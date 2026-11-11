@@ -1,0 +1,698 @@
+[
+ {
+  "screen": "rektcapital",
+  "n": 221,
+  "chars": 55393,
+  "from": "2026-09-23",
+  "to": "2026-11-10",
+  "file": "output/x_btc_2026/frozen/rektcapital.txt"
+ },
+ {
+  "screen": "DrProfitCrypto",
+  "n": 166,
+  "chars": 43804,
+  "from": "2026-01-03",
+  "to": "2026-11-08",
+  "file": "output/x_btc_2026/frozen/DrProfitCrypto.txt"
+ },
+ {
+  "screen": "xfli5",
+  "n": 134,
+  "chars": 14770,
+  "from": "2026-03-14",
+  "to": "2026-11-05",
+  "file": "output/x_btc_2026/frozen/xfli5.txt"
+ },
+ {
+  "screen": "Bitcoin",
+  "n": 130,
+  "chars": 7908,
+  "from": "2026-05-31",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/Bitcoin.txt"
+ },
+ {
+  "screen": "huangdaobtc",
+  "n": 124,
+  "chars": 19621,
+  "from": "2026-05-28",
+  "to": "2026-11-10",
+  "file": "output/x_btc_2026/frozen/huangdaobtc.txt"
+ },
+ {
+  "screen": "crypto_punkX",
+  "n": 116,
+  "chars": 10677,
+  "from": "2026-08-21",
+  "to": "2026-11-06",
+  "file": "output/x_btc_2026/frozen/crypto_punkX.txt"
+ },
+ {
+  "screen": "AwbczBTC",
+  "n": 100,
+  "chars": 14449,
+  "from": "2026-08-31",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/AwbczBTC.txt"
+ },
+ {
+  "screen": "0xCryptoChan",
+  "n": 92,
+  "chars": 15883,
+  "from": "2026-07-11",
+  "to": "2026-11-08",
+  "file": "output/x_btc_2026/frozen/0xCryptoChan.txt"
+ },
+ {
+  "screen": "saylor",
+  "n": 84,
+  "chars": 9412,
+  "from": "2026-08-19",
+  "to": "2026-11-10",
+  "file": "output/x_btc_2026/frozen/saylor.txt"
+ },
+ {
+  "screen": "market_beggar",
+  "n": 83,
+  "chars": 16110,
+  "from": "2026-07-02",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/market_beggar.txt"
+ },
+ {
+  "screen": "btc2688",
+  "n": 82,
+  "chars": 8255,
+  "from": "2026-02-17",
+  "to": "2026-11-09",
+  "file": "output/x_btc_2026/frozen/btc2688.txt"
+ },
+ {
+  "screen": "dongbimao",
+  "n": 82,
+  "chars": 9966,
+  "from": "2026-07-29",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/dongbimao.txt"
+ },
+ {
+  "screen": "AshCrypto",
+  "n": 70,
+  "chars": 14537,
+  "from": "2026-10-31",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/AshCrypto.txt"
+ },
+ {
+  "screen": "liujia0224",
+  "n": 69,
+  "chars": 9776,
+  "from": "2026-01-13",
+  "to": "2026-11-03",
+  "file": "output/x_btc_2026/frozen/liujia0224.txt"
+ },
+ {
+  "screen": "EmberCN",
+  "n": 67,
+  "chars": 14123,
+  "from": "2026-01-01",
+  "to": "2026-04-27",
+  "file": "output/x_btc_2026/frozen/EmberCN.txt"
+ },
+ {
+  "screen": "Felix_Hsu",
+  "n": 67,
+  "chars": 8663,
+  "from": "2026-01-05",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/Felix_Hsu.txt"
+ },
+ {
+  "screen": "benjamincowen",
+  "n": 60,
+  "chars": 8984,
+  "from": "2026-09-18",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/benjamincowen.txt"
+ },
+ {
+  "screen": "btc1368",
+  "n": 60,
+  "chars": 4997,
+  "from": "2026-10-12",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/btc1368.txt"
+ },
+ {
+  "screen": "cs_zhaozilong",
+  "n": 59,
+  "chars": 8061,
+  "from": "2026-01-05",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/cs_zhaozilong.txt"
+ },
+ {
+  "screen": "fishbtcer",
+  "n": 58,
+  "chars": 4261,
+  "from": "2026-02-05",
+  "to": "2026-11-10",
+  "file": "output/x_btc_2026/frozen/fishbtcer.txt"
+ },
+ {
+  "screen": "btc_tigerx",
+  "n": 56,
+  "chars": 9166,
+  "from": "2026-02-28",
+  "to": "2026-10-06",
+  "file": "output/x_btc_2026/frozen/btc_tigerx.txt"
+ },
+ {
+  "screen": "DL_W59",
+  "n": 55,
+  "chars": 8898,
+  "from": "2026-08-21",
+  "to": "2026-11-10",
+  "file": "output/x_btc_2026/frozen/DL_W59.txt"
+ },
+ {
+  "screen": "Billions_2022_",
+  "n": 53,
+  "chars": 6212,
+  "from": "2026-06-02",
+  "to": "2026-11-10",
+  "file": "output/x_btc_2026/frozen/Billions_2022_.txt"
+ },
+ {
+  "screen": "Murphychen888",
+  "n": 51,
+  "chars": 8656,
+  "from": "2026-09-15",
+  "to": "2026-11-09",
+  "file": "output/x_btc_2026/frozen/Murphychen888.txt"
+ },
+ {
+  "screen": "SilverBulletBTC",
+  "n": 51,
+  "chars": 6056,
+  "from": "2026-02-05",
+  "to": "2026-10-08",
+  "file": "output/x_btc_2026/frozen/SilverBulletBTC.txt"
+ },
+ {
+  "screen": "Cryptodengta",
+  "n": 48,
+  "chars": 6474,
+  "from": "2026-07-14",
+  "to": "2026-11-10",
+  "file": "output/x_btc_2026/frozen/Cryptodengta.txt"
+ },
+ {
+  "screen": "_Checkmatey_",
+  "n": 47,
+  "chars": 11045,
+  "from": "2026-01-21",
+  "to": "2026-10-29",
+  "file": "output/x_btc_2026/frozen/_Checkmatey_.txt"
+ },
+ {
+  "screen": "chairbtc",
+  "n": 46,
+  "chars": 5106,
+  "from": "2026-10-27",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/chairbtc.txt"
+ },
+ {
+  "screen": "Wangduanniao",
+  "n": 39,
+  "chars": 2666,
+  "from": "2026-04-11",
+  "to": "2026-06-30",
+  "file": "output/x_btc_2026/frozen/Wangduanniao.txt"
+ },
+ {
+  "screen": "wangtuai888",
+  "n": 39,
+  "chars": 5182,
+  "from": "2026-05-17",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/wangtuai888.txt"
+ },
+ {
+  "screen": "monkeyjiang",
+  "n": 38,
+  "chars": 3432,
+  "from": "2026-10-18",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/monkeyjiang.txt"
+ },
+ {
+  "screen": "sylvigil",
+  "n": 36,
+  "chars": 3317,
+  "from": "2026-03-20",
+  "to": "2026-11-09",
+  "file": "output/x_btc_2026/frozen/sylvigil.txt"
+ },
+ {
+  "screen": "Sykodelic_",
+  "n": 35,
+  "chars": 10724,
+  "from": "2026-09-27",
+  "to": "2026-11-10",
+  "file": "output/x_btc_2026/frozen/Sykodelic_.txt"
+ },
+ {
+  "screen": "willywoo",
+  "n": 32,
+  "chars": 7660,
+  "from": "2026-01-09",
+  "to": "2026-11-05",
+  "file": "output/x_btc_2026/frozen/willywoo.txt"
+ },
+ {
+  "screen": "ai_9684xtpa",
+  "n": 30,
+  "chars": 6429,
+  "from": "2026-09-28",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/ai_9684xtpa.txt"
+ },
+ {
+  "screen": "biupa",
+  "n": 29,
+  "chars": 2562,
+  "from": "2026-07-05",
+  "to": "2026-10-19",
+  "file": "output/x_btc_2026/frozen/biupa.txt"
+ },
+ {
+  "screen": "terryharmonic",
+  "n": 28,
+  "chars": 3086,
+  "from": "2026-10-08",
+  "to": "2026-11-10",
+  "file": "output/x_btc_2026/frozen/terryharmonic.txt"
+ },
+ {
+  "screen": "ChandlerGuo",
+  "n": 27,
+  "chars": 1361,
+  "from": "2026-04-08",
+  "to": "2026-11-06",
+  "file": "output/x_btc_2026/frozen/ChandlerGuo.txt"
+ },
+ {
+  "screen": "CryptoApprenti1",
+  "n": 27,
+  "chars": 2768,
+  "from": "2026-10-31",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/CryptoApprenti1.txt"
+ },
+ {
+  "screen": "crypto_yan_gui",
+  "n": 26,
+  "chars": 2863,
+  "from": "2026-06-09",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/crypto_yan_gui.txt"
+ },
+ {
+  "screen": "Mrluanluan",
+  "n": 26,
+  "chars": 3876,
+  "from": "2026-09-23",
+  "to": "2026-11-05",
+  "file": "output/x_btc_2026/frozen/Mrluanluan.txt"
+ },
+ {
+  "screen": "Guilin_Chen_",
+  "n": 25,
+  "chars": 3224,
+  "from": "2026-10-21",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/Guilin_Chen_.txt"
+ },
+ {
+  "screen": "oragnes",
+  "n": 25,
+  "chars": 4261,
+  "from": "2026-11-01",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/oragnes.txt"
+ },
+ {
+  "screen": "BobLoukas",
+  "n": 24,
+  "chars": 5511,
+  "from": "2026-06-10",
+  "to": "2026-11-09",
+  "file": "output/x_btc_2026/frozen/BobLoukas.txt"
+ },
+ {
+  "screen": "Keyshotvv",
+  "n": 24,
+  "chars": 2208,
+  "from": "2026-09-28",
+  "to": "2026-11-09",
+  "file": "output/x_btc_2026/frozen/Keyshotvv.txt"
+ },
+ {
+  "screen": "Cato_KT",
+  "n": 22,
+  "chars": 3651,
+  "from": "2026-10-23",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/Cato_KT.txt"
+ },
+ {
+  "screen": "cryptovizart",
+  "n": 21,
+  "chars": 5087,
+  "from": "2026-01-02",
+  "to": "2026-11-10",
+  "file": "output/x_btc_2026/frozen/cryptovizart.txt"
+ },
+ {
+  "screen": "Dp520888",
+  "n": 21,
+  "chars": 1584,
+  "from": "2026-03-04",
+  "to": "2026-04-24",
+  "file": "output/x_btc_2026/frozen/Dp520888.txt"
+ },
+ {
+  "screen": "williamlab",
+  "n": 20,
+  "chars": 1952,
+  "from": "2026-02-05",
+  "to": "2026-10-29",
+  "file": "output/x_btc_2026/frozen/williamlab.txt"
+ },
+ {
+  "screen": "Btc_kking",
+  "n": 19,
+  "chars": 1545,
+  "from": "2026-09-21",
+  "to": "2026-11-10",
+  "file": "output/x_btc_2026/frozen/Btc_kking.txt"
+ },
+ {
+  "screen": "UnicornBitcoin",
+  "n": 19,
+  "chars": 2614,
+  "from": "2026-09-27",
+  "to": "2026-11-10",
+  "file": "output/x_btc_2026/frozen/UnicornBitcoin.txt"
+ },
+ {
+  "screen": "Pathusa",
+  "n": 18,
+  "chars": 1212,
+  "from": "2026-09-29",
+  "to": "2026-11-09",
+  "file": "output/x_btc_2026/frozen/Pathusa.txt"
+ },
+ {
+  "screen": "B_daojia",
+  "n": 15,
+  "chars": 2228,
+  "from": "2026-09-05",
+  "to": "2026-11-10",
+  "file": "output/x_btc_2026/frozen/B_daojia.txt"
+ },
+ {
+  "screen": "realGuanYu",
+  "n": 15,
+  "chars": 1591,
+  "from": "2026-01-26",
+  "to": "2026-08-13",
+  "file": "output/x_btc_2026/frozen/realGuanYu.txt"
+ },
+ {
+  "screen": "0XTiger666",
+  "n": 14,
+  "chars": 1212,
+  "from": "2026-04-13",
+  "to": "2026-11-02",
+  "file": "output/x_btc_2026/frozen/0XTiger666.txt"
+ },
+ {
+  "screen": "LuYao_Trader",
+  "n": 14,
+  "chars": 2210,
+  "from": "2026-06-22",
+  "to": "2026-11-01",
+  "file": "output/x_btc_2026/frozen/LuYao_Trader.txt"
+ },
+ {
+  "screen": "qinbafrank",
+  "n": 14,
+  "chars": 1215,
+  "from": "2026-04-14",
+  "to": "2026-04-26",
+  "file": "output/x_btc_2026/frozen/qinbafrank.txt"
+ },
+ {
+  "screen": "CryptoCapo_",
+  "n": 13,
+  "chars": 2308,
+  "from": "2026-01-20",
+  "to": "2026-11-02",
+  "file": "output/x_btc_2026/frozen/CryptoCapo_.txt"
+ },
+ {
+  "screen": "CryptoPainter",
+  "n": 13,
+  "chars": 1801,
+  "from": "2026-10-07",
+  "to": "2026-11-10",
+  "file": "output/x_btc_2026/frozen/CryptoPainter.txt"
+ },
+ {
+  "screen": "sky27867843",
+  "n": 13,
+  "chars": 1368,
+  "from": "2026-07-14",
+  "to": "2026-11-08",
+  "file": "output/x_btc_2026/frozen/sky27867843.txt"
+ },
+ {
+  "screen": "0xTodd",
+  "n": 12,
+  "chars": 1906,
+  "from": "2026-08-03",
+  "to": "2026-10-24",
+  "file": "output/x_btc_2026/frozen/0xTodd.txt"
+ },
+ {
+  "screen": "bitfish",
+  "n": 12,
+  "chars": 1350,
+  "from": "2026-02-05",
+  "to": "2026-10-31",
+  "file": "output/x_btc_2026/frozen/bitfish.txt"
+ },
+ {
+  "screen": "liuwei16602825",
+  "n": 12,
+  "chars": 2040,
+  "from": "2026-01-30",
+  "to": "2026-07-28",
+  "file": "output/x_btc_2026/frozen/liuwei16602825.txt"
+ },
+ {
+  "screen": "BeliaSchoo91221",
+  "n": 11,
+  "chars": 1995,
+  "from": "2026-01-08",
+  "to": "2026-06-22",
+  "file": "output/x_btc_2026/frozen/BeliaSchoo91221.txt"
+ },
+ {
+  "screen": "BTC_Alert_",
+  "n": 11,
+  "chars": 1748,
+  "from": "2026-09-11",
+  "to": "2026-11-04",
+  "file": "output/x_btc_2026/frozen/BTC_Alert_.txt"
+ },
+ {
+  "screen": "ViewsOfChris",
+  "n": 11,
+  "chars": 1304,
+  "from": "2026-10-14",
+  "to": "2026-10-31",
+  "file": "output/x_btc_2026/frozen/ViewsOfChris.txt"
+ },
+ {
+  "screen": "TraderS18",
+  "n": 9,
+  "chars": 951,
+  "from": "2026-10-19",
+  "to": "2026-11-09",
+  "file": "output/x_btc_2026/frozen/TraderS18.txt"
+ },
+ {
+  "screen": "blockTVBee",
+  "n": 8,
+  "chars": 1394,
+  "from": "2026-09-25",
+  "to": "2026-11-07",
+  "file": "output/x_btc_2026/frozen/blockTVBee.txt"
+ },
+ {
+  "screen": "WilliamLu126",
+  "n": 7,
+  "chars": 764,
+  "from": "2026-01-29",
+  "to": "2026-03-22",
+  "file": "output/x_btc_2026/frozen/WilliamLu126.txt"
+ },
+ {
+  "screen": "alpha101xyz",
+  "n": 6,
+  "chars": 1114,
+  "from": "2026-06-04",
+  "to": "2026-07-30",
+  "file": "output/x_btc_2026/frozen/alpha101xyz.txt"
+ },
+ {
+  "screen": "Xiaoniu6161",
+  "n": 6,
+  "chars": 528,
+  "from": "2026-11-03",
+  "to": "2026-11-06",
+  "file": "output/x_btc_2026/frozen/Xiaoniu6161.txt"
+ },
+ {
+  "screen": "Baisircrypto",
+  "n": 5,
+  "chars": 894,
+  "from": "2026-08-20",
+  "to": "2026-11-06",
+  "file": "output/x_btc_2026/frozen/Baisircrypto.txt"
+ },
+ {
+  "screen": "Goupenguin",
+  "n": 5,
+  "chars": 659,
+  "from": "2026-10-11",
+  "to": "2026-11-09",
+  "file": "output/x_btc_2026/frozen/Goupenguin.txt"
+ },
+ {
+  "screen": "0xPickleCati",
+  "n": 4,
+  "chars": 927,
+  "from": "2026-03-31",
+  "to": "2026-06-12",
+  "file": "output/x_btc_2026/frozen/0xPickleCati.txt"
+ },
+ {
+  "screen": "Geight16",
+  "n": 4,
+  "chars": 342,
+  "from": "2026-09-29",
+  "to": "2026-10-31",
+  "file": "output/x_btc_2026/frozen/Geight16.txt"
+ },
+ {
+  "screen": "Hoyooyoo",
+  "n": 3,
+  "chars": 422,
+  "from": "2026-10-26",
+  "to": "2026-11-11",
+  "file": "output/x_btc_2026/frozen/Hoyooyoo.txt"
+ },
+ {
+  "screen": "wolfyxbt",
+  "n": 3,
+  "chars": 298,
+  "from": "2026-10-08",
+  "to": "2026-11-03",
+  "file": "output/x_btc_2026/frozen/wolfyxbt.txt"
+ },
+ {
+  "screen": "BTCwukong",
+  "n": 2,
+  "chars": 117,
+  "from": "2026-03-13",
+  "to": "2026-10-27",
+  "file": "output/x_btc_2026/frozen/BTCwukong.txt"
+ },
+ {
+  "screen": "jiangjinyajy",
+  "n": 2,
+  "chars": 346,
+  "from": "2026-06-14",
+  "to": "2026-06-16",
+  "file": "output/x_btc_2026/frozen/jiangjinyajy.txt"
+ },
+ {
+  "screen": "Web3Dc888",
+  "n": 2,
+  "chars": 347,
+  "from": "2026-09-29",
+  "to": "2026-11-09",
+  "file": "output/x_btc_2026/frozen/Web3Dc888.txt"
+ },
+ {
+  "screen": "yiqifacai",
+  "n": 2,
+  "chars": 257,
+  "from": "2026-08-27",
+  "to": "2026-10-21",
+  "file": "output/x_btc_2026/frozen/yiqifacai.txt"
+ },
+ {
+  "screen": "ZiiiMindInvest",
+  "n": 2,
+  "chars": 253,
+  "from": "2026-03-05",
+  "to": "2026-03-16",
+  "file": "output/x_btc_2026/frozen/ZiiiMindInvest.txt"
+ },
+ {
+  "screen": "billtheinvestor",
+  "n": 1,
+  "chars": 146,
+  "from": "2026-10-09",
+  "to": "2026-10-09",
+  "file": "output/x_btc_2026/frozen/billtheinvestor.txt"
+ },
+ {
+  "screen": "hebi555",
+  "n": 1,
+  "chars": 158,
+  "from": "2026-10-10",
+  "to": "2026-10-10",
+  "file": "output/x_btc_2026/frozen/hebi555.txt"
+ },
+ {
+  "screen": "octopusycc",
+  "n": 1,
+  "chars": 130,
+  "from": "2026-11-01",
+  "to": "2026-11-01",
+  "file": "output/x_btc_2026/frozen/octopusycc.txt"
+ },
+ {
+  "screen": "PhyrexNi",
+  "n": 1,
+  "chars": 191,
+  "from": "2026-11-10",
+  "to": "2026-11-10",
+  "file": "output/x_btc_2026/frozen/PhyrexNi.txt"
+ },
+ {
+  "screen": "traderxiaoxia",
+  "n": 1,
+  "chars": 52,
+  "from": "2026-07-22",
+  "to": "2026-07-22",
+  "file": "output/x_btc_2026/frozen/traderxiaoxia.txt"
+ }
+]

@@ -1,0 +1,8202 @@
+[
+ {
+  "screen": "Billions_2022_",
+  "total_tweets": 53,
+  "btc_tweets": 50,
+  "cat": {
+   "btc_analysis": 38,
+   "btc_vague": 8,
+   "macro_only": 3,
+   "commentary": 4,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 13,
+  "verified": 9,
+  "rawWinRate": 0.889,
+  "excess": 0.229,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.262,
+    "n": 9,
+    "rawWin": 0.889
+   },
+   "8%/90d": {
+    "excess": 0.229,
+    "n": 9,
+    "rawWin": 0.889
+   },
+   "15%/90d": {
+    "excess": -0.234,
+    "n": 9,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.17,
+    "n": 9,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": true,
+    "strongEvidence": [],
+    "weakEvidence": [
+     {
+      "date": "2026-06-02",
+      "quote": "大饼会在6w9止跌"
+     }
+    ],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": true,
+    "weakHit": false,
+    "strongEvidence": [
+     {
+      "date": "2026-09-24",
+      "target": 83500,
+      "quote": "这轮回调大饼最低在 8w35 附近"
+     }
+    ],
+    "weakEvidence": [],
+    "candidateCount": 4
+   }
+  ],
+  "nodeHit": 1,
+  "nodeWeak": 1,
+  "coveredNodes": 2,
+  "trend": {
+   "rate": 0.5,
+   "n": 8,
+   "variety": 0.38,
+   "biased": false
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 7,
+  "score": 9,
+  "band": "S",
+  "reason": "超额 23pt；节点1/4；点位明确"
+ },
+ {
+  "screen": "sylvigil",
+  "total_tweets": 36,
+  "btc_tweets": 36,
+  "cat": {
+   "btc_analysis": 18,
+   "btc_vague": 10,
+   "macro_only": 4,
+   "commentary": 4,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 7,
+  "verified": 6,
+  "rawWinRate": 1,
+  "excess": 0.277,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.181,
+    "n": 6,
+    "rawWin": 0.833
+   },
+   "8%/90d": {
+    "excess": 0.277,
+    "n": 6,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": -0.022,
+    "n": 6,
+    "rawWin": 0.333
+   },
+   "25%/120d": {
+    "excess": -0.179,
+    "n": 6,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 2
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 2,
+  "trend": {
+   "rate": 0.4,
+   "n": 5,
+   "variety": 0.29,
+   "biased": false
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 5,
+  "score": 7,
+  "band": "S",
+  "reason": "超额 28pt；点位明确"
+ },
+ {
+  "screen": "cs_zhaozilong",
+  "total_tweets": 59,
+  "btc_tweets": 59,
+  "cat": {
+   "btc_analysis": 30,
+   "btc_vague": 12,
+   "macro_only": 4,
+   "commentary": 8,
+   "promo": 4,
+   "retweet": 1
+  },
+  "predsCount": 6,
+  "verified": 6,
+  "rawWinRate": 0.833,
+  "excess": 0.19,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.04,
+    "n": 6,
+    "rawWin": 0.5
+   },
+   "8%/90d": {
+    "excess": 0.19,
+    "n": 6,
+    "rawWin": 0.833
+   },
+   "15%/90d": {
+    "excess": -0.07,
+    "n": 6,
+    "rawWin": 0.333
+   },
+   "25%/120d": {
+    "excess": -0.222,
+    "n": 6,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 2
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 2
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 2,
+  "trend": {
+   "rate": null,
+   "n": 5,
+   "variety": 0.17,
+   "biased": true
+  },
+  "type": {
+   "code": "A2",
+   "label": "有分析·偏宏观无点位"
+  },
+  "withPrice": 2,
+  "score": 4,
+  "band": "B",
+  "reason": "超额 19pt"
+ },
+ {
+  "screen": "_Checkmatey_",
+  "total_tweets": 47,
+  "btc_tweets": 47,
+  "cat": {
+   "btc_analysis": 30,
+   "btc_vague": 5,
+   "macro_only": 2,
+   "commentary": 8,
+   "promo": 2,
+   "retweet": 0
+  },
+  "predsCount": 5,
+  "verified": 5,
+  "rawWinRate": 0.8,
+  "excess": 0.111,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.175,
+    "n": 5,
+    "rawWin": 0.8
+   },
+   "8%/90d": {
+    "excess": 0.111,
+    "n": 5,
+    "rawWin": 0.8
+   },
+   "15%/90d": {
+    "excess": 0.135,
+    "n": 5,
+    "rawWin": 0.6
+   },
+   "25%/120d": {
+    "excess": 0.107,
+    "n": 5,
+    "rawWin": 0.4
+   }
+  },
+  "stab": "stable_pos",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": true,
+    "strongEvidence": [],
+    "weakEvidence": [
+     {
+      "date": "2026-06-25",
+      "quote": "Bitcoin is extremely high value at this point in time."
+     }
+    ],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 1,
+  "coveredNodes": 2,
+  "trend": {
+   "rate": null,
+   "n": 5,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 2,
+  "score": 4,
+  "band": "B",
+  "reason": "超额 11pt；点位明确"
+ },
+ {
+  "screen": "fishbtcer",
+  "total_tweets": 58,
+  "btc_tweets": 58,
+  "cat": {
+   "btc_analysis": 40,
+   "btc_vague": 12,
+   "macro_only": 0,
+   "commentary": 6,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 8,
+  "verified": 8,
+  "rawWinRate": 0.875,
+  "excess": 0.013,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.042,
+    "n": 8,
+    "rawWin": 0.75
+   },
+   "8%/90d": {
+    "excess": 0.013,
+    "n": 8,
+    "rawWin": 0.875
+   },
+   "15%/90d": {
+    "excess": 0.001,
+    "n": 8,
+    "rawWin": 0.625
+   },
+   "25%/120d": {
+    "excess": -0.043,
+    "n": 8,
+    "rawWin": 0.375
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": true,
+    "strongEvidence": [],
+    "weakEvidence": [
+     {
+      "date": "2026-02-06",
+      "quote": "可以买了 #btc #eth 忍一点浮亏没事的"
+     }
+    ],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 1,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": 0.833,
+   "n": 6,
+   "variety": 0.25,
+   "biased": false
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 5,
+  "score": 2,
+  "band": "C",
+  "reason": "超额 1pt；点位明确"
+ },
+ {
+  "screen": "Cryptodengta",
+  "total_tweets": 48,
+  "btc_tweets": 48,
+  "cat": {
+   "btc_analysis": 32,
+   "btc_vague": 10,
+   "macro_only": 4,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 7,
+  "verified": 5,
+  "rawWinRate": 0.6,
+  "excess": 0.004,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.058,
+    "n": 5,
+    "rawWin": 0.6
+   },
+   "8%/90d": {
+    "excess": 0.004,
+    "n": 5,
+    "rawWin": 0.6
+   },
+   "15%/90d": {
+    "excess": -0.11,
+    "n": 5,
+    "rawWin": 0.2
+   },
+   "25%/120d": {
+    "excess": -0.087,
+    "n": 5,
+    "rawWin": 0.2
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": true,
+    "strongEvidence": [],
+    "weakEvidence": [
+     {
+      "date": "2026-08-25",
+      "quote": "这轮 bitcoin:native 的高点应该会到95-97K才会结束"
+     }
+    ],
+    "candidateCount": 3
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 1,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": 0.75,
+   "n": 4,
+   "variety": 0.29,
+   "biased": false
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 4,
+  "score": 2,
+  "band": "C",
+  "reason": "超额 0pt；点位明确"
+ },
+ {
+  "screen": "DrProfitCrypto",
+  "total_tweets": 166,
+  "btc_tweets": 166,
+  "cat": {
+   "btc_analysis": 120,
+   "btc_vague": 30,
+   "macro_only": 6,
+   "commentary": 8,
+   "promo": 2,
+   "retweet": 0
+  },
+  "predsCount": 21,
+  "verified": 21,
+  "rawWinRate": 0.714,
+  "excess": -0.016,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.046,
+    "n": 21,
+    "rawWin": 0.571
+   },
+   "8%/90d": {
+    "excess": -0.016,
+    "n": 21,
+    "rawWin": 0.714
+   },
+   "15%/90d": {
+    "excess": 0.057,
+    "n": 21,
+    "rawWin": 0.524
+   },
+   "25%/120d": {
+    "excess": -0.033,
+    "n": 21,
+    "rawWin": 0.19
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": true,
+    "strongEvidence": [],
+    "weakEvidence": [
+     {
+      "date": "2026-02-09",
+      "quote": "My ultimate bottom target is somewhere in the region of the 40s, expect it to hit in Sept-Oct"
+     }
+    ],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 7
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": true,
+    "strongEvidence": [],
+    "weakEvidence": [
+     {
+      "date": "2026-05-29",
+      "quote": "The Bottom will be in Sep-Oct The Bottom will be between 40-50k"
+     },
+     {
+      "date": "2026-06-24",
+      "quote": "the bottom should be between 40-42k area based on this indicator!"
+     }
+    ],
+    "candidateCount": 2
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 2
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 2,
+  "coveredNodes": 4,
+  "trend": {
+   "rate": 0.615,
+   "n": 13,
+   "variety": 0.29,
+   "biased": false
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 17,
+  "score": 2,
+  "band": "C",
+  "reason": "超额 -2pt；点位明确；趋势跟随-1"
+ },
+ {
+  "screen": "btc_tigerx",
+  "total_tweets": 56,
+  "btc_tweets": 56,
+  "cat": {
+   "btc_analysis": 40,
+   "btc_vague": 6,
+   "macro_only": 3,
+   "commentary": 5,
+   "promo": 2,
+   "retweet": 0
+  },
+  "predsCount": 7,
+  "verified": 7,
+  "rawWinRate": 0.714,
+  "excess": -0.096,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.146,
+    "n": 7,
+    "rawWin": 0.429
+   },
+   "8%/90d": {
+    "excess": -0.096,
+    "n": 7,
+    "rawWin": 0.714
+   },
+   "15%/90d": {
+    "excess": -0.162,
+    "n": 7,
+    "rawWin": 0.429
+   },
+   "25%/120d": {
+    "excess": -0.143,
+    "n": 7,
+    "rawWin": 0.143
+   }
+  },
+  "stab": "stable_neg",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": true,
+    "strongEvidence": [],
+    "weakEvidence": [
+     {
+      "date": "2026-04-15",
+      "quote": "这也是情绪的疯狂见顶区的表现"
+     }
+    ],
+    "candidateCount": 4
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": true,
+    "strongEvidence": [],
+    "weakEvidence": [
+     {
+      "date": "2026-06-06",
+      "quote": "开始进入最后的等待阶段了，子弹还没准备好的要抓紧"
+     }
+    ],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 2,
+  "coveredNodes": 2,
+  "trend": {
+   "rate": 0.667,
+   "n": 3,
+   "variety": 0.29,
+   "biased": false
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 3,
+  "score": 1,
+  "band": "C",
+  "reason": "超额 -10pt；点位明确"
+ },
+ {
+  "screen": "liujia0224",
+  "total_tweets": 69,
+  "btc_tweets": 69,
+  "cat": {
+   "btc_analysis": 38,
+   "btc_vague": 9,
+   "macro_only": 6,
+   "commentary": 8,
+   "promo": 8,
+   "retweet": 0
+  },
+  "predsCount": 18,
+  "verified": 17,
+  "rawWinRate": 0.471,
+  "excess": -0.124,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.076,
+    "n": 17,
+    "rawWin": 0.471
+   },
+   "8%/90d": {
+    "excess": -0.124,
+    "n": 17,
+    "rawWin": 0.471
+   },
+   "15%/90d": {
+    "excess": 0.006,
+    "n": 17,
+    "rawWin": 0.353
+   },
+   "25%/120d": {
+    "excess": 0.108,
+    "n": 17,
+    "rawWin": 0.294
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": true,
+    "strongEvidence": [],
+    "weakEvidence": [
+     {
+      "date": "2026-01-21",
+      "quote": "继续等待比特币新低（80k以下）的出现后才会开始买入"
+     },
+     {
+      "date": "2026-01-30",
+      "quote": "如果最低插到77000-78000"
+     }
+    ],
+    "candidateCount": 6
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": true,
+    "strongEvidence": [],
+    "weakEvidence": [
+     {
+      "date": "2026-07-09",
+      "quote": "币价却不再下跌，这就是阶段性的底部"
+     }
+    ],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 3
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 2,
+  "coveredNodes": 3,
+  "trend": {
+   "rate": 0.545,
+   "n": 11,
+   "variety": 0.33,
+   "biased": false
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 8,
+  "score": 1,
+  "band": "C",
+  "reason": "超额 -12pt；点位明确"
+ },
+ {
+  "screen": "Murphychen888",
+  "total_tweets": 51,
+  "btc_tweets": 51,
+  "cat": {
+   "btc_analysis": 32,
+   "btc_vague": 13,
+   "macro_only": 4,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 1,
+  "verified": 1,
+  "rawWinRate": 1,
+  "excess": 0.438,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.438,
+    "n": 1,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.438,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": -0.225,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.2,
+    "n": 1,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 1 条"
+ },
+ {
+  "screen": "williamlab",
+  "total_tweets": 20,
+  "btc_tweets": 20,
+  "cat": {
+   "btc_analysis": 7,
+   "btc_vague": 5,
+   "macro_only": 1,
+   "commentary": 7,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 3,
+  "verified": 2,
+  "rawWinRate": 1,
+  "excess": 0.356,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.12,
+    "n": 2,
+    "rawWin": 0.5
+   },
+   "8%/90d": {
+    "excess": 0.356,
+    "n": 2,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": 0.479,
+    "n": 2,
+    "rawWin": 1
+   },
+   "25%/120d": {
+    "excess": 0.414,
+    "n": 2,
+    "rawWin": 0.5
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": true,
+    "weakHit": false,
+    "strongEvidence": [
+     {
+      "date": "2026-02-06",
+      "target": 60000,
+      "quote": "好消息，比特币最多只能跌六万刀了。"
+     }
+    ],
+    "weakEvidence": [
+     {
+      "date": "2026-02-05",
+      "quote": "比特币ETF开盘那晚的价格是五万上下。。。怎么也不可能跌破这个价格吧？"
+     }
+    ],
+    "candidateCount": 2
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 1,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": null,
+   "n": 2,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 2,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 2 条"
+ },
+ {
+  "screen": "terryharmonic",
+  "total_tweets": 28,
+  "btc_tweets": 26,
+  "cat": {
+   "btc_analysis": 16,
+   "btc_vague": 8,
+   "macro_only": 2,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 5,
+  "verified": 1,
+  "rawWinRate": 1,
+  "excess": 0.317,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.417,
+    "n": 1,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.317,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": -0.067,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 1,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 2
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": 0.5,
+   "n": 2,
+   "variety": 0.2,
+   "biased": false
+  },
+  "type": {
+   "code": "A2",
+   "label": "有分析·偏宏观无点位"
+  },
+  "withPrice": 1,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 1 条"
+ },
+ {
+  "screen": "jiangjinyajy",
+  "total_tweets": 2,
+  "btc_tweets": 2,
+  "cat": {
+   "btc_analysis": 1,
+   "btc_vague": 0,
+   "macro_only": 1,
+   "commentary": 0,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 1,
+  "verified": 1,
+  "rawWinRate": 1,
+  "excess": 0.286,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.495,
+    "n": 1,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": 0.286,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": 0.363,
+    "n": 1,
+    "rawWin": 1
+   },
+   "25%/120d": {
+    "excess": 0.363,
+    "n": 1,
+    "rawWin": 1
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": true,
+    "weakHit": false,
+    "strongEvidence": [
+     {
+      "date": "2026-06-14",
+      "target": 60000,
+      "quote": "历史规律来看，6万就是底部区域了，往下的空间将非常有限"
+     }
+    ],
+    "weakEvidence": [],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 1,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": null,
+   "n": 1,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 1,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 1 条"
+ },
+ {
+  "screen": "SilverBulletBTC",
+  "total_tweets": 51,
+  "btc_tweets": 51,
+  "cat": {
+   "btc_analysis": 10,
+   "btc_vague": 14,
+   "macro_only": 1,
+   "commentary": 26,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 2,
+  "verified": 2,
+  "rawWinRate": 1,
+  "excess": 0.268,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.361,
+    "n": 2,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.268,
+    "n": 2,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": -0.05,
+    "n": 2,
+    "rawWin": 0.5
+   },
+   "25%/120d": {
+    "excess": -0.217,
+    "n": 2,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": true,
+    "strongEvidence": [],
+    "weakEvidence": [
+     {
+      "date": "2026-02-07",
+      "quote": "Highest volume candles in a very long time indicated a local bottom."
+     }
+    ],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 1,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": 0.5,
+   "n": 2,
+   "variety": 0.5,
+   "biased": false
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 2 条"
+ },
+ {
+  "screen": "crypto_punkX",
+  "total_tweets": 116,
+  "btc_tweets": 116,
+  "cat": {
+   "btc_analysis": 18,
+   "btc_vague": 12,
+   "macro_only": 0,
+   "commentary": 20,
+   "promo": 66,
+   "retweet": 0
+  },
+  "predsCount": 1,
+  "verified": 1,
+  "rawWinRate": 1,
+  "excess": 0.22,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.22,
+    "n": 1,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.22,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": -0.484,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.462,
+    "n": 1,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 1,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "E",
+   "label": "推广/喊单为主"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 1 条"
+ },
+ {
+  "screen": "Baisircrypto",
+  "total_tweets": 5,
+  "btc_tweets": 5,
+  "cat": {
+   "btc_analysis": 1,
+   "btc_vague": 0,
+   "macro_only": 0,
+   "commentary": 1,
+   "promo": 3,
+   "retweet": 0
+  },
+  "predsCount": 1,
+  "verified": 1,
+  "rawWinRate": 1,
+  "excess": 0.198,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.198,
+    "n": 1,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.198,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": -0.505,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.484,
+    "n": 1,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 1,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "E",
+   "label": "推广/喊单为主"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 1 条"
+ },
+ {
+  "screen": "ZiiiMindInvest",
+  "total_tweets": 2,
+  "btc_tweets": 2,
+  "cat": {
+   "btc_analysis": 1,
+   "btc_vague": 0,
+   "macro_only": 0,
+   "commentary": 1,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 1,
+  "verified": 1,
+  "rawWinRate": 1,
+  "excess": 0.176,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.418,
+    "n": 1,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.176,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": 0.495,
+    "n": 1,
+    "rawWin": 1
+   },
+   "25%/120d": {
+    "excess": -0.088,
+    "n": 1,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": true,
+    "weakHit": false,
+    "strongEvidence": [
+     {
+      "date": "2026-03-16",
+      "target": 79000,
+      "quote": "上方7万9到8万1有压力"
+     }
+    ],
+    "weakEvidence": [],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 1,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": null,
+   "n": 1,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 1,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 1 条"
+ },
+ {
+  "screen": "btc1368",
+  "total_tweets": 60,
+  "btc_tweets": 50,
+  "cat": {
+   "btc_analysis": 22,
+   "btc_vague": 18,
+   "macro_only": 4,
+   "commentary": 12,
+   "promo": 4,
+   "retweet": 0
+  },
+  "predsCount": 7,
+  "verified": 3,
+  "rawWinRate": 0.667,
+  "excess": 0.052,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.113,
+    "n": 3,
+    "rawWin": 0.667
+   },
+   "8%/90d": {
+    "excess": 0.052,
+    "n": 3,
+    "rawWin": 0.667
+   },
+   "15%/90d": {
+    "excess": -0.055,
+    "n": 3,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 3,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 3
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": 0.5,
+   "n": 2,
+   "variety": 0.43,
+   "biased": false
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 3,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 3 条"
+ },
+ {
+  "screen": "0XTiger666",
+  "total_tweets": 14,
+  "btc_tweets": 14,
+  "cat": {
+   "btc_analysis": 5,
+   "btc_vague": 4,
+   "macro_only": 0,
+   "commentary": 5,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 3,
+  "verified": 3,
+  "rawWinRate": 1,
+  "excess": 0.048,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.223,
+    "n": 3,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.048,
+    "n": 3,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": 0.286,
+    "n": 3,
+    "rawWin": 1
+   },
+   "25%/120d": {
+    "excess": 0.037,
+    "n": 3,
+    "rawWin": 0.333
+   }
+  },
+  "stab": "stable_pos",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": true,
+    "strongEvidence": [],
+    "weakEvidence": [
+     {
+      "date": "2026-04-13",
+      "quote": "大饼，黄金，白银全部逃顶了"
+     },
+     {
+      "date": "2026-04-30",
+      "quote": "加密大饼这波反弹差不多了"
+     }
+    ],
+    "candidateCount": 3
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 1,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": null,
+   "n": 2,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "A2",
+   "label": "有分析·偏宏观无点位"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 3 条"
+ },
+ {
+  "screen": "Dp520888",
+  "total_tweets": 21,
+  "btc_tweets": 21,
+  "cat": {
+   "btc_analysis": 1,
+   "btc_vague": 1,
+   "macro_only": 0,
+   "commentary": 19,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 1,
+  "verified": 1,
+  "rawWinRate": 1,
+  "excess": 0.022,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.242,
+    "n": 1,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.022,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": 0.209,
+    "n": 1,
+    "rawWin": 1
+   },
+   "25%/120d": {
+    "excess": 0.703,
+    "n": 1,
+    "rawWin": 1
+   }
+  },
+  "stab": "stable_pos",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": null,
+   "n": 1,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 1 条"
+ },
+ {
+  "screen": "alpha101xyz",
+  "total_tweets": 6,
+  "btc_tweets": 6,
+  "cat": {
+   "btc_analysis": 3,
+   "btc_vague": 0,
+   "macro_only": 1,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 1,
+  "verified": 1,
+  "rawWinRate": 1,
+  "excess": 0.011,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.066,
+    "n": 1,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.011,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": 0.264,
+    "n": 1,
+    "rawWin": 1
+   },
+   "25%/120d": {
+    "excess": 0.275,
+    "n": 1,
+    "rawWin": 1
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 1,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 1 条"
+ },
+ {
+  "screen": "cryptovizart",
+  "total_tweets": 21,
+  "btc_tweets": 21,
+  "cat": {
+   "btc_analysis": 16,
+   "btc_vague": 3,
+   "macro_only": 0,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 2,
+  "verified": 1,
+  "rawWinRate": 1,
+  "excess": 0,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.154,
+    "n": 1,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": 0.121,
+    "n": 1,
+    "rawWin": 1
+   },
+   "25%/120d": {
+    "excess": 0.132,
+    "n": 1,
+    "rawWin": 1
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": 1,
+   "n": 2,
+   "variety": 0.5,
+   "biased": false
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 1 条"
+ },
+ {
+  "screen": "DL_W59",
+  "total_tweets": 55,
+  "btc_tweets": 55,
+  "cat": {
+   "btc_analysis": 29,
+   "btc_vague": 16,
+   "macro_only": 8,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 4,
+  "verified": 3,
+  "rawWinRate": 0.667,
+  "excess": -0.009,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.053,
+    "n": 3,
+    "rawWin": 0.667
+   },
+   "8%/90d": {
+    "excess": -0.009,
+    "n": 3,
+    "rawWin": 0.667
+   },
+   "15%/90d": {
+    "excess": -0.114,
+    "n": 3,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.056,
+    "n": 3,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 2
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": 1,
+   "n": 2,
+   "variety": 0.25,
+   "biased": false
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 2,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 3 条"
+ },
+ {
+  "screen": "Guilin_Chen_",
+  "total_tweets": 25,
+  "btc_tweets": 25,
+  "cat": {
+   "btc_analysis": 13,
+   "btc_vague": 7,
+   "macro_only": 2,
+   "commentary": 3,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 2,
+  "verified": 2,
+  "rawWinRate": 0.5,
+  "excess": -0.03,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.019,
+    "n": 2,
+    "rawWin": 0.5
+   },
+   "8%/90d": {
+    "excess": -0.03,
+    "n": 2,
+    "rawWin": 0.5
+   },
+   "15%/90d": {
+    "excess": -0.054,
+    "n": 2,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 2,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0.5,
+   "biased": false
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 1,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 2 条"
+ },
+ {
+  "screen": "dongbimao",
+  "total_tweets": 82,
+  "btc_tweets": 82,
+  "cat": {
+   "btc_analysis": 45,
+   "btc_vague": 20,
+   "macro_only": 5,
+   "commentary": 5,
+   "promo": 7,
+   "retweet": 0
+  },
+  "predsCount": 7,
+  "verified": 5,
+  "rawWinRate": 0.6,
+  "excess": -0.033,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.033,
+    "n": 5,
+    "rawWin": 0.6
+   },
+   "8%/90d": {
+    "excess": -0.033,
+    "n": 5,
+    "rawWin": 0.6
+   },
+   "15%/90d": {
+    "excess": -0.136,
+    "n": 5,
+    "rawWin": 0.2
+   },
+   "25%/120d": {
+    "excess": -0.113,
+    "n": 5,
+    "rawWin": 0.2
+   }
+  },
+  "stab": "stable_neg",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 6,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 4,
+  "score": 0,
+  "band": "D",
+  "reason": "超额 -3pt；点位明确"
+ },
+ {
+  "screen": "CryptoCapo_",
+  "total_tweets": 13,
+  "btc_tweets": 13,
+  "cat": {
+   "btc_analysis": 9,
+   "btc_vague": 2,
+   "macro_only": 1,
+   "commentary": 1,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 5,
+  "verified": 5,
+  "rawWinRate": 0.6,
+  "excess": -0.034,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.016,
+    "n": 5,
+    "rawWin": 0.6
+   },
+   "8%/90d": {
+    "excess": -0.034,
+    "n": 5,
+    "rawWin": 0.6
+   },
+   "15%/90d": {
+    "excess": -0.015,
+    "n": 5,
+    "rawWin": 0.4
+   },
+   "25%/120d": {
+    "excess": -0.161,
+    "n": 5,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 2,
+  "trend": {
+   "rate": 0.667,
+   "n": 3,
+   "variety": 0.2,
+   "biased": false
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 3,
+  "score": 0,
+  "band": "D",
+  "reason": "超额 -3pt；点位明确"
+ },
+ {
+  "screen": "biupa",
+  "total_tweets": 29,
+  "btc_tweets": 20,
+  "cat": {
+   "btc_analysis": 12,
+   "btc_vague": 6,
+   "macro_only": 2,
+   "commentary": 7,
+   "promo": 1,
+   "retweet": 1
+  },
+  "predsCount": 6,
+  "verified": 6,
+  "rawWinRate": 0.667,
+  "excess": -0.043,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.028,
+    "n": 6,
+    "rawWin": 0.667
+   },
+   "8%/90d": {
+    "excess": -0.043,
+    "n": 6,
+    "rawWin": 0.667
+   },
+   "15%/90d": {
+    "excess": 0.047,
+    "n": 6,
+    "rawWin": 0.5
+   },
+   "25%/120d": {
+    "excess": 0.066,
+    "n": 6,
+    "rawWin": 0.5
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 2,
+  "trend": {
+   "rate": 1,
+   "n": 1,
+   "variety": 0.33,
+   "biased": false
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 4,
+  "score": 0,
+  "band": "D",
+  "reason": "超额 -4pt；点位明确"
+ },
+ {
+  "screen": "0xCryptoChan",
+  "total_tweets": 92,
+  "btc_tweets": 92,
+  "cat": {
+   "btc_analysis": 84,
+   "btc_vague": 6,
+   "macro_only": 0,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 4,
+  "verified": 4,
+  "rawWinRate": 0.75,
+  "excess": -0.046,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.016,
+    "n": 4,
+    "rawWin": 0.75
+   },
+   "8%/90d": {
+    "excess": -0.046,
+    "n": 4,
+    "rawWin": 0.75
+   },
+   "15%/90d": {
+    "excess": 0.224,
+    "n": 4,
+    "rawWin": 0.75
+   },
+   "25%/120d": {
+    "excess": -0.006,
+    "n": 4,
+    "rawWin": 0.5
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 3,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "A2",
+   "label": "有分析·偏宏观无点位"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 4 条"
+ },
+ {
+  "screen": "btc2688",
+  "total_tweets": 82,
+  "btc_tweets": 82,
+  "cat": {
+   "btc_analysis": 52,
+   "btc_vague": 16,
+   "macro_only": 6,
+   "commentary": 8,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 14,
+  "verified": 13,
+  "rawWinRate": 0.538,
+  "excess": -0.048,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.112,
+    "n": 13,
+    "rawWin": 0.385
+   },
+   "8%/90d": {
+    "excess": -0.048,
+    "n": 13,
+    "rawWin": 0.538
+   },
+   "15%/90d": {
+    "excess": 0.007,
+    "n": 13,
+    "rawWin": 0.385
+   },
+   "25%/120d": {
+    "excess": -0.025,
+    "n": 13,
+    "rawWin": 0.154
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": true,
+    "strongEvidence": [],
+    "weakEvidence": [
+     {
+      "date": "2026-06-05",
+      "quote": "现货50000-40000的比特币只要到来，可越跌越买"
+     },
+     {
+      "date": "2026-06-11",
+      "quote": "比特币已是底部区间"
+     }
+    ],
+    "candidateCount": 3
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 1,
+  "coveredNodes": 3,
+  "trend": {
+   "rate": 0.667,
+   "n": 9,
+   "variety": 0.43,
+   "biased": false
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 9,
+  "score": 0,
+  "band": "D",
+  "reason": "超额 -5pt；点位明确；趋势跟随-1"
+ },
+ {
+  "screen": "willywoo",
+  "total_tweets": 32,
+  "btc_tweets": 32,
+  "cat": {
+   "btc_analysis": 22,
+   "btc_vague": 5,
+   "macro_only": 3,
+   "commentary": 1,
+   "promo": 1,
+   "retweet": 0
+  },
+  "predsCount": 7,
+  "verified": 4,
+  "rawWinRate": 0.5,
+  "excess": -0.07,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.064,
+    "n": 4,
+    "rawWin": 0.5
+   },
+   "8%/90d": {
+    "excess": -0.07,
+    "n": 4,
+    "rawWin": 0.5
+   },
+   "15%/90d": {
+    "excess": -0.044,
+    "n": 4,
+    "rawWin": 0.25
+   },
+   "25%/120d": {
+    "excess": 0.119,
+    "n": 4,
+    "rawWin": 0.25
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 4,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "A2",
+   "label": "有分析·偏宏观无点位"
+  },
+  "withPrice": 2,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 4 条"
+ },
+ {
+  "screen": "benjamincowen",
+  "total_tweets": 60,
+  "btc_tweets": 60,
+  "cat": {
+   "btc_analysis": 34,
+   "btc_vague": 14,
+   "macro_only": 8,
+   "commentary": 3,
+   "promo": 1,
+   "retweet": 0
+  },
+  "predsCount": 7,
+  "verified": 2,
+  "rawWinRate": 0.5,
+  "excess": -0.079,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.068,
+    "n": 2,
+    "rawWin": 0.5
+   },
+   "8%/90d": {
+    "excess": -0.079,
+    "n": 2,
+    "rawWin": 0.5
+   },
+   "15%/90d": {
+    "excess": -0.052,
+    "n": 2,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 2,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": null,
+   "n": 5,
+   "variety": 0.14,
+   "biased": true
+  },
+  "type": {
+   "code": "A2",
+   "label": "有分析·偏宏观无点位"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 2 条"
+ },
+ {
+  "screen": "crypto_yan_gui",
+  "total_tweets": 26,
+  "btc_tweets": 26,
+  "cat": {
+   "btc_analysis": 20,
+   "btc_vague": 4,
+   "macro_only": 0,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 4,
+  "verified": 3,
+  "rawWinRate": 0.333,
+  "excess": -0.085,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.063,
+    "n": 3,
+    "rawWin": 0.333
+   },
+   "8%/90d": {
+    "excess": -0.085,
+    "n": 3,
+    "rawWin": 0.333
+   },
+   "15%/90d": {
+    "excess": -0.102,
+    "n": 3,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.073,
+    "n": 3,
+    "rawWin": 0
+   }
+  },
+  "stab": "stable_neg",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": 0.667,
+   "n": 3,
+   "variety": 0.5,
+   "biased": false
+  },
+  "type": {
+   "code": "A2",
+   "label": "有分析·偏宏观无点位"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 3 条"
+ },
+ {
+  "screen": "xfli5",
+  "total_tweets": 134,
+  "btc_tweets": 134,
+  "cat": {
+   "btc_analysis": 10,
+   "btc_vague": 34,
+   "macro_only": 0,
+   "commentary": 90,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 3,
+  "verified": 3,
+  "rawWinRate": 0.667,
+  "excess": -0.101,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.02,
+    "n": 3,
+    "rawWin": 0.667
+   },
+   "8%/90d": {
+    "excess": -0.101,
+    "n": 3,
+    "rawWin": 0.667
+   },
+   "15%/90d": {
+    "excess": 0.211,
+    "n": 3,
+    "rawWin": 0.667
+   },
+   "25%/120d": {
+    "excess": 0.055,
+    "n": 3,
+    "rawWin": 0.333
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": 0.5,
+   "n": 2,
+   "variety": 0.33,
+   "biased": false
+  },
+  "type": {
+   "code": "B",
+   "label": "模棱两可"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 3 条"
+ },
+ {
+  "screen": "LuYao_Trader",
+  "total_tweets": 14,
+  "btc_tweets": 14,
+  "cat": {
+   "btc_analysis": 9,
+   "btc_vague": 2,
+   "macro_only": 1,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 4,
+  "verified": 4,
+  "rawWinRate": 0.5,
+  "excess": -0.12,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.066,
+    "n": 4,
+    "rawWin": 0.5
+   },
+   "8%/90d": {
+    "excess": -0.12,
+    "n": 4,
+    "rawWin": 0.5
+   },
+   "15%/90d": {
+    "excess": -0.131,
+    "n": 4,
+    "rawWin": 0.25
+   },
+   "25%/120d": {
+    "excess": -0.113,
+    "n": 4,
+    "rawWin": 0.25
+   }
+  },
+  "stab": "stable_neg",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": true,
+    "strongEvidence": [],
+    "weakEvidence": [
+     {
+      "date": "2026-07-03",
+      "quote": "比特币已经跌到了这一波的底部，这里千万不要过分看空了"
+     }
+    ],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 1,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": null,
+   "n": 1,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 3,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 4 条"
+ },
+ {
+  "screen": "market_beggar",
+  "total_tweets": 83,
+  "btc_tweets": 83,
+  "cat": {
+   "btc_analysis": 48,
+   "btc_vague": 24,
+   "macro_only": 6,
+   "commentary": 5,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 6,
+  "verified": 4,
+  "rawWinRate": 0.5,
+  "excess": -0.126,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.027,
+    "n": 4,
+    "rawWin": 0.5
+   },
+   "8%/90d": {
+    "excess": -0.126,
+    "n": 4,
+    "rawWin": 0.5
+   },
+   "15%/90d": {
+    "excess": -0.003,
+    "n": 4,
+    "rawWin": 0.25
+   },
+   "25%/120d": {
+    "excess": 0.033,
+    "n": 4,
+    "rawWin": 0.25
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 2
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 2,
+  "trend": {
+   "rate": 0,
+   "n": 2,
+   "variety": 0.33,
+   "biased": false
+  },
+  "type": {
+   "code": "A2",
+   "label": "有分析·偏宏观无点位"
+  },
+  "withPrice": 2,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 4 条"
+ },
+ {
+  "screen": "Wangduanniao",
+  "total_tweets": 39,
+  "btc_tweets": 39,
+  "cat": {
+   "btc_analysis": 2,
+   "btc_vague": 1,
+   "macro_only": 0,
+   "commentary": 35,
+   "promo": 1,
+   "retweet": 0
+  },
+  "predsCount": 2,
+  "verified": 2,
+  "rawWinRate": 0.5,
+  "excess": -0.137,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.005,
+    "n": 2,
+    "rawWin": 0.5
+   },
+   "8%/90d": {
+    "excess": -0.137,
+    "n": 2,
+    "rawWin": 0.5
+   },
+   "15%/90d": {
+    "excess": -0.401,
+    "n": 2,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.132,
+    "n": 2,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 2,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 2 条"
+ },
+ {
+  "screen": "BobLoukas",
+  "total_tweets": 24,
+  "btc_tweets": 24,
+  "cat": {
+   "btc_analysis": 16,
+   "btc_vague": 5,
+   "macro_only": 3,
+   "commentary": 0,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 6,
+  "verified": 4,
+  "rawWinRate": 0.25,
+  "excess": -0.177,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.177,
+    "n": 4,
+    "rawWin": 0.25
+   },
+   "8%/90d": {
+    "excess": -0.177,
+    "n": 4,
+    "rawWin": 0.25
+   },
+   "15%/90d": {
+    "excess": -0.169,
+    "n": 4,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.11,
+    "n": 4,
+    "rawWin": 0
+   }
+  },
+  "stab": "stable_neg",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": true,
+    "strongEvidence": [],
+    "weakEvidence": [
+     {
+      "date": "2026-06-10",
+      "quote": "Significant confluence of HTF Cycle Lows that are due around Oct this year."
+     }
+    ],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 1,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": 1,
+   "n": 3,
+   "variety": 0.5,
+   "biased": false
+  },
+  "type": {
+   "code": "A2",
+   "label": "有分析·偏宏观无点位"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 4 条"
+ },
+ {
+  "screen": "sky27867843",
+  "total_tweets": 13,
+  "btc_tweets": 13,
+  "cat": {
+   "btc_analysis": 6,
+   "btc_vague": 4,
+   "macro_only": 2,
+   "commentary": 1,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 4,
+  "verified": 1,
+  "rawWinRate": 0,
+  "excess": -0.209,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.198,
+    "n": 1,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.209,
+    "n": 1,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.011,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 1,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": 0.333,
+   "n": 3,
+   "variety": 0.25,
+   "biased": false
+  },
+  "type": {
+   "code": "A2",
+   "label": "有分析·偏宏观无点位"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 1 条"
+ },
+ {
+  "screen": "Pathusa",
+  "total_tweets": 18,
+  "btc_tweets": 18,
+  "cat": {
+   "btc_analysis": 10,
+   "btc_vague": 5,
+   "macro_only": 1,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 7,
+  "verified": 3,
+  "rawWinRate": 0.333,
+  "excess": -0.215,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.194,
+    "n": 3,
+    "rawWin": 0.333
+   },
+   "8%/90d": {
+    "excess": -0.215,
+    "n": 3,
+    "rawWin": 0.333
+   },
+   "15%/90d": {
+    "excess": -0.039,
+    "n": 3,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 3,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": 1,
+   "n": 4,
+   "variety": 0.29,
+   "biased": false
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 3,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 3 条"
+ },
+ {
+  "screen": "rektcapital",
+  "total_tweets": 221,
+  "btc_tweets": 221,
+  "cat": {
+   "btc_analysis": 150,
+   "btc_vague": 25,
+   "macro_only": 0,
+   "commentary": 20,
+   "promo": 26,
+   "retweet": 0
+  },
+  "predsCount": 6,
+  "verified": 1,
+  "rawWinRate": 0,
+  "excess": -0.277,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.277,
+    "n": 1,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.277,
+    "n": 1,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.021,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 1,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": null,
+   "n": 2,
+   "variety": 0.17,
+   "biased": true
+  },
+  "type": {
+   "code": "A2",
+   "label": "有分析·偏宏观无点位"
+  },
+  "withPrice": 2,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 1 条"
+ },
+ {
+  "screen": "Geight16",
+  "total_tweets": 4,
+  "btc_tweets": 4,
+  "cat": {
+   "btc_analysis": 2,
+   "btc_vague": 1,
+   "macro_only": 0,
+   "commentary": 1,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 1,
+  "verified": 1,
+  "rawWinRate": 0,
+  "excess": -0.277,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.277,
+    "n": 1,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.277,
+    "n": 1,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.021,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 1,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 1 条"
+ },
+ {
+  "screen": "monkeyjiang",
+  "total_tweets": 38,
+  "btc_tweets": 38,
+  "cat": {
+   "btc_analysis": 14,
+   "btc_vague": 18,
+   "macro_only": 0,
+   "commentary": 4,
+   "promo": 2,
+   "retweet": 0
+  },
+  "predsCount": 8,
+  "verified": 1,
+  "rawWinRate": 0,
+  "excess": -0.306,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.306,
+    "n": 1,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.306,
+    "n": 1,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.02,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 1,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 6,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 4,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 1 条"
+ },
+ {
+  "screen": "Keyshotvv",
+  "total_tweets": 24,
+  "btc_tweets": 24,
+  "cat": {
+   "btc_analysis": 12,
+   "btc_vague": 6,
+   "macro_only": 0,
+   "commentary": 6,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 3,
+  "verified": 2,
+  "rawWinRate": 0,
+  "excess": -0.338,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.338,
+    "n": 2,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.338,
+    "n": 2,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.019,
+    "n": 2,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 2,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": 0.5,
+   "n": 2,
+   "variety": 0.33,
+   "biased": false
+  },
+  "type": {
+   "code": "A2",
+   "label": "有分析·偏宏观无点位"
+  },
+  "withPrice": 1,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 2 条"
+ },
+ {
+  "screen": "blockTVBee",
+  "total_tweets": 8,
+  "btc_tweets": 8,
+  "cat": {
+   "btc_analysis": 2,
+   "btc_vague": 3,
+   "macro_only": 1,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 1,
+  "verified": 1,
+  "rawWinRate": 0,
+  "excess": -0.352,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.352,
+    "n": 1,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.352,
+    "n": 1,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.019,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 1,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 1 条"
+ },
+ {
+  "screen": "UnicornBitcoin",
+  "total_tweets": 19,
+  "btc_tweets": 19,
+  "cat": {
+   "btc_analysis": 8,
+   "btc_vague": 6,
+   "macro_only": 0,
+   "commentary": 4,
+   "promo": 1,
+   "retweet": 0
+  },
+  "predsCount": 3,
+  "verified": 2,
+  "rawWinRate": 0,
+  "excess": -0.385,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.385,
+    "n": 2,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.385,
+    "n": 2,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.018,
+    "n": 2,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 2,
+    "rawWin": 0
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 1,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "A2",
+   "label": "有分析·偏宏观无点位"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 2 条"
+ },
+ {
+  "screen": "Sykodelic_",
+  "total_tweets": 35,
+  "btc_tweets": 35,
+  "cat": {
+   "btc_analysis": 30,
+   "btc_vague": 4,
+   "macro_only": 0,
+   "commentary": 1,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 5,
+  "verified": 3,
+  "rawWinRate": 0,
+  "excess": -0.402,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.402,
+    "n": 3,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.402,
+    "n": 3,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.051,
+    "n": 3,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.024,
+    "n": 3,
+    "rawWin": 0
+   }
+  },
+  "stab": "stable_neg",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 4,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 2,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 3 条"
+ },
+ {
+  "screen": "chairbtc",
+  "total_tweets": 46,
+  "btc_tweets": 46,
+  "cat": {
+   "btc_analysis": 23,
+   "btc_vague": 9,
+   "macro_only": 2,
+   "commentary": 10,
+   "promo": 2,
+   "retweet": 0
+  },
+  "predsCount": 7,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 5,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 5,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "CryptoApprenti1",
+  "total_tweets": 27,
+  "btc_tweets": 27,
+  "cat": {
+   "btc_analysis": 13,
+   "btc_vague": 1,
+   "macro_only": 1,
+   "commentary": 12,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 4,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 3,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "A2",
+   "label": "有分析·偏宏观无点位"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "Cato_KT",
+  "total_tweets": 22,
+  "btc_tweets": 22,
+  "cat": {
+   "btc_analysis": 14,
+   "btc_vague": 4,
+   "macro_only": 2,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 3,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": null,
+   "n": 2,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 3,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "oragnes",
+  "total_tweets": 25,
+  "btc_tweets": 25,
+  "cat": {
+   "btc_analysis": 4,
+   "btc_vague": 4,
+   "macro_only": 3,
+   "commentary": 14,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 2,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 1,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "CryptoPainter",
+  "total_tweets": 13,
+  "btc_tweets": 13,
+  "cat": {
+   "btc_analysis": 6,
+   "btc_vague": 4,
+   "macro_only": 0,
+   "commentary": 2,
+   "promo": 1,
+   "retweet": 0
+  },
+  "predsCount": 2,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": 0.5,
+   "n": 2,
+   "variety": 0.5,
+   "biased": false
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 1,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "AshCrypto",
+  "total_tweets": 70,
+  "btc_tweets": 70,
+  "cat": {
+   "btc_analysis": 12,
+   "btc_vague": 8,
+   "macro_only": 0,
+   "commentary": 50,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 2,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 2,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 1,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "TraderS18",
+  "total_tweets": 9,
+  "btc_tweets": 8,
+  "cat": {
+   "btc_analysis": 6,
+   "btc_vague": 2,
+   "macro_only": 1,
+   "commentary": 0,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 2,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": 0,
+   "n": 1,
+   "variety": 0.5,
+   "biased": false
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 1,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "Hoyooyoo",
+  "total_tweets": 3,
+  "btc_tweets": 3,
+  "cat": {
+   "btc_analysis": 2,
+   "btc_vague": 1,
+   "macro_only": 0,
+   "commentary": 0,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 2,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 2,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 1,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "B_daojia",
+  "total_tweets": 15,
+  "btc_tweets": 12,
+  "cat": {
+   "btc_analysis": 1,
+   "btc_vague": 1,
+   "macro_only": 0,
+   "commentary": 4,
+   "promo": 9,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "E",
+   "label": "推广/喊单为主"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "Btc_kking",
+  "total_tweets": 19,
+  "btc_tweets": 19,
+  "cat": {
+   "btc_analysis": 8,
+   "btc_vague": 8,
+   "macro_only": 1,
+   "commentary": 1,
+   "promo": 1,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "0xTodd",
+  "total_tweets": 12,
+  "btc_tweets": 12,
+  "cat": {
+   "btc_analysis": 2,
+   "btc_vague": 2,
+   "macro_only": 0,
+   "commentary": 8,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "Bitcoin",
+  "total_tweets": 130,
+  "btc_tweets": 130,
+  "cat": {
+   "btc_analysis": 0,
+   "btc_vague": 0,
+   "macro_only": 0,
+   "commentary": 130,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "saylor",
+  "total_tweets": 84,
+  "btc_tweets": 84,
+  "cat": {
+   "btc_analysis": 0,
+   "btc_vague": 0,
+   "macro_only": 4,
+   "commentary": 45,
+   "promo": 35,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "E",
+   "label": "推广/喊单为主"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "Mrluanluan",
+  "total_tweets": 26,
+  "btc_tweets": 26,
+  "cat": {
+   "btc_analysis": 0,
+   "btc_vague": 18,
+   "macro_only": 0,
+   "commentary": 6,
+   "promo": 2,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "bitfish",
+  "total_tweets": 12,
+  "btc_tweets": 12,
+  "cat": {
+   "btc_analysis": 3,
+   "btc_vague": 2,
+   "macro_only": 2,
+   "commentary": 2,
+   "promo": 3,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "ai_9684xtpa",
+  "total_tweets": 30,
+  "btc_tweets": 30,
+  "cat": {
+   "btc_analysis": 7,
+   "btc_vague": 2,
+   "macro_only": 1,
+   "commentary": 16,
+   "promo": 4,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "EmberCN",
+  "total_tweets": 67,
+  "btc_tweets": 67,
+  "cat": {
+   "btc_analysis": 0,
+   "btc_vague": 0,
+   "macro_only": 0,
+   "commentary": 63,
+   "promo": 4,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "ViewsOfChris",
+  "total_tweets": 11,
+  "btc_tweets": 11,
+  "cat": {
+   "btc_analysis": 1,
+   "btc_vague": 3,
+   "macro_only": 4,
+   "commentary": 3,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "0xPickleCati",
+  "total_tweets": 4,
+  "btc_tweets": 4,
+  "cat": {
+   "btc_analysis": 1,
+   "btc_vague": 1,
+   "macro_only": 0,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "BTCwukong",
+  "total_tweets": 2,
+  "btc_tweets": 2,
+  "cat": {
+   "btc_analysis": 0,
+   "btc_vague": 2,
+   "macro_only": 0,
+   "commentary": 0,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "PhyrexNi",
+  "total_tweets": 1,
+  "btc_tweets": 1,
+  "cat": {
+   "btc_analysis": 0,
+   "btc_vague": 0,
+   "macro_only": 0,
+   "commentary": 1,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "qinbafrank",
+  "total_tweets": 14,
+  "btc_tweets": 8,
+  "cat": {
+   "btc_analysis": 1,
+   "btc_vague": 1,
+   "macro_only": 7,
+   "commentary": 5,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "Xiaoniu6161",
+  "total_tweets": 6,
+  "btc_tweets": 6,
+  "cat": {
+   "btc_analysis": 1,
+   "btc_vague": 3,
+   "macro_only": 0,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "billtheinvestor",
+  "total_tweets": 1,
+  "btc_tweets": 1,
+  "cat": {
+   "btc_analysis": 0,
+   "btc_vague": 0,
+   "macro_only": 0,
+   "commentary": 1,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "traderxiaoxia",
+  "total_tweets": 1,
+  "btc_tweets": 1,
+  "cat": {
+   "btc_analysis": 0,
+   "btc_vague": 0,
+   "macro_only": 0,
+   "commentary": 1,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "BeliaSchoo91221",
+  "total_tweets": 11,
+  "btc_tweets": 11,
+  "cat": {
+   "btc_analysis": 0,
+   "btc_vague": 2,
+   "macro_only": 1,
+   "commentary": 3,
+   "promo": 5,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "E",
+   "label": "推广/喊单为主"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "Web3Dc888",
+  "total_tweets": 2,
+  "btc_tweets": 2,
+  "cat": {
+   "btc_analysis": 0,
+   "btc_vague": 0,
+   "macro_only": 0,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "hebi555",
+  "total_tweets": 1,
+  "btc_tweets": 1,
+  "cat": {
+   "btc_analysis": 0,
+   "btc_vague": 0,
+   "macro_only": 0,
+   "commentary": 1,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "BTC_Alert_",
+  "total_tweets": 11,
+  "btc_tweets": 11,
+  "cat": {
+   "btc_analysis": 7,
+   "btc_vague": 1,
+   "macro_only": 0,
+   "commentary": 3,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "WilliamLu126",
+  "total_tweets": 7,
+  "btc_tweets": 7,
+  "cat": {
+   "btc_analysis": 2,
+   "btc_vague": 0,
+   "macro_only": 1,
+   "commentary": 4,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "Goupenguin",
+  "total_tweets": 5,
+  "btc_tweets": 5,
+  "cat": {
+   "btc_analysis": 0,
+   "btc_vague": 2,
+   "macro_only": 0,
+   "commentary": 2,
+   "promo": 1,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "wolfyxbt",
+  "total_tweets": 3,
+  "btc_tweets": 3,
+  "cat": {
+   "btc_analysis": 0,
+   "btc_vague": 1,
+   "macro_only": 0,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "yiqifacai",
+  "total_tweets": 2,
+  "btc_tweets": 2,
+  "cat": {
+   "btc_analysis": 1,
+   "btc_vague": 0,
+   "macro_only": 0,
+   "commentary": 1,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "D",
+   "label": "样本不足"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "octopusycc",
+  "total_tweets": 1,
+  "btc_tweets": 1,
+  "cat": {
+   "btc_analysis": 0,
+   "btc_vague": 0,
+   "macro_only": 0,
+   "commentary": 0,
+   "promo": 1,
+   "retweet": 0
+  },
+  "predsCount": 0,
+  "verified": 0,
+  "rawWinRate": null,
+  "excess": null,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  },
+  "stab": "unknown",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 0,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "E",
+   "label": "推广/喊单为主"
+  },
+  "withPrice": 0,
+  "score": 0,
+  "band": "样本不足",
+  "reason": "可验证 0 条"
+ },
+ {
+  "screen": "wangtuai888",
+  "total_tweets": 39,
+  "btc_tweets": 36,
+  "cat": {
+   "btc_analysis": 20,
+   "btc_vague": 6,
+   "macro_only": 8,
+   "commentary": 3,
+   "promo": 2,
+   "retweet": 0
+  },
+  "predsCount": 7,
+  "verified": 5,
+  "rawWinRate": 0.4,
+  "excess": -0.092,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.225,
+    "n": 5,
+    "rawWin": 0.2
+   },
+   "8%/90d": {
+    "excess": -0.092,
+    "n": 5,
+    "rawWin": 0.4
+   },
+   "15%/90d": {
+    "excess": -0.251,
+    "n": 5,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.171,
+    "n": 5,
+    "rawWin": 0
+   }
+  },
+  "stab": "stable_neg",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 2,
+  "trend": {
+   "rate": 0.4,
+   "n": 5,
+   "variety": 0.43,
+   "biased": false
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 3,
+  "score": -1,
+  "band": "负分",
+  "reason": "超额 -9pt；点位明确"
+ },
+ {
+  "screen": "huangdaobtc",
+  "total_tweets": 124,
+  "btc_tweets": 124,
+  "cat": {
+   "btc_analysis": 99,
+   "btc_vague": 14,
+   "macro_only": 5,
+   "commentary": 4,
+   "promo": 2,
+   "retweet": 0
+  },
+  "predsCount": 27,
+  "verified": 20,
+  "rawWinRate": 0.65,
+  "excess": 0.008,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.058,
+    "n": 20,
+    "rawWin": 0.65
+   },
+   "8%/90d": {
+    "excess": 0.008,
+    "n": 20,
+    "rawWin": 0.65
+   },
+   "15%/90d": {
+    "excess": -0.115,
+    "n": 20,
+    "rawWin": 0.25
+   },
+   "25%/120d": {
+    "excess": -0.096,
+    "n": 20,
+    "rawWin": 0.2
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": true,
+    "weakHit": false,
+    "strongEvidence": [
+     {
+      "date": "2026-09-08",
+      "target": 85000,
+      "quote": "BTC反弹目标85000一带"
+     },
+     {
+      "date": "2026-09-22",
+      "target": 94000,
+      "quote": "下一个关键位置是94000，这里将有可能是反弹的终结位"
+     }
+    ],
+    "weakEvidence": [],
+    "candidateCount": 9
+   }
+  ],
+  "nodeHit": 1,
+  "nodeWeak": 0,
+  "coveredNodes": 2,
+  "trend": {
+   "rate": 0.947,
+   "n": 19,
+   "variety": 0.37,
+   "biased": false
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 23,
+  "score": -2,
+  "band": "负分档",
+  "reason": "追涨杀跌 95%（19次）"
+ },
+ {
+  "screen": "ChandlerGuo",
+  "total_tweets": 27,
+  "btc_tweets": 27,
+  "cat": {
+   "btc_analysis": 5,
+   "btc_vague": 10,
+   "macro_only": 1,
+   "commentary": 8,
+   "promo": 2,
+   "retweet": 1
+  },
+  "predsCount": 9,
+  "verified": 7,
+  "rawWinRate": 0.571,
+  "excess": -0.151,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.157,
+    "n": 7,
+    "rawWin": 0.429
+   },
+   "8%/90d": {
+    "excess": -0.151,
+    "n": 7,
+    "rawWin": 0.571
+   },
+   "15%/90d": {
+    "excess": -0.086,
+    "n": 7,
+    "rawWin": 0.429
+   },
+   "25%/120d": {
+    "excess": -0.046,
+    "n": 7,
+    "rawWin": 0.429
+   }
+  },
+  "stab": "stable_neg",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 2
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": null,
+   "n": 6,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 4,
+  "score": -2,
+  "band": "负分",
+  "reason": "超额 -15pt；点位明确"
+ },
+ {
+  "screen": "liuwei16602825",
+  "total_tweets": 12,
+  "btc_tweets": 12,
+  "cat": {
+   "btc_analysis": 6,
+   "btc_vague": 3,
+   "macro_only": 1,
+   "commentary": 2,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 7,
+  "verified": 7,
+  "rawWinRate": 0.571,
+  "excess": -0.161,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.289,
+    "n": 7,
+    "rawWin": 0.286
+   },
+   "8%/90d": {
+    "excess": -0.161,
+    "n": 7,
+    "rawWin": 0.571
+   },
+   "15%/90d": {
+    "excess": -0.331,
+    "n": 7,
+    "rawWin": 0.143
+   },
+   "25%/120d": {
+    "excess": -0.19,
+    "n": 7,
+    "rawWin": 0
+   }
+  },
+  "stab": "stable_neg",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": null,
+   "n": 4,
+   "variety": 0.14,
+   "biased": true
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 4,
+  "score": -2,
+  "band": "负分",
+  "reason": "超额 -16pt；点位明确"
+ },
+ {
+  "screen": "realGuanYu",
+  "total_tweets": 15,
+  "btc_tweets": 15,
+  "cat": {
+   "btc_analysis": 10,
+   "btc_vague": 4,
+   "macro_only": 1,
+   "commentary": 0,
+   "promo": 0,
+   "retweet": 0
+  },
+  "predsCount": 8,
+  "verified": 8,
+  "rawWinRate": 0.625,
+  "excess": -0.211,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.087,
+    "n": 8,
+    "rawWin": 0.625
+   },
+   "8%/90d": {
+    "excess": -0.211,
+    "n": 8,
+    "rawWin": 0.625
+   },
+   "15%/90d": {
+    "excess": 0.042,
+    "n": 8,
+    "rawWin": 0.625
+   },
+   "25%/120d": {
+    "excess": 0.147,
+    "n": 8,
+    "rawWin": 0.5
+   }
+  },
+  "stab": "unstable",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 2
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 1,
+  "trend": {
+   "rate": null,
+   "n": 7,
+   "variety": 0.13,
+   "biased": true
+  },
+  "type": {
+   "code": "A2",
+   "label": "有分析·偏宏观无点位"
+  },
+  "withPrice": 1,
+  "score": -3,
+  "band": "负分",
+  "reason": "超额 -21pt"
+ },
+ {
+  "screen": "Felix_Hsu",
+  "total_tweets": 67,
+  "btc_tweets": 58,
+  "cat": {
+   "btc_analysis": 32,
+   "btc_vague": 12,
+   "macro_only": 6,
+   "commentary": 12,
+   "promo": 5,
+   "retweet": 0
+  },
+  "predsCount": 10,
+  "verified": 9,
+  "rawWinRate": 0.444,
+  "excess": -0.271,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.149,
+    "n": 9,
+    "rawWin": 0.444
+   },
+   "8%/90d": {
+    "excess": -0.271,
+    "n": 9,
+    "rawWin": 0.444
+   },
+   "15%/90d": {
+    "excess": -0.125,
+    "n": 9,
+    "rawWin": 0.333
+   },
+   "25%/120d": {
+    "excess": -0.073,
+    "n": 9,
+    "rawWin": 0.111
+   }
+  },
+  "stab": "stable_neg",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 2
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 1
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 2,
+  "trend": {
+   "rate": 0.667,
+   "n": 6,
+   "variety": 0.3,
+   "biased": false
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 8,
+  "score": -3,
+  "band": "负分",
+  "reason": "超额 -27pt；点位明确"
+ },
+ {
+  "screen": "AwbczBTC",
+  "total_tweets": 100,
+  "btc_tweets": 100,
+  "cat": {
+   "btc_analysis": 55,
+   "btc_vague": 30,
+   "macro_only": 6,
+   "commentary": 6,
+   "promo": 3,
+   "retweet": 0
+  },
+  "predsCount": 9,
+  "verified": 6,
+  "rawWinRate": 0,
+  "excess": -0.433,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.433,
+    "n": 6,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.433,
+    "n": 6,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.086,
+    "n": 6,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.063,
+    "n": 6,
+    "rawWin": 0
+   }
+  },
+  "stab": "stable_neg",
+  "nodes": [
+   {
+    "node": "2026-02 大底 6W",
+    "realDate": "2026-02-06",
+    "realPrice": 60000,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-05 阶段顶 8W2",
+    "realDate": "2026-05-06",
+    "realPrice": 82850,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-07 大底 5W7",
+    "realDate": "2026-07-01",
+    "realPrice": 57800,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   },
+   {
+    "node": "2026-10 阶段顶 8W7",
+    "realDate": "2026-09-21",
+    "realPrice": 87396,
+    "hit": false,
+    "weakHit": false,
+    "strongEvidence": [],
+    "weakEvidence": [],
+    "candidateCount": 0
+   }
+  ],
+  "nodeHit": 0,
+  "nodeWeak": 0,
+  "coveredNodes": 0,
+  "trend": {
+   "rate": null,
+   "n": 6,
+   "variety": 0,
+   "biased": true
+  },
+  "type": {
+   "code": "A1",
+   "label": "有分析·有明确点位"
+  },
+  "withPrice": 9,
+  "score": -3,
+  "band": "负分",
+  "reason": "超额 -43pt；点位明确"
+ }
+]

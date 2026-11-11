@@ -1,0 +1,265 @@
+{
+  "accounts": [
+    {
+      "screen": "EmberCN",
+      "verdict": "B",
+      "verdict_reason": "纯链上数据播报，无方向判断",
+      "total_tweets": 67,
+      "btc_tweets": 67,
+      "cat": {
+        "btc_analysis": 0,
+        "btc_vague": 0,
+        "macro_only": 0,
+        "commentary": 63,
+        "promo": 4,
+        "retweet": 0
+      },
+      "preds": [],
+      "note": "巨鲸/机构链上资金追踪，只陈述事实，从不预测价格方向"
+    },
+    {
+      "screen": "monkeyjiang",
+      "verdict": "A1",
+      "verdict_reason": "多点位喊多，5开头绝对底判断应验",
+      "total_tweets": 38,
+      "btc_tweets": 38,
+      "cat": {
+        "btc_analysis": 14,
+        "btc_vague": 18,
+        "macro_only": 0,
+        "commentary": 4,
+        "promo": 2,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-10-19",
+          "dir": "up",
+          "target": 100000,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "比特币这波到10万 PEPE翻个倍可以吧"
+        },
+        {
+          "date": "2026-10-25",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "比特币8万的支撑很强 宏观没有大利空"
+        },
+        {
+          "date": "2026-10-26",
+          "dir": "up",
+          "target": null,
+          "level": "bottom",
+          "horizon": "weeks",
+          "quote": "总感觉比特币到底了"
+        },
+        {
+          "date": "2026-10-30",
+          "dir": "up",
+          "target": 50000,
+          "level": "bottom",
+          "horizon": "months",
+          "quote": "我更加确信比特币不会到3和4开头 5开头已经绝对底部了"
+        },
+        {
+          "date": "2026-10-30",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "months",
+          "quote": "每次黑天鹅之后，比特币都会新高 这次依然不例外。"
+        },
+        {
+          "date": "2026-11-04",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "months",
+          "quote": "现在应该是年底这波行情的起点"
+        },
+        {
+          "date": "2026-11-08",
+          "dir": "up",
+          "target": 80000,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "还会重新站上8字头"
+        },
+        {
+          "date": "2026-11-08",
+          "dir": "up",
+          "target": 90000,
+          "level": null,
+          "horizon": "months",
+          "quote": "继续看好年底的行情，觉得比特币有希望达到9开头，甚至10开头"
+        }
+      ],
+      "note": "散户视角长期看多，善用周K支撑线，10月底喊5开头为绝对底基本应验"
+    },
+    {
+      "screen": "williamlab",
+      "verdict": "A2",
+      "verdict_reason": "2月初精准喊6万底，情绪化少点位",
+      "total_tweets": 20,
+      "btc_tweets": 20,
+      "cat": {
+        "btc_analysis": 7,
+        "btc_vague": 5,
+        "macro_only": 1,
+        "commentary": 7,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-02-05",
+          "dir": "up",
+          "target": 50000,
+          "level": "bottom",
+          "horizon": "months",
+          "quote": "比特币ETF开盘那晚的价格是五万上下。。。怎么也不可能跌破这个价格吧？"
+        },
+        {
+          "date": "2026-02-06",
+          "dir": "up",
+          "target": 60000,
+          "level": "bottom",
+          "horizon": "weeks",
+          "quote": "好消息，比特币最多只能跌六万刀了。"
+        },
+        {
+          "date": "2026-10-29",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "quarters",
+          "quote": "2028年10月之前比特币突破历史新高，赌注100万美元。"
+        }
+      ],
+      "note": "情绪化短评为主，2月6日「最多跌六万」与当日60K大底几乎完全吻合"
+    },
+    {
+      "screen": "ViewsOfChris",
+      "verdict": "D",
+      "verdict_reason": "11条跨度17天，转向SpaceX无价格判断",
+      "total_tweets": 11,
+      "btc_tweets": 11,
+      "cat": {
+        "btc_analysis": 1,
+        "btc_vague": 3,
+        "macro_only": 4,
+        "commentary": 3,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [],
+      "note": "叙事转向SpaceX，认为比特币历史使命完成，但不给任何价格方向"
+    },
+    {
+      "screen": "alpha101xyz",
+      "verdict": "D",
+      "verdict_reason": "仅6条，样本不足",
+      "total_tweets": 6,
+      "btc_tweets": 6,
+      "cat": {
+        "btc_analysis": 3,
+        "btc_vague": 0,
+        "macro_only": 1,
+        "commentary": 2,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-07-30",
+          "dir": "up",
+          "target": 60000,
+          "level": "bottom",
+          "horizon": "months",
+          "quote": "剩余的下行空间和时间都已经不多 所以6万左右做了一部分底层"
+        }
+      ],
+      "note": "推文少但质量高，7月底按5浪结构判断6万抄底，事后正确"
+    },
+    {
+      "screen": "0xPickleCati",
+      "verdict": "D",
+      "verdict_reason": "仅4条，无自身价格预测",
+      "total_tweets": 4,
+      "btc_tweets": 4,
+      "cat": {
+        "btc_analysis": 1,
+        "btc_vague": 1,
+        "macro_only": 0,
+        "commentary": 2,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [],
+      "note": "吐槽为主，一条为转述各派系观点，非本人判断"
+    },
+    {
+      "screen": "BTCwukong",
+      "verdict": "D",
+      "verdict_reason": "仅2条，样本不足",
+      "total_tweets": 2,
+      "btc_tweets": 2,
+      "cat": {
+        "btc_analysis": 0,
+        "btc_vague": 2,
+        "macro_only": 0,
+        "commentary": 0,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [],
+      "note": "几乎无BTC内容，一句口号式「起飞」，无时间与点位"
+    },
+    {
+      "screen": "ZiiiMindInvest",
+      "verdict": "D",
+      "verdict_reason": "仅2条，样本不足",
+      "total_tweets": 2,
+      "btc_tweets": 2,
+      "cat": {
+        "btc_analysis": 1,
+        "btc_vague": 0,
+        "macro_only": 0,
+        "commentary": 1,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-03-16",
+          "dir": "down",
+          "target": 79000,
+          "level": "top",
+          "horizon": "weeks",
+          "quote": "上方7万9到8万1有压力"
+        }
+      ],
+      "note": "仅两条，3月给出79-81K压力区判断，表述谨慎偏技术分析"
+    },
+    {
+      "screen": "PhyrexNi",
+      "verdict": "D",
+      "verdict_reason": "仅1条ETF数据，无预测",
+      "total_tweets": 1,
+      "btc_tweets": 1,
+      "cat": {
+        "btc_analysis": 0,
+        "btc_vague": 0,
+        "macro_only": 0,
+        "commentary": 1,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [],
+      "note": "单条ETF资金流数据播报，无方向判断"
+    }
+  ]
+}

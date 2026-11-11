@@ -1,0 +1,673 @@
+{
+  "accounts": [
+    {
+      "screen": "rektcapital",
+      "verdict": "A1",
+      "verdict_reason": "条件式点位分析，87k见顶后一路看跌，方向兑现",
+      "total_tweets": 221,
+      "btc_tweets": 221,
+      "cat": {
+        "btc_analysis": 150,
+        "btc_vague": 25,
+        "macro_only": 0,
+        "commentary": 20,
+        "promo": 26,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-10-21",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "price will be looking to revisit the 3-day Lower High (black)"
+        },
+        {
+          "date": "2026-10-24",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "confirmed entry into the blue-blue Weekly Range and could drop lower within it"
+        },
+        {
+          "date": "2026-10-29",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "going in for a retest of the general area outlined by the purple 50-week EMA"
+        },
+        {
+          "date": "2026-10-30",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "Bitcoin is now mean reverting back into the $60k to $80k Macro Range"
+        },
+        {
+          "date": "2026-11-02",
+          "dir": "down",
+          "target": 76000,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "price could very well go below ~$76000"
+        },
+        {
+          "date": "2026-11-04",
+          "dir": "down",
+          "target": 75500,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "may guide price back towards the ~$75.5k level below over time"
+        }
+      ],
+      "note": "纯技术流派，点位与条件句密集，极少口号；BTC内容占比近百分百"
+    },
+    {
+      "screen": "crypto_punkX",
+      "verdict": "C",
+      "verdict_reason": "油管引流标题党，反复喊最后上车机会，无点位",
+      "total_tweets": 116,
+      "btc_tweets": 116,
+      "cat": {
+        "btc_analysis": 18,
+        "btc_vague": 12,
+        "macro_only": 0,
+        "commentary": 20,
+        "promo": 66,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-08-23",
+          "dir": "up",
+          "target": null,
+          "level": "bottom",
+          "horizon": "months",
+          "quote": "我認為這基本確定就是熊末的爆量上穿了，熊市已經正式結束"
+        }
+      ],
+      "note": "每条链上数据+视频标题引流，重仓牛初叙事，几乎不给具体价位"
+    },
+    {
+      "screen": "btc2688",
+      "verdict": "A1",
+      "verdict_reason": "点位密集且反复给缺口回补目标，方向多次兑现",
+      "total_tweets": 82,
+      "btc_tweets": 82,
+      "cat": {
+        "btc_analysis": 52,
+        "btc_vague": 16,
+        "macro_only": 6,
+        "commentary": 8,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-03-09",
+          "dir": "up",
+          "target": 74000,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "再次回调结束，反弹力度会更大，大概率会创出新高，突破74000附近"
+        },
+        {
+          "date": "2026-03-11",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "months",
+          "quote": "战争只能影响短期比特币和以太坊走势即回调，中长期一定是看涨的"
+        },
+        {
+          "date": "2026-03-24",
+          "dir": "down",
+          "target": 50000,
+          "level": "bottom",
+          "horizon": "months",
+          "quote": "从盘面上看熊市低点应该在50000-45000附近"
+        },
+        {
+          "date": "2026-04-16",
+          "dir": "up",
+          "target": 84000,
+          "level": null,
+          "horizon": "months",
+          "quote": "比特币上方缺口84000附近和96000附近大概率会去补回"
+        },
+        {
+          "date": "2026-05-04",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "比特币和以太依然是继续看多"
+        },
+        {
+          "date": "2026-06-05",
+          "dir": "down",
+          "target": 40000,
+          "level": "bottom",
+          "horizon": "months",
+          "quote": "现货50000-40000的比特币只要到来，可越跌越买"
+        },
+        {
+          "date": "2026-06-11",
+          "dir": "up",
+          "target": null,
+          "level": "bottom",
+          "horizon": "months",
+          "quote": "比特币已是底部区间"
+        },
+        {
+          "date": "2026-06-29",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "日线级别将开启震荡上行"
+        },
+        {
+          "date": "2026-06-30",
+          "dir": "down",
+          "target": 55000,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "会一次性跌破58000去新的低点，57000-55000是下方支撑点"
+        },
+        {
+          "date": "2026-07-07",
+          "dir": "down",
+          "target": 60000,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "下看60300-60000附近"
+        },
+        {
+          "date": "2026-07-20",
+          "dir": "down",
+          "target": 45000,
+          "level": "bottom",
+          "horizon": "months",
+          "quote": "大概率是在3.9-4.5两个位置"
+        },
+        {
+          "date": "2026-07-24",
+          "dir": "down",
+          "target": 60000,
+          "level": null,
+          "horizon": "months",
+          "quote": "这个缺口必回补"
+        },
+        {
+          "date": "2026-09-27",
+          "dir": "down",
+          "target": 60000,
+          "level": null,
+          "horizon": "months",
+          "quote": "我现在比特币60000下方挂单现货"
+        },
+        {
+          "date": "2026-11-03",
+          "dir": "down",
+          "target": null,
+          "level": "bottom",
+          "horizon": "quarters",
+          "quote": "或是比特币下一个周期底部的时间窗口"
+        }
+      ],
+      "note": "缺口理论+均线，点位明确但反复喊6万回补；爱用反问句和脏话"
+    },
+    {
+      "screen": "btc1368",
+      "verdict": "A2",
+      "verdict_reason": "有明确多空立场，但多靠均线定性，少量目标位",
+      "total_tweets": 60,
+      "btc_tweets": 50,
+      "cat": {
+        "btc_analysis": 22,
+        "btc_vague": 18,
+        "macro_only": 4,
+        "commentary": 12,
+        "promo": 4,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-10-12",
+          "dir": "down",
+          "target": 76000,
+          "level": "bottom",
+          "horizon": "weeks",
+          "quote": "周线级别的震荡，最低点可能会在76000-80000区间，震荡后继续上行至10万美金"
+        },
+        {
+          "date": "2026-10-12",
+          "dir": "up",
+          "target": 100000,
+          "level": null,
+          "horizon": "months",
+          "quote": "震荡后继续上行至10万美金"
+        },
+        {
+          "date": "2026-10-15",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "BTC必然要回踩MA60~MA120区间，不回踩，就不健康"
+        },
+        {
+          "date": "2026-10-24",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "我断定BTC还需要继续日线级别的震荡下跌"
+        },
+        {
+          "date": "2026-10-24",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "months",
+          "quote": "BTC没有见顶，但调整也没有结束，我预计回踩120日线继续向上"
+        },
+        {
+          "date": "2026-10-29",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "我预计买入的机会快来了"
+        },
+        {
+          "date": "2026-11-04",
+          "dir": "up",
+          "target": 100000,
+          "level": null,
+          "horizon": "quarters",
+          "quote": "比特币反而有机会走真牛市，冲10万不是梦"
+        }
+      ],
+      "note": "技术派+宏观政治视角，立场强硬爱吵架，掺带单群与KOL互推"
+    },
+    {
+      "screen": "Billions_2022_",
+      "verdict": "A1",
+      "verdict_reason": "量价逻辑完整，点位明确，10月回调判断兑现",
+      "total_tweets": 53,
+      "btc_tweets": 50,
+      "cat": {
+        "btc_analysis": 38,
+        "btc_vague": 8,
+        "macro_only": 3,
+        "commentary": 4,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-06-02",
+          "dir": "down",
+          "target": 69000,
+          "level": "bottom",
+          "horizon": "weeks",
+          "quote": "大饼会在6w9止跌"
+        },
+        {
+          "date": "2026-08-23",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "连续三天放量拉盘，历史上这样的走法没有一次是骗炮的，都是一波行情的开始"
+        },
+        {
+          "date": "2026-08-26",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "BTC 突破 - 回落，测盘结束，下一步：再一次飙涨"
+        },
+        {
+          "date": "2026-09-18",
+          "dir": "up",
+          "target": 97000,
+          "level": null,
+          "horizon": "months",
+          "quote": "这波行情 BTC 目标至少在 9w7"
+        },
+        {
+          "date": "2026-09-22",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "该上车的直接上车，别等"
+        },
+        {
+          "date": "2026-09-24",
+          "dir": "down",
+          "target": 83500,
+          "level": "bottom",
+          "horizon": "weeks",
+          "quote": "这轮回调大饼最低在 8w35 附近"
+        },
+        {
+          "date": "2026-09-29",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "更多是强弩之末的意味"
+        },
+        {
+          "date": "2026-10-09",
+          "dir": "down",
+          "target": 79000,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "btc 更深一点可能会在 7w9～8w 之间"
+        },
+        {
+          "date": "2026-10-22",
+          "dir": "down",
+          "target": 79000,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "接下来这波能砸到 7w9 附近"
+        },
+        {
+          "date": "2026-10-27",
+          "dir": "up",
+          "target": 84000,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "只看反弹不看反转，先到 8w4"
+        },
+        {
+          "date": "2026-10-29",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "months",
+          "quote": "11 月～12 月还得往上拉"
+        },
+        {
+          "date": "2026-11-07",
+          "dir": "up",
+          "target": 80000,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "接下来几天又得反弹上去，大概会在 8w 左右"
+        },
+        {
+          "date": "2026-11-10",
+          "dir": "up",
+          "target": null,
+          "level": "bottom",
+          "horizon": "months",
+          "quote": "BTC 的熊市已经结束了"
+        }
+      ],
+      "note": "自称老鱼，量价+宏观，点位敢给；9月97k目标偏乐观，10月回调准"
+    },
+    {
+      "screen": "wangtuai888",
+      "verdict": "C",
+      "verdict_reason": "高频喊单口号化，100倍做空，公开策略群引流",
+      "total_tweets": 39,
+      "btc_tweets": 36,
+      "cat": {
+        "btc_analysis": 20,
+        "btc_vague": 6,
+        "macro_only": 8,
+        "commentary": 3,
+        "promo": 2,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-05-27",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "我现在是BTC多军了 谁拦我都不好使"
+        },
+        {
+          "date": "2026-06-02",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "months",
+          "quote": "熊市就是要靠做空赚很多很多钱"
+        },
+        {
+          "date": "2026-06-23",
+          "dir": "down",
+          "target": 62000,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "上次说跌破6W4 就会非常恐怖 最终到6W2"
+        },
+        {
+          "date": "2026-07-22",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "后面在6W8还让你做多的KOL直接拉黑"
+        },
+        {
+          "date": "2026-09-15",
+          "dir": "down",
+          "target": 75500,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "坚定做空大饼 75500不破不平"
+        },
+        {
+          "date": "2026-10-28",
+          "dir": "up",
+          "target": 84000,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "有回抽8w4缺口的需求"
+        },
+        {
+          "date": "2026-11-11",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "BTC多军这次会胜利，不想再输了"
+        }
+      ],
+      "note": "合约短打为主，敢喊点位但口号化；自称预测连中，群与比赛引流"
+    },
+    {
+      "screen": "terryharmonic",
+      "verdict": "A2",
+      "verdict_reason": "有框架有方向，关键位判断兑现，但常发提问式内容",
+      "total_tweets": 28,
+      "btc_tweets": 26,
+      "cat": {
+        "btc_analysis": 16,
+        "btc_vague": 8,
+        "macro_only": 2,
+        "commentary": 2,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-10-08",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "9 月这波拉升大概率是精心策划的陷阱"
+        },
+        {
+          "date": "2026-10-24",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "这不是触底反弹，而是多头防线的共振失守"
+        },
+        {
+          "date": "2026-10-26",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "空头大概率已接管盘面"
+        },
+        {
+          "date": "2026-10-29",
+          "dir": "up",
+          "target": 83000,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "比特币看似还要再测试83k多一次"
+        },
+        {
+          "date": "2026-11-04",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "多头的防线就彻底崩塌了"
+        }
+      ],
+      "note": "偏空框架+宏观事件，关键位准；常以提问收尾，样本期仅一个月"
+    },
+    {
+      "screen": "oragnes",
+      "verdict": "D",
+      "verdict_reason": "以快讯转述为主，仅11天数据，自判极少",
+      "total_tweets": 25,
+      "btc_tweets": 25,
+      "cat": {
+        "btc_analysis": 4,
+        "btc_vague": 4,
+        "macro_only": 3,
+        "commentary": 14,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-11-04",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "months",
+          "quote": "接下来一起迎接11月份的上涨行情"
+        },
+        {
+          "date": "2026-11-06",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "months",
+          "quote": "都挡不住加密牛市"
+        }
+      ],
+      "note": "新闻聚合号，多转述他人观点（Tom Lee/Lyn Alden），自有判断少"
+    },
+    {
+      "screen": "cryptovizart",
+      "verdict": "A2",
+      "verdict_reason": "链上量化视角，少直接点位，多区间与结构判断",
+      "total_tweets": 21,
+      "btc_tweets": 21,
+      "cat": {
+        "btc_analysis": 16,
+        "btc_vague": 3,
+        "macro_only": 0,
+        "commentary": 2,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-07-17",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "months",
+          "quote": "roughly 2 to 5 months before demand gradually absorbed the sell pressure"
+        },
+        {
+          "date": "2026-11-05",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "shallow correction and sideways trading in the days ahead"
+        }
+      ],
+      "note": "纯链上数据/资金流分析，风格克制，常明说不猜方向"
+    },
+    {
+      "screen": "B_daojia",
+      "verdict": "E",
+      "verdict_reason": "以火币HTX活动与储备证明推广为主，几乎无自有预测",
+      "total_tweets": 15,
+      "btc_tweets": 12,
+      "cat": {
+        "btc_analysis": 1,
+        "btc_vague": 1,
+        "macro_only": 0,
+        "commentary": 4,
+        "promo": 9,
+        "retweet": 0
+      },
+      "preds": [],
+      "note": "交易所合作号，内容为PoR、理财活动、十大交易机会转发，无独立观点"
+    },
+    {
+      "screen": "CryptoPainter",
+      "verdict": "D",
+      "verdict_reason": "13条推文仅1个月，多为交易日志，方向预测少",
+      "total_tweets": 13,
+      "btc_tweets": 13,
+      "cat": {
+        "btc_analysis": 6,
+        "btc_vague": 4,
+        "macro_only": 0,
+        "commentary": 2,
+        "promo": 1,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-11-05",
+          "dir": "down",
+          "target": 68000,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "如果美股开启了一波空头趋势，那么BTC可能会去68000附近"
+        },
+        {
+          "date": "2026-11-05",
+          "dir": "up",
+          "target": null,
+          "level": "bottom",
+          "horizon": "months",
+          "quote": "6~8w这个区间目前已经可以视为周期低位了"
+        }
+      ],
+      "note": "策略+定投双轨，记录仓位调整，看多长期但不猜底；样本期短"
+    }
+  ]
+}

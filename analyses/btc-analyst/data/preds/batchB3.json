@@ -1,0 +1,225 @@
+{
+  "accounts": [
+    {
+      "screen": "SilverBulletBTC",
+      "verdict": "A2",
+      "verdict_reason": "合约短线派，方向判断准但少给具体点位",
+      "total_tweets": 51,
+      "btc_tweets": 51,
+      "cat": {
+        "btc_analysis": 10,
+        "btc_vague": 14,
+        "macro_only": 1,
+        "commentary": 26,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-02-07",
+          "dir": "up",
+          "target": null,
+          "level": "bottom",
+          "horizon": "weeks",
+          "quote": "Highest volume candles in a very long time indicated a local bottom."
+        },
+        {
+          "date": "2026-02-10",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "If bulls can't push it above the resistance we'll see another dump soon"
+        }
+      ],
+      "note": "高杠杆合约短线为主，2月在6万区抄底，后期多转为条件式表达"
+    },
+    {
+      "screen": "CryptoApprenti1",
+      "verdict": "D",
+      "verdict_reason": "推文集中11天，跨度不足3个月",
+      "total_tweets": 27,
+      "btc_tweets": 27,
+      "cat": {
+        "btc_analysis": 13,
+        "btc_vague": 1,
+        "macro_only": 1,
+        "commentary": 12,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-11-03",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "BTC做反抽——共同点就一个：都往下看。空神不挑市场，挑方向。"
+        },
+        {
+          "date": "2026-11-04",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "存储、AI 泡沫、BTC 反抽，全往下看"
+        },
+        {
+          "date": "2026-11-06",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "现在这段是反弹不是底，追进去就是在别人止盈的位置接棒。"
+        },
+        {
+          "date": "2026-11-06",
+          "dir": "down",
+          "target": null,
+          "level": "top",
+          "horizon": "months",
+          "quote": "11 月弹一下不改结论，12 月见顶之后才是我等的那段"
+        }
+      ],
+      "note": "自称空神，自顶一路看空，主张11月反弹、12月见顶后再空"
+    },
+    {
+      "screen": "BeliaSchoo91221",
+      "verdict": "D",
+      "verdict_reason": "行业资讯与交易所活动为主，无方向预测",
+      "total_tweets": 11,
+      "btc_tweets": 11,
+      "cat": {
+        "btc_analysis": 0,
+        "btc_vague": 2,
+        "macro_only": 1,
+        "commentary": 3,
+        "promo": 5,
+        "retweet": 0
+      },
+      "preds": [],
+      "note": "谈BTC抵押品、市值排名与囤币指标，多为资讯罗列，不给价格判断"
+    },
+    {
+      "screen": "blockTVBee",
+      "verdict": "D",
+      "verdict_reason": "BTC推文仅8条，多为震荡行情解读",
+      "total_tweets": 8,
+      "btc_tweets": 8,
+      "cat": {
+        "btc_analysis": 2,
+        "btc_vague": 3,
+        "macro_only": 1,
+        "commentary": 2,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-10-14",
+          "dir": "up",
+          "target": null,
+          "level": "bottom",
+          "horizon": "weeks",
+          "quote": "这意味着属于微策略、BTC和加密的恐慌时期真正的结束了"
+        }
+      ],
+      "note": "强调牛市未到、当前震荡，偏长文逻辑分析，几乎不给点位"
+    },
+    {
+      "screen": "Baisircrypto",
+      "verdict": "D",
+      "verdict_reason": "BTC推文仅5条，且含推广，样本不足",
+      "total_tweets": 5,
+      "btc_tweets": 5,
+      "cat": {
+        "btc_analysis": 1,
+        "btc_vague": 0,
+        "macro_only": 0,
+        "commentary": 1,
+        "promo": 3,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-08-21",
+          "dir": "up",
+          "target": null,
+          "level": null,
+          "horizon": "months",
+          "quote": "所以，现在，可能才刚刚开始！"
+        }
+      ],
+      "note": "以历史K线类比看多，其余为项目与理财推广"
+    },
+    {
+      "screen": "Hoyooyoo",
+      "verdict": "D",
+      "verdict_reason": "BTC推文仅3条，样本不足",
+      "total_tweets": 3,
+      "btc_tweets": 3,
+      "cat": {
+        "btc_analysis": 2,
+        "btc_vague": 1,
+        "macro_only": 0,
+        "commentary": 0,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [
+        {
+          "date": "2026-10-26",
+          "dir": "down",
+          "target": null,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "再次向下跌破79000，就进入弱势。多头将面临不利局面。"
+        },
+        {
+          "date": "2026-11-08",
+          "dir": "down",
+          "target": 69000,
+          "level": null,
+          "horizon": "weeks",
+          "quote": "74500就是多头最后底线，跌破先看69000。"
+        }
+      ],
+      "note": "纯技术结构派，给支撑与破位目标位，推文极少但表述精准"
+    },
+    {
+      "screen": "Web3Dc888",
+      "verdict": "D",
+      "verdict_reason": "BTC推文仅2条，无价格方向预测",
+      "total_tweets": 2,
+      "btc_tweets": 2,
+      "cat": {
+        "btc_analysis": 0,
+        "btc_vague": 0,
+        "macro_only": 0,
+        "commentary": 2,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [],
+      "note": "吐槽交易所并唱衰BTC生态项目，无点位与方向判断"
+    },
+    {
+      "screen": "hebi555",
+      "verdict": "D",
+      "verdict_reason": "仅1条BTC推文且为吐槽，样本不足",
+      "total_tweets": 1,
+      "btc_tweets": 1,
+      "cat": {
+        "btc_analysis": 0,
+        "btc_vague": 0,
+        "macro_only": 0,
+        "commentary": 1,
+        "promo": 0,
+        "retweet": 0
+      },
+      "preds": [],
+      "note": "仅一条吐槽交易所的推文，无任何价格判断"
+    }
+  ]
+}

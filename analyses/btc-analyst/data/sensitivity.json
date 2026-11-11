@@ -1,0 +1,1720 @@
+[
+ {
+  "screen": "rektcapital",
+  "n": 6,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.277,
+    "n": 1,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.277,
+    "n": 1,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.021,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 1,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "crypto_punkX",
+  "n": 1,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.22,
+    "n": 1,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.22,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": -0.484,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.462,
+    "n": 1,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "btc2688",
+  "n": 14,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.112,
+    "n": 13,
+    "rawWin": 0.385
+   },
+   "8%/90d": {
+    "excess": -0.048,
+    "n": 13,
+    "rawWin": 0.538
+   },
+   "15%/90d": {
+    "excess": 0.007,
+    "n": 13,
+    "rawWin": 0.385
+   },
+   "25%/120d": {
+    "excess": -0.025,
+    "n": 13,
+    "rawWin": 0.154
+   }
+  }
+ },
+ {
+  "screen": "btc1368",
+  "n": 7,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.113,
+    "n": 3,
+    "rawWin": 0.667
+   },
+   "8%/90d": {
+    "excess": 0.052,
+    "n": 3,
+    "rawWin": 0.667
+   },
+   "15%/90d": {
+    "excess": -0.055,
+    "n": 3,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 3,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "Billions_2022_",
+  "n": 13,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.262,
+    "n": 9,
+    "rawWin": 0.889
+   },
+   "8%/90d": {
+    "excess": 0.229,
+    "n": 9,
+    "rawWin": 0.889
+   },
+   "15%/90d": {
+    "excess": -0.234,
+    "n": 9,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.17,
+    "n": 9,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "wangtuai888",
+  "n": 7,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.225,
+    "n": 5,
+    "rawWin": 0.2
+   },
+   "8%/90d": {
+    "excess": -0.092,
+    "n": 5,
+    "rawWin": 0.4
+   },
+   "15%/90d": {
+    "excess": -0.251,
+    "n": 5,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.171,
+    "n": 5,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "terryharmonic",
+  "n": 5,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.417,
+    "n": 1,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.317,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": -0.067,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 1,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "oragnes",
+  "n": 2,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "cryptovizart",
+  "n": 2,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.154,
+    "n": 1,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": 0.121,
+    "n": 1,
+    "rawWin": 1
+   },
+   "25%/120d": {
+    "excess": 0.132,
+    "n": 1,
+    "rawWin": 1
+   }
+  }
+ },
+ {
+  "screen": "B_daojia",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "CryptoPainter",
+  "n": 2,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "DrProfitCrypto",
+  "n": 21,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.046,
+    "n": 21,
+    "rawWin": 0.571
+   },
+   "8%/90d": {
+    "excess": -0.016,
+    "n": 21,
+    "rawWin": 0.714
+   },
+   "15%/90d": {
+    "excess": 0.057,
+    "n": 21,
+    "rawWin": 0.524
+   },
+   "25%/120d": {
+    "excess": -0.033,
+    "n": 21,
+    "rawWin": 0.19
+   }
+  }
+ },
+ {
+  "screen": "AwbczBTC",
+  "n": 9,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.433,
+    "n": 6,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.433,
+    "n": 6,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.086,
+    "n": 6,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.063,
+    "n": 6,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "dongbimao",
+  "n": 7,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.033,
+    "n": 5,
+    "rawWin": 0.6
+   },
+   "8%/90d": {
+    "excess": -0.033,
+    "n": 5,
+    "rawWin": 0.6
+   },
+   "15%/90d": {
+    "excess": -0.136,
+    "n": 5,
+    "rawWin": 0.2
+   },
+   "25%/120d": {
+    "excess": -0.113,
+    "n": 5,
+    "rawWin": 0.2
+   }
+  }
+ },
+ {
+  "screen": "cs_zhaozilong",
+  "n": 6,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.04,
+    "n": 6,
+    "rawWin": 0.5
+   },
+   "8%/90d": {
+    "excess": 0.19,
+    "n": 6,
+    "rawWin": 0.833
+   },
+   "15%/90d": {
+    "excess": -0.07,
+    "n": 6,
+    "rawWin": 0.333
+   },
+   "25%/120d": {
+    "excess": -0.222,
+    "n": 6,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "Murphychen888",
+  "n": 1,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.438,
+    "n": 1,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.438,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": -0.225,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.2,
+    "n": 1,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "sylvigil",
+  "n": 7,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.181,
+    "n": 6,
+    "rawWin": 0.833
+   },
+   "8%/90d": {
+    "excess": 0.277,
+    "n": 6,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": -0.022,
+    "n": 6,
+    "rawWin": 0.333
+   },
+   "25%/120d": {
+    "excess": -0.179,
+    "n": 6,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "ChandlerGuo",
+  "n": 9,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.157,
+    "n": 7,
+    "rawWin": 0.429
+   },
+   "8%/90d": {
+    "excess": -0.151,
+    "n": 7,
+    "rawWin": 0.571
+   },
+   "15%/90d": {
+    "excess": -0.086,
+    "n": 7,
+    "rawWin": 0.429
+   },
+   "25%/120d": {
+    "excess": -0.046,
+    "n": 7,
+    "rawWin": 0.429
+   }
+  }
+ },
+ {
+  "screen": "BobLoukas",
+  "n": 6,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.177,
+    "n": 4,
+    "rawWin": 0.25
+   },
+   "8%/90d": {
+    "excess": -0.177,
+    "n": 4,
+    "rawWin": 0.25
+   },
+   "15%/90d": {
+    "excess": -0.169,
+    "n": 4,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.11,
+    "n": 4,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "Btc_kking",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "realGuanYu",
+  "n": 8,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.087,
+    "n": 8,
+    "rawWin": 0.625
+   },
+   "8%/90d": {
+    "excess": -0.211,
+    "n": 8,
+    "rawWin": 0.625
+   },
+   "15%/90d": {
+    "excess": 0.042,
+    "n": 8,
+    "rawWin": 0.625
+   },
+   "25%/120d": {
+    "excess": 0.147,
+    "n": 8,
+    "rawWin": 0.5
+   }
+  }
+ },
+ {
+  "screen": "sky27867843",
+  "n": 4,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.198,
+    "n": 1,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.209,
+    "n": 1,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.011,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 1,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "xfli5",
+  "n": 3,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.02,
+    "n": 3,
+    "rawWin": 0.667
+   },
+   "8%/90d": {
+    "excess": -0.101,
+    "n": 3,
+    "rawWin": 0.667
+   },
+   "15%/90d": {
+    "excess": 0.211,
+    "n": 3,
+    "rawWin": 0.667
+   },
+   "25%/120d": {
+    "excess": 0.055,
+    "n": 3,
+    "rawWin": 0.333
+   }
+  }
+ },
+ {
+  "screen": "0xCryptoChan",
+  "n": 4,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.016,
+    "n": 4,
+    "rawWin": 0.75
+   },
+   "8%/90d": {
+    "excess": -0.046,
+    "n": 4,
+    "rawWin": 0.75
+   },
+   "15%/90d": {
+    "excess": 0.224,
+    "n": 4,
+    "rawWin": 0.75
+   },
+   "25%/120d": {
+    "excess": -0.006,
+    "n": 4,
+    "rawWin": 0.5
+   }
+  }
+ },
+ {
+  "screen": "AshCrypto",
+  "n": 2,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "fishbtcer",
+  "n": 8,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.042,
+    "n": 8,
+    "rawWin": 0.75
+   },
+   "8%/90d": {
+    "excess": 0.013,
+    "n": 8,
+    "rawWin": 0.875
+   },
+   "15%/90d": {
+    "excess": 0.001,
+    "n": 8,
+    "rawWin": 0.625
+   },
+   "25%/120d": {
+    "excess": -0.043,
+    "n": 8,
+    "rawWin": 0.375
+   }
+  }
+ },
+ {
+  "screen": "Cryptodengta",
+  "n": 7,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.058,
+    "n": 5,
+    "rawWin": 0.6
+   },
+   "8%/90d": {
+    "excess": 0.004,
+    "n": 5,
+    "rawWin": 0.6
+   },
+   "15%/90d": {
+    "excess": -0.11,
+    "n": 5,
+    "rawWin": 0.2
+   },
+   "25%/120d": {
+    "excess": -0.087,
+    "n": 5,
+    "rawWin": 0.2
+   }
+  }
+ },
+ {
+  "screen": "Sykodelic_",
+  "n": 5,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.402,
+    "n": 3,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.402,
+    "n": 3,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.051,
+    "n": 3,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.024,
+    "n": 3,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "crypto_yan_gui",
+  "n": 4,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.063,
+    "n": 3,
+    "rawWin": 0.333
+   },
+   "8%/90d": {
+    "excess": -0.085,
+    "n": 3,
+    "rawWin": 0.333
+   },
+   "15%/90d": {
+    "excess": -0.102,
+    "n": 3,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.073,
+    "n": 3,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "Keyshotvv",
+  "n": 3,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.338,
+    "n": 2,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.338,
+    "n": 2,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.019,
+    "n": 2,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 2,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "UnicornBitcoin",
+  "n": 3,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.385,
+    "n": 2,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.385,
+    "n": 2,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.018,
+    "n": 2,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 2,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "0XTiger666",
+  "n": 3,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.223,
+    "n": 3,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.048,
+    "n": 3,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": 0.286,
+    "n": 3,
+    "rawWin": 1
+   },
+   "25%/120d": {
+    "excess": 0.037,
+    "n": 3,
+    "rawWin": 0.333
+   }
+  }
+ },
+ {
+  "screen": "0xTodd",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "Bitcoin",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "saylor",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "liujia0224",
+  "n": 18,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.076,
+    "n": 17,
+    "rawWin": 0.471
+   },
+   "8%/90d": {
+    "excess": -0.124,
+    "n": 17,
+    "rawWin": 0.471
+   },
+   "15%/90d": {
+    "excess": 0.006,
+    "n": 17,
+    "rawWin": 0.353
+   },
+   "25%/120d": {
+    "excess": 0.108,
+    "n": 17,
+    "rawWin": 0.294
+   }
+  }
+ },
+ {
+  "screen": "btc_tigerx",
+  "n": 7,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.146,
+    "n": 7,
+    "rawWin": 0.429
+   },
+   "8%/90d": {
+    "excess": -0.096,
+    "n": 7,
+    "rawWin": 0.714
+   },
+   "15%/90d": {
+    "excess": -0.162,
+    "n": 7,
+    "rawWin": 0.429
+   },
+   "25%/120d": {
+    "excess": -0.143,
+    "n": 7,
+    "rawWin": 0.143
+   }
+  }
+ },
+ {
+  "screen": "_Checkmatey_",
+  "n": 5,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.175,
+    "n": 5,
+    "rawWin": 0.8
+   },
+   "8%/90d": {
+    "excess": 0.111,
+    "n": 5,
+    "rawWin": 0.8
+   },
+   "15%/90d": {
+    "excess": 0.135,
+    "n": 5,
+    "rawWin": 0.6
+   },
+   "25%/120d": {
+    "excess": 0.107,
+    "n": 5,
+    "rawWin": 0.4
+   }
+  }
+ },
+ {
+  "screen": "willywoo",
+  "n": 7,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.064,
+    "n": 4,
+    "rawWin": 0.5
+   },
+   "8%/90d": {
+    "excess": -0.07,
+    "n": 4,
+    "rawWin": 0.5
+   },
+   "15%/90d": {
+    "excess": -0.044,
+    "n": 4,
+    "rawWin": 0.25
+   },
+   "25%/120d": {
+    "excess": 0.119,
+    "n": 4,
+    "rawWin": 0.25
+   }
+  }
+ },
+ {
+  "screen": "Mrluanluan",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "Felix_Hsu",
+  "n": 10,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.149,
+    "n": 9,
+    "rawWin": 0.444
+   },
+   "8%/90d": {
+    "excess": -0.271,
+    "n": 9,
+    "rawWin": 0.444
+   },
+   "15%/90d": {
+    "excess": -0.125,
+    "n": 9,
+    "rawWin": 0.333
+   },
+   "25%/120d": {
+    "excess": -0.073,
+    "n": 9,
+    "rawWin": 0.111
+   }
+  }
+ },
+ {
+  "screen": "Pathusa",
+  "n": 7,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.194,
+    "n": 3,
+    "rawWin": 0.333
+   },
+   "8%/90d": {
+    "excess": -0.215,
+    "n": 3,
+    "rawWin": 0.333
+   },
+   "15%/90d": {
+    "excess": -0.039,
+    "n": 3,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 3,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "LuYao_Trader",
+  "n": 4,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.066,
+    "n": 4,
+    "rawWin": 0.5
+   },
+   "8%/90d": {
+    "excess": -0.12,
+    "n": 4,
+    "rawWin": 0.5
+   },
+   "15%/90d": {
+    "excess": -0.131,
+    "n": 4,
+    "rawWin": 0.25
+   },
+   "25%/120d": {
+    "excess": -0.113,
+    "n": 4,
+    "rawWin": 0.25
+   }
+  }
+ },
+ {
+  "screen": "bitfish",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "huangdaobtc",
+  "n": 27,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.058,
+    "n": 20,
+    "rawWin": 0.65
+   },
+   "8%/90d": {
+    "excess": 0.008,
+    "n": 20,
+    "rawWin": 0.65
+   },
+   "15%/90d": {
+    "excess": -0.115,
+    "n": 20,
+    "rawWin": 0.25
+   },
+   "25%/120d": {
+    "excess": -0.096,
+    "n": 20,
+    "rawWin": 0.2
+   }
+  }
+ },
+ {
+  "screen": "market_beggar",
+  "n": 6,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.027,
+    "n": 4,
+    "rawWin": 0.5
+   },
+   "8%/90d": {
+    "excess": -0.126,
+    "n": 4,
+    "rawWin": 0.5
+   },
+   "15%/90d": {
+    "excess": -0.003,
+    "n": 4,
+    "rawWin": 0.25
+   },
+   "25%/120d": {
+    "excess": 0.033,
+    "n": 4,
+    "rawWin": 0.25
+   }
+  }
+ },
+ {
+  "screen": "benjamincowen",
+  "n": 7,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.068,
+    "n": 2,
+    "rawWin": 0.5
+   },
+   "8%/90d": {
+    "excess": -0.079,
+    "n": 2,
+    "rawWin": 0.5
+   },
+   "15%/90d": {
+    "excess": -0.052,
+    "n": 2,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 2,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "DL_W59",
+  "n": 4,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.053,
+    "n": 3,
+    "rawWin": 0.667
+   },
+   "8%/90d": {
+    "excess": -0.009,
+    "n": 3,
+    "rawWin": 0.667
+   },
+   "15%/90d": {
+    "excess": -0.114,
+    "n": 3,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.056,
+    "n": 3,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "chairbtc",
+  "n": 7,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "ai_9684xtpa",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "Guilin_Chen_",
+  "n": 2,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.019,
+    "n": 2,
+    "rawWin": 0.5
+   },
+   "8%/90d": {
+    "excess": -0.03,
+    "n": 2,
+    "rawWin": 0.5
+   },
+   "15%/90d": {
+    "excess": -0.054,
+    "n": 2,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 2,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "Cato_KT",
+  "n": 3,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "biupa",
+  "n": 6,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.028,
+    "n": 6,
+    "rawWin": 0.667
+   },
+   "8%/90d": {
+    "excess": -0.043,
+    "n": 6,
+    "rawWin": 0.667
+   },
+   "15%/90d": {
+    "excess": 0.047,
+    "n": 6,
+    "rawWin": 0.5
+   },
+   "25%/120d": {
+    "excess": 0.066,
+    "n": 6,
+    "rawWin": 0.5
+   }
+  }
+ },
+ {
+  "screen": "CryptoCapo_",
+  "n": 5,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.016,
+    "n": 5,
+    "rawWin": 0.6
+   },
+   "8%/90d": {
+    "excess": -0.034,
+    "n": 5,
+    "rawWin": 0.6
+   },
+   "15%/90d": {
+    "excess": -0.015,
+    "n": 5,
+    "rawWin": 0.4
+   },
+   "25%/120d": {
+    "excess": -0.161,
+    "n": 5,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "liuwei16602825",
+  "n": 7,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.289,
+    "n": 7,
+    "rawWin": 0.286
+   },
+   "8%/90d": {
+    "excess": -0.161,
+    "n": 7,
+    "rawWin": 0.571
+   },
+   "15%/90d": {
+    "excess": -0.331,
+    "n": 7,
+    "rawWin": 0.143
+   },
+   "25%/120d": {
+    "excess": -0.19,
+    "n": 7,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "EmberCN",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "monkeyjiang",
+  "n": 8,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.306,
+    "n": 1,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.306,
+    "n": 1,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.02,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 1,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "williamlab",
+  "n": 3,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.12,
+    "n": 2,
+    "rawWin": 0.5
+   },
+   "8%/90d": {
+    "excess": 0.356,
+    "n": 2,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": 0.479,
+    "n": 2,
+    "rawWin": 1
+   },
+   "25%/120d": {
+    "excess": 0.414,
+    "n": 2,
+    "rawWin": 0.5
+   }
+  }
+ },
+ {
+  "screen": "ViewsOfChris",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "alpha101xyz",
+  "n": 1,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.066,
+    "n": 1,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.011,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": 0.264,
+    "n": 1,
+    "rawWin": 1
+   },
+   "25%/120d": {
+    "excess": 0.275,
+    "n": 1,
+    "rawWin": 1
+   }
+  }
+ },
+ {
+  "screen": "0xPickleCati",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "BTCwukong",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "ZiiiMindInvest",
+  "n": 1,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.418,
+    "n": 1,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.176,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": 0.495,
+    "n": 1,
+    "rawWin": 1
+   },
+   "25%/120d": {
+    "excess": -0.088,
+    "n": 1,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "PhyrexNi",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "qinbafrank",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "TraderS18",
+  "n": 2,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "Xiaoniu6161",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "Geight16",
+  "n": 1,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.277,
+    "n": 1,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.277,
+    "n": 1,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.021,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 1,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "jiangjinyajy",
+  "n": 1,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.495,
+    "n": 1,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": 0.286,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": 0.363,
+    "n": 1,
+    "rawWin": 1
+   },
+   "25%/120d": {
+    "excess": 0.363,
+    "n": 1,
+    "rawWin": 1
+   }
+  }
+ },
+ {
+  "screen": "billtheinvestor",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "traderxiaoxia",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "SilverBulletBTC",
+  "n": 2,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.361,
+    "n": 2,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.268,
+    "n": 2,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": -0.05,
+    "n": 2,
+    "rawWin": 0.5
+   },
+   "25%/120d": {
+    "excess": -0.217,
+    "n": 2,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "CryptoApprenti1",
+  "n": 4,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "BeliaSchoo91221",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "blockTVBee",
+  "n": 1,
+  "cells": {
+   "8%/60d": {
+    "excess": -0.352,
+    "n": 1,
+    "rawWin": 0
+   },
+   "8%/90d": {
+    "excess": -0.352,
+    "n": 1,
+    "rawWin": 0
+   },
+   "15%/90d": {
+    "excess": -0.019,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": 0,
+    "n": 1,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "Baisircrypto",
+  "n": 1,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.198,
+    "n": 1,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.198,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": -0.505,
+    "n": 1,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.484,
+    "n": 1,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "Hoyooyoo",
+  "n": 2,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "Web3Dc888",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "hebi555",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "Wangduanniao",
+  "n": 2,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.005,
+    "n": 2,
+    "rawWin": 0.5
+   },
+   "8%/90d": {
+    "excess": -0.137,
+    "n": 2,
+    "rawWin": 0.5
+   },
+   "15%/90d": {
+    "excess": -0.401,
+    "n": 2,
+    "rawWin": 0
+   },
+   "25%/120d": {
+    "excess": -0.132,
+    "n": 2,
+    "rawWin": 0
+   }
+  }
+ },
+ {
+  "screen": "Dp520888",
+  "n": 1,
+  "cells": {
+   "8%/60d": {
+    "excess": 0.242,
+    "n": 1,
+    "rawWin": 1
+   },
+   "8%/90d": {
+    "excess": 0.022,
+    "n": 1,
+    "rawWin": 1
+   },
+   "15%/90d": {
+    "excess": 0.209,
+    "n": 1,
+    "rawWin": 1
+   },
+   "25%/120d": {
+    "excess": 0.703,
+    "n": 1,
+    "rawWin": 1
+   }
+  }
+ },
+ {
+  "screen": "BTC_Alert_",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "WilliamLu126",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "Goupenguin",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "wolfyxbt",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "yiqifacai",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ },
+ {
+  "screen": "octopusycc",
+  "n": 0,
+  "cells": {
+   "8%/60d": null,
+   "8%/90d": null,
+   "15%/90d": null,
+   "25%/120d": null
+  }
+ }
+]

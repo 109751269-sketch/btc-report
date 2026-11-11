@@ -1,0 +1,166 @@
+{
+ "accounts": [
+  {
+   "screen": "Wangduanniao",
+   "verdict": "D",
+   "verdict_reason": "跨度不足3个月，以闲谈互动为主，仅偶发长期看多",
+   "total_tweets": 39,
+   "btc_tweets": 39,
+   "cat": {
+    "btc_analysis": 2,
+    "btc_vague": 1,
+    "macro_only": 0,
+    "commentary": 35,
+    "promo": 1,
+    "retweet": 0
+   },
+   "preds": [
+    {
+     "date": "2026-04-26",
+     "dir": "up",
+     "target": null,
+     "level": null,
+     "horizon": "months",
+     "quote": "我不认为比特币会到3-4万。 因为大机构都在买了，他们不会卖。"
+    },
+    {
+     "date": "2026-04-30",
+     "dir": "up",
+     "target": null,
+     "level": null,
+     "horizon": "quarters",
+     "quote": "狂暴大牛市会在不经意间就来了比特币未来会到达几十万美金一个"
+    }
+   ],
+   "note": "长期囤币党，看好OKB甚于BTC，几乎不提供具体点位与时间窗"
+  },
+  {
+   "screen": "Dp520888",
+   "verdict": "D",
+   "verdict_reason": "跨度不足3个月，多为回复互动，仅一句逢跌加仓建议",
+   "total_tweets": 21,
+   "btc_tweets": 21,
+   "cat": {
+    "btc_analysis": 1,
+    "btc_vague": 1,
+    "macro_only": 0,
+    "commentary": 19,
+    "promo": 0,
+    "retweet": 0
+   },
+   "preds": [
+    {
+     "date": "2026-04-22",
+     "dir": "down",
+     "target": null,
+     "level": null,
+     "horizon": "weeks",
+     "quote": "如果想买，最稳的策略是买个底仓，后面等比特币再大跌一波买够"
+    }
+   ],
+   "note": "KOL日常互动为主，偶谈代币与仓位，无系统行情分析"
+  },
+  {
+   "screen": "BTC_Alert_",
+   "verdict": "D",
+   "verdict_reason": "跨度不足3个月，实盘复盘为主，无前瞻点位",
+   "total_tweets": 11,
+   "btc_tweets": 11,
+   "cat": {
+    "btc_analysis": 7,
+    "btc_vague": 1,
+    "macro_only": 0,
+    "commentary": 3,
+    "promo": 0,
+    "retweet": 0
+   },
+   "preds": [],
+   "note": "晒实盘盈亏与仓位流水，多为事后复盘，缺少明确前瞻方向目标"
+  },
+  {
+   "screen": "WilliamLu126",
+   "verdict": "D",
+   "verdict_reason": "样本仅7条且跨度约2个月，无价格判断",
+   "total_tweets": 7,
+   "btc_tweets": 7,
+   "cat": {
+    "btc_analysis": 2,
+    "btc_vague": 0,
+    "macro_only": 1,
+    "commentary": 4,
+    "promo": 0,
+    "retweet": 0
+   },
+   "preds": [],
+   "note": "讨论行业成熟度与个人转型，对BTC行情无明确方向预测"
+  },
+  {
+   "screen": "Goupenguin",
+   "verdict": "D",
+   "verdict_reason": "样本仅5条，无任何价格方向预测",
+   "total_tweets": 5,
+   "btc_tweets": 5,
+   "cat": {
+    "btc_analysis": 0,
+    "btc_vague": 2,
+    "macro_only": 0,
+    "commentary": 2,
+    "promo": 1,
+    "retweet": 0
+   },
+   "preds": [],
+   "note": "安全事件吐槽与交易所活动推广，行情内容为调侃段子"
+  },
+  {
+   "screen": "wolfyxbt",
+   "verdict": "D",
+   "verdict_reason": "仅3条推文，无明确点位或方向预测",
+   "total_tweets": 3,
+   "btc_tweets": 3,
+   "cat": {
+    "btc_analysis": 0,
+    "btc_vague": 1,
+    "macro_only": 0,
+    "commentary": 2,
+    "promo": 0,
+    "retweet": 0
+   },
+   "preds": [],
+   "note": "科普型内容为主，月度涨跌仅反问未给判断"
+  },
+  {
+   "screen": "yiqifacai",
+   "verdict": "D",
+   "verdict_reason": "仅2条推文，无BTC价格方向判断",
+   "total_tweets": 2,
+   "btc_tweets": 2,
+   "cat": {
+    "btc_analysis": 1,
+    "btc_vague": 0,
+    "macro_only": 0,
+    "commentary": 1,
+    "promo": 0,
+    "retweet": 0
+   },
+   "preds": [],
+   "note": "偏美股与算力叙事，BTC仅作类比，无行情预测"
+  },
+  {
+   "screen": "octopusycc",
+   "verdict": "D",
+   "verdict_reason": "仅1条推文，且为交易所活动推广",
+   "total_tweets": 1,
+   "btc_tweets": 1,
+   "cat": {
+    "btc_analysis": 0,
+    "btc_vague": 0,
+    "macro_only": 0,
+    "commentary": 0,
+    "promo": 1,
+    "retweet": 0
+   },
+   "preds": [],
+   "note": "仅一条OKX理财活动推广，无任何行情观点"
+  }
+ ]
+}
