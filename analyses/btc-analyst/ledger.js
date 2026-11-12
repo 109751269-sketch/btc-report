@@ -1,8 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = require('./paths').resolveRoot();
-const px = JSON.parse(fs.readFileSync(path.join(ROOT, 'btc_daily.json'), 'utf8'))
+const { resolveRoot, resolveDataRoot } = require('./paths');
+const ROOT = resolveRoot();
+const DATA = resolveDataRoot();
+const px = JSON.parse(fs.readFileSync(path.join(DATA, 'btc_daily.json'), 'utf8'))
   .filter(r => r.t >= '2026-01-01');
 const idx = new Map(px.map((r, i) => [r.t, i]));
 
@@ -60,7 +62,7 @@ for (const f of fs.readdirSync(PREDS).filter(x => x.endsWith('.json')).sort()) {
 }
 const accounts = [...byScreen.values()].map(x => x.a);
 
-const finals = JSON.parse(fs.readFileSync(path.join(ROOT, 'final_v2.json'), 'utf8'));
+const finals = JSON.parse(fs.readFileSync(path.join(ROOT, 'final_v3.json'), 'utf8'));
 const rank = new Map(finals.map((r, i) => [r.screen, i + 1]));
 const scoreOf = new Map(finals.map(r => [r.screen, r]));
 

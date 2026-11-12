@@ -19,10 +19,12 @@
  */
 const fs = require('fs');
 const path = require('path');
-const ROOT = require('./paths').resolveRoot();
+const { resolveRoot, resolveDataRoot } = require('./paths');
+const ROOT = resolveRoot();
+const DATA = resolveDataRoot();
 const PREDS = path.join(ROOT, 'preds');
 
-const px = JSON.parse(fs.readFileSync(path.join(ROOT, 'btc_daily.json'), 'utf8'))
+const px = JSON.parse(fs.readFileSync(path.join(DATA, 'btc_daily.json'), 'utf8'))
   .filter(r => r.t >= '2026-01-01');
 const idx = new Map(px.map((r, i) => [r.t, i]));
 

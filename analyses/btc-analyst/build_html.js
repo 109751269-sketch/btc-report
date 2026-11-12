@@ -1,7 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = require('./paths').resolveRoot();
+const { resolveRoot, resolveDataRoot } = require('./paths');
+const ROOT = resolveRoot();
+const DATA = resolveDataRoot();
 const OUT_DIR = process.env.REPORT_OUT || path.join(ROOT, 'html');
 
 const R = JSON.parse(fs.readFileSync(path.join(ROOT, 'final_v3.json'), 'utf8'));
@@ -25,7 +27,7 @@ const low = R.filter(r => r.stab === 'unknown' || r.verified < 5);
 // 模拟交易排行（>=5笔）
 const simRank = S.filter(x => x.nTrades >= 5).sort((a, b) => (b.medianRet ?? -9) - (a.medianRet ?? -9));
 const bhRet = (() => {
-  const px = JSON.parse(fs.readFileSync(path.join(ROOT, 'btc_daily.json'), 'utf8')).filter(r => r.t >= '2026-01-01');
+  const px = JSON.parse(fs.readFileSync(path.join(DATA, 'btc_daily.json'), 'utf8')).filter(r => r.t >= '2026-01-01');
   return px[px.length - 1].c / px[0].c - 1;
 })();
 

@@ -25,28 +25,34 @@
 | 文件 | 输入 | 输出 | 作用 |
 |---|---|---|---|
 | `paths.js` | — | — | **公共模块**，被其它脚本 require。解析数据目录：命令行参数 > `BTC_ROOT` 环境变量 > 本目录 `data/` |
-| `freeze_digests.js` | `data/raw/*.json` | `data/frozen/<账号>.txt` | 把原始推文冻结成快照，格式 `[YYYY-MM-DD] 正文` 时间正序。分析期间数据不再变动，保证可复现 |
+| `freeze_digests.js` | `data/<日期>/raw/*.json` | `data/<日期>/frozen/<账号>.txt` | 把原始推文冻结成快照，格式 `[YYYY-MM-DD] 正文` 时间正序。分析期间数据不再变动，保证可复现 |
 | `[LLM 抽取]` | `data/frozen/*.txt` | `data/preds/batchN.json` | **不是脚本**，是把账号分批交子代理精读，按 `PRED_SPEC.md` 产出结构化预测 |
-| `audit_preds.js` | `data/preds/*.json` + `data/frozen/` | 控制台报告 | **防编造**：把每条 `quote` 去空白后回原文做 substring 匹配，未命中即报警。必须 0 未命中才继续 |
-| `score_final.js` | `data/preds/` + `data/btc_daily.json` | `data/final_v3.json` `data/sensitivity.json` | **严格口径打分**：基准校正后的超额胜率 + 4 口径稳健性分层（stable_pos / stable_neg / unstable） |
-| `sim_trade.js` | `data/preds/` + `data/btc_daily.json` | `data/sim_results.json` | **模拟操作**：预测日入场，−10% 止损、触目标止盈、最长 120 天。算中位收益、胜率、止损率、模糊正确率 |
-| `ledger.js` | `data/preds/` + `data/final_v3.json` | `data/ledger.json` | **逐条台账**：每条预测的"当时价格 → 后续 1/2/3 月涨跌 → 是否兑现" |
+| `audit_preds.js` | `data/<日期>/preds/*.json` + `data/<日期>/frozen/` | 控制台报告 | **防编造**：把每条 `quote` 去空白后回原文做 substring 匹配，未命中即报警。必须 0 未命中才继续 |
+| `score_final.js` | `data/<日期>/preds/` + `data/btc_daily.json` | `data/<日期>/final_v3.json` `data/<日期>/sensitivity.json` | **严格口径打分**：基准校正后的超额胜率 + 4 口径稳健性分层（stable_pos / stable_neg / unstable） |
+| `sim_trade.js` | `data/<日期>/preds/` + `data/btc_daily.json` | `data/<日期>/sim_results.json` | **模拟操作**：预测日入场，−10% 止损、触目标止盈、最长 120 天。算中位收益、胜率、止损率、模糊正确率 |
+| `ledger.js` | `data/<日期>/preds/` + `data/<日期>/final_v3.json` | `data/<日期>/ledger.json` | **逐条台账**：每条预测的"当时价格 → 后续 1/2/3 月涨跌 → 是否兑现" |
 | `build_html.js` | 上述所有 json | `<REPORT_OUT>/index.html` | 生成暗色主题 HTML 报告（9 个章节、18 张表） |
 
 ### 数据（`data/`）
 
-| 路径 | 大小 | 作用 |
-|---|---|---|
-| `btc_daily.json` | 29 K | BTC 日线 OHLC（Binance，2026 全年），所有验证的价格来源 |
-| `preds/batch*.json` | 132 K | 9 个批次的结构化预测，共 349 条 |
-| `frozen/` | 991 K | 87 个账号的推文快照，审计与重抽取的依据 |
-| `final_v3.json` | 150 K | 严格口径评分结果（87 账号 × 4 口径） |
-| `sensitivity.json` | 23 K | 4 口径明细（供 `build_html.js` 画表） |
-| `sim_results.json` | 107 K | 模拟操作结果（含每笔交易明细） |
-| `ledger.json` | 150 K | 逐条预测台账 |
-| `frozen_manifest.json` | 14 K | 账号清单（推文数、时间跨度） |
+按日期归档。`btc_daily.json` 是跨期共享的行情数据，留在根目录；其余都是单次运行的产物。
 
-> **未包含 `raw/`**：原始推文约 16 MB，可由 `frozen/` 重新生成，不纳入版本管理。
+```
+data/
+├── btc_daily.json              共享：BTC 日线 OHLC（2026 全年），所有验证的价格来源
+└── 2026-11-11/                 单次运行（第一次评测）
+    ├── preds/batch*.json       9 个批次的结构化预测，共 349 条
+    ├── frozen/                 87 个账号的推文快照，审计与重抽取的依据
+    ├── final_v3.json           严格口径评分
+    ├── sensitivity.json        4 口径明细
+    ├── sim_results.json        模拟操作结果（含每笔明细）
+    ├── ledger.json             逐条预测台账
+    └── frozen_manifest.json    账号清单（推文数、时间跨度）
+```
+
+下次新评测就新建 `data/<新日期>/`，互不覆盖，`btc_daily.json` 继续复用。
+
+> **未包含 `raw/`**：原始推文约 16 MB，可由 `frozen/` 重新生成，不进版本管理。
 
 ---
 
@@ -66,7 +72,7 @@
 ### 第 2 步：冻结
 
 ```bash
-node freeze_digests.js
+node freeze_digests.js <data/日期目录>
 ```
 
 ### 第 3 步：LLM 语义抽取
@@ -84,15 +90,15 @@ node audit_preds.js
 ### 第 4 步：打分（两种口径都要跑）
 
 ```bash
-node score_final.js   # 严格口径
-node sim_trade.js     # 模拟操作
+node score_final.js data/2026-11-11   # 严格口径
+node sim_trade.js data/2026-11-11      # 模拟操作
 ```
 
 ### 第 5 步：出报告
 
 ```bash
-node ledger.js
-REPORT_OUT=./html node build_html.js
+node ledger.js data/2026-11-11
+REPORT_OUT=./html node build_html.js data/2026-11-11
 ```
 
 ### 第 6 步：发布（可选）

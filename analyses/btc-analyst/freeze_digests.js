@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const ROOT = require('./paths').resolveRoot();
+const ROOT = require('./paths').resolveRoot();  // 运行目录 data/<date>/
 const RAW = path.join(ROOT, 'raw');
 const FROZEN = path.join(ROOT, 'frozen');
 fs.mkdirSync(FROZEN, { recursive: true });
