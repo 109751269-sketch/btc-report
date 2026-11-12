@@ -100,12 +100,18 @@ tr:hover td{background:rgba(255,255,255,.015)}
 .quote{color:var(--txt3);font-size:12.5px;font-style:normal}
 footer{border-top:1px solid var(--line);padding:24px 0 48px;font-size:12px;color:var(--txt3);font-family:var(--mono)}
 a{color:var(--acc2)}
+a.acct{color:inherit;text-decoration:none;border-bottom:1px solid rgba(91,157,255,.28);transition:color .15s ease,border-color .15s ease}
+a.acct:hover{color:var(--acc2);border-bottom-color:var(--acc2)}
 @media(max-width:640px){table{font-size:12px}td,th{padding:8px}}
 `;
 
 const H = [];
 const P = (s = '') => H.push(s);
 const esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+// 账号名 → 推特主页链接（X handle 仅含 [A-Za-z0-9_]，可安全 encode）
+const acct = (handle) =>
+  `<a class="acct" href="https://x.com/${encodeURIComponent(handle)}" target="_blank" rel="noopener noreferrer">@${esc(handle)}</a>`;
 
 const badge = (band) => {
   const m = { S: 'b-s', A: 'b-a', B: 'b-b', C: 'b-c', D: 'b-d' };
@@ -148,7 +154,7 @@ if (pos.length) {
   P('<div class="scroll"><table><thead><tr><th>账号</th><th>8%/60d</th><th>8%/90d</th><th>15%/90d</th><th>25%/120d</th><th>原始胜率</th><th>可验证</th></tr></thead><tbody>');
   for (const r of pos) {
     const c = r.cells;
-    P(`<tr><td><strong>@${esc(r.screen)}</strong></td>` +
+    P(`<tr><td><strong>${acct(r.screen)}</strong></td>` +
       cfgKeys.map(k => `<td class="mono ${(c[k]?.excess ?? 0) > 0 ? 'pos' : 'neg'}">${pt(c[k]?.excess)}</td>`).join('') +
       `<td class="mono">${pct(r.rawWinRate)}</td><td class="mono">${r.verified}</td></tr>`);
   }
@@ -160,7 +166,7 @@ P('<h3>明确判定为「跌了看跌、涨了看涨」</h3>');
 const followers = R.filter(x => x.trend.rate != null && x.trend.n >= 8 && x.trend.rate >= 0.72);
 if (followers.length) {
   P('<div class="scroll"><table><thead><tr><th>账号</th><th>追涨杀跌率</th><th>样本</th><th>说明</th></tr></thead><tbody>');
-  for (const r of followers) P(`<tr><td><strong>@${esc(r.screen)}</strong></td><td class="neg mono">${pct(r.trend.rate)}</td><td class="mono">${r.trend.n} 次</td><td>${esc(r.reason || '')}</td></tr>`);
+  for (const r of followers) P(`<tr><td><strong>${acct(r.screen)}</strong></td><td class="neg mono">${pct(r.trend.rate)}</td><td class="mono">${r.trend.n} 次</td><td>${esc(r.reason || '')}</td></tr>`);
   P('</tbody></table></div>');
 } else P('<p class="dim">无。</p>');
 
@@ -193,7 +199,7 @@ P('<p>规则：按预测日收盘价入场；做多遇 −10% 止损、触及目
 P(`<div class="note">2026 全年买入持有 = <strong class="${bhRet > 0 ? 'pos' : 'neg'}">${pct(bhRet, 1)}</strong>。下表只列交易笔数 ≥5 的账号。</p>`);
 P('<div class="scroll"><table><thead><tr><th>#</th><th>账号</th><th>笔数</th><th>中位收益</th><th>均收益</th><th>胜率</th><th>止损率</th><th>模糊正确率</th></tr></thead><tbody>');
 simRank.forEach((r, i) => {
-  P(`<tr><td class="mono dim">${i + 1}</td><td><strong>@${esc(r.screen)}</strong></td><td class="mono">${r.nTrades}</td>` +
+  P(`<tr><td class="mono dim">${i + 1}</td><td><strong>${acct(r.screen)}</strong></td><td class="mono">${r.nTrades}</td>` +
     `<td class="mono ${r.medianRet > 0 ? 'pos' : 'neg'}">${pct(r.medianRet, 1)}</td>` +
     `<td class="mono ${r.avgRet > 0 ? 'pos' : 'neg'}">${pct(r.avgRet, 1)}</td>` +
     `<td class="mono">${pct(r.winRate)}</td>` +
@@ -218,7 +224,7 @@ const prof = R.filter(r => r.total_tweets >= 15 && r.cat).sort((a, b) => b.btc_t
 for (const r of prof.slice(0, 28)) {
   const c = r.cat, t = r.total_tweets || 1;
   const f = (x) => ((x || 0) / t * 100).toFixed(0) + '%';
-  P(`<tr><td><strong>@${esc(r.screen)}</strong></td><td class="mono">${r.total_tweets}</td><td class="mono">${f(c.btc_analysis)}</td><td class="mono">${f(c.btc_vague)}</td><td class="mono">${f(c.macro_only)}</td><td class="mono">${f(c.commentary)}</td><td class="mono">${f(c.promo)}</td><td>${badge(r.type.code)}</td></tr>`);
+  P(`<tr><td><strong>${acct(r.screen)}</strong></td><td class="mono">${r.total_tweets}</td><td class="mono">${f(c.btc_analysis)}</td><td class="mono">${f(c.btc_vague)}</td><td class="mono">${f(c.macro_only)}</td><td class="mono">${f(c.commentary)}</td><td class="mono">${f(c.promo)}</td><td>${badge(r.type.code)}</td></tr>`);
 }
 P('</tbody></table></div>');
 
@@ -232,7 +238,7 @@ for (const screen of showList) {
   const r = R.find(x => x.screen === screen) || {};
   const sim = simOf.get(screen) || {};
   const stabTxt = r.stab === 'stable_pos' ? '<span class="pos">稳定正</span>' : r.stab === 'stable_neg' ? '<span class="neg">稳定负</span>' : r.stab === 'unstable' ? '不稳定' : '样本不足';
-  P(`<h3>@${esc(screen)} ${badge(r.band)} <span class="dim" style="font-weight:400;font-size:13px">超额 ${pt(r.excess)} ｜ 原始胜率 ${pct(r.rawWinRate)} ｜ 可验证 ${r.verified} ｜ 稳健性 ${stabTxt}` +
+  P(`<h3>${acct(screen)} ${badge(r.band)} <span class="dim" style="font-weight:400;font-size:13px">超额 ${pt(r.excess)} ｜ 原始胜率 ${pct(r.rawWinRate)} ｜ 可验证 ${r.verified} ｜ 稳健性 ${stabTxt}` +
     (sim.nTrades >= 5 ? ` ｜ 模拟中位 ${pct(sim.medianRet, 1)}` : '') + '</span></h3>');
   P('<div class="scroll"><table><thead><tr><th>日期</th><th>当时价格</th><th>预测</th><th>1月</th><th>2月</th><th>3月</th><th>结果</th></tr></thead><tbody>');
   for (const x of a.rows.slice(0, 12)) {
@@ -254,7 +260,7 @@ P('<h3>4 口径全负（建议忽略）</h3>');
 P('<div class="scroll"><table><thead><tr><th>账号</th><th>8%/60d</th><th>8%/90d</th><th>15%/90d</th><th>25%/120d</th><th>样本</th></tr></thead><tbody>');
 for (const r of neg) {
   const c = r.cells;
-  P(`<tr><td><strong>@${esc(r.screen)}</strong></td>` + cfgKeys.map(k => `<td class="mono neg">${pt(c[k]?.excess)}</td>`).join('') + `<td class="mono">${r.verified}</td></tr>`);
+  P(`<tr><td><strong>${acct(r.screen)}</strong></td>` + cfgKeys.map(k => `<td class="mono neg">${pt(c[k]?.excess)}</td>`).join('') + `<td class="mono">${r.verified}</td></tr>`);
 }
 P('</tbody></table></div>');
 
@@ -263,7 +269,7 @@ P('<p class="dim">这些账号时而准时而错，结论取决于用什么阈�
 P('<div class="scroll"><table><thead><tr><th>账号</th><th>8%/60d</th><th>8%/90d</th><th>15%/90d</th><th>25%/120d</th><th>样本</th></tr></thead><tbody>');
 for (const r of uns.sort((a, b) => b.predsCount - a.predsCount).slice(0, 30)) {
   const c = r.cells;
-  P(`<tr><td>@${esc(r.screen)}</td>` + cfgKeys.map(k => `<td class="mono ${(c[k]?.excess ?? 0) >= 0 ? 'pos' : 'neg'}">${pt(c[k]?.excess)}</td>`).join('') + `<td class="mono">${r.verified}</td></tr>`);
+  P(`<tr><td>${acct(r.screen)}</td>` + cfgKeys.map(k => `<td class="mono ${(c[k]?.excess ?? 0) >= 0 ? 'pos' : 'neg'}">${pt(c[k]?.excess)}</td>`).join('') + `<td class="mono">${r.verified}</td></tr>`);
 }
 P('</tbody></table></div>');
 
