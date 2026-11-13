@@ -48,6 +48,8 @@ BTC 相关公开报告站点（GitHub Pages）：**https://109751269-sketch.gith
 - **内容订正**：同一期直接覆盖原目录，并在页脚更新「修订」说明
 - **跨版本改版**：新建 `-r2/` 目录，旧版保留
 - **新增一期**：复制 `_template/report.html` → 替换占位符 → 更新专题 README 版本表与专题首页卡片
+- **交付前自检（强制）**：① 给新页的博主名加链接：`node <skill>/lib/handle-links.js <页面>`；
+  ② 跑内链校验：`node <skill>/lib/check-links.js .` —— **0 坏链才提交**（手写相对路径已出过两次 404）
 
 ## 分析代码在哪
 
