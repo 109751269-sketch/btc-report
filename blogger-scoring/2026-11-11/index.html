@@ -1,0 +1,355 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>推特 BTC 博主预测能力评测 · 2026 全年</title>
+<style>
+:root{
+  --bg:#080a0f; --panel:#11161f; --panel2:#151b26;
+  --line:#1f2836; --line2:#2a3546;
+  --txt:#e8edf5; --txt2:#9aa7bb; --txt3:#67748a;
+  --acc:#f0b429; --acc2:#5b9dff; --up:#3ddc97; --dn:#ff5d6c;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  line-height:1.7; -webkit-font-smoothing:antialiased; min-height:100vh;
+  background-image:
+    radial-gradient(900px 460px at 12% -8%,rgba(91,157,255,.12),transparent 62%),
+    radial-gradient(760px 400px at 88% 4%,rgba(240,180,41,.07),transparent 66%);
+}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+header{padding:64px 0 40px;border-bottom:1px solid var(--line)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--acc);border:1px solid rgba(240,180,41,.28);
+  background:rgba(240,180,41,.07);padding:6px 14px;border-radius:99px;margin-bottom:22px;font-weight:600}
+.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px var(--acc)}
+h1{font-size:clamp(28px,4vw,40px);font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+h1 .grad{background:linear-gradient(100deg,#fff,#9fc4ff 45%,#f0b429 85%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.lede{color:var(--txt2);font-size:15px}
+main{padding:36px 0 80px}
+h2{font-size:20px;font-weight:700;margin:44px 0 8px;letter-spacing:-.01em}
+h2:first-child{margin-top:0}
+h3{font-size:15px;font-weight:650;margin:28px 0 10px;color:var(--txt)}
+h2 .num{color:var(--acc);font-family:var(--mono);font-size:14px;margin-right:10px}
+p{color:var(--txt2);font-size:14.5px;margin:10px 0}
+p strong{color:var(--txt)}
+.note{background:rgba(91,157,255,.06);border-left:3px solid var(--acc2);padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0;font-size:13.5px;color:var(--txt2)}
+.warn{background:rgba(255,93,108,.07);border-left:3px solid var(--dn);padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0;font-size:13.5px;color:#ffb3ba}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13px}
+th{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line2);color:var(--txt3);
+  font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:hover td{background:rgba(255,255,255,.015)}
+.mono{font-family:var(--mono);font-size:12.5px}
+.pos{color:var(--up);font-weight:600}
+.neg{color:var(--dn);font-weight:600}
+.dim{color:var(--txt3)}
+.badge{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:5px;letter-spacing:.04em}
+.b-s{background:rgba(61,220,151,.15);color:var(--up);border:1px solid rgba(61,220,151,.35)}
+.b-a{background:rgba(91,157,255,.15);color:var(--acc2);border:1px solid rgba(91,157,255,.35)}
+.b-b{background:rgba(240,180,41,.12);color:var(--acc);border:1px solid rgba(240,180,41,.3)}
+.b-c{background:rgba(154,167,187,.1);color:var(--txt2);border:1px solid var(--line2)}
+.b-d{background:rgba(103,116,138,.1);color:var(--txt3);border:1px solid var(--line)}
+.b-neg{background:rgba(255,93,108,.12);color:var(--dn);border:1px solid rgba(255,93,108,.35)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:18px 0}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.kpi .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--txt3);margin-bottom:6px}
+.kpi .v{font-size:24px;font-weight:750;font-family:var(--mono)}
+.kpi .s{font-size:12px;color:var(--txt3);margin-top:4px}
+.scroll{overflow-x:auto;border-radius:10px;border:1px solid var(--line)}
+.scroll table{margin:0}
+.scroll th{background:var(--panel)}
+.quote{color:var(--txt3);font-size:12.5px;font-style:normal}
+footer{border-top:1px solid var(--line);padding:24px 0 48px;font-size:12px;color:var(--txt3);font-family:var(--mono)}
+a{color:var(--acc2)}
+a.acct{color:inherit;text-decoration:none;border-bottom:1px solid rgba(91,157,255,.28);transition:color .15s ease,border-color .15s ease}
+a.acct:hover{color:var(--acc2);border-bottom-color:var(--acc2)}
+@media(max-width:640px){table{font-size:12px}td,th{padding:8px}}
+</style></head><body>
+<div style="position:fixed;top:12px;right:14px;z-index:9999;font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+  <a href="../../" style="display:inline-block;padding:7px 13px;border-radius:20px;background:rgba(17,22,31,.92);color:#e8edf5;text-decoration:none;font-size:12px;border:1px solid #2a3546;box-shadow:0 4px 14px rgba(0,0,0,.28)">← 02 博主预测能力打分</a>
+</div>
+<div class="wrap">
+<header>
+<div class="eyebrow"><span class="dot"></span>BTC Research</div>
+<h1>推特 BTC 博主<span class="grad"> 预测能力评测</span></h1>
+<p class="lede">2026-01-01 ~ 2026-11-11 ｜ 87 个博主 ｜ 341 条明确预测 ｜ 用真实 BTC 日线逐条验证</p>
+</header><main>
+<h2><span class="num">00</span>先说结论</h2>
+<div class="cards">
+<div class="kpi"><div class="k">博主总数</div><div class="v">87</div><div class="s">有实质 BTC 数据的账号</div></div>
+<div class="kpi"><div class="k">明确预测</div><div class="v">341</div><div class="s">全部逐字核对原文</div></div>
+<div class="kpi"><div class="k">4 口径稳定为正</div><div class="v pos">3</div><div class="s">其中样本≥5 的仅 1 个</div></div>
+<div class="kpi"><div class="k">模拟跑赢买入持有</div><div class="v">20 / 20</div><div class="s">买入持有基准 -16.6%</div></div>
+</div>
+<div class="note"><strong>核心方法：不能直接算胜率。</strong>2026 年 BTC 振幅极大（9.79万 → 5.78万 → 8.74万）。随机日期无脑喊「涨 8%」命中 <strong>67.1%</strong>，喊「跌 8%」命中 <strong>65.8%</strong>。所以必须用「超额胜率 = 实际命中 − 同日同向基准」，再做 4 口径稳健性检验。</div>
+<h3>两种口径的结论不同，都必须看</h3>
+<div class="scroll"><table><thead><tr><th>口径</th><th>衡量什么</th><th>结论</th></tr></thead><tbody>
+<tr><td><strong>严格口径</strong></td><td>预测方向是否在窗口内达标（要求高）</td><td>4 口径稳定为正且样本≥5 的只有 <strong>1</strong> 个</td></tr>
+<tr><td><strong>模拟操作</strong></td><td>照着买卖能否赚钱（含 10% 止损、模糊容错）</td><td>跑赢买入持有（-16.6%）的有 <strong>20</strong> 个，最好的是 @realGuanYu，中位收益 12.3%</td></tr>
+</tbody></table></div>
+<div class="note"><strong>为什么两个结论不同？</strong>严格口径会把「抄底略早、短期磨一下、最终涨起来」判成错，对博主不公平；但模拟操作若不加止损，也会把「先亏 40% 再涨回来」当成赚。所以本报告同时给出两者：<strong>严格口径看预测能力，模拟操作看实战收益（已加 10% 止损）</strong>。</div>
+<h3>严格口径：4 口径稳定为正的账号</h3>
+<div class="scroll"><table><thead><tr><th>账号</th><th>8%/60d</th><th>8%/90d</th><th>15%/90d</th><th>25%/120d</th><th>原始胜率</th><th>可验证</th></tr></thead><tbody>
+<tr><td><strong><a class="acct" href="https://x.com/_Checkmatey_" target="_blank" rel="noopener noreferrer">@_Checkmatey_</a></strong></td><td class="mono pos">+18pt</td><td class="mono pos">+11pt</td><td class="mono pos">+14pt</td><td class="mono pos">+11pt</td><td class="mono">80%</td><td class="mono">5</td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/0XTiger666" target="_blank" rel="noopener noreferrer">@0XTiger666</a></strong></td><td class="mono pos">+22pt</td><td class="mono pos">+5pt</td><td class="mono pos">+29pt</td><td class="mono pos">+4pt</td><td class="mono">100%</td><td class="mono">3</td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/Dp520888" target="_blank" rel="noopener noreferrer">@Dp520888</a></strong></td><td class="mono pos">+24pt</td><td class="mono pos">+2pt</td><td class="mono pos">+21pt</td><td class="mono pos">+70pt</td><td class="mono">100%</td><td class="mono">1</td></tr>
+</tbody></table></div>
+<p class="dim">样本 &lt;5 条的账号即便 4 口径同正也不应作为交易依据——统计上不具意义。</p>
+<h3>明确判定为「跌了看跌、涨了看涨」</h3>
+<div class="scroll"><table><thead><tr><th>账号</th><th>追涨杀跌率</th><th>样本</th><th>说明</th></tr></thead><tbody>
+<tr><td><strong><a class="acct" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a></strong></td><td class="neg mono">95%</td><td class="mono">19 次</td><td>追涨杀跌 95%（19次）</td></tr>
+</tbody></table></div>
+<h2><span class="num">01</span>方法：三重校正</h2>
+<h3>① 基准校正</h3>
+<p>「未来 N 天内方向移动达阈值」直接算胜率会虚高。基准 = 该预测日 ±45 天邻域内、同方向、同规则的命中率。超额 = 实际 − 基准。</p>
+<h3>② 4 口径稳健性</h3>
+<p>±8%/60天、±8%/90天、±15%/90天、±25%/120天。只有 4 个口径<strong>同号且幅度 &gt;2pt</strong> 才认定「稳定」；口径间符号翻转 = 结论依赖行情噪音，不下判断。</p>
+<h3>③ 语义抽取 + 逐字审计</h3>
+<p>正则无法区分「预测」与「复盘」（"之前我说过会跌""果然如此"会被误判）。改用 LLM 逐条精读并强制结构化输出，要求 <span class="mono">quote</span> 逐字摘录；再用脚本把 quote 去空白后回原文 substring 校验。本次全部预测审计后 <strong>0 处编造</strong>。</p>
+<div class="warn"><strong>已修复的两个评分 bug：</strong>①「预测命中」与「基准」曾用不同标尺（前者按目标价、后者按固定幅度），导致给出远目标价的账号被系统性压低；② 追涨杀跌判定缺少方向多样性门，单边看空者在下跌年会被误判。</div>
+<h2><span class="num">02</span>关键大周期节点命中</h2>
+<p>四个真实节点，判定标准：节点前窗口内给出同方向预测，且目标价落在节点价 ±8% 内（强命中）；仅有顶/底措辞无价格为弱命中。</p>
+<div class="scroll"><table><thead><tr><th>节点</th><th>日期</th><th>真实价</th><th>强命中</th><th>弱命中</th></tr></thead><tbody>
+<tr><td><strong>2月大底 6W</strong></td><td class="mono">2026-02-06</td><td class="mono">60,000</td><td>@williamlab</td><td class="dim">@fishbtcer, @DrProfitCrypto, @liujia0224, @SilverBulletBTC</td></tr>
+<tr><td><strong>5月阶段顶 8W2</strong></td><td class="mono">2026-05-06</td><td class="mono">82,850</td><td>@ZiiiMindInvest</td><td class="dim">@btc_tigerx, @0XTiger666</td></tr>
+<tr><td><strong>7月大底 5W7</strong></td><td class="mono">2026-07-01</td><td class="mono">57,800</td><td>@jiangjinyajy</td><td class="dim">@Billions_2022_, @_Checkmatey_, @DrProfitCrypto, @btc_tigerx, @liujia0224, @btc2688, @LuYao_Trader, @BobLoukas</td></tr>
+<tr><td><strong>10月阶段顶 8W7</strong></td><td class="mono">2026-09-21</td><td class="mono">87,396</td><td>@Billions_2022_, @huangdaobtc</td><td class="dim">@Cryptodengta</td></tr>
+</tbody></table></div>
+<p><strong>没有任何账号命中超过 1 个节点。</strong>这批博主对大周期顶底的判断普遍不可用。</p>
+<h2><span class="num">03</span>模拟操作：如果照他说的时间点买卖</h2>
+<p>规则：按预测日收盘价入场；做多遇 −10% 止损、触及目标价止盈，否则 120 天平仓；做空反向。按<strong>中位收益</strong>排序（避免被单笔大赚拉偏）。</p>
+<div class="note">2026 全年买入持有 = <strong class="neg">-16.6%</strong>。下表只列交易笔数 ≥5 的账号。</p>
+<div class="scroll"><table><thead><tr><th>#</th><th>账号</th><th>笔数</th><th>中位收益</th><th>均收益</th><th>胜率</th><th>止损率</th><th>模糊正确率</th></tr></thead><tbody>
+<tr><td class="mono dim">1</td><td><strong><a class="acct" href="https://x.com/realGuanYu" target="_blank" rel="noopener noreferrer">@realGuanYu</a></strong></td><td class="mono">8</td><td class="mono pos">12.3%</td><td class="mono pos">3.8%</td><td class="mono">63%</td><td class="mono">38%</td><td class="mono">50%</td></tr>
+<tr><td class="mono dim">2</td><td><strong><a class="acct" href="https://x.com/biupa" target="_blank" rel="noopener noreferrer">@biupa</a></strong></td><td class="mono">6</td><td class="mono pos">5.2%</td><td class="mono pos">2.4%</td><td class="mono">83%</td><td class="mono">17%</td><td class="mono">50%</td></tr>
+<tr><td class="mono dim">3</td><td><strong><a class="acct" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a></strong></td><td class="mono">20</td><td class="mono pos">4.2%</td><td class="mono pos">2.2%</td><td class="mono">50%</td><td class="mono">50%</td><td class="mono">45%</td></tr>
+<tr><td class="mono dim">4</td><td><strong><a class="acct" href="https://x.com/Cryptodengta" target="_blank" rel="noopener noreferrer">@Cryptodengta</a></strong></td><td class="mono">5</td><td class="mono neg">-1.9%</td><td class="mono pos">1.2%</td><td class="mono">40%</td><td class="mono">20%</td><td class="mono">60%</td></tr>
+<tr><td class="mono dim">5</td><td><strong><a class="acct" href="https://x.com/Billions_2022_" target="_blank" rel="noopener noreferrer">@Billions_2022_</a></strong></td><td class="mono">9</td><td class="mono neg">-3.4%</td><td class="mono neg">-1.6%</td><td class="mono">44%</td><td class="mono">22%</td><td class="mono">67%</td></tr>
+<tr><td class="mono dim">6</td><td><strong><a class="acct" href="https://x.com/sylvigil" target="_blank" rel="noopener noreferrer">@sylvigil</a></strong></td><td class="mono">6</td><td class="mono neg">-5.8%</td><td class="mono neg">-2.1%</td><td class="mono">33%</td><td class="mono">33%</td><td class="mono">67%</td></tr>
+<tr><td class="mono dim">7</td><td><strong><a class="acct" href="https://x.com/dongbimao" target="_blank" rel="noopener noreferrer">@dongbimao</a></strong></td><td class="mono">5</td><td class="mono neg">-7.7%</td><td class="mono neg">-5.3%</td><td class="mono">20%</td><td class="mono">40%</td><td class="mono">40%</td></tr>
+<tr><td class="mono dim">8</td><td><strong><a class="acct" href="https://x.com/ChandlerGuo" target="_blank" rel="noopener noreferrer">@ChandlerGuo</a></strong></td><td class="mono">7</td><td class="mono neg">-10.0%</td><td class="mono pos">0.6%</td><td class="mono">43%</td><td class="mono">57%</td><td class="mono">43%</td></tr>
+<tr><td class="mono dim">9</td><td><strong><a class="acct" href="https://x.com/btc2688" target="_blank" rel="noopener noreferrer">@btc2688</a></strong></td><td class="mono">13</td><td class="mono neg">-10.0%</td><td class="mono neg">-0.4%</td><td class="mono">31%</td><td class="mono">69%</td><td class="mono">15%</td></tr>
+<tr><td class="mono dim">10</td><td><strong><a class="acct" href="https://x.com/Felix_Hsu" target="_blank" rel="noopener noreferrer">@Felix_Hsu</a></strong></td><td class="mono">9</td><td class="mono neg">-10.0%</td><td class="mono neg">-0.8%</td><td class="mono">44%</td><td class="mono">56%</td><td class="mono">33%</td></tr>
+<tr><td class="mono dim">11</td><td><strong><a class="acct" href="https://x.com/_Checkmatey_" target="_blank" rel="noopener noreferrer">@_Checkmatey_</a></strong></td><td class="mono">5</td><td class="mono neg">-10.0%</td><td class="mono neg">-1.0%</td><td class="mono">20%</td><td class="mono">40%</td><td class="mono">40%</td></tr>
+<tr><td class="mono dim">12</td><td><strong><a class="acct" href="https://x.com/liujia0224" target="_blank" rel="noopener noreferrer">@liujia0224</a></strong></td><td class="mono">17</td><td class="mono neg">-10.0%</td><td class="mono neg">-1.4%</td><td class="mono">41%</td><td class="mono">53%</td><td class="mono">35%</td></tr>
+<tr><td class="mono dim">13</td><td><strong><a class="acct" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a></strong></td><td class="mono">21</td><td class="mono neg">-10.0%</td><td class="mono neg">-3.1%</td><td class="mono">33%</td><td class="mono">67%</td><td class="mono">29%</td></tr>
+<tr><td class="mono dim">14</td><td><strong><a class="acct" href="https://x.com/fishbtcer" target="_blank" rel="noopener noreferrer">@fishbtcer</a></strong></td><td class="mono">8</td><td class="mono neg">-10.0%</td><td class="mono neg">-3.3%</td><td class="mono">38%</td><td class="mono">50%</td><td class="mono">50%</td></tr>
+<tr><td class="mono dim">15</td><td><strong><a class="acct" href="https://x.com/CryptoCapo_" target="_blank" rel="noopener noreferrer">@CryptoCapo_</a></strong></td><td class="mono">5</td><td class="mono neg">-10.0%</td><td class="mono neg">-4.8%</td><td class="mono">40%</td><td class="mono">60%</td><td class="mono">20%</td></tr>
+<tr><td class="mono dim">16</td><td><strong><a class="acct" href="https://x.com/btc_tigerx" target="_blank" rel="noopener noreferrer">@btc_tigerx</a></strong></td><td class="mono">7</td><td class="mono neg">-10.0%</td><td class="mono neg">-4.9%</td><td class="mono">14%</td><td class="mono">71%</td><td class="mono">14%</td></tr>
+<tr><td class="mono dim">17</td><td><strong><a class="acct" href="https://x.com/cs_zhaozilong" target="_blank" rel="noopener noreferrer">@cs_zhaozilong</a></strong></td><td class="mono">6</td><td class="mono neg">-10.0%</td><td class="mono neg">-5.1%</td><td class="mono">33%</td><td class="mono">67%</td><td class="mono">17%</td></tr>
+<tr><td class="mono dim">18</td><td><strong><a class="acct" href="https://x.com/wangtuai888" target="_blank" rel="noopener noreferrer">@wangtuai888</a></strong></td><td class="mono">5</td><td class="mono neg">-10.0%</td><td class="mono neg">-5.7%</td><td class="mono">40%</td><td class="mono">60%</td><td class="mono">0%</td></tr>
+<tr><td class="mono dim">19</td><td><strong><a class="acct" href="https://x.com/AwbczBTC" target="_blank" rel="noopener noreferrer">@AwbczBTC</a></strong></td><td class="mono">6</td><td class="mono neg">-10.0%</td><td class="mono neg">-10.0%</td><td class="mono">0%</td><td class="mono">100%</td><td class="mono">0%</td></tr>
+<tr><td class="mono dim">20</td><td><strong><a class="acct" href="https://x.com/liuwei16602825" target="_blank" rel="noopener noreferrer">@liuwei16602825</a></strong></td><td class="mono">7</td><td class="mono neg">-10.0%</td><td class="mono neg">-10.0%</td><td class="mono">0%</td><td class="mono">100%</td><td class="mono">0%</td></tr>
+</tbody></table></div>
+<p class="dim"><strong>模糊正确</strong> = 允许抄底略早（最大不利偏移 ≤8%）但后续确实走出 ≥5% 上升空间。这是对「长期看对、短期磨人」的宽松判定。</p>
+<h2><span class="num">04</span>博主分类与画像</h2>
+<div class="scroll"><table><thead><tr><th>类型</th><th>含义</th><th>数量</th></tr></thead><tbody>
+<tr><td><span class="badge b-a">A1</span></td><td>有分析·有明确点位</td><td class="mono">27</td></tr>
+<tr><td><span class="badge b-a">A2</span></td><td>有分析·偏宏观无点位</td><td class="mono">15</td></tr>
+<tr><td><span class="badge b-b">B</span></td><td>模棱两可</td><td class="mono">1</td></tr>
+<tr><td><span class="badge b-c">C</span></td><td>娱乐·瞎猜</td><td class="mono">0</td></tr>
+<tr><td><span class="badge b-d">D</span></td><td>样本不足</td><td class="mono">38</td></tr>
+<tr><td><span class="badge b-d">E</span></td><td>推广/喊单为主</td><td class="mono">6</td></tr>
+</tbody></table></div>
+<h3>帖子构成占比（BTC 原创 ≥15 条）</h3>
+<div class="scroll"><table><thead><tr><th>账号</th><th>总推文</th><th>BTC分析</th><th>模棱两可</th><th>纯宏观</th><th>闲聊</th><th>推广</th><th>类型</th></tr></thead><tbody>
+<tr><td><strong><a class="acct" href="https://x.com/rektcapital" target="_blank" rel="noopener noreferrer">@rektcapital</a></strong></td><td class="mono">221</td><td class="mono">68%</td><td class="mono">11%</td><td class="mono">0%</td><td class="mono">9%</td><td class="mono">12%</td><td><span class="badge b-a">A2</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a></strong></td><td class="mono">166</td><td class="mono">72%</td><td class="mono">18%</td><td class="mono">4%</td><td class="mono">5%</td><td class="mono">1%</td><td><span class="badge b-a">A1</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/xfli5" target="_blank" rel="noopener noreferrer">@xfli5</a></strong></td><td class="mono">134</td><td class="mono">7%</td><td class="mono">25%</td><td class="mono">0%</td><td class="mono">67%</td><td class="mono">0%</td><td><span class="badge b-b">B</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/Bitcoin" target="_blank" rel="noopener noreferrer">@Bitcoin</a></strong></td><td class="mono">130</td><td class="mono">0%</td><td class="mono">0%</td><td class="mono">0%</td><td class="mono">100%</td><td class="mono">0%</td><td><span class="badge b-d">D</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a></strong></td><td class="mono">124</td><td class="mono">80%</td><td class="mono">11%</td><td class="mono">4%</td><td class="mono">3%</td><td class="mono">2%</td><td><span class="badge b-a">A1</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/crypto_punkX" target="_blank" rel="noopener noreferrer">@crypto_punkX</a></strong></td><td class="mono">116</td><td class="mono">16%</td><td class="mono">10%</td><td class="mono">0%</td><td class="mono">17%</td><td class="mono">57%</td><td><span class="badge b-d">E</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/AwbczBTC" target="_blank" rel="noopener noreferrer">@AwbczBTC</a></strong></td><td class="mono">100</td><td class="mono">55%</td><td class="mono">30%</td><td class="mono">6%</td><td class="mono">6%</td><td class="mono">3%</td><td><span class="badge b-a">A1</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/0xCryptoChan" target="_blank" rel="noopener noreferrer">@0xCryptoChan</a></strong></td><td class="mono">92</td><td class="mono">91%</td><td class="mono">7%</td><td class="mono">0%</td><td class="mono">2%</td><td class="mono">0%</td><td><span class="badge b-a">A2</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/saylor" target="_blank" rel="noopener noreferrer">@saylor</a></strong></td><td class="mono">84</td><td class="mono">0%</td><td class="mono">0%</td><td class="mono">5%</td><td class="mono">54%</td><td class="mono">42%</td><td><span class="badge b-d">E</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/market_beggar" target="_blank" rel="noopener noreferrer">@market_beggar</a></strong></td><td class="mono">83</td><td class="mono">58%</td><td class="mono">29%</td><td class="mono">7%</td><td class="mono">6%</td><td class="mono">0%</td><td><span class="badge b-a">A2</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/dongbimao" target="_blank" rel="noopener noreferrer">@dongbimao</a></strong></td><td class="mono">82</td><td class="mono">55%</td><td class="mono">24%</td><td class="mono">6%</td><td class="mono">6%</td><td class="mono">9%</td><td><span class="badge b-a">A1</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/btc2688" target="_blank" rel="noopener noreferrer">@btc2688</a></strong></td><td class="mono">82</td><td class="mono">63%</td><td class="mono">20%</td><td class="mono">7%</td><td class="mono">10%</td><td class="mono">0%</td><td><span class="badge b-a">A1</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/AshCrypto" target="_blank" rel="noopener noreferrer">@AshCrypto</a></strong></td><td class="mono">70</td><td class="mono">17%</td><td class="mono">11%</td><td class="mono">0%</td><td class="mono">71%</td><td class="mono">0%</td><td><span class="badge b-d">D</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/liujia0224" target="_blank" rel="noopener noreferrer">@liujia0224</a></strong></td><td class="mono">69</td><td class="mono">55%</td><td class="mono">13%</td><td class="mono">9%</td><td class="mono">12%</td><td class="mono">12%</td><td><span class="badge b-a">A1</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/EmberCN" target="_blank" rel="noopener noreferrer">@EmberCN</a></strong></td><td class="mono">67</td><td class="mono">0%</td><td class="mono">0%</td><td class="mono">0%</td><td class="mono">94%</td><td class="mono">6%</td><td><span class="badge b-d">D</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/benjamincowen" target="_blank" rel="noopener noreferrer">@benjamincowen</a></strong></td><td class="mono">60</td><td class="mono">57%</td><td class="mono">23%</td><td class="mono">13%</td><td class="mono">5%</td><td class="mono">2%</td><td><span class="badge b-a">A2</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/cs_zhaozilong" target="_blank" rel="noopener noreferrer">@cs_zhaozilong</a></strong></td><td class="mono">59</td><td class="mono">51%</td><td class="mono">20%</td><td class="mono">7%</td><td class="mono">14%</td><td class="mono">7%</td><td><span class="badge b-a">A2</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/fishbtcer" target="_blank" rel="noopener noreferrer">@fishbtcer</a></strong></td><td class="mono">58</td><td class="mono">69%</td><td class="mono">21%</td><td class="mono">0%</td><td class="mono">10%</td><td class="mono">0%</td><td><span class="badge b-a">A1</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/Felix_Hsu" target="_blank" rel="noopener noreferrer">@Felix_Hsu</a></strong></td><td class="mono">67</td><td class="mono">48%</td><td class="mono">18%</td><td class="mono">9%</td><td class="mono">18%</td><td class="mono">7%</td><td><span class="badge b-a">A1</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/btc_tigerx" target="_blank" rel="noopener noreferrer">@btc_tigerx</a></strong></td><td class="mono">56</td><td class="mono">71%</td><td class="mono">11%</td><td class="mono">5%</td><td class="mono">9%</td><td class="mono">4%</td><td><span class="badge b-a">A1</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/DL_W59" target="_blank" rel="noopener noreferrer">@DL_W59</a></strong></td><td class="mono">55</td><td class="mono">53%</td><td class="mono">29%</td><td class="mono">15%</td><td class="mono">4%</td><td class="mono">0%</td><td><span class="badge b-a">A1</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/Murphychen888" target="_blank" rel="noopener noreferrer">@Murphychen888</a></strong></td><td class="mono">51</td><td class="mono">63%</td><td class="mono">25%</td><td class="mono">8%</td><td class="mono">4%</td><td class="mono">0%</td><td><span class="badge b-d">D</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/SilverBulletBTC" target="_blank" rel="noopener noreferrer">@SilverBulletBTC</a></strong></td><td class="mono">51</td><td class="mono">20%</td><td class="mono">27%</td><td class="mono">2%</td><td class="mono">51%</td><td class="mono">0%</td><td><span class="badge b-d">D</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/Billions_2022_" target="_blank" rel="noopener noreferrer">@Billions_2022_</a></strong></td><td class="mono">53</td><td class="mono">72%</td><td class="mono">15%</td><td class="mono">6%</td><td class="mono">8%</td><td class="mono">0%</td><td><span class="badge b-a">A1</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/btc1368" target="_blank" rel="noopener noreferrer">@btc1368</a></strong></td><td class="mono">60</td><td class="mono">37%</td><td class="mono">30%</td><td class="mono">7%</td><td class="mono">20%</td><td class="mono">7%</td><td><span class="badge b-a">A1</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/Cryptodengta" target="_blank" rel="noopener noreferrer">@Cryptodengta</a></strong></td><td class="mono">48</td><td class="mono">67%</td><td class="mono">21%</td><td class="mono">8%</td><td class="mono">4%</td><td class="mono">0%</td><td><span class="badge b-a">A1</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/_Checkmatey_" target="_blank" rel="noopener noreferrer">@_Checkmatey_</a></strong></td><td class="mono">47</td><td class="mono">64%</td><td class="mono">11%</td><td class="mono">4%</td><td class="mono">17%</td><td class="mono">4%</td><td><span class="badge b-a">A1</span></td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/chairbtc" target="_blank" rel="noopener noreferrer">@chairbtc</a></strong></td><td class="mono">46</td><td class="mono">50%</td><td class="mono">20%</td><td class="mono">4%</td><td class="mono">22%</td><td class="mono">4%</td><td><span class="badge b-a">A1</span></td></tr>
+</tbody></table></div>
+<h2><span class="num">05</span>逐条预测台账</h2>
+<p>「预测日 · 当时价格 → 方向 目标价 · 后续 1/2/3 月涨跌 · 是否兑现」。这是最具体的证据。</p>
+<h3><a class="acct" href="https://x.com/_Checkmatey_" target="_blank" rel="noopener noreferrer">@_Checkmatey_</a> <span class="badge b-b">B</span> <span class="dim" style="font-weight:400;font-size:13px">超额 +11pt ｜ 原始胜率 80% ｜ 可验证 5 ｜ 稳健性 <span class="pos">稳定正</span> ｜ 模拟中位 -10.0%</span></h3>
+<div class="scroll"><table><thead><tr><th>日期</th><th>当时价格</th><th>预测</th><th>1月</th><th>2月</th><th>3月</th><th>结果</th></tr></thead><tbody>
+<tr><td class="mono">2026-02-09</td><td class="mono">70,138</td><td>看涨 —</td><td class="mono pos">0%</td><td class="mono pos">4%</td><td class="mono pos">17%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-04-18</td><td class="mono">75,692</td><td>看涨 70,000</td><td class="mono pos">2%</td><td class="mono neg">-15%</td><td class="mono neg">-16%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-06-25</td><td class="mono">59,794</td><td>看涨 —</td><td class="mono pos">8%</td><td class="mono pos">32%</td><td class="mono pos">41%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-08-19</td><td class="mono">69,335</td><td>看涨 60,000</td><td class="mono pos">17%</td><td class="mono pos">18%</td><td class="mono pos">--</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-09-28</td><td class="mono">83,500</td><td>看涨 —</td><td class="mono neg">-3%</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="dim">待观察</span></td></tr>
+</tbody></table></div>
+<h3><a class="acct" href="https://x.com/Billions_2022_" target="_blank" rel="noopener noreferrer">@Billions_2022_</a> <span class="badge b-s">S</span> <span class="dim" style="font-weight:400;font-size:13px">超额 +23pt ｜ 原始胜率 89% ｜ 可验证 9 ｜ 稳健性 不稳定 ｜ 模拟中位 -3.4%</span></h3>
+<div class="scroll"><table><thead><tr><th>日期</th><th>当时价格</th><th>预测</th><th>1月</th><th>2月</th><th>3月</th><th>结果</th></tr></thead><tbody>
+<tr><td class="mono">2026-06-02</td><td class="mono">66,761</td><td>看跌 69,000</td><td class="mono neg">-8%</td><td class="mono neg">-6%</td><td class="mono pos">18%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-08-23</td><td class="mono">77,734</td><td>看涨 —</td><td class="mono pos">11%</td><td class="mono pos">5%</td><td class="mono pos">--</td><td><span class="dim">待观察</span></td></tr>
+<tr><td class="mono">2026-08-26</td><td class="mono">79,024</td><td>看涨 —</td><td class="mono pos">6%</td><td class="mono pos">1%</td><td class="mono pos">--</td><td><span class="dim">待观察</span></td></tr>
+<tr><td class="mono">2026-09-18</td><td class="mono">80,884</td><td>看涨 97,000</td><td class="mono pos">2%</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-09-22</td><td class="mono">86,209</td><td>看涨 —</td><td class="mono neg">-6%</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="dim">待观察</span></td></tr>
+<tr><td class="mono">2026-09-24</td><td class="mono">84,410</td><td>看跌 83,500</td><td class="mono neg">-4%</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-09-29</td><td class="mono">83,664</td><td>看跌 —</td><td class="mono neg">-7%</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="dim">待观察</span></td></tr>
+<tr><td class="mono">2026-10-09</td><td class="mono">82,636</td><td>看跌 79,000</td><td class="mono neg">-9%</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-10-22</td><td class="mono">81,416</td><td>看跌 79,000</td><td class="mono pos">--</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-10-27</td><td class="mono">80,910</td><td>看涨 84,000</td><td class="mono pos">--</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-10-29</td><td class="mono">77,992</td><td>看涨 —</td><td class="mono pos">--</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="dim">待观察</span></td></tr>
+<tr><td class="mono">2026-11-07</td><td class="mono">75,868</td><td>看涨 80,000</td><td class="mono pos">--</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="neg">✗ 未兑现</span></td></tr>
+</tbody></table></div>
+<h3><a class="acct" href="https://x.com/btc1368" target="_blank" rel="noopener noreferrer">@btc1368</a> <span class="badge b-d">样本不足</span> <span class="dim" style="font-weight:400;font-size:13px">超额 +5pt ｜ 原始胜率 67% ｜ 可验证 3 ｜ 稳健性 不稳定</span></h3>
+<div class="scroll"><table><thead><tr><th>日期</th><th>当时价格</th><th>预测</th><th>1月</th><th>2月</th><th>3月</th><th>结果</th></tr></thead><tbody>
+<tr><td class="mono">2026-10-12</td><td class="mono">81,850</td><td>看跌 76,000</td><td class="mono neg">-10%</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-10-12</td><td class="mono">81,850</td><td>看涨 100,000</td><td class="mono neg">-10%</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-10-15</td><td class="mono">82,246</td><td>看跌 —</td><td class="mono pos">--</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="dim">待观察</span></td></tr>
+<tr><td class="mono">2026-10-24</td><td class="mono">80,888</td><td>看跌 —</td><td class="mono pos">--</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="dim">待观察</span></td></tr>
+<tr><td class="mono">2026-10-24</td><td class="mono">80,888</td><td>看涨 —</td><td class="mono pos">--</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="dim">待观察</span></td></tr>
+<tr><td class="mono">2026-10-29</td><td class="mono">77,992</td><td>看涨 —</td><td class="mono pos">--</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="dim">待观察</span></td></tr>
+<tr><td class="mono">2026-11-04</td><td class="mono">80,504</td><td>看涨 100,000</td><td class="mono pos">--</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="neg">✗ 未兑现</span></td></tr>
+</tbody></table></div>
+<h3><a class="acct" href="https://x.com/biupa" target="_blank" rel="noopener noreferrer">@biupa</a> <span class="badge b-d">D</span> <span class="dim" style="font-weight:400;font-size:13px">超额 -4pt ｜ 原始胜率 67% ｜ 可验证 6 ｜ 稳健性 不稳定 ｜ 模拟中位 5.2%</span></h3>
+<div class="scroll"><table><thead><tr><th>日期</th><th>当时价格</th><th>预测</th><th>1月</th><th>2月</th><th>3月</th><th>结果</th></tr></thead><tbody>
+<tr><td class="mono">2026-07-07</td><td class="mono">63,364</td><td>看涨 67,000</td><td class="mono pos">2%</td><td class="mono pos">26%</td><td class="mono pos">35%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-07-29</td><td class="mono">63,984</td><td>看涨 67,300</td><td class="mono pos">22%</td><td class="mono pos">32%</td><td class="mono pos">27%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-07-29</td><td class="mono">63,984</td><td>看跌 —</td><td class="mono pos">22%</td><td class="mono pos">32%</td><td class="mono pos">27%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-08-05</td><td class="mono">64,665</td><td>看涨 67,300</td><td class="mono pos">23%</td><td class="mono pos">34%</td><td class="mono pos">20%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-09-03</td><td class="mono">81,270</td><td>看涨 82,000</td><td class="mono pos">4%</td><td class="mono neg">-6%</td><td class="mono pos">--</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-09-18</td><td class="mono">80,884</td><td>看跌 —</td><td class="mono pos">2%</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="dim">待观察</span></td></tr>
+</tbody></table></div>
+<h3><a class="acct" href="https://x.com/liujia0224" target="_blank" rel="noopener noreferrer">@liujia0224</a> <span class="badge b-c">C</span> <span class="dim" style="font-weight:400;font-size:13px">超额 -12pt ｜ 原始胜率 47% ｜ 可验证 17 ｜ 稳健性 不稳定 ｜ 模拟中位 -10.0%</span></h3>
+<div class="scroll"><table><thead><tr><th>日期</th><th>当时价格</th><th>预测</th><th>1月</th><th>2月</th><th>3月</th><th>结果</th></tr></thead><tbody>
+<tr><td class="mono">2026-01-13</td><td class="mono">95,414</td><td>看涨 94,000</td><td class="mono neg">-31%</td><td class="mono neg">-25%</td><td class="mono neg">-22%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-01-21</td><td class="mono">89,455</td><td>看跌 80,000</td><td class="mono neg">-24%</td><td class="mono neg">-24%</td><td class="mono neg">-15%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-01-26</td><td class="mono">88,347</td><td>看涨 100,000</td><td class="mono neg">-23%</td><td class="mono neg">-25%</td><td class="mono neg">-11%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-01-30</td><td class="mono">84,260</td><td>看跌 78,000</td><td class="mono neg">-22%</td><td class="mono neg">-19%</td><td class="mono neg">-9%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-02-02</td><td class="mono">78,739</td><td>看跌 70,000</td><td class="mono neg">-8%</td><td class="mono neg">-15%</td><td class="mono neg">-0%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-02-02</td><td class="mono">78,739</td><td>看涨 —</td><td class="mono neg">-8%</td><td class="mono neg">-15%</td><td class="mono neg">-0%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-03-01</td><td class="mono">65,776</td><td>看涨 —</td><td class="mono pos">4%</td><td class="mono pos">16%</td><td class="mono pos">12%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-04-14</td><td class="mono">74,132</td><td>看涨 76,000</td><td class="mono pos">9%</td><td class="mono neg">-13%</td><td class="mono neg">-16%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-07-09</td><td class="mono">63,230</td><td>看涨 —</td><td class="mono pos">3%</td><td class="mono pos">25%</td><td class="mono pos">32%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-08-15</td><td class="mono">63,086</td><td>看跌 57,000</td><td class="mono pos">24%</td><td class="mono pos">30%</td><td class="mono pos">--</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-08-18</td><td class="mono">64,725</td><td>看涨 —</td><td class="mono pos">18%</td><td class="mono pos">26%</td><td class="mono pos">--</td><td><span class="dim">待观察</span></td></tr>
+<tr><td class="mono">2026-08-19</td><td class="mono">69,335</td><td>看跌 —</td><td class="mono pos">17%</td><td class="mono pos">18%</td><td class="mono pos">--</td><td><span class="dim">待观察</span></td></tr>
+</tbody></table></div>
+<h3><a class="acct" href="https://x.com/Felix_Hsu" target="_blank" rel="noopener noreferrer">@Felix_Hsu</a> <span class="badge b-neg">负分</span> <span class="dim" style="font-weight:400;font-size:13px">超额 -27pt ｜ 原始胜率 44% ｜ 可验证 9 ｜ 稳健性 <span class="neg">稳定负</span> ｜ 模拟中位 -10.0%</span></h3>
+<div class="scroll"><table><thead><tr><th>日期</th><th>当时价格</th><th>预测</th><th>1月</th><th>2月</th><th>3月</th><th>结果</th></tr></thead><tbody>
+<tr><td class="mono">2026-01-07</td><td class="mono">91,364</td><td>看涨 102,000</td><td class="mono neg">-23%</td><td class="mono neg">-28%</td><td class="mono neg">-21%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-01-15</td><td class="mono">95,605</td><td>看涨 102,000</td><td class="mono neg">-27%</td><td class="mono neg">-22%</td><td class="mono neg">-22%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-01-30</td><td class="mono">84,260</td><td>看跌 66,000</td><td class="mono neg">-22%</td><td class="mono neg">-19%</td><td class="mono neg">-9%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-01-31</td><td class="mono">78,741</td><td>看跌 —</td><td class="mono neg">-13%</td><td class="mono neg">-14%</td><td class="mono neg">-1%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-02-24</td><td class="mono">64,058</td><td>看跌 58,000</td><td class="mono pos">7%</td><td class="mono pos">21%</td><td class="mono pos">21%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-02-26</td><td class="mono">67,485</td><td>看跌 64,500</td><td class="mono neg">-2%</td><td class="mono pos">15%</td><td class="mono pos">10%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-02-27</td><td class="mono">65,872</td><td>看跌 60,000</td><td class="mono pos">0%</td><td class="mono pos">16%</td><td class="mono pos">12%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-02-28</td><td class="mono">66,973</td><td>看涨 —</td><td class="mono neg">-0%</td><td class="mono pos">13%</td><td class="mono pos">10%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-10-06</td><td class="mono">85,550</td><td>看跌 77,000</td><td class="mono neg">-11%</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-10-29</td><td class="mono">77,992</td><td>看跌 77,000</td><td class="mono pos">--</td><td class="mono pos">--</td><td class="mono pos">--</td><td><span class="pos">✓ 兑现</span></td></tr>
+</tbody></table></div>
+<h3><a class="acct" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a> <span class="badge b-neg">负分档</span> <span class="dim" style="font-weight:400;font-size:13px">超额 +1pt ｜ 原始胜率 65% ｜ 可验证 20 ｜ 稳健性 不稳定 ｜ 模拟中位 4.2%</span></h3>
+<div class="scroll"><table><thead><tr><th>日期</th><th>当时价格</th><th>预测</th><th>1月</th><th>2月</th><th>3月</th><th>结果</th></tr></thead><tbody>
+<tr><td class="mono">2026-06-03</td><td class="mono">64,143</td><td>看跌 20,000</td><td class="mono neg">-2%</td><td class="mono neg">-1%</td><td class="mono pos">21%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-06-04</td><td class="mono">63,886</td><td>看跌 30,000</td><td class="mono neg">-1%</td><td class="mono neg">-1%</td><td class="mono pos">21%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-06-08</td><td class="mono">63,086</td><td>看跌 —</td><td class="mono neg">-1%</td><td class="mono pos">3%</td><td class="mono pos">27%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-06-09</td><td class="mono">61,730</td><td>看跌 —</td><td class="mono pos">2%</td><td class="mono pos">5%</td><td class="mono pos">28%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-06-24</td><td class="mono">61,078</td><td>看涨 80,000</td><td class="mono pos">5%</td><td class="mono pos">27%</td><td class="mono pos">41%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-06-26</td><td class="mono">60,097</td><td>看跌 49,000</td><td class="mono pos">9%</td><td class="mono pos">31%</td><td class="mono pos">41%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-06-30</td><td class="mono">58,625</td><td>看跌 49,000</td><td class="mono pos">11%</td><td class="mono pos">33%</td><td class="mono pos">42%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-07-17</td><td class="mono">63,932</td><td>看涨 77,000</td><td class="mono neg">-2%</td><td class="mono pos">18%</td><td class="mono pos">29%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-07-20</td><td class="mono">65,256</td><td>看涨 83,000</td><td class="mono pos">6%</td><td class="mono pos">24%</td><td class="mono pos">26%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-07-22</td><td class="mono">66,114</td><td>看涨 77,000</td><td class="mono pos">19%</td><td class="mono pos">23%</td><td class="mono pos">26%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-08-03</td><td class="mono">63,520</td><td>看跌 49,000</td><td class="mono pos">22%</td><td class="mono pos">33%</td><td class="mono pos">23%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-08-17</td><td class="mono">64,532</td><td>看跌 —</td><td class="mono pos">18%</td><td class="mono pos">27%</td><td class="mono pos">--</td><td><span class="dim">待观察</span></td></tr>
+</tbody></table></div>
+<h3><a class="acct" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a> <span class="badge b-c">C</span> <span class="dim" style="font-weight:400;font-size:13px">超额 -2pt ｜ 原始胜率 71% ｜ 可验证 21 ｜ 稳健性 不稳定 ｜ 模拟中位 -10.0%</span></h3>
+<div class="scroll"><table><thead><tr><th>日期</th><th>当时价格</th><th>预测</th><th>1月</th><th>2月</th><th>3月</th><th>结果</th></tr></thead><tbody>
+<tr><td class="mono">2026-01-14</td><td class="mono">96,952</td><td>看跌 80,000</td><td class="mono neg">-29%</td><td class="mono neg">-25%</td><td class="mono neg">-24%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-02-09</td><td class="mono">70,138</td><td>看跌 40,000</td><td class="mono pos">0%</td><td class="mono pos">4%</td><td class="mono pos">17%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-02-27</td><td class="mono">65,872</td><td>看跌 —</td><td class="mono pos">0%</td><td class="mono pos">16%</td><td class="mono pos">12%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-03-03</td><td class="mono">68,338</td><td>看涨 —</td><td class="mono neg">-2%</td><td class="mono pos">15%</td><td class="mono pos">5%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-03-24</td><td class="mono">70,557</td><td>看跌 40,000</td><td class="mono pos">11%</td><td class="mono pos">9%</td><td class="mono neg">-9%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-03-27</td><td class="mono">66,407</td><td>看跌 50,000</td><td class="mono pos">18%</td><td class="mono pos">14%</td><td class="mono neg">-10%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-03-29</td><td class="mono">66,011</td><td>看跌 40,000</td><td class="mono pos">16%</td><td class="mono pos">12%</td><td class="mono neg">-9%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-04-05</td><td class="mono">69,034</td><td>看跌 40,000</td><td class="mono pos">17%</td><td class="mono neg">-8%</td><td class="mono neg">-9%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-04-14</td><td class="mono">74,132</td><td>看跌 40,000</td><td class="mono pos">9%</td><td class="mono neg">-13%</td><td class="mono neg">-16%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+<tr><td class="mono">2026-04-17</td><td class="mono">77,072</td><td>看跌 —</td><td class="mono pos">1%</td><td class="mono neg">-15%</td><td class="mono neg">-17%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-04-24</td><td class="mono">77,437</td><td>看涨 80,000</td><td class="mono neg">-1%</td><td class="mono neg">-19%</td><td class="mono neg">-16%</td><td><span class="pos">✓ 兑现</span></td></tr>
+<tr><td class="mono">2026-05-09</td><td class="mono">80,678</td><td>看跌 50,000</td><td class="mono neg">-22%</td><td class="mono neg">-23%</td><td class="mono neg">-20%</td><td><span class="neg">✗ 未兑现</span></td></tr>
+</tbody></table></div>
+<h2><span class="num">06</span>稳定负与结论不稳定的账号</h2>
+<h3>4 口径全负（建议忽略）</h3>
+<div class="scroll"><table><thead><tr><th>账号</th><th>8%/60d</th><th>8%/90d</th><th>15%/90d</th><th>25%/120d</th><th>样本</th></tr></thead><tbody>
+<tr><td><strong><a class="acct" href="https://x.com/AwbczBTC" target="_blank" rel="noopener noreferrer">@AwbczBTC</a></strong></td><td class="mono neg">-43pt</td><td class="mono neg">-43pt</td><td class="mono neg">-9pt</td><td class="mono neg">-6pt</td><td class="mono">6</td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/Sykodelic_" target="_blank" rel="noopener noreferrer">@Sykodelic_</a></strong></td><td class="mono neg">-40pt</td><td class="mono neg">-40pt</td><td class="mono neg">-5pt</td><td class="mono neg">-2pt</td><td class="mono">3</td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/Felix_Hsu" target="_blank" rel="noopener noreferrer">@Felix_Hsu</a></strong></td><td class="mono neg">-15pt</td><td class="mono neg">-27pt</td><td class="mono neg">-13pt</td><td class="mono neg">-7pt</td><td class="mono">9</td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/BobLoukas" target="_blank" rel="noopener noreferrer">@BobLoukas</a></strong></td><td class="mono neg">-18pt</td><td class="mono neg">-18pt</td><td class="mono neg">-17pt</td><td class="mono neg">-11pt</td><td class="mono">4</td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/liuwei16602825" target="_blank" rel="noopener noreferrer">@liuwei16602825</a></strong></td><td class="mono neg">-29pt</td><td class="mono neg">-16pt</td><td class="mono neg">-33pt</td><td class="mono neg">-19pt</td><td class="mono">7</td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/ChandlerGuo" target="_blank" rel="noopener noreferrer">@ChandlerGuo</a></strong></td><td class="mono neg">-16pt</td><td class="mono neg">-15pt</td><td class="mono neg">-9pt</td><td class="mono neg">-5pt</td><td class="mono">7</td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/LuYao_Trader" target="_blank" rel="noopener noreferrer">@LuYao_Trader</a></strong></td><td class="mono neg">-7pt</td><td class="mono neg">-12pt</td><td class="mono neg">-13pt</td><td class="mono neg">-11pt</td><td class="mono">4</td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/btc_tigerx" target="_blank" rel="noopener noreferrer">@btc_tigerx</a></strong></td><td class="mono neg">-15pt</td><td class="mono neg">-10pt</td><td class="mono neg">-16pt</td><td class="mono neg">-14pt</td><td class="mono">7</td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/wangtuai888" target="_blank" rel="noopener noreferrer">@wangtuai888</a></strong></td><td class="mono neg">-23pt</td><td class="mono neg">-9pt</td><td class="mono neg">-25pt</td><td class="mono neg">-17pt</td><td class="mono">5</td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/crypto_yan_gui" target="_blank" rel="noopener noreferrer">@crypto_yan_gui</a></strong></td><td class="mono neg">-6pt</td><td class="mono neg">-9pt</td><td class="mono neg">-10pt</td><td class="mono neg">-7pt</td><td class="mono">3</td></tr>
+<tr><td><strong><a class="acct" href="https://x.com/dongbimao" target="_blank" rel="noopener noreferrer">@dongbimao</a></strong></td><td class="mono neg">-3pt</td><td class="mono neg">-3pt</td><td class="mono neg">-14pt</td><td class="mono neg">-11pt</td><td class="mono">5</td></tr>
+</tbody></table></div>
+<h3>不稳定（口径间符号翻转，共 39 个）</h3>
+<p class="dim">这些账号时而准时而错，结论取决于用什么阈值衡量，<strong>不能作为交易依据</strong>。</p>
+<div class="scroll"><table><thead><tr><th>账号</th><th>8%/60d</th><th>8%/90d</th><th>15%/90d</th><th>25%/120d</th><th>样本</th></tr></thead><tbody>
+<tr><td><a class="acct" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a></td><td class="mono pos">+6pt</td><td class="mono pos">+1pt</td><td class="mono neg">-12pt</td><td class="mono neg">-10pt</td><td class="mono">20</td></tr>
+<tr><td><a class="acct" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a></td><td class="mono neg">-5pt</td><td class="mono neg">-2pt</td><td class="mono pos">+6pt</td><td class="mono neg">-3pt</td><td class="mono">21</td></tr>
+<tr><td><a class="acct" href="https://x.com/liujia0224" target="_blank" rel="noopener noreferrer">@liujia0224</a></td><td class="mono neg">-8pt</td><td class="mono neg">-12pt</td><td class="mono pos">+1pt</td><td class="mono pos">+11pt</td><td class="mono">17</td></tr>
+<tr><td><a class="acct" href="https://x.com/btc2688" target="_blank" rel="noopener noreferrer">@btc2688</a></td><td class="mono neg">-11pt</td><td class="mono neg">-5pt</td><td class="mono pos">+1pt</td><td class="mono neg">-3pt</td><td class="mono">13</td></tr>
+<tr><td><a class="acct" href="https://x.com/Billions_2022_" target="_blank" rel="noopener noreferrer">@Billions_2022_</a></td><td class="mono pos">+26pt</td><td class="mono pos">+23pt</td><td class="mono neg">-23pt</td><td class="mono neg">-17pt</td><td class="mono">9</td></tr>
+<tr><td><a class="acct" href="https://x.com/fishbtcer" target="_blank" rel="noopener noreferrer">@fishbtcer</a></td><td class="mono neg">-4pt</td><td class="mono pos">+1pt</td><td class="mono pos">+0pt</td><td class="mono neg">-4pt</td><td class="mono">8</td></tr>
+<tr><td><a class="acct" href="https://x.com/monkeyjiang" target="_blank" rel="noopener noreferrer">@monkeyjiang</a></td><td class="mono neg">-31pt</td><td class="mono neg">-31pt</td><td class="mono neg">-2pt</td><td class="mono pos">0pt</td><td class="mono">1</td></tr>
+<tr><td><a class="acct" href="https://x.com/realGuanYu" target="_blank" rel="noopener noreferrer">@realGuanYu</a></td><td class="mono neg">-9pt</td><td class="mono neg">-21pt</td><td class="mono pos">+4pt</td><td class="mono pos">+15pt</td><td class="mono">8</td></tr>
+<tr><td><a class="acct" href="https://x.com/sylvigil" target="_blank" rel="noopener noreferrer">@sylvigil</a></td><td class="mono pos">+18pt</td><td class="mono pos">+28pt</td><td class="mono neg">-2pt</td><td class="mono neg">-18pt</td><td class="mono">6</td></tr>
+<tr><td><a class="acct" href="https://x.com/Cryptodengta" target="_blank" rel="noopener noreferrer">@Cryptodengta</a></td><td class="mono pos">+6pt</td><td class="mono pos">+0pt</td><td class="mono neg">-11pt</td><td class="mono neg">-9pt</td><td class="mono">5</td></tr>
+<tr><td><a class="acct" href="https://x.com/btc1368" target="_blank" rel="noopener noreferrer">@btc1368</a></td><td class="mono pos">+11pt</td><td class="mono pos">+5pt</td><td class="mono neg">-6pt</td><td class="mono pos">0pt</td><td class="mono">3</td></tr>
+<tr><td><a class="acct" href="https://x.com/willywoo" target="_blank" rel="noopener noreferrer">@willywoo</a></td><td class="mono neg">-6pt</td><td class="mono neg">-7pt</td><td class="mono neg">-4pt</td><td class="mono pos">+12pt</td><td class="mono">4</td></tr>
+<tr><td><a class="acct" href="https://x.com/benjamincowen" target="_blank" rel="noopener noreferrer">@benjamincowen</a></td><td class="mono neg">-7pt</td><td class="mono neg">-8pt</td><td class="mono neg">-5pt</td><td class="mono pos">0pt</td><td class="mono">2</td></tr>
+<tr><td><a class="acct" href="https://x.com/Pathusa" target="_blank" rel="noopener noreferrer">@Pathusa</a></td><td class="mono neg">-19pt</td><td class="mono neg">-22pt</td><td class="mono neg">-4pt</td><td class="mono pos">0pt</td><td class="mono">3</td></tr>
+<tr><td><a class="acct" href="https://x.com/cs_zhaozilong" target="_blank" rel="noopener noreferrer">@cs_zhaozilong</a></td><td class="mono neg">-4pt</td><td class="mono pos">+19pt</td><td class="mono neg">-7pt</td><td class="mono neg">-22pt</td><td class="mono">6</td></tr>
+<tr><td><a class="acct" href="https://x.com/biupa" target="_blank" rel="noopener noreferrer">@biupa</a></td><td class="mono pos">+3pt</td><td class="mono neg">-4pt</td><td class="mono pos">+5pt</td><td class="mono pos">+7pt</td><td class="mono">6</td></tr>
+<tr><td><a class="acct" href="https://x.com/market_beggar" target="_blank" rel="noopener noreferrer">@market_beggar</a></td><td class="mono neg">-3pt</td><td class="mono neg">-13pt</td><td class="mono neg">-0pt</td><td class="mono pos">+3pt</td><td class="mono">4</td></tr>
+<tr><td><a class="acct" href="https://x.com/rektcapital" target="_blank" rel="noopener noreferrer">@rektcapital</a></td><td class="mono neg">-28pt</td><td class="mono neg">-28pt</td><td class="mono neg">-2pt</td><td class="mono pos">0pt</td><td class="mono">1</td></tr>
+<tr><td><a class="acct" href="https://x.com/terryharmonic" target="_blank" rel="noopener noreferrer">@terryharmonic</a></td><td class="mono pos">+42pt</td><td class="mono pos">+32pt</td><td class="mono neg">-7pt</td><td class="mono pos">0pt</td><td class="mono">1</td></tr>
+<tr><td><a class="acct" href="https://x.com/CryptoCapo_" target="_blank" rel="noopener noreferrer">@CryptoCapo_</a></td><td class="mono pos">+2pt</td><td class="mono neg">-3pt</td><td class="mono neg">-2pt</td><td class="mono neg">-16pt</td><td class="mono">5</td></tr>
+<tr><td><a class="acct" href="https://x.com/DL_W59" target="_blank" rel="noopener noreferrer">@DL_W59</a></td><td class="mono pos">+5pt</td><td class="mono neg">-1pt</td><td class="mono neg">-11pt</td><td class="mono neg">-6pt</td><td class="mono">3</td></tr>
+<tr><td><a class="acct" href="https://x.com/0xCryptoChan" target="_blank" rel="noopener noreferrer">@0xCryptoChan</a></td><td class="mono neg">-2pt</td><td class="mono neg">-5pt</td><td class="mono pos">+22pt</td><td class="mono neg">-1pt</td><td class="mono">4</td></tr>
+<tr><td><a class="acct" href="https://x.com/sky27867843" target="_blank" rel="noopener noreferrer">@sky27867843</a></td><td class="mono neg">-20pt</td><td class="mono neg">-21pt</td><td class="mono neg">-1pt</td><td class="mono pos">0pt</td><td class="mono">1</td></tr>
+<tr><td><a class="acct" href="https://x.com/williamlab" target="_blank" rel="noopener noreferrer">@williamlab</a></td><td class="mono neg">-12pt</td><td class="mono pos">+36pt</td><td class="mono pos">+48pt</td><td class="mono pos">+41pt</td><td class="mono">2</td></tr>
+<tr><td><a class="acct" href="https://x.com/xfli5" target="_blank" rel="noopener noreferrer">@xfli5</a></td><td class="mono neg">-2pt</td><td class="mono neg">-10pt</td><td class="mono pos">+21pt</td><td class="mono pos">+6pt</td><td class="mono">3</td></tr>
+<tr><td><a class="acct" href="https://x.com/Keyshotvv" target="_blank" rel="noopener noreferrer">@Keyshotvv</a></td><td class="mono neg">-34pt</td><td class="mono neg">-34pt</td><td class="mono neg">-2pt</td><td class="mono pos">0pt</td><td class="mono">2</td></tr>
+<tr><td><a class="acct" href="https://x.com/UnicornBitcoin" target="_blank" rel="noopener noreferrer">@UnicornBitcoin</a></td><td class="mono neg">-39pt</td><td class="mono neg">-39pt</td><td class="mono neg">-2pt</td><td class="mono pos">0pt</td><td class="mono">2</td></tr>
+<tr><td><a class="acct" href="https://x.com/SilverBulletBTC" target="_blank" rel="noopener noreferrer">@SilverBulletBTC</a></td><td class="mono pos">+36pt</td><td class="mono pos">+27pt</td><td class="mono neg">-5pt</td><td class="mono neg">-22pt</td><td class="mono">2</td></tr>
+<tr><td><a class="acct" href="https://x.com/cryptovizart" target="_blank" rel="noopener noreferrer">@cryptovizart</a></td><td class="mono pos">+15pt</td><td class="mono pos">0pt</td><td class="mono pos">+12pt</td><td class="mono pos">+13pt</td><td class="mono">1</td></tr>
+<tr><td><a class="acct" href="https://x.com/Guilin_Chen_" target="_blank" rel="noopener noreferrer">@Guilin_Chen_</a></td><td class="mono neg">-2pt</td><td class="mono neg">-3pt</td><td class="mono neg">-5pt</td><td class="mono pos">0pt</td><td class="mono">2</td></tr>
+</tbody></table></div>
+<h2><span class="num">07</span>数据质量声明</h2>
+<div class="scroll"><table><thead><tr><th>项</th><th>说明</th></tr></thead><tbody>
+<tr><td>rektcapital</td><td>原抓 833 条，重抓时未做 merge 被覆盖为 241 条（仅剩 9 月后），其评分不可信</td></tr>
+<tr><td>节点覆盖</td><td>87 个账号中，覆盖 4 个关键节点窗口的仅 6 个，覆盖 ≥2 个的 34 个</td></tr>
+<tr><td>429 限流</td><td>抓取中辅助接口（ViewerBadgeCounts / GetPublicKeysQuery）持续 429，但核心 SearchTimeline 全部 200，不影响数据完整性</td></tr>
+<tr><td>预测审计</td><td>全部预测经 quote 逐字回原文校验，0 处编造</td></tr>
+</tbody></table></div>
+<h2><span class="num">08</span>怎么用这份报告</h2>
+<ol style="color:var(--txt2);font-size:14.5px;padding-left:22px">
+<li>只看「4 口径稳定为正」的账号，且样本 ≥5 的才可参考。</li>
+<li>稳定负的账号可作反向参考，但不要机械反向——他们错的方式不一定是可预测的。</li>
+<li>不稳定账号只能参考逻辑，不能跟单。</li>
+<li><strong>任何博主都必须配止损</strong>：最好的超额胜率也只有 +10~18pt，单次判断落空是常态。</li>
+<li>大周期顶底几乎没人能提前判断，不要指望博主帮你抓大底逃大顶。</li>
+</ol>
+<footer>数据区间 2026-01-01 ~ 2026-11-11 ｜ 生成 2026-11-12 ｜ 87 个博主 / 341 条预测</footer>
+</main></div></body></html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>观点台账首轮判定：30 条 / 28 个账号 · 2026-11-13</title>
+<link rel="stylesheet" href="../../assets/report.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="crumb"><a href="../../">首页</a><span>/</span><a href="../">02 博主预测能力打分</a><span>/</span>2026-11-13</div>
+  <div class="series">TOPIC 02 · 2026-11-13</div>
+  <h1>观点台账首轮判定：30 条 / 28 个账号</h1>
+  <div class="sub">事件：BTC 跌破 70,000（2026-11-13，现价 69,284，当日最低 67,568）｜判定器：<code>verify_calls.js</code>（判据写死在代码里）</div>
+
+  <div class="grid">
+    <div class="kpi"><div class="n">30</div><div class="l">台账条目（28 个账号）</div></div>
+    <div class="kpi"><div class="n fall">3</div><div class="l">已判错</div></div>
+    <div class="kpi"><div class="n">22</div><div class="l">待定（有硬判据）</div></div>
+    <div class="kpi"><div class="n plain">5</div><div class="l">观察项（不计分）</div></div>
+  </div>
+
+  <div class="callout ok">
+    <strong>为什么要有台账：</strong>平时大家只会记住「谁说得响」，不会记住「谁后来错了」。这套机制把每句可量化的话变成一张<strong>到期自动结算的承诺</strong>——目标位、起算日、结算日、判据全部固定，避免事后解释。
+  </div>
+
+  <h2>一、判定类型（写死，不临场解释）</h2>
+  <table>
+    <tr><th style="width:130px">类型</th><th>含义</th><th>判据</th></tr>
+    <tr><td><code>down</code></td><td>喊跌到某价位</td><td>窗口内最低价 ≤ 目标 → 对；到期没到 → 错</td></tr>
+    <tr><td><code>up</code></td><td>喊反弹/涨到某价位</td><td>窗口内最高价 ≥ 目标 → 对；到期没到 → 错</td></tr>
+    <tr><td><code>bottom</code> / <code>hold</code></td><td>喊某价位是底 / 支撑守住</td><td>最低价跌破 目标×0.97 → 错；未破 → 到结算日判对</td></tr>
+    <tr><td><code>reject</code></td><td>某价位「难成支撑/阻力」</td><td>连续 2 日收盘站上该位 → 错</td></tr>
+    <tr><td><code>observe</code></td><td>条件式 / 无点位</td><td>不计分，只观察</td></tr>
+  </table>
+  <p class="small"><strong>起算日一律设为 11-14</strong>，不用当天已发生的行情倒推。这条是踩坑后补的：有两条「73k 难成持久支撑」是在 73k 已经跌破后才说的，用 <code>down</code> 判据必然判对，已改为 <code>reject</code>（看是否连续 2 日站上 73k）。</p>
+
+  <h2>二、派系分布</h2>
+  <table>
+    <tr><th style="width:150px">派系</th><th>代表账号</th><th>核心承诺</th></tr>
+    <tr><td><span class="tag bear">极端看空</span></td><td>@pathusa、@huangdaobtc、@blockTVBee、@crypto_yan_gui、@dongbimao、@KillaXBT</td><td>6 万（pathusa）、4.9 万（huangdaobtc）、「7 万不是底」</td></tr>
+    <tr><td><span class="tag bull">看底派</span></td><td>@DrProfitCrypto、@Jiangzhuoer2、@sky27867843、@AshCrypto、@Sykodelic_、@monkeyjiang、@ericlu_86、@chairbtc、@btc2688</td><td>68k 是底、67.5k 好转、66.5–67k 布局、60k 绝对底</td></tr>
+    <tr><td><span class="tag gray">反弹 / 结构</span></td><td>@bobloukas、@rektcapital、@benjamincowen、@Cato_KT</td><td>反弹 78–80k 不是买点、73k 难成支撑、Q4 抛售</td></tr>
+    <tr><td><span class="tag neg">看多（已喊底）</span></td><td>@sylvigil、@Billions_2022_、@market_beggar、@AwbczBTC</td><td>很快拉升、熊市结束（不破 7w6）、牛初建仓、75k→105k</td></tr>
+    <tr><td><span class="tag gray">等右侧 / 观察</span></td><td>@BensonTWN、@Jackyi_ld、@Mrluanluan、@TingHu888、@BTC521</td><td>ETF 转正再买、不抄半山腰、投降量级未到、定投</td></tr>
+  </table>
+
+  <h2>三、首轮已判错（建议降级 / 拉黑）</h2>
+  <table>
+    <tr><th style="width:150px">账号</th><th>当时怎么说</th><th>判定</th><th style="width:130px">建议</th></tr>
+    <tr>
+      <td><strong><a class="handle" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a></strong></td>
+      <td class="q">10-24 在 <b>80,400 建 $36M 多单</b>，11-05 「<b>75,000 加仓现货</b>」，并称「要非常非常糟的事才会跌破当前水平」</td>
+      <td class="q">最低 <b>67,568</b>，跌破 75,000×0.97 = <b>72,750</b> 的容错线</td>
+      <td><span class="tag neg">降级</span> 累计 2 次 → 拉黑</td>
+    </tr>
+    <tr>
+      <td><strong><a class="handle" href="https://x.com/Billions_2022_" target="_blank" rel="noopener noreferrer">@Billions_2022_</a></strong></td>
+      <td class="q">11-07「BTC 不会完蛋，<b>没跌破 7w6 的支撑</b>」；11-10「<b>BTC 的熊市已经结束了</b>」</td>
+      <td class="q">跌破 76,000×0.97 = <b>73,720</b></td>
+      <td><span class="tag neg">降级</span> 前一期评测的 S 档第一名</td>
+    </tr>
+    <tr>
+      <td><strong><a class="handle" href="https://x.com/market_beggar" target="_blank" rel="noopener noreferrer">@market_beggar</a></strong></td>
+      <td class="q">11-02「<b>牛初的确认</b>，我们或许正经历数年一遇的建仓窗口」</td>
+      <td class="q">同上，跌破 73,720</td>
+      <td><span class="tag neg">降级</span></td>
+    </tr>
+  </table>
+  <div class="callout bad">
+    <strong>值得注意：</strong>这三条都不是「方向错」，而是<strong>「底的位置错」</strong>——他们看多并没错到「不该涨」，而是把 75–76k 当成了底。这类错误对跟单者伤害最大，因为它发生在下跌途中，会让人不断加仓。
+  </div>
+
+  <h2>四、待定清单（按结算日）</h2>
+  <table>
+    <tr><th style="width:110px">结算日</th><th class="num">条数</th><th>关键对赌</th></tr>
+    <tr><td>2026-11-20</td><td class="num">2</td><td>@DrProfitCrypto「68k 是底」 vs @Jiangzhuoer2「反弹到 70k 以上」——<strong>同一天结算，多空直接对赌</strong></td></tr>
+    <tr><td>2026-11-21</td><td class="num">1</td><td>@Cato_KT「73k 守不住」</td></tr>
+    <tr><td>2026-11-27</td><td class="num">15</td><td>看底派（AshCrypto / Sykodelic_ / monkeyjiang 的 67.5k 底、sky 的 66.5k）与看空派（blockTVBee / crypto_yan_gui / dongbimao 的 66–67k）同时结算</td></tr>
+    <tr><td>2026-12-31</td><td class="num">7</td><td>极端目标见分晓：@pathusa 60k、@huangdaobtc 49k、@ericlu_86 60k、@chairbtc 60k、@AwbczBTC 105k、@BTC521 60k</td></tr>
+  </table>
+
+  <h2>五、拉黑规则</h2>
+  <div class="card">
+    <ol>
+      <li><strong>极端看空（≤60k）</strong>：到期未跌到、且期间已反弹站上 70k → 拉黑（对应「瞎喊点位」）。</li>
+      <li><strong>看底派</strong>：被跌破 level×0.97 → 降级；<strong>累计 2 次 → 拉黑</strong>。</li>
+      <li><strong>极端看多目标</strong>（如 105k）：到期未达 → 按同一规则处理。</li>
+      <li><strong>同一人同期给方向相反的硬目标</strong> → 标注并单独判：<a class="handle" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a> 11-13 既说「最终跌破 49000」，又说「62.5–67.5k 做多、目标 75k」，两条都在台账里。</li>
+    </ol>
+    <p class="small" style="margin-bottom:0">注：单次判错只降级，不直接拉黑——除非是极端点位连续落空（规则 1）。这样避免把「方向对但幅度保守」的人和「纯瞎喊」的人混为一谈。</p>
+  </div>
+
+  <h2>六、方法与局限</h2>
+  <div class="card">
+    <ul class="small">
+      <li><strong>台账与判定器</strong>：<code>state/calls_ledger.json</code>（30 条）+ <code>verify_calls.js</code>（五类判据）；每轮自动拉行情判定并写回，人工不参与改判。</li>
+      <li><strong>只用原文</strong>：每条都存逐字 quote；博主自述（如「我是一直看空」）不作为证据。</li>
+      <li><strong>容量偏差</strong>：<code>bottom</code> 型用「是否跌破 3%」近似判断「底成不成立」，无法区分「横盘磨底」与「真反转」；后续可加「是否在 N 日内反弹 ≥X%」作为二次判据。</li>
+      <li><strong>时间粒度</strong>：判定用日线，盘中插针可能被日线吞掉；对极短周期的观点不适用。</li>
+      <li>本页为机械判定结果，不代表对博主整体能力的最终评价（能力评测见 <a href="../2026-11-12/">11-12 期</a> 与 <a href="../2026-11-11/">11-11 期</a>）。</li>
+    </ul>
+  </div>
+
+  <div class="foot">
+    生成 2026-11-13 21:0x（北京时间）｜专题：<a href="../">02 博主预测能力打分</a> ·
+    上一期：<a href="../2026-11-12/">评分逻辑复盘</a> ·
+    明细报告：<code>calls_verification_20261113.md</code><br>
+    判定为机械执行，不构成投资建议。
+  </div>
+</div>
+</body>
+</html>

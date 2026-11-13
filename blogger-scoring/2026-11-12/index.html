@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>博主评分复盘 · 大周期优先 · 记忆机制 · 三日观点 · 2026-11-12</title>
+<style>
+  :root{
+    --bg:#080a0f; --panel:#11161f; --panel2:#151b26;
+    --line:#1f2836; --line2:#2a3546;
+    --txt:#e8edf5; --txt2:#9aa7bb; --txt3:#67748a;
+    --acc:#f0b429; --acc2:#5b9dff;
+    --rise:#f2555a; --fall:#3ddc97;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);line-height:1.75;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+    background-image:radial-gradient(900px 460px at 12% -8%,rgba(91,157,255,.12),transparent 62%),
+      radial-gradient(760px 400px at 88% 4%,rgba(240,180,41,.07),transparent 66%);
+    background-attachment:fixed}
+  .wrap{max-width:1120px;margin:0 auto;padding:40px 24px 72px}
+  h1{font-size:26px;line-height:1.35;margin-bottom:8px;font-weight:650;letter-spacing:.01em}
+  .sub{color:var(--txt2);font-size:12.5px;margin-bottom:16px}
+  h2{font-size:17px;margin:34px 0 12px;padding-left:11px;border-left:3px solid var(--acc);font-weight:650}
+  h3{font-size:14px;margin:22px 0 8px;color:var(--acc2);font-weight:600}
+  p{margin:9px 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:12px 0}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .kpi .n{font-size:24px;font-weight:700;color:var(--acc);line-height:1.2;font-family:var(--mono)}
+  .kpi .l{font-size:11.5px;color:var(--txt3);margin-top:5px;line-height:1.5}
+  .kpi .n.down{color:var(--fall)} .kpi .n.up{color:var(--rise)}
+  .kpi .n.plain{color:var(--txt)} .kpi .n.warn{color:var(--acc)}
+  table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);
+    border-radius:10px;overflow:hidden;font-size:12.5px;margin:12px 0}
+  th,td{padding:9px 11px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+  th{background:var(--panel2);font-weight:600;color:var(--txt2);white-space:nowrap;font-size:12px}
+  tr:last-child td{border-bottom:none}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;font-family:var(--mono)}
+  .up{color:var(--rise);font-weight:600} .down{color:var(--fall);font-weight:600}
+  .tag{display:inline-block;padding:1px 7px;border-radius:10px;font-size:10.5px;
+    background:rgba(91,157,255,.12);color:var(--acc2);white-space:nowrap}
+  .tag.bear{background:rgba(61,220,151,.12);color:var(--fall)}
+  .tag.bull{background:rgba(242,85,90,.12);color:var(--rise)}
+  .tag.neg{background:rgba(240,180,41,.12);color:var(--acc)}
+  .tag.warn{background:rgba(240,180,41,.1);color:#e0a72a}
+  .tag.good{background:rgba(91,157,255,.14);color:#7fb2ff}
+  .tag.gray{background:rgba(21,27,38,.95);color:var(--txt3)}
+  a{color:var(--acc2);text-decoration:none;border-bottom:1px solid rgba(91,157,255,.25)}
+  a:hover{border-bottom-color:var(--acc2)}
+  a.handle{color:inherit;border-bottom:1px dashed rgba(255,255,255,.28);white-space:nowrap}
+  a.handle:hover{color:var(--acc);border-bottom-style:solid;border-bottom-color:var(--acc)}
+  a.handle code{background:inherit;border:0;padding:0}
+  .small{font-size:11.5px;color:var(--txt3)}
+  ul,ol{margin:8px 0 8px 20px} li{margin:6px 0}
+  code{background:var(--panel2);border:1px solid var(--line);border-radius:4px;padding:1px 5px;
+    font-family:var(--mono);font-size:11.5px;color:var(--acc2)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .note{background:var(--panel2);border:1px dashed var(--line2);border-radius:9px;
+    padding:12px 14px;font-size:12px;color:var(--txt2);margin:12px 0}
+  .callout{background:rgba(240,180,41,.06);border:1px solid rgba(240,180,41,.22);
+    border-radius:9px;padding:13px 15px;margin:14px 0;font-size:13px;color:var(--txt)}
+  .callout.bad{background:rgba(242,85,90,.07);border-color:rgba(242,85,90,.25)}
+  .callout.ok{background:rgba(61,220,151,.06);border-color:rgba(61,220,151,.22)}
+  .banner{background:rgba(91,157,255,.08);border:1px solid rgba(91,157,255,.22);border-radius:9px;
+    padding:11px 15px;font-size:12.5px;margin:14px 0;color:var(--txt2)}
+  .q{border-left:2px solid var(--line2);padding-left:11px;color:var(--txt2);font-size:12px;margin:5px 0}
+  .q b{color:var(--txt)}
+  .foot{margin-top:30px;padding-top:14px;border-top:1px solid var(--line);
+    color:var(--txt3);font-size:11.5px;line-height:1.9}
+  .foot a{color:var(--txt2)}
+  .bar{height:7px;background:var(--panel2);border-radius:4px;overflow:hidden;display:inline-block;width:110px;vertical-align:middle;margin-right:7px}
+  .bar > i{display:block;height:100%;background:var(--acc2)}
+  @media(max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}
+    .wrap{padding:28px 18px 56px} h1{font-size:21px}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:12px;right:14px;z-index:9999;font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+  <a href="../../" style="display:inline-block;padding:7px 13px;border-radius:20px;background:rgba(17,22,31,.92);color:#e8edf5;text-decoration:none;font-size:12px;border:1px solid #2a3546;box-shadow:0 4px 14px rgba(0,0,0,.28)">← 02 博主预测能力打分</a>
+</div>
+
+<div class="wrap">
+  <h1>博主预测评分复盘 · 大周期优先 · 记忆更新机制 · 最近三天观点</h1>
+  <div class="sub">生成时间：2026-11-12 13:3x（北京时间）｜对照基准：11-11 完成的《推特 BTC 博主预测能力评测报告》｜本轮新增：<code>score_cycle.js</code> / <code>daily_roll.js</code> / <code>x_btc_3d_digest.js</code></div>
+
+  <div class="grid">
+    <div class="kpi"><div class="n">341</div><div class="l">历史预测台账条数 / 87 账号</div></div>
+    <div class="kpi"><div class="n warn">75 / 87</div><div class="l">换大周期口径后「证据不足」的账号</div></div>
+    <div class="kpi"><div class="n">146</div><div class="l">尚未到期的预测（其中 69 条大周期）</div></div>
+    <div class="kpi"><div class="n plain">168</div><div class="l">最近三天观点帖 / 49 账号</div></div>
+  </div>
+
+  <div class="callout ok"><strong>一句话结论：</strong>你的判断是对的——昨天那套评分<strong>形式上</strong>有大周期维度，<strong>实质上</strong>几乎完全由短期口径决定；而且按「两三个月走势」重算后，现有语料<strong>根本不足以判定哪位博主大周期准</strong>（87 个账号里 75 个证据不足）。真正缺的不是打分公式，是「每天增量积累 + 到期自动结算」的台账机制——这个机制我已经搭好可运行原型。</div>
+
+  <!-- ============ 1 ============ -->
+  <h2>一、昨天那份「博主准确率」的经验，到底从哪来的</h2>
+  <p>分四层，我上一轮引用的数字来自第 1 层，方法论来自第 2 层：</p>
+  <table>
+    <tr><th style="width:130px">层级</th><th>具体位置</th><th>内容</th><th style="width:110px">随每日更新？</th></tr>
+    <tr><td><strong>1. 数据真源</strong></td><td><code>F:\despseekharness\crawler\output\x_btc_2026\</code></td><td><code>btc_daily.json</code>（2026 全年日线）、<code>corpus.json</code>（全年关注账号推文）、<code>frozen/*.txt</code>（87 账号冻结快照）、<code>preds/batch1-5 + batchB1-4.json</code>（LLM 逐条语义精读抽出的 <strong>349 → 去重 341 条</strong>明确预测，含 date / dir / target / level / horizon / 逐字 quote）</td><td><span class="tag neg">否 · 11-11 静态冻结</span></td></tr>
+    <tr><td><strong>2. 评分脚本链</strong></td><td><code>crawler\*.js</code></td><td><code>verify_score.js</code> → <code>verify_score2.js</code>（v2 基准校正）→ <code>score_final.js</code>（v3 唯一权威，修了「命中与基准标尺不一致」的 bug）→ <code>sensitivity.js</code> / <code>ledger.js</code>；产物 <code>final_v3.json</code>、<code>ledger.json</code>、<code>sensitivity.json</code>、<code>REPORT.md</code></td><td><span class="tag neg">否 · 需手工重跑</span></td></tr>
+    <tr><td><strong>3. 方法论记忆</strong></td><td><code>C:\Users\sun\.agent-memory\EXPERIENCE.md</code><br>第 45–47 行</td><td>跨宿主共用池，11-11 22:26 写入：<em>「不能直接算胜率，要用超额胜率 = 实际命中 − 同日同向基准」「语义任务不能靠正则，要 LLM 精读 + quote 逐字审计」「追涨杀跌要加方向多样性门槛」</em>。<br>注意：<strong>skill 本体</strong> <code>web-analysis-ai\EXPERIENCE.md</code>（72KB）里<strong>没有</strong> BTC 评测条目，这条经验只落在共用池。</td><td><span class="tag gray">手工追加</span></td></tr>
+    <tr><td><strong>4. 我上一轮的引用</strong></td><td><code>output\x_btc_20261112\credibility.json</code></td><td>今天 13:17 我从 <code>final_v3.json</code>（取 excess / stab）+ <code>ledger.json</code>（取 verdict）派生的<strong>一次性映射视图</strong>，只用于给 24h 观点打标签，不是底层数据本身。</td><td><span class="tag neg">否 · 快照</span></td></tr>
+  </table>
+  <div class="note">所以「经验」不是一个自动积累的档案，而是：一次全年语料抓取 → 9 个批次的人工/LLM 语义精读 → 一条脚本链算出的一次性结论 → 手写进共用池的三条方法论。<strong>昨天算完之后，没有任何东西在持续跟踪这些预测后来兑现没有。</strong></div>
+
+  <!-- ============ 2 ============ -->
+  <h2>二、支不支持「每天更新内容 → 底层记忆跟着更新」</h2>
+  <div class="callout"><strong>结论：机制完全支持，但此前没接上；我这次已经把可运行原型建好了。</strong>技能里其实<strong>已有同类先例</strong>——脉脉的 <code>playbooks/maimai.crawl-ledger.json</code>（抓前查 coverage、抓完立即更新 lastRun / bottomReached），只是 BTC 评测这条链没用上。</div>
+
+  <div class="split">
+    <div class="card"><h3 style="margin-top:0">此前的四个缺口</h3><ul>
+      <li><strong>台账不是 append-only</strong>：<code>ledger.json</code> 是全量重算产物，新预测只能重跑整条链</li>
+      <li><strong>没有到期结算队列</strong>：9 月之后发的预测还没走完 60/90 天窗口，旧脚本直接丢弃或按不足 20 根 K 线跳过——本次查出 <strong>69 条大周期预测未到期</strong></li>
+      <li><strong>抽取环节必须语义精读</strong>：共用池经验第 46 行已确认正则会把「果然如此 / 之前我说过」当预测，这一步无法纯脚本自动化</li>
+      <li><strong>版本不一致</strong>：<code>ledger.js</code> 读 <code>final_v2.json</code>，与 <code>final_v3.json</code> 有 <strong>14/61 账号分数冲突</strong>（见第三节）</li>
+    </ul></div>
+    <div class="card"><h3 style="margin-top:0">已落地的原型（本次新建）</h3><ul>
+      <li><code>crawler\state\predictions.jsonl</code> — <strong>341 条 append-only 台账</strong>，每条含唯一 id、发出日、周期、结算日、状态、兑现价</li>
+      <li><code>crawler\state\credibility_snapshot.json</code> — <strong>87 账号</strong>对外快照，观点标注直接读 <code>warn / tier / cycleScore</code></li>
+      <li><code>crawler\state\roll_meta.json</code> — lastRun / lastIngest / lastSettle / priceThrough</li>
+      <li><code>crawler\daily_roll.js</code> — <code>--init / --ingest / --settle / --rebuild / --daily / --status</code></li>
+    </ul>
+    <p class="small" style="margin-bottom:0">实测：初始化 341 条 → 结算 <strong>195 条</strong>（命中 58 / 未中 137）→ 仍有 <strong>146 条未到期</strong>；快照 87 账号全部覆盖。</p></div>
+  </div>
+
+  <h3>每天怎么用（4 步，只有第 2 步需要 LLM）</h3>
+  <table>
+    <tr><th style="width:44px">#</th><th>动作</th><th>命令 / 输入</th><th>自动化</th></tr>
+    <tr><td>1</td><td>抓当天 24h 关注流</td><td><code>node x_btc_24h_capture.js --hours=24</code></td><td><span class="tag good">全自动</span></td></tr>
+    <tr><td>2</td><td>按 <code>PRED_SPEC.md</code> 语义精读，抽出当日新预测（JSON：screen / date / dir / target / level / horizon / quote）</td><td>LLM 产出 <code>preds/daily-YYYYMMDD.json</code></td><td><span class="tag warn">需语义判断</span></td></tr>
+    <tr><td>3</td><td>追加 + 结算 + 重算 + 刷新快照</td><td><code>node daily_roll.js --ingest &lt;file&gt; &amp;&amp; node daily_roll.js --daily</code></td><td><span class="tag good">全自动</span></td></tr>
+    <tr><td>4</td><td>简报读快照，每条观点自动带最新历史标签</td><td><code>x_btc_3d_digest.js</code> 改读 <code>credibility_snapshot.json</code></td><td><span class="tag good">全自动</span></td></tr>
+  </table>
+  <div class="note"><strong>边界要说清楚：</strong>「底层记忆」分两种——① <strong>结构化预测台账</strong>（谁在哪天喊了什么、后来兑现没有）适合机器滚动更新，已解决；② <strong>方法论经验</strong>（共用池 EXPERIENCE.md）是人工沉淀，不该每天自动改写。按你定的规矩，我<strong>没有改任何 skill 文件</strong>，<code>state/</code> 全部放在爬虫工作区。要不要把这条流程写进 skill / 挂成每日自动化，等你点头。</div>
+
+  <!-- ============ 3 ============ -->
+  <h2>三、评分逻辑复盘：有没有考虑「大周期」？</h2>
+  <h3>3.1 昨天实际怎么算的</h3>
+  <div class="card" style="font-family:Consolas,Monaco,monospace;font-size:12.5px;background:#fbfcfe">
+    score = round(excess × 20) + nodeHit × 2 + nodeWeak × 1 + 点位明确 1 − 趋势跟随 1　（clamp 到 −3 ~ 10）<br>
+    excess = 「8% / 90 天窗口内<strong>曾经触及</strong>」的方向命中率 − 同日同向无脑喊的基准命中率<br>
+    门槛：追涨杀跌 ≥72% 直接 −2；可验证 &lt;5 条 → 0 分「样本不足」
+  </div>
+  <p><strong>回答：形式上有，实质上没有。</strong><code>score_final.js</code> 里确实定义了 4 个关键节点（2/6 大底、5/6 阶段顶、7/1 大底、9/21 阶段顶），<code>REPORT.md</code> 还专门有第三节「关键大周期节点命中」。但它对最终排名几乎不起作用：</p>
+  <table>
+    <tr><th style="width:180px">问题</th><th>证据</th><th style="width:100px">影响</th></tr>
+    <tr><td><strong>① horizon 字段被完全忽略</strong></td><td><code>PRED_SPEC.md</code> 强制每条预测填 <code>weeks / months / quarters</code>，349 条全部有值（194 / 127 / 28）。但 <code>score_final.js</code> 通篇<strong>没有引用 horizon</strong>，一律按 90 天 8% 判定——喊半年大顶和喊下周反弹用同一把尺子。</td><td><span class="tag neg">致命</span></td></tr>
+    <tr><td><strong>② 短期口径支配排名</strong></td><td>主项 <code>round(excess×20)</code> 实测范围 <strong>−43pt ~ +44pt</strong>，即 ±8~9 分；节点项理论最多 +8 分，但 <strong>82/87 账号 nodeHit = 0</strong>、最高只有 1 个强命中（+2 分）。两者差一个数量级。</td><td><span class="tag neg">致命</span></td></tr>
+    <tr><td><strong>③ 事后确认算成「提前预判」</strong></td><td>节点窗口含拐点当天及之后（如 2 月大底窗口到 2/15）。实证：旧报告列为「强命中 2 月大底」的 <strong><a class="handle" href="https://x.com/williamlab" target="_blank" rel="noopener noreferrer">@williamlab</a></strong>，原文是 <code>[2026-02-06] 好消息，比特币最多只能跌六万刀了</code>——<strong>拐点当天</strong>喊底，不是提前预判。</td><td><span class="tag neg">致命</span></td></tr>
+    <tr><td><strong>④ 判定过严 + 覆盖率低</strong></td><td>强命中要求目标价落在真实极值 ±8% 内；87 账号里 <strong>50 个覆盖 0 个节点</strong>、仅 1 个覆盖全 4 个。「没人能抓顶底」这个结论，有一半是判定标准造成的。</td><td><span class="tag warn">大</span></td></tr>
+    <tr><td><strong>⑤ 没有样本收缩</strong></td><td><strong>67/87 账号可验证 &lt;5 条</strong>；5 条预测的分和 20 条预测的分同台排序，没有 n/(n+k) 收缩。</td><td><span class="tag warn">大</span></td></tr>
+    <tr><td><strong>⑥ 节点是事后挑的</strong></td><td>4 个极值点由回看全年行情手工选定，存在选择性偏差；且未校验「目标价与方向是否自洽」。</td><td><span class="tag gray">中</span></td></tr>
+  </table>
+
+  <h3>3.2 顺带查出的版本一致性问题</h3>
+  <table>
+    <tr><th style="width:170px">问题</th><th>具体表现</th></tr>
+    <tr><td><strong>台账与终榜不一致</strong></td><td><code>ledger.js</code> 引用的是 <code>final_v2.json</code>，与 v3 终榜 <strong>14/61 账号分数冲突</strong>：<a class="handle" href="https://x.com/Billions_2022_" target="_blank" rel="noopener noreferrer"> 1 </a> 台账 0/D vs 终榜 9/S；<a class="handle" href="https://x.com/sylvigil" target="_blank" rel="noopener noreferrer"> 2 </a> 台账 −3/负分 vs 终榜 7/S。</td></tr>
+    <tr><td><strong>稳健性检验标尺混用</strong></td><td><code>score_final.js</code> 注释声明「命中统一不用目标价」，但 <code>sensitivity.js</code> 的 <code>hitOf()</code> 仍按目标价判定；两个脚本都会写 <code>sensitivity.json</code>，谁后跑谁覆盖。</td></tr>
+    <tr><td><strong>报告自相矛盾</strong></td><td><code>REPORT.md</code> 〇节说「真正可信的只有 3 个：<code>_Checkmatey_ / 0XTiger666 / Dp520888</code>」，七节却说「只看 4.1 的 4 个：<code>Billions_2022_ / _Checkmatey_ / biupa / btc1368</code>」；且〇节把两个自己标着「样本不足」的账号列进「真正可信」。</td></tr>
+    <tr><td><strong>数据缺口已自认</strong></td><td>报告第六节声明 <a class="handle" href="https://x.com/rektcapital" target="_blank" rel="noopener noreferrer"> 3 </a> 原抓 833 条被重抓覆盖成 221 条（仅剩 9 月后），<strong>其评分不可信</strong>——而他恰恰是这三天发声最多的技术派博主之一。</td></tr>
+  </table>
+
+  <h3>3.3 优化方案（已落地重算：<code>score_cycle.js</code>）</h3>
+  <table>
+    <tr><th style="width:170px">维度</th><th>旧口径 v3</th><th>新口径（大周期优先）</th><th style="width:90px">权重</th></tr>
+    <tr><td>大周期方向</td><td>无独立维度，混在 8%/90d</td><td>只取 <code>months / quarters</code>，按 <strong>60 / 90 天后收盘方向 ≥10%</strong> 判定（终点方向，不是中途触及），减同日同向基准</td><td><strong>× 60</strong></td></tr>
+    <tr><td>大顶 / 大底</td><td>拐点窗口内目标价 ±8%，每命中 +2</td><td>必须<strong>提前 7~90 天</strong>；≥45 天 ×1.2；拐点当天及之后 = 0；按覆盖节点数归一 + 覆盖度折扣</td><td><strong>× 20</strong></td></tr>
+    <tr><td>短期命中</td><td><code>excess × 20</code>（主项）</td><td>保留但压到辅助位，仅作反向提示</td><td><strong>× 8</strong>（≤5%）</td></tr>
+    <tr><td>样本收缩</td><td>无</td><td>所有超额乘 <code>n/(n+6)</code>；可结算大周期 &lt;3 条的账号<strong>不参与排名</strong></td><td>—</td></tr>
+    <tr><td>追涨杀跌</td><td>直接 −2 出局</td><td>保留，−6 分惩罚</td><td>—</td></tr>
+  </table>
+
+  <h3>3.4 重算结果：不是「谁准」，而是「根本还没数据判」</h3>
+  <table>
+    <tr><th>预测周期</th><th class="num">可结算</th><th class="num">实际命中</th><th class="num">无脑喊基准</th><th class="num">超额</th><th class="num">未到期</th></tr>
+    <tr><td><code>weeks</code> 短期</td><td class="num">129</td><td class="num">57.4%</td><td class="num">62.9%</td><td class="num down">−5.5pt</td><td class="num">0</td></tr>
+    <tr><td><code>months</code> 两月级</td><td class="num">77</td><td class="num">41.6%</td><td class="num">45.0%</td><td class="num down">−3.4pt</td><td class="num">49</td></tr>
+    <tr><td><code>quarters</code> 季度级</td><td class="num">8</td><td class="num">0.0%</td><td class="num">35.3%</td><td class="num down">−35.3pt</td><td class="num">20</td></tr>
+  </table>
+  <div class="callout bad"><strong>诚实结论：</strong>换成「两三个月后到底往哪走」这把更严格的尺子后，这批博主的大周期预测<strong>整体也没跑赢无脑喊</strong>（41.6% vs 45.0%）。但更关键的是：能结算的只有 85 条、<strong>69 条还没到期</strong>、分散到 87 个账号后 <strong>75 个账号证据不足</strong>，只有 12 个能进主榜（且每人只有 3~12 条）。所以昨天「几乎没人能提前判断大顶大底」这句话方向没错，但<strong>理由错了</strong>——不是能力被证伪，是样本根本不够，且旧的节点判定把「事后喊底」也算成了命中。</div>
+
+  <h3>3.5 新旧评分对照（仅列可排名的 12 个账号）</h3>
+  <table>
+    <tr><th>账号</th><th class="num">新分</th><th>新分层</th><th class="num">大周期超额</th><th class="num">可结算</th><th class="num">顶底预判</th><th>旧分 / 档</th><th>解读</th></tr>
+    <tr><td><a class="handle" href="https://x.com/liujia0224" target="_blank" rel="noopener noreferrer">@liujia0224</a></td><td class="num">70</td><td><span class="tag good">大周期偏准</span></td><td class="num up">+14pt</td><td class="num">3</td><td class="num">0.5</td><td>1 / C</td><td>被短期 −8pt 压住，大周期口径下升到第 1</td></tr>
+    <tr><td><a class="handle" href="https://x.com/_Checkmatey_" target="_blank" rel="noopener noreferrer">@_Checkmatey_</a></td><td class="num">64</td><td><span class="tag good">大周期偏准</span></td><td class="num up">+7pt</td><td class="num">3</td><td class="num">0.6</td><td>4 / B</td><td>唯一在两套口径下都成立的账号；覆盖 3/4 节点</td></tr>
+    <tr><td><a class="handle" href="https://x.com/fishbtcer" target="_blank" rel="noopener noreferrer">@fishbtcer</a></td><td class="num">60</td><td><span class="tag good">大周期偏准</span></td><td class="num up">+6pt</td><td class="num">4</td><td class="num">0</td><td>2 / C</td><td>旧口径被低估</td></tr>
+    <tr><td><a class="handle" href="https://x.com/btc_tigerx" target="_blank" rel="noopener noreferrer">@btc_tigerx</a></td><td class="num">54</td><td><span class="tag bull">顶底预判型</span></td><td class="num down">−9pt</td><td class="num">6</td><td class="num">1.7</td><td>1 / C</td><td>大方向常错，但<strong>顶底提前预判证据全场最强</strong></td></tr>
+    <tr><td><a class="handle" href="https://x.com/realGuanYu" target="_blank" rel="noopener noreferrer">@realGuanYu</a> / <a class="handle" href="https://x.com/ChandlerGuo" target="_blank" rel="noopener noreferrer">@ChandlerGuo</a></td><td class="num">54</td><td>中性</td><td class="num up">+3~4pt</td><td class="num">3~5</td><td class="num">0</td><td>−3 / −2（负分）</td><td>旧口径判负分，大周期样本下并不差 → 短期噪声所致</td></tr>
+    <tr><td><a class="handle" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a></td><td class="num">52</td><td>中性</td><td class="num down">−3pt</td><td class="num">12</td><td class="num">0.6</td><td>2 / C</td><td>样本最多的账号，覆盖 4/4 节点</td></tr>
+    <tr><td><a class="handle" href="https://x.com/btc2688" target="_blank" rel="noopener noreferrer">@btc2688</a></td><td class="num">44</td><td><span class="tag neg">大周期偏错</span></td><td class="num down">−6pt</td><td class="num">7</td><td class="num">0.5</td><td>0 / D</td><td>—</td></tr>
+    <tr><td><a class="handle" href="https://x.com/sylvigil" target="_blank" rel="noopener noreferrer">@sylvigil</a></td><td class="num">42</td><td><span class="tag neg">大周期偏错</span></td><td class="num down">−8pt</td><td class="num">3</td><td class="num">0</td><td><strong>7 / S</strong></td><td><strong>典型翻转</strong>：短期 +9pt 撑起旧 S 档，大周期 −8pt</td></tr>
+    <tr><td><a class="handle" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a></td><td class="num">34</td><td><span class="tag neg">大周期偏错</span></td><td class="num down">−14pt</td><td class="num">7</td><td class="num">1.2</td><td>−2 / 负分档</td><td>追涨杀跌 95%，但曾提前 63 天预判 9 月顶（孤证）</td></tr>
+    <tr><td><a class="handle" href="https://x.com/liuwei16602825" target="_blank" rel="noopener noreferrer">@liuwei16602825</a></td><td class="num">28</td><td><span class="tag neg">大周期偏错</span></td><td class="num down">−18pt</td><td class="num">6</td><td class="num">0</td><td>−2 / 负分</td><td>新榜垫底</td></tr>
+  </table>
+  <div class="note"><strong>排名翻转说明了什么：</strong>旧榜首 <a class="handle" href="https://x.com/Billions_2022_" target="_blank" rel="noopener noreferrer"> 4 </a>（9/S）在新口径下是「证据不足」——大周期可结算 <strong>0 条</strong>，9 分全靠短期 +12pt 和节点弱命中堆出来；旧「真正可信」名单里的 <a class="handle" href="https://x.com/0XTiger666" target="_blank" rel="noopener noreferrer"> 5 </a>、<a class="handle" href="https://x.com/Dp520888" target="_blank" rel="noopener noreferrer"> 6 </a> 同样是大周期 0 条。<a class="handle" href="https://x.com/Felix_Hsu" target="_blank" rel="noopener noreferrer"> 7 </a> 旧 −3/负分（短期 −27pt），但大周期 2 条均为正 → 昨天给他贴的「稳定跑输」<strong>只适用于短期，不宜外推到两三个月级别</strong>。</div>
+
+  <h3>3.6 真正有「提前预判大顶/大底」证据的账号（14 个，按证据强度）</h3>
+  <table>
+    <tr><th>账号</th><th class="num">顶底分</th><th class="num">覆盖节点</th><th>提前预判证据</th></tr>
+    <tr><td><a class="handle" href="https://x.com/btc_tigerx" target="_blank" rel="noopener noreferrer">@btc_tigerx</a></td><td class="num">1.7</td><td class="num">2 / 4</td><td>5 月顶提前 <strong>21 天</strong>（顶/底措辞）；7 月大底提前 <strong>56 天</strong>喊目标 60,000（实际 57,800，误差 3.8%）</td></tr>
+    <tr><td><a class="handle" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a></td><td class="num">1.2</td><td class="num">2 / 4</td><td>9 月顶提前 <strong>63 天</strong>喊 83,000（实际 87,396）</td></tr>
+    <tr><td><a class="handle" href="https://x.com/ZiiiMindInvest" target="_blank" rel="noopener noreferrer">@ZiiiMindInvest</a></td><td class="num">1.2</td><td class="num">1 / 4</td><td>5 月顶提前 <strong>51 天</strong>喊 79,000（实际 82,850）</td></tr>
+    <tr><td><a class="handle" href="https://x.com/Cryptodengta" target="_blank" rel="noopener noreferrer">@Cryptodengta</a> / <a class="handle" href="https://x.com/jiangjinyajy" target="_blank" rel="noopener noreferrer">@jiangjinyajy</a></td><td class="num">1.0</td><td class="num">1 / 4</td><td>前者 9 月顶提前 27 天喊 97,000；后者 7 月底提前 17 天喊 60,000</td></tr>
+    <tr><td><a class="handle" href="https://x.com/_Checkmatey_" target="_blank" rel="noopener noreferrer">@_Checkmatey_</a> / <a class="handle" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a> / <a class="handle" href="https://x.com/xfli5" target="_blank" rel="noopener noreferrer">@xfli5</a> / <a class="handle" href="https://x.com/cs_zhaozilong" target="_blank" rel="noopener noreferrer">@cs_zhaozilong</a></td><td class="num">0.6</td><td class="num">3~4 / 4</td><td>均在 7 月大底前 <strong>73~89 天</strong>给出底部措辞（点位偏，但方向与时间对）；其中 <a class="handle" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a> 覆盖全部 4 个节点</td></tr>
+    <tr><td><a class="handle" href="https://x.com/liujia0224" target="_blank" rel="noopener noreferrer">@liujia0224</a> / <a class="handle" href="https://x.com/btc2688" target="_blank" rel="noopener noreferrer">@btc2688</a> / <a class="handle" href="https://x.com/Billions_2022_" target="_blank" rel="noopener noreferrer">@Billions_2022_</a> / <a class="handle" href="https://x.com/0XTiger666" target="_blank" rel="noopener noreferrer">@0XTiger666</a> / <a class="handle" href="https://x.com/BobLoukas" target="_blank" rel="noopener noreferrer">@BobLoukas</a></td><td class="num">0.5</td><td class="num">1~4 / 4</td><td>单点弱命中，不构成稳定能力</td></tr>
+  </table>
+  <p class="small">按新规则，旧报告的两个「强命中」被剔除或降级：<a class="handle" href="https://x.com/williamlab" target="_blank" rel="noopener noreferrer"> 8 </a>（2/6 当天喊 6 万，事后确认）→ 0；<a class="handle" href="https://x.com/Billions_2022_" target="_blank" rel="noopener noreferrer"> 9 </a>（7 月底提前 29 天喊 69,000，误差 19% 超出 ±12%）→ 0.5 弱命中。</p>
+
+  <h3>3.7 还没做的优化空间（按优先级）</h3>
+  <ol>
+    <li><strong>扩语料（最优先）</strong>：现有 341 条只抽「明确预测」；要判大周期，应定向重抽 <code>months/quarters</code> 级别的判断，并恢复 <a class="handle" href="https://x.com/rektcapital" target="_blank" rel="noopener noreferrer"> 10 </a> 被覆盖的 612 条。当前 87 账号中只有 <strong>61 个有可抽取预测</strong>。</li>
+    <li><strong>基准改用 bootstrap</strong>：±45 天邻域在拐点附近会「自我包含」（邻居日也含同一波行情），可能系统性抬高基准。</li>
+    <li><strong>节点扩容 + 算法识别</strong>：4 个手工极值点 → 用规则识别全年所有 ≥15% 的月度级转折，扩到 8~12 个，降低选择性偏差。</li>
+    <li><strong>概率校准而非单一分数</strong>：输出 Brier score / 置信区间；校验「目标价与方向自洽」；同日同向多账号预测要降权（非独立样本）。</li>
+    <li><strong>统一版本</strong>：把 <code>ledger.js</code> / <code>sensitivity.js</code> 指向 v3 判定函数，消除 14 处分数冲突。</li>
+  </ol>
+
+  <!-- ============ 4 ============ -->
+  <h2>四、拉长到最近三天：带历史标签的观点</h2>
+  <p>窗口 <strong>2026-11-09 → 11-12</strong>（<code>frozen/</code> 日期级精度 + 今日关注流分钟级精度），合并去重：<strong>143 + 66 → 209 → 观点帖 168 条 / 49 账号</strong>，其中 41 个账号有 2026 全年历史评分、45 条带具体点位。现价 <strong>$73,578</strong>，24h −0.26%，近 7 日 −8.6%。</p>
+
+  <h3>4.1 三天点位共识（45 条带点位帖的数字频次）</h3>
+  <table>
+    <tr><th>点位</th><th class="num">提及</th><th>含义</th></tr>
+    <tr><td><strong>73,000</strong></td><td class="num">12</td><td>当前战场；200 日均线约 73,153、斐波 0.5 约 72,581 都落在这里</td></tr>
+    <tr><td><strong>75,000</strong></td><td class="num">10</td><td>多空分水岭，未收复前反弹都按「缓解反弹」看</td></tr>
+    <tr><td>78,000 / 79,000</td><td class="num">9</td><td>上方阻力带（含 76,800 / 78,300 旧周支撑转阻力）</td></tr>
+    <tr><td>74,000 / 77,000 / 76,000</td><td class="num">12</td><td>4 小时反弹乏力位 74,800；MA120 回补位 75,500~76,000</td></tr>
+    <tr><td>下方 49,000 / 58,000~60,000 / 65,000~71,000</td><td class="num">各 1~2</td><td>极端看空与长线分批抄底区，属少数派</td></tr>
+  </table>
+  <div class="callout"><strong>一个值得注意的画像：</strong>新榜主榜 12 个账号里，这三天<strong>只有 3 个发了观点，而且全在榜尾</strong>（<a class="handle" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer"> 11 </a> #11、<a class="handle" href="https://x.com/btc2688" target="_blank" rel="noopener noreferrer"> 12 </a> #9、<a class="handle" href="https://x.com/sylvigil" target="_blank" rel="noopener noreferrer"> 13 </a> #10，都是「大周期偏错」）。大周期口径下排前四的 <code>@liujia0224 / @_Checkmatey_ / @fishbtcer / @btc_tigerx</code> 这三天<strong>都没发声</strong>。也就是说：这三天你信息流里最响的几位，恰好是历史上两三个月级别判断偏错的那批。</div>
+
+  <h3>4.2 逐条观点 + 博主历史标签（重点带点位者）</h3>
+  <table>
+    <tr><th style="width:120px">博主</th><th>三天内的观点 / 点位</th><th style="width:215px">历史测算提示</th></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/rektcapital" target="_blank" rel="noopener noreferrer">@rektcapital</a></strong><br><span class="small">11/09–11/12，17 帖</span></td><td>73,000 作为持久支撑「可能性并不高」；任何反弹到 <strong>75,000 / 76,800 / 78,300</strong> 都可能只是突破后的缓解反弹；卖方投降尚未出现，筑底往往要一个多月；周线收在 78,300 / 76,800 下方历史上都伴随深度回撤。</td><td><span class="tag gray">评分不可信</span> 全年语料被重抓覆盖（833→221 条，仅剩 9 月后），旧样本可验证仅 1 条。<strong>他的点位可以读，但不要套用任何历史准确率结论。</strong></td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a></strong><br><span class="small">11/09–11/10</span></td><td>一直看空，认为反弹到 <strong>78,000–79,000</strong> 是「最后的诱多 / 逃命机会」，最终会跌破 <strong>49,000</strong>；美股入熊、BTC 3–4 万才合理。</td><td><span class="tag neg">追涨杀跌 95%</span> 旧口径负分档，新口径大周期 −14pt（#11）。<strong>但</strong>曾提前 63 天预判 9 月顶 83,000，属孤证，整体不宜跟。</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/AwbczBTC" target="_blank" rel="noopener noreferrer">@AwbczBTC</a></strong><br><span class="small">11/09–11/12</span></td><td>预计第二段从 <strong>75,000</strong> 再拉 3 万点到 <strong>105,000</strong>；11/09 认为支撑 <strong>72,500–73,000</strong>、「真的跌得差不多了」；11/12 转为抱怨砸盘。</td><td><span class="tag neg">历史以错误为主</span> 旧口径 −43pt、稳定跑输（6 条），新口径证据不足。三天内观点自相矛盾。</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/BobLoukas" target="_blank" rel="noopener noreferrer">@BobLoukas</a></strong><br><span class="small">11/09</span></td><td>周线显示周期顶已现、弱势可能延续到 <strong>1 月</strong>；但 4 年周期底部已形成，12 月考虑重新满仓，目前 50% 现金。</td><td><span class="tag neg">历史以错误为主</span> 旧 −18pt 稳定跑输；新口径大周期仅 1 条、顶底预判 0.5，<strong>证据不足</strong>。周期判断是他的主打，但恰好缺可验证样本。</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/sylvigil" target="_blank" rel="noopener noreferrer">@sylvigil</a></strong><br><span class="small">11/09</span></td><td>「空间换时间，盘整时间不长了，很快要启动下一轮拉升」。</td><td><span class="tag neg">历史以错误为主</span> <strong>旧榜 7/S（第 2 名）→ 新口径「大周期偏错」#10</strong>：短期 +9pt 虚高、大周期 −8pt。最典型的「旧评分误导」案例。</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/dongbimao" target="_blank" rel="noopener noreferrer">@dongbimao</a></strong><br><span class="small">11/09–11/11</span></td><td>周线 6 连阴、恐慌媲美熊市，「再给两周时间」；这周收回就是牛市黄金坑，收不回要重新思考牛市；继续持仓不动。</td><td><span class="tag neg">历史以错误为主</span> 旧稳定跑输，新口径大周期 −9pt（仅 1 条，证据不足）。</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/btc2688" target="_blank" rel="noopener noreferrer">@btc2688</a></strong><br><span class="small">11/11</span></td><td>「下个牛市怎么样很难说」，担心散户一致抄底的剧本不会兑现。</td><td><span class="tag neg">大周期偏错</span> 新榜 #9，−6pt / 7 条（样本较足）。</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/Cato_KT" target="_blank" rel="noopener noreferrer">@Cato_KT</a></strong><br><span class="small">11/09–11/12</span></td><td>反弹 4H 到 <strong>74,800</strong> 乏力；本周若站不稳 <strong>75,500</strong>（MA120），最好低位震荡、最差 <strong>73,000</strong> 守不住；12/9 议息前是较好的抄底窗口。</td><td><span class="tag gray">历史样本不足</span> 无可验证预测，标签仅表示「没有证据」，不代表不准。</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/Guilin_Chen_" target="_blank" rel="noopener noreferrer">@Guilin_Chen_</a></strong><br><span class="small">11/09</span></td><td>强弱分界：SMA200 = <strong>73,153</strong>、57→87 段斐波 0.5 = <strong>72,581</strong>，跌破即客观走弱；跌破 76,000 已由强转弱。</td><td><span class="tag gray">历史样本不足</span> 旧口径仅 2 条可验证。</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/chairbtc" target="_blank" rel="noopener noreferrer">@chairbtc</a></strong><br><span class="small">11/09–11/11</span></td><td>认定 <strong>58,000–60,000</strong> 是本轮底部，跌破 6 万分批抄底；短期不能收复 <strong>76,000</strong> 则继续下行回踩 7 万甚至 6 开头；2029 年至少 3 倍。</td><td><span class="tag gray">历史样本不足</span> 长周期判断（2029）无法用当前台账验证。</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/CryptoPainter" target="_blank" rel="noopener noreferrer">@CryptoPainter</a></strong><br><span class="small">11/09–11/11</span></td><td>「现在就是 2022 年下半年」；两周后若还在 <strong>75k</strong> 附近就抄底，市场往往不给第三次机会。</td><td><span class="tag gray">历史样本不足</span> —</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/AshCrypto" target="_blank" rel="noopener noreferrer">@AshCrypto</a></strong><br><span class="small">11/10–11/12</span></td><td>「BTC 会到 <strong>200,000</strong>」，11 月中期选举恐慌是下一轮抛物线前的最佳买点；熬过 11 月追赶反弹会很猛。</td><td><span class="tag gray">无可抽取预测</span> 87 账号评测里没有他的明确预测记录，历史准确率<strong>空白</strong>。</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/_Checkmatey_" target="_blank" rel="noopener noreferrer">@_Checkmatey_</a> / <a class="handle" href="https://x.com/liujia0224" target="_blank" rel="noopener noreferrer">@liujia0224</a> / <a class="handle" href="https://x.com/fishbtcer" target="_blank" rel="noopener noreferrer">@fishbtcer</a> / <a class="handle" href="https://x.com/btc_tigerx" target="_blank" rel="noopener noreferrer">@btc_tigerx</a></strong></td><td>这三天<strong>没有新观点</strong>。</td><td><span class="tag good">大周期口径下排前四</span> 若后续发声，优先级应高于上面这批；其中 <a class="handle" href="https://x.com/btc_tigerx" target="_blank" rel="noopener noreferrer">@btc_tigerx</a> 顶底预判证据最强。</td></tr>
+  </table>
+  <p class="small">上一版 24h 简报中提到的 <a class="handle" href="https://x.com/Felix_Hsu" target="_blank" rel="noopener noreferrer"> 14 </a>（73k 买入、11 月月线 &gt;77.5k）与 <a class="handle" href="https://x.com/Jiangzhuoer2" target="_blank" rel="noopener noreferrer"> 15 </a>（下跌停在 72.5k 或 69–70k）来自「近 7 日公开搜索补充语料」，<strong>不在本次三天关注流窗口内</strong>，故未重复列入。<a class="handle" href="https://x.com/Felix_Hsu" target="_blank" rel="noopener noreferrer"> 16 </a> 的历史标签也需修正：旧口径 −27pt 稳定跑输只对短期有效，大周期 2 条均为正。</p>
+
+  <!-- ============ 5 ============ -->
+  <h2>五、结论</h2>
+  <div class="card"><ul>
+    <li><strong>来源</strong>：准确率结论来自一次性冻结的全年评测（341 条 LLM 精读预测 + 脚本链），方法论落在跨宿主共用池 <code>EXPERIENCE.md</code> 第 45–47 行，不在 skill 本体里。</li>
+    <li><strong>机制</strong>：此前不支持滚动更新；现已建好 append-only 台账 + 到期结算 + 快照（87 账号），每日只需补一步 LLM 预测抽取即可闭环。实测 341 条中 195 条可结算、146 条仍在等待到期。</li>
+    <li><strong>评分</strong>：昨天确实写了「大周期节点」章节，但 <code>horizon</code> 字段被完全忽略、主项是 8%/90d 短期口径、事后喊底算成提前命中、无样本收缩 → <strong>短期主导排名</strong>。按你的要求重算（大周期 ×60、顶底 ×20、短期 ×8、样本收缩、证据不足不排名）后，榜单大幅翻转。</li>
+    <li><strong>谁大周期准</strong>：严格口径下能排的只有 12 个账号，偏准 3 个（<code>@liujia0224 / @_Checkmatey_ / @fishbtcer</code>）、顶底预判型 1 个（<a class="handle" href="https://x.com/btc_tigerx" target="_blank" rel="noopener noreferrer"> 17 </a>）；有明确「提前预判」证据的 14 个账号里只有 4~5 个证据较强，且都是 1~2 次孤证。<strong>更根本的结论是：现有语料不足以回答这个问题</strong>，需要扩语料 + 让 69 条未到期预测随每日台账自然结算。</li>
+    <li><strong>三天观点</strong>：共识 73,000（战场）/ 75,000（分水岭）/ 76.8–79,000（阻力）；这三天发声最多的是历史上大周期偏错的账号，而新榜前四全部沉默。</li>
+  </ul></div>
+
+  <h2>六、问题与局限</h2>
+  <div class="card"><ul>
+    <li>新评分是<strong>复盘对照版</strong>，未覆盖旧产物；<code>final_v3.json</code> 与 <code>REPORT.md</code> 保持原样，两套口径并列供比较。</li>
+    <li><code>quarters</code> 只有 8 条可结算、命中 0，统计上几乎不能推断任何结论；<code>months</code> 41.6% vs 基准 45.0% 的差距也在噪声范围内。</li>
+    <li>「大顶大底」仍是事后按全年行情挑的 4 个极值点，新的提前量规则缓解了「事后确认」问题，但没消除选择性偏差。</li>
+    <li>三天窗口的 <code>frozen/</code> 语料只有日期级精度，11/09 可能含当天早于 13:23 的帖；今日关注流为分钟级，两者已按账号+文本去重。</li>
+    <li>部分推文是 X 自动中文译文，本报告为摘要不是逐字原文；点位按原文数字抽取，少数地址/数量数字被误识别，已在制表时剔除。</li>
+    <li>所有点位与博主标签均为历史统计与观点汇总，<strong>不构成投资建议</strong>。</li>
+  </ul></div>
+
+  <h2>七、需要你拍板的两件事</h2>
+  <div class="card"><ol>
+    <li>要不要把 <code>daily_roll.js</code> 这条流程<strong>写进 skill</strong>（<code>sites/x.com.md</code> 或新建 BTC 评测分册）并挂成每日自动化？按你定的规矩，我没擅自改 skill 文件。</li>
+    <li>要不要<strong>扩大语料重抽</strong>：把 87 账号全年 BTC 推文按「大周期判断」定向重抽一遍（重点恢复 <a class="handle" href="https://x.com/rektcapital" target="_blank" rel="noopener noreferrer"> 18 </a> 被覆盖的 612 条），这是真正能回答「谁大周期准」的唯一办法，但需要再跑一轮抓取 + LLM 精读。</li>
+  </ol></div>
+
+  <div class="foot">产物目录：<code>F:\despseekharness\crawler\output\x_btc_20261112\</code>（<code>cycle_score.json</code>、<code>3d_views.json</code>、<code>3d_views_readable.txt</code>、<code>3d_levels.txt</code>）｜台账：<code>F:\despseekharness\crawler\state\</code>｜脚本：<code>score_cycle.js</code>、<code>daily_roll.js</code>、<code>x_btc_3d_digest.js</code></div>
+</div>
+</body>
+</html>

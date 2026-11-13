@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>X 关注流 24h + BTC 走势与大V观点简报 · 2026-11-12</title>
+<style>
+  :root{
+    --bg:#080a0f; --panel:#11161f; --panel2:#151b26;
+    --line:#1f2836; --line2:#2a3546;
+    --txt:#e8edf5; --txt2:#9aa7bb; --txt3:#67748a;
+    --acc:#f0b429; --acc2:#5b9dff;
+    --rise:#f2555a; --fall:#3ddc97;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);line-height:1.75;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+    background-image:radial-gradient(900px 460px at 12% -8%,rgba(91,157,255,.12),transparent 62%),
+      radial-gradient(760px 400px at 88% 4%,rgba(240,180,41,.07),transparent 66%);
+    background-attachment:fixed}
+  .wrap{max-width:1120px;margin:0 auto;padding:40px 24px 72px}
+  h1{font-size:26px;line-height:1.35;margin-bottom:8px;font-weight:650;letter-spacing:.01em}
+  .sub{color:var(--txt2);font-size:12.5px;margin-bottom:16px}
+  h2{font-size:17px;margin:34px 0 12px;padding-left:11px;border-left:3px solid var(--acc);font-weight:650}
+  h3{font-size:14px;margin:22px 0 8px;color:var(--acc2);font-weight:600}
+  p{margin:9px 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:12px 0}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .kpi .n{font-size:24px;font-weight:700;color:var(--acc);line-height:1.2;font-family:var(--mono)}
+  .kpi .l{font-size:11.5px;color:var(--txt3);margin-top:5px;line-height:1.5}
+  .kpi .n.down{color:var(--fall)} .kpi .n.up{color:var(--rise)}
+  .kpi .n.plain{color:var(--txt)} .kpi .n.warn{color:var(--acc)}
+  table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);
+    border-radius:10px;overflow:hidden;font-size:12.5px;margin:12px 0}
+  th,td{padding:9px 11px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+  th{background:var(--panel2);font-weight:600;color:var(--txt2);white-space:nowrap;font-size:12px}
+  tr:last-child td{border-bottom:none}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;font-family:var(--mono)}
+  .up{color:var(--rise);font-weight:600} .down{color:var(--fall);font-weight:600}
+  .tag{display:inline-block;padding:1px 7px;border-radius:10px;font-size:10.5px;
+    background:rgba(91,157,255,.12);color:var(--acc2);white-space:nowrap}
+  .tag.bear{background:rgba(61,220,151,.12);color:var(--fall)}
+  .tag.bull{background:rgba(242,85,90,.12);color:var(--rise)}
+  .tag.neg{background:rgba(240,180,41,.12);color:var(--acc)}
+  .tag.warn{background:rgba(240,180,41,.1);color:#e0a72a}
+  .tag.good{background:rgba(91,157,255,.14);color:#7fb2ff}
+  .tag.gray{background:rgba(21,27,38,.95);color:var(--txt3)}
+  a{color:var(--acc2);text-decoration:none;border-bottom:1px solid rgba(91,157,255,.25)}
+  a:hover{border-bottom-color:var(--acc2)}
+  a.handle{color:inherit;border-bottom:1px dashed rgba(255,255,255,.28);white-space:nowrap}
+  a.handle:hover{color:var(--acc);border-bottom-style:solid;border-bottom-color:var(--acc)}
+  a.handle code{background:inherit;border:0;padding:0}
+  .small{font-size:11.5px;color:var(--txt3)}
+  ul,ol{margin:8px 0 8px 20px} li{margin:6px 0}
+  code{background:var(--panel2);border:1px solid var(--line);border-radius:4px;padding:1px 5px;
+    font-family:var(--mono);font-size:11.5px;color:var(--acc2)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .note{background:var(--panel2);border:1px dashed var(--line2);border-radius:9px;
+    padding:12px 14px;font-size:12px;color:var(--txt2);margin:12px 0}
+  .callout{background:rgba(240,180,41,.06);border:1px solid rgba(240,180,41,.22);
+    border-radius:9px;padding:13px 15px;margin:14px 0;font-size:13px;color:var(--txt)}
+  .callout.bad{background:rgba(242,85,90,.07);border-color:rgba(242,85,90,.25)}
+  .callout.ok{background:rgba(61,220,151,.06);border-color:rgba(61,220,151,.22)}
+  .banner{background:rgba(91,157,255,.08);border:1px solid rgba(91,157,255,.22);border-radius:9px;
+    padding:11px 15px;font-size:12.5px;margin:14px 0;color:var(--txt2)}
+  .q{border-left:2px solid var(--line2);padding-left:11px;color:var(--txt2);font-size:12px;margin:5px 0}
+  .q b{color:var(--txt)}
+  .foot{margin-top:30px;padding-top:14px;border-top:1px solid var(--line);
+    color:var(--txt3);font-size:11.5px;line-height:1.9}
+  .foot a{color:var(--txt2)}
+  .bar{height:7px;background:var(--panel2);border-radius:4px;overflow:hidden;display:inline-block;width:110px;vertical-align:middle;margin-right:7px}
+  .bar > i{display:block;height:100%;background:var(--acc2)}
+  @media(max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}
+    .wrap{padding:28px 18px 56px} h1{font-size:21px}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:12px;right:14px;z-index:9999;font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+  <a href="../../" style="display:inline-block;padding:7px 13px;border-radius:20px;background:rgba(17,22,31,.92);color:#e8edf5;text-decoration:none;font-size:12px;border:1px solid #2a3546;box-shadow:0 4px 14px rgba(0,0,0,.28)">← 03 博主观点与走势预测</a>
+</div>
+
+<div class="wrap">
+  <h1>X 关注流 24h + BTC 走势与大V观点简报</h1>
+  <div class="sub">窗口：2026-11-11 13:23 → 2026-11-12 13:23（北京时间）｜行情快照：11-12 13:15｜数据源：X「正在关注 · 最近」、Binance BTCUSDT、近 7 日本地语料、2026 全年博主预测能力评测</div>
+
+  <div class="grid">
+    <div class="kpi"><div class="n">495</div><div class="l">24h 关注流去重帖 / 123 位作者</div></div>
+    <div class="kpi"><div class="n">187</div><div class="l">含观点/判断的帖（占 37.8%）</div></div>
+    <div class="kpi"><div class="n">67</div><div class="l">BTC / 加密相关帖 / 41 位作者</div></div>
+    <div class="kpi"><div class="n down">-8.6%</div><div class="l">BTC 近 7 日（80,504 → 73,578）</div></div>
+  </div>
+
+  <h2>一、结论（先看这里）</h2>
+  <div class="card">
+    <ul>
+      <li><b>行情</b>：11/04 冲高 <b>81,196</b> 后连续回落，11/10 CPI 超预期当晚插针 <b>72,727</b>（近 7 日最低），此后在 <b>73,500–74,800</b> 窄幅横盘。当前 <b>$73,578</b>，24h <span class="down">-0.26%</span>，近 7 日 <span class="down">-8.6%</span>；<b>75,000 尚未收复</b>。</li>
+      <li><b>关注流热点</b>：24h 最刷屏的不是币圈，而是<b>英伟达黄仁勋去留传闻（117 帖，占 23.6%）</b>；加密侧讨论被三条宏观叙事主导——Anthropic IPO 抽走流动性、美股虹吸资金、现货 ETF 连续净流出 / 贝莱德卖币。</li>
+      <li><b>观点温度</b>：67 条 BTC 帖里，看多类词 27 条、看空类词 11 条，但语义上多数是<b>「接近底部、但要等确认」</b>，不是直接喊涨。谨慎派 <a class="handle" href="https://x.com/rektcapital" target="_blank" rel="noopener noreferrer">@rektcapital</a> 反复强调：卖方投降尚未出现，反弹到 75k / 76.8k / 78.3k 仍可能只是「跌破后的缓解反弹」。</li>
+      <li><b>点位共识</b>：<b>75,000</b> 是多空分水岭（近 7 日被提及 39 次，最高），<b>73,000</b> 是当前战场（30 次，且贴近 200 日均线约 73.1–73.2k）；下方依次 72,727 前低 → 71k → 69–70k → 65–60k；上方 76.8–78.3k 阻力 → 80–82k → 83k / 90k / 100k。</li>
+      <li><b>权重提示</b>：24h 里几位最响亮的看多声音（<a class="handle" href="https://x.com/Sykodelic_" target="_blank" rel="noopener noreferrer">@Sykodelic_</a>、<a class="handle" href="https://x.com/Felix_Hsu" target="_blank" rel="noopener noreferrer">@Felix_Hsu</a>、<a class="handle" href="https://x.com/BobLoukas" target="_blank" rel="noopener noreferrer">@BobLoukas</a>、<a class="handle" href="https://x.com/AwbczBTC" target="_blank" rel="noopener noreferrer">@AwbczBTC</a>），在 2026 全年 4 口径评测中<b>都是稳定跑输基准的账号</b>；稳定跑赢的 3 个账号本轮 24h 未给新点位。观点可参考，不宜照单执行。</li>
+    </ul>
+  </div>
+
+  <h2>二、最近 9 天 BTC 真实走势（Binance BTCUSDT 日线，美元）</h2>
+  <table>
+    <thead><tr><th>日期</th><th class="num">开盘</th><th class="num">最高</th><th class="num">最低</th><th class="num">收盘</th><th class="num">当日涨跌</th><th>备注</th></tr></thead>
+    <tbody>
+      <tr><td>11-04</td><td class="num">77,453.85</td><td class="num">81,196.01</td><td class="num">75,736.38</td><td class="num">80,504.01</td><td class="num up">+3.94%</td><td>阶段高点 81,196</td></tr>
+      <tr><td>11-05</td><td class="num">80,504.01</td><td class="num">80,918.01</td><td class="num">75,208.42</td><td class="num">76,088.01</td><td class="num down">-5.49%</td><td>单日大跌，美股同步下挫</td></tr>
+      <tr><td>11-06</td><td class="num">76,088.01</td><td class="num">76,416.24</td><td class="num">74,888.00</td><td class="num">75,844.00</td><td class="num down">-0.32%</td><td>横盘</td></tr>
+      <tr><td>11-07</td><td class="num">75,844.00</td><td class="num">76,249.99</td><td class="num">75,571.08</td><td class="num">75,867.59</td><td class="num up">+0.03%</td><td>窄幅</td></tr>
+      <tr><td>11-08</td><td class="num">75,867.58</td><td class="num">76,200.00</td><td class="num">73,510.00</td><td class="num">74,851.44</td><td class="num down">-1.34%</td><td>周末流动性稀薄，插针</td></tr>
+      <tr><td>11-09</td><td class="num">74,851.44</td><td class="num">75,599.22</td><td class="num">73,750.00</td><td class="num">75,368.41</td><td class="num up">+0.69%</td><td>反弹</td></tr>
+      <tr><td>11-10</td><td class="num">75,368.41</td><td class="num">75,442.01</td><td class="num"><b>72,727.27</b></td><td class="num">73,796.06</td><td class="num down">-2.09%</td><td>CPI 超预期 + 多头清算，月内最低</td></tr>
+      <tr><td>11-11</td><td class="num">73,796.06</td><td class="num">74,811.45</td><td class="num">73,209.12</td><td class="num">74,015.19</td><td class="num up">+0.30%</td><td>弱反弹，美股大涨但 BTC 未跟</td></tr>
+      <tr><td>11-12（盘中）</td><td class="num">74,015.20</td><td class="num">74,217.49</td><td class="num">73,549.06</td><td class="num"><b>73,577.57</b></td><td class="num down">-0.61%</td><td>截至 13:15，24h 高 74,811 / 低 73,390</td></tr>
+    </tbody>
+  </table>
+  <div class="note" style="margin-top:12px">
+    <b>回撤背景（公开报道，非推特观点）</b>：11/10 美国 10 月 CPI 环比 +0.4%（预期 +0.3%）、核心 +0.3%（预期 +0.2%），12 月加息预期升温，2 年期美债收益率单日 +17bp 至 4.73%；CoinGlass 统计 24h 约 1.7 亿美元多头被清算（多头占比约 85%）；现货 BTC ETF 连续 4 个交易日净流出（11/10 约 9,500 万美元），200 日均线约 73.1–73.2k、365 日均线约 76.4k。推特侧另有「Anthropic IPO 抽走风险资金」「MSTR 或被 MSCI 剔除」两条讨论主线。
+  </div>
+
+  <h2>三、24h 关注流在聊什么（话题定量）</h2>
+  <table>
+    <thead><tr><th>话题</th><th class="num">帖数</th><th class="num">占 495 帖</th><th>热度</th><th>代表观点</th></tr></thead>
+    <tbody>
+      <tr><td>英伟达 / 黄仁勋去留</td><td class="num">117</td><td class="num">23.6%</td><td><span class="bar"><i style="width:100%"></i></span></td><td><a class="handle" href="https://x.com/DeItaone" target="_blank" rel="noopener noreferrer">@DeItaone</a> 连发快讯，董事会或讨论罢免 CEO；多位博主认为消息节奏「有组织」</td></tr>
+      <tr><td>BTC / 加密行情</td><td class="num">67</td><td class="num">13.5%</td><td><span class="bar"><i style="width:57%"></i></span></td><td>底部是否确认、75k 能否收复、ETF 流出</td></tr>
+      <tr><td>伊朗地缘</td><td class="num">14</td><td class="num">2.8%</td><td><span class="bar"><i style="width:12%"></i></span></td><td>谈判僵局 / 万斯可能直接会谈</td></tr>
+      <tr><td>MSTR / MSCI</td><td class="num">13</td><td class="num">2.6%</td><td><span class="bar"><i style="width:11%"></i></span></td><td>被剔除指数带来的被动卖压 vs Saylor 现金储备</td></tr>
+      <tr><td>Anthropic IPO</td><td class="num">11</td><td class="num">2.2%</td><td><span class="bar"><i style="width:9%"></i></span></td><td><a class="handle" href="https://x.com/benjamincowen" target="_blank" rel="noopener noreferrer">@benjamincowen</a>：投资者为大型 IPO 腾挪资金，可解释 BTC 弱势</td></tr>
+      <tr><td>ETF / 机构资金</td><td class="num">9</td><td class="num">1.8%</td><td><span class="bar"><i style="width:8%"></i></span></td><td><a class="handle" href="https://x.com/AshCrypto" target="_blank" rel="noopener noreferrer">@AshCrypto</a>：贝莱德卖出 2.697 亿美元 BTC，整月零净流入</td></tr>
+      <tr><td>俄罗斯加密</td><td class="num">8</td><td class="num">1.6%</td><td><span class="bar"><i style="width:7%"></i></span></td><td>俄央行允许交易所自 11/22 起交易加密货币</td></tr>
+      <tr><td>CPI / 加息 / 美联储</td><td class="num">4</td><td class="num">0.8%</td><td><span class="bar"><i style="width:3%"></i></span></td><td><a class="handle" href="https://x.com/Felix_Hsu" target="_blank" rel="noopener noreferrer">@Felix_Hsu</a>：CPI 后市场出现「再加息 50bp」声音</td></tr>
+    </tbody>
+  </table>
+  <div class="small" style="margin-top:8px">注：主题关键词可重叠，同一帖可计入多个话题；方向词频为正则口径（非语义判定）。</div>
+
+  <h2>四、大V 观点与对应点位（最近 24h，均为「我关注的」账号）</h2>
+  <table>
+    <thead><tr><th>账号 / 时间</th><th>倾向</th><th>预测与点位</th><th>依据摘要</th><th class="num">赞</th><th>历史评测</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://x.com/rektcapital/status/2120537865608429639">@rektcapital</a><br><span class="small">11-11 23:23 ~ 11-12 02:54（4 帖）</span></td><td><span class="tag bear">谨慎偏空</span></td><td><b>73k 难成持久支撑</b>；反弹到 <b>75k / 76.8k / 78.3k</b> 都可能只是「跌破后的缓解反弹」；-17% 回撤</td><td>卖方成交量投降尚未出现；周线连续收在 78.3k / 76.8k 下方，旧支撑转新阻力；今年每次底部都要数周构造</td><td class="num">278 / 226 / 179</td><td><span class="tag neg">不稳定 -28pt</span></td></tr>
+      <tr><td><a href="https://x.com/Jiangzhuoer2/status/2120525482127196291">@Jiangzhuoer2</a><br><span class="small">11-11 22:34</span></td><td><span class="tag">长多短空</span></td><td>本轮下跌终点：<b>72.5k（斐波 50%）</b>或 <b>69–70k（61.8%）</b>；<b>57,758（7 月）</b>是本轮熊市底</td><td>链上长期指标显示熊市已结束，牛市仍在，问题只是这轮回调在哪停</td><td class="num">139</td><td><span class="tag">未入评测池</span></td></tr>
+      <tr><td><a href="https://x.com/Felix_Hsu/status/2120707348792750134">@Felix_Hsu</a><br><span class="small">11-12 10:36</span></td><td><span class="tag bull">看多反弹</span></td><td><b>73k 买入月底不亏</b>；<b>11 月月线 &gt; 77.5k</b> 概率极大；本周低点即圣诞前低点；机构都在等 <b>68k</b></td><td>自称 10/06 最早提出周线下跌；CPI 后加息预期已充分交易</td><td class="num">56</td><td><span class="tag neg">稳定跑输 -27pt</span></td></tr>
+      <tr><td><a href="https://x.com/Sykodelic_/status/2120615672300675286">@Sykodelic_</a><br><span class="small">11-12 04:16</span></td><td><span class="tag bull">看多（见底）</span></td><td><b>Syko 指标显示底部已到</b>；<b>80k+</b> 买入的顶部买家正在投降</td><td>过去 12 个月该指标命中 8/9 局部底、7/8 局部顶；短持者实现盈亏比率显示强投降迹象</td><td class="num">327</td><td><span class="tag neg">稳定跑输 -40pt</span></td></tr>
+      <tr><td><a href="https://x.com/BobLoukas/status/2120567202340299042">@BobLoukas</a><br><span class="small">11-12 01:19</span></td><td><span class="tag bull">转多</span></td><td>日线 / 周线<b>周期低点已形成</b>，准备「大幅上行突破」</td><td>股市强势收盘 + 情绪极度负面；与 11/09 的「弱势延续到 1 月、12 月再加满仓」相比明显转乐观</td><td class="num">922</td><td><span class="tag neg">稳定跑输 -18pt</span></td></tr>
+      <tr><td><a href="https://x.com/market_beggar/status/2120698844447183160">@market_beggar</a><br><span class="small">11-12 10:02</span></td><td><span class="tag bull">偏多（分批）</span></td><td>无具体点位，主张「<b>牛市最佳加仓窗口建立在短持者痛苦之上</b>」</td><td>AVIV Heatmap 重回绿色折扣区、价格低于短持者平均成本、STH-NUPL &lt; 0</td><td class="num">74</td><td><span class="tag warn">不稳定 -13pt</span></td></tr>
+      <tr><td><a href="https://x.com/AshCrypto/status/2120622158145815011">@AshCrypto</a><br><span class="small">11-12 04:58 / 12:54</span></td><td><span class="tag">多空并陈</span></td><td>看多：「熬过 11 月，<b>BTC 追赶反弹将疯狂</b>」；利空快讯：贝莱德卖出 <b>2.697 亿美元 BTC</b>、整月零净流入</td><td>美股本周新增 2.6 万亿美元市值、标普距高点仅 2.95%，BTC 明显落后；ETF 端买盘缺席</td><td class="num">908</td><td><span class="tag">未入评测池</span></td></tr>
+      <tr><td><a href="https://x.com/KillaXBT/status/2120708292469006796">@KillaXBT</a><br><span class="small">11-12 10:40</span></td><td><span class="tag bull">偏多（建仓区）</span></td><td>当前是「<b>有趣的位置</b>」，适合鲸鱼分批建仓；BTC 在等 <b>Anthropic IPO 落地</b></td><td>同时测试两条多年对角线 + 自低点以来的高周期趋势线，并回补上涨留下的失衡区</td><td class="num">549</td><td><span class="tag">未入评测池</span></td></tr>
+      <tr><td><a href="https://x.com/dongbimao/status/2120731985492746388">@dongbimao</a><br><span class="small">11-12 12:14</span></td><td><span class="tag">持有观望</span></td><td><b>100 个 BTC 现货不动</b>，等三日线走平再缓慢上涨</td><td>类比 2023 年牛初的三日线形态；11/09 曾提示「周线不能再跌，这一两周定方向」</td><td class="num">33</td><td><span class="tag neg">稳定跑输 -3pt</span></td></tr>
+      <tr><td><a href="https://x.com/benjamincowen/status/2120525821073129656">@benjamincowen</a><br><span class="small">11-11 22:35</span></td><td><span class="tag bear">归因偏空</span></td><td>无点位：<b>BTC 下跌可能是 Anthropic IPO 抽资金</b></td><td>类比 SpaceX IPO 前的 BTC 表现；投资者为重大 IPO 释放资本</td><td class="num">1299</td><td><span class="tag warn">不稳定 -8pt</span></td></tr>
+      <tr><td><a href="https://x.com/wufantouzi/status/2120541079351013488">@wufantouzi</a><br><span class="small">11-11 23:36</span></td><td><span class="tag bear">中性偏空</span></td><td>「<b>只有震荡，没有主升浪</b>」</td><td>资金都在追美股、币圈仍在净流出，等纳指涨不动 BTC 才有机会</td><td class="num">38</td><td><span class="tag">未入评测池</span></td></tr>
+      <tr><td><a href="https://x.com/willywoo/status/2120740509098672491">@willywoo</a><br><span class="small">11-12 12:48</span></td><td><span class="tag bull">长线偏多</span></td><td>无点位：「<b>早期牛市中的恐惧是一种礼物</b>」</td><td>链上长周期视角，情绪面极度悲观</td><td class="num">189</td><td><span class="tag warn">不稳定 -7pt</span></td></tr>
+    </tbody>
+  </table>
+
+  <h2>五、近 7 日补充观点（含公开搜索到的大V，标注来源）</h2>
+  <div class="small" style="margin-bottom:8px">这一组来自 11/09–11/11 本地已存的 BTC 搜索语料与关注账号全年语料，用于补足「最近几天」的方向与点位；<b>与上面 24h 关注流分开统计</b>。近 7 日共 967 条 BTC 帖、510 条观点帖、512 位作者。</div>
+  <table>
+    <thead><tr><th>账号 / 日期</th><th>倾向</th><th>目标位 / 关键位</th><th>观点摘要</th><th>来源</th></tr></thead>
+    <tbody>
+      <tr><td><a class="handle" href="https://x.com/chairbtc" target="_blank" rel="noopener noreferrer">@chairbtc</a> · 11-10</td><td><span class="tag bear">偏空后抄底</span></td><td>收不回 <b>76,000</b> → 回踩 <b>70,000</b> 甚至 6 字头；<b>60,000 以下分批抄底</b></td><td>日线跌破 MA120 已破位；认为 5–6 万是本轮底部区</td><td>关注账号</td></tr>
+      <tr><td><a class="handle" href="https://x.com/Hoyooyoo" target="_blank" rel="noopener noreferrer">@Hoyooyoo</a> · 11-08</td><td><span class="tag bear">偏空</span></td><td><b>76,500</b> 之下弱势；<b>74,500 是多头最后底线</b>，跌破先看 <b>69,000</b></td><td>「震荡的嵌套」，向下深度可达本轮起涨点</td><td>关注账号</td></tr>
+      <tr><td><a class="handle" href="https://x.com/AwbczBTC" target="_blank" rel="noopener noreferrer">@AwbczBTC</a> · 11-10</td><td><span class="tag bull">强看多</span></td><td><b>72,500–73,000</b> 斐波 618 支撑；<b>75,000 → 105,000</b> 第二段涨幅</td><td>「大的要来了」；但全年评测为最差档 -43pt</td><td>关注账号</td></tr>
+      <tr><td><a class="handle" href="https://x.com/dongbimao" target="_blank" rel="noopener noreferrer">@dongbimao</a> · 11-05</td><td><span class="tag bull">年底看多</span></td><td>年底仍有机会冲 <b>100,000</b></td><td>7.5 万附近下探可能已完成一次流动性清洗；但右侧突破仍需确认（11/09 起转谨慎）</td><td>关注账号</td></tr>
+      <tr><td><a class="handle" href="https://x.com/BobLoukas" target="_blank" rel="noopener noreferrer">@BobLoukas</a> · 11-09</td><td><span class="tag bear">中期谨慎</span></td><td>无点位；<b>12 月才重新加满仓</b>，当前 50% 现金</td><td>周线周期顶已现，弱势可能延续到 1 月；4 年周期底部已在</td><td>关注账号</td></tr>
+      <tr><td><a class="handle" href="https://x.com/rektcapital" target="_blank" rel="noopener noreferrer">@rektcapital</a> · 11-10</td><td><span class="tag bear">偏空</span></td><td><b>76,800 / 78,300</b> 周线支撑转阻力；<b>75,000</b> 已被看跌回测</td><td>-17% 回撤仍未见卖方投降，任何反弹可能只是短暂缓解</td><td>关注账号</td></tr>
+      <tr><td><a class="handle" href="https://x.com/BitmonkCrypto" target="_blank" rel="noopener noreferrer">@BitmonkCrypto</a> · 11-09</td><td><span class="tag bear">偏空</span></td><td><b>74.4–76.2k</b> 支撑失守；跌破 <b>73k</b> 看 <b>69–70k</b>；<b>65–55k</b> 为极限情景</td><td>200 日均线约 73k 是关键，极限情景只是「可能」而非确定</td><td>公开搜索</td></tr>
+      <tr><td><a class="handle" href="https://x.com/CryptoReviewing" target="_blank" rel="noopener noreferrer">@CryptoReviewing</a> · 11-09</td><td><span class="tag">中性 / 流动性</span></td><td><b>71–73.5k</b> 有流动性待扫；<b>75–78.5k</b> 清算集群是更高概率的上行目标</td><td>一周内全市场清算 42 亿美元，上下都有清算池</td><td>公开搜索</td></tr>
+      <tr><td><a class="handle" href="https://x.com/XBTkaz" target="_blank" rel="noopener noreferrer">@XBTkaz</a> · 11-09</td><td><span class="tag bull">看多</span></td><td>最后扫到 <b>72k</b> 诱空 → 涨向 <b>90k</b>；<b>60k</b> 不会发生</td><td>「底部比你想象的更近」</td><td>公开搜索</td></tr>
+      <tr><td><a class="handle" href="https://x.com/MookieNFT" target="_blank" rel="noopener noreferrer">@MookieNFT</a> · 11-11</td><td><span class="tag bull">条件看多</span></td><td>先收复 <b>75k</b> → 买家介入则 <b>83k</b> 是下一目标；否则 <b>67k</b></td><td>CPI 超预期后跌至 73k，但历史上大跌后常有 8%–30% 反弹</td><td>公开搜索</td></tr>
+      <tr><td><a class="handle" href="https://x.com/FinanzasArgy" target="_blank" rel="noopener noreferrer">@FinanzasArgy</a> · 11-10</td><td><span class="tag">分水岭</span></td><td>收复 <b>75k</b> = 积极信号；否则下看 <b>71k</b></td><td>转述分析师对跌破 74k 后的技术判断</td><td>公开搜索</td></tr>
+      <tr><td><a class="handle" href="https://x.com/ShawnCT_" target="_blank" rel="noopener noreferrer">@ShawnCT_</a> · 11-09</td><td><span class="tag bear">极端看空</span></td><td>恐慌抛售到 <b>48–50k</b>；<b>2027 Q1</b> 反转到 <b>100k+</b></td><td>认为 126k 以来每次反弹都是「上升通道陷阱 → 假突破 → 崩盘」</td><td>公开搜索</td></tr>
+      <tr><td><a class="handle" href="https://x.com/drfrostcrypto" target="_blank" rel="noopener noreferrer">@drfrostcrypto</a> · 11-11</td><td><span class="tag bull">极端看多</span></td><td>从 <b>73k</b> 直接进入 <b>93–104k</b> 抛物线扩张</td><td>「结构若不成我就删号」，属口号式喊单</td><td>公开搜索</td></tr>
+    </tbody>
+  </table>
+
+  <h2>六、点位共识（近 7 日 510 条观点帖的数字抽取，确定性统计）</h2>
+  <table>
+    <thead><tr><th class="num">点位（USD）</th><th class="num">提及次数</th><th>市场含义</th><th>代表账号</th></tr></thead>
+    <tbody>
+      <tr><td class="num"><b>75,000</b></td><td class="num">39</td><td><b>多空分水岭</b>：收复=转强 / 反复受阻=缓解反弹；也是原支撑转阻力位</td><td><a class="handle" href="https://x.com/rektcapital" target="_blank" rel="noopener noreferrer">@rektcapital</a>、<a class="handle" href="https://x.com/MookieNFT" target="_blank" rel="noopener noreferrer">@MookieNFT</a>、<a class="handle" href="https://x.com/DaanCrypto" target="_blank" rel="noopener noreferrer">@DaanCrypto</a>、<a class="handle" href="https://x.com/CryptoReviewing" target="_blank" rel="noopener noreferrer">@CryptoReviewing</a></td></tr>
+      <tr><td class="num"><b>73,000</b></td><td class="num">30</td><td>当前战场；贴近 200 日均线（约 73.1–73.2k）与 11/10 插针区</td><td><a class="handle" href="https://x.com/rektcapital" target="_blank" rel="noopener noreferrer">@rektcapital</a>、<a class="handle" href="https://x.com/IvanOnTech" target="_blank" rel="noopener noreferrer">@IvanOnTech</a>、<a class="handle" href="https://x.com/Cato_KT" target="_blank" rel="noopener noreferrer">@Cato_KT</a>、<a class="handle" href="https://x.com/drfrostcrypto" target="_blank" rel="noopener noreferrer">@drfrostcrypto</a></td></tr>
+      <tr><td class="num">74,000</td><td class="num">11</td><td>短线整理中枢，跌破 74k 后的技术确认位</td><td><a class="handle" href="https://x.com/FinanzasArgy" target="_blank" rel="noopener noreferrer">@FinanzasArgy</a>、<a class="handle" href="https://x.com/BitcoinIntelX" target="_blank" rel="noopener noreferrer">@BitcoinIntelX</a>、<a class="handle" href="https://x.com/theunipcs" target="_blank" rel="noopener noreferrer">@theunipcs</a></td></tr>
+      <tr><td class="num">80,000</td><td class="num">8</td><td>上方心理关口 / 前期反弹高点区</td><td><a class="handle" href="https://x.com/Ellaweb_3" target="_blank" rel="noopener noreferrer">@Ellaweb_3</a>、<a class="handle" href="https://x.com/glassnode" target="_blank" rel="noopener noreferrer">@glassnode</a>、<a class="handle" href="https://x.com/AwbczBTC" target="_blank" rel="noopener noreferrer">@AwbczBTC</a></td></tr>
+      <tr><td class="num">76,000</td><td class="num">8</td><td>MA120 / 前支撑，收不回则维持弱势</td><td><a class="handle" href="https://x.com/chairbtc" target="_blank" rel="noopener noreferrer">@chairbtc</a>、<a class="handle" href="https://x.com/rektcapital" target="_blank" rel="noopener noreferrer">@rektcapital</a>、<a class="handle" href="https://x.com/XBTkaz" target="_blank" rel="noopener noreferrer">@XBTkaz</a></td></tr>
+      <tr><td class="num">60,000</td><td class="num">8</td><td>深度回撤的极端空头目标 / 长线抄底区</td><td><a class="handle" href="https://x.com/XBTkaz" target="_blank" rel="noopener noreferrer">@XBTkaz</a>、<a class="handle" href="https://x.com/ardizor" target="_blank" rel="noopener noreferrer">@ardizor</a>、<a class="handle" href="https://x.com/chairbtc" target="_blank" rel="noopener noreferrer">@chairbtc</a></td></tr>
+      <tr><td class="num">100,000</td><td class="num">7</td><td>年底或 2027 年的多头目标</td><td><a class="handle" href="https://x.com/dongbimao" target="_blank" rel="noopener noreferrer">@dongbimao</a>、<a class="handle" href="https://x.com/ShawnCT_" target="_blank" rel="noopener noreferrer">@ShawnCT_</a>、<a class="handle" href="https://x.com/MrWhaleBD" target="_blank" rel="noopener noreferrer">@MrWhaleBD</a></td></tr>
+      <tr><td class="num">82,000</td><td class="num">7</td><td>突破 80k 后的下一目标 / 前压力位</td><td><a class="handle" href="https://x.com/Wealthmanager" target="_blank" rel="noopener noreferrer">@Wealthmanager</a>、<a class="handle" href="https://x.com/AresOnCrypto" target="_blank" rel="noopener noreferrer">@AresOnCrypto</a>、<a class="handle" href="https://x.com/chairbtc" target="_blank" rel="noopener noreferrer">@chairbtc</a></td></tr>
+      <tr><td class="num">69,000</td><td class="num">5</td><td>斐波 61.8% 回撤区（69–70k），多数空头的第一目标</td><td><a class="handle" href="https://x.com/BitmonkCrypto" target="_blank" rel="noopener noreferrer">@BitmonkCrypto</a>、<a class="handle" href="https://x.com/Hoyooyoo" target="_blank" rel="noopener noreferrer">@Hoyooyoo</a>、<a class="handle" href="https://x.com/PrecisionTrade3" target="_blank" rel="noopener noreferrer">@PrecisionTrade3</a></td></tr>
+      <tr><td class="num">72,000</td><td class="num">5</td><td>前低 72,727 下方一档，流动性扫荡区</td><td><a class="handle" href="https://x.com/DaanCrypto" target="_blank" rel="noopener noreferrer">@DaanCrypto</a>、<a class="handle" href="https://x.com/XBTkaz" target="_blank" rel="noopener noreferrer">@XBTkaz</a>、<a class="handle" href="https://x.com/JrKripto" target="_blank" rel="noopener noreferrer">@JrKripto</a></td></tr>
+    </tbody>
+  </table>
+
+  <h2>七、「该信谁」：2026 全年博主预测能力评测（昨日已完成的本地资产）</h2>
+  <div class="split">
+    <div class="card">
+      <h3 style="margin-top:0">4 口径下稳定跑赢基准（仅 3 个）</h3>
+      <table><tbody>
+        <tr><td><a class="handle" href="https://x.com/_Checkmatey_" target="_blank" rel="noopener noreferrer">@_Checkmatey_</a></td><td class="num up">+11.1pt</td><td class="small">有分析、有明确点位</td></tr>
+        <tr><td><a class="handle" href="https://x.com/0XTiger666" target="_blank" rel="noopener noreferrer">@0XTiger666</a></td><td class="num up">+4.8pt</td><td class="small">偏宏观、少给点位</td></tr>
+        <tr><td><a class="handle" href="https://x.com/Dp520888" target="_blank" rel="noopener noreferrer">@Dp520888</a></td><td class="num up">+2.2pt</td><td class="small">样本不足，结论弱</td></tr>
+      </tbody></table>
+      <div class="small" style="margin-top:8px">这 3 个账号在本次 24h 窗口内<b>没有发布带点位的新预测</b>。</div>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">稳定跑输基准（11 个，含本轮活跃账号）</h3>
+      <div class="small"><a class="handle" href="https://x.com/AwbczBTC" target="_blank" rel="noopener noreferrer">@AwbczBTC</a> <span class="down">-43.3pt</span>｜<a class="handle" href="https://x.com/Sykodelic_" target="_blank" rel="noopener noreferrer">@Sykodelic_</a> <span class="down">-40.2pt</span>｜<a class="handle" href="https://x.com/Felix_Hsu" target="_blank" rel="noopener noreferrer">@Felix_Hsu</a> <span class="down">-27.1pt</span>｜<a class="handle" href="https://x.com/BobLoukas" target="_blank" rel="noopener noreferrer">@BobLoukas</a> <span class="down">-17.7pt</span>｜<a class="handle" href="https://x.com/liuwei16602825" target="_blank" rel="noopener noreferrer">@liuwei16602825</a> <span class="down">-16.1</span>｜<a class="handle" href="https://x.com/ChandlerGuo" target="_blank" rel="noopener noreferrer">@ChandlerGuo</a> <span class="down">-15.1</span>｜<a class="handle" href="https://x.com/LuYao_Trader" target="_blank" rel="noopener noreferrer">@LuYao_Trader</a> <span class="down">-12.0</span>｜<a class="handle" href="https://x.com/btc_tigerx" target="_blank" rel="noopener noreferrer">@btc_tigerx</a> <span class="down">-9.6</span>｜<a class="handle" href="https://x.com/wangtuai888" target="_blank" rel="noopener noreferrer">@wangtuai888</a> <span class="down">-9.2</span>｜<a class="handle" href="https://x.com/crypto_yan_gui" target="_blank" rel="noopener noreferrer">@crypto_yan_gui</a> <span class="down">-8.5</span>｜<a class="handle" href="https://x.com/dongbimao" target="_blank" rel="noopener noreferrer">@dongbimao</a> <span class="down">-3.3pt</span></div>
+      <div class="small" style="margin-top:8px">口径：87 个加密账号、341 条可验证预测，用「超额胜率 = 实际命中 − 同日同向基准命中」并做 4 组敏感性检验。基准本身就有约 2/3 胜率（无脑看涨 +8%/90 天命中 67.1%），所以「喊对」不等于有预判能力。</div>
+    </div>
+  </div>
+
+  <h2>八、问题与局限</h2>
+  <div class="card">
+    <ul>
+      <li><b>排序噪声</b>：X「最近」仍会混入旧帖与推荐卡片（原始 600 条里最早可到 2025-06），已按 ISO 时间硬过滤 24h 得到 495 条；90 条无时间戳（多为推广）被剔除，但算法插入内容仍可能带来少量噪声。</li>
+      <li><b>翻译口径</b>：部分推文是 X 页面自动显示的中文译文，表中为<b>摘要而非逐字原文</b>；点位数字按原文抽取，未做二次换算。</li>
+      <li><b>来源分层</b>：第四节全部来自「我关注的」账号 24h 流；第五节含公开搜索到的非关注账号，已单列，避免混淆。</li>
+      <li><b>历史评测的边界</b>：基于 2026 全年 341 条可验证预测，小样本账号结论不稳；评测衡量的是「方向 + 幅度是否兑现」，不代表观点质量或逻辑优劣。</li>
+      <li><b>非投资建议</b>：以上点位与预测均为博主观点汇总，不构成任何买卖建议。行情为 Binance BTCUSDT，快照时间 2026-11-12 13:15（北京时间）。</li>
+    </ul>
+  </div>
+
+  <div class="foot">
+    产物目录：<code>F:\despseekharness\crawler\output\x_btc_20261112\</code>　｜　原始数据：<code>raw_home_v2.json</code>（600 条采集）、<code>final_stats.json</code>、<code>market.json</code>、<code>candidates.json</code>、<code>credibility.json</code><br>
+    复现：<code>node x_btc_24h_capture.js --limit=600 --hours=24</code> → <code>node x_btc_1112_market.js</code> → <code>node x_btc_1112_digest.js</code> → <code>node x_btc_1112_final_stats.js</code>（工作目录 <code>F:\despseekharness\crawler</code>）
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>02 博主预测能力打分 · BTC 研究站</title>
+<link rel="stylesheet" href="../assets/report.css">
+<style>
+  .list{display:flex;flex-direction:column;gap:12px;margin:16px 0}
+  .item{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:16px 18px;transition:border-color .16s,transform .16s}
+  .item:hover{border-color:rgba(240,180,41,.3);transform:translateX(2px)}
+  .item .d{font-family:var(--mono);font-size:12px;color:var(--acc);letter-spacing:.04em}
+  .item .t{font-size:15px;color:var(--txt);margin:4px 0 5px;font-weight:600}
+  .item .s{font-size:12.5px;color:var(--txt2);line-height:1.7}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="crumb"><a href="../">首页</a><span>/</span>02 博主预测能力打分</div>
+  <div class="series">TOPIC 02</div>
+  <h1>博主预测能力打分</h1>
+  <div class="sub">核心不是「他这次说对没」，而是「他有没有稳定的判断力」。全部口径可复现。</div>
+
+  <div class="list">
+    <a class="item" href="2026-11-13/">
+      <div class="d">2026-11-13</div>
+      <div class="t">观点台账首轮判定：30 条 / 28 个账号</div>
+      <div class="s">把当日各派系观点转成可机械判定的承诺（目标位 + 起算日 + 结算日）。首轮已判错 3 条：DrProfitCrypto「75k 加仓」、Billions_2022_「不破 7w6」、market_beggar「牛初建仓」。</div>
+    </a>
+    <a class="item" href="2026-11-12/">
+      <div class="d">2026-11-12</div>
+      <div class="t">评分逻辑复盘：大周期优先 + 记忆更新机制</div>
+      <div class="s">旧评分主项是「90 天内曾触及 8%」，短期噪声支配排名；改为周期分层 + 顶底提前预判 + 样本收缩后，87 个账号里只有 12 个能排，旧榜首反而喊错底。</div>
+    </a>
+    <a class="item" href="2026-11-11/">
+      <div class="d">2026-11-11</div>
+      <div class="t">2026 全年预测能力评测（87 账号 / 341 条预测）</div>
+      <div class="s">用超额胜率 + 四口径敏感性检验，只有 3 个账号在 4 种检验下全部跑赢基准；「大周期顶底几乎没人能提前判断」。</div>
+    </a>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">四条硬口径</h3>
+    <ul class="small">
+      <li><strong>超额胜率</strong>：命中率 − 同日同向「无脑喊」基准（随机喊有约 2/3 命中）</li>
+      <li><strong>周期分层</strong>：只用 months/quarters 评大周期，按「60/90 天后收盘方向 ≥10%」判定</li>
+      <li><strong>顶底提前预判</strong>：拐点前 7–90 天加权；拐点当天喊底 = 事后确认，不计分</li>
+      <li><strong>历史一致性</strong>：trendFollow ≥0.72 且 n≥8 → 评级封顶 B（顺势不是能力）</li>
+    </ul>
+    <p class="small" style="margin-bottom:0">完整说明见 <a href="README.md">README</a>。</p>
+  </div>
+
+  <div class="foot">
+    <a href="../">← 返回首页</a> · 版本规则：<code>blogger-scoring/YYYY-MM-DD/</code>｜不构成投资建议
+  </div>
+</div>
+</body>
+</html>
