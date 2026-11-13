@@ -67,11 +67,22 @@ a{color:var(--acc2)}
 a.acct{color:inherit;text-decoration:none;border-bottom:1px solid rgba(91,157,255,.28);transition:color .15s ease,border-color .15s ease}
 a.acct:hover{color:var(--acc2);border-bottom-color:var(--acc2)}
 @media(max-width:640px){table{font-size:12px}td,th{padding:8px}}
-</style></head><body>
-<div style="position:fixed;top:12px;right:14px;z-index:9999;font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
-  <a href="../../" style="display:inline-block;padding:7px 13px;border-radius:20px;background:rgba(17,22,31,.92);color:#e8edf5;text-decoration:none;font-size:12px;border:1px solid #2a3546;box-shadow:0 4px 14px rgba(0,0,0,.28)">← 02 博主预测能力打分</a>
-</div>
+
+  /* handle-links: 博主名可点击，不破坏排版 */
+  a.handle{color:inherit;text-decoration:none;border-bottom:1px dashed currentColor;white-space:nowrap}
+  a.handle:hover{color:var(--accent,#2a5bd7);border-bottom-style:solid}
+  a.handle code{background:inherit;border:0;padding:0}
+</style><style>
+  /* 面包屑：与 assets/report.css 中 .crumb 保持一致（自包含样式页用） */
+  .crumb{font-size:12px;color:var(--txt3);margin:0 0 16px;letter-spacing:.02em}
+  .crumb a{color:var(--txt2);text-decoration:none;border-bottom:1px solid transparent}
+  .crumb a:hover{color:var(--acc,#f0b429);border-bottom-color:rgba(240,180,41,.4)}
+  .crumb span{color:var(--txt3);margin:0 6px}
+</style>
+</head><body>
+
 <div class="wrap">
+  <div class="crumb"><a href="../../">首页</a><span>/</span><a href="../">02 博主预测能力打分</a><span>/</span>2026-11-11</div>
 <header>
 <div class="eyebrow"><span class="dot"></span>BTC Research</div>
 <h1>推特 BTC 博主<span class="grad"> 预测能力评测</span></h1>
@@ -88,7 +99,7 @@ a.acct:hover{color:var(--acc2);border-bottom-color:var(--acc2)}
 <h3>两种口径的结论不同，都必须看</h3>
 <div class="scroll"><table><thead><tr><th>口径</th><th>衡量什么</th><th>结论</th></tr></thead><tbody>
 <tr><td><strong>严格口径</strong></td><td>预测方向是否在窗口内达标（要求高）</td><td>4 口径稳定为正且样本≥5 的只有 <strong>1</strong> 个</td></tr>
-<tr><td><strong>模拟操作</strong></td><td>照着买卖能否赚钱（含 10% 止损、模糊容错）</td><td>跑赢买入持有（-16.6%）的有 <strong>20</strong> 个，最好的是 @realGuanYu，中位收益 12.3%</td></tr>
+<tr><td><strong>模拟操作</strong></td><td>照着买卖能否赚钱（含 10% 止损、模糊容错）</td><td>跑赢买入持有（-16.6%）的有 <strong>20</strong> 个，最好的是 <a class="handle" href="https://x.com/realGuanYu" target="_blank" rel="noopener noreferrer">@realGuanYu</a>，中位收益 12.3%</td></tr>
 </tbody></table></div>
 <div class="note"><strong>为什么两个结论不同？</strong>严格口径会把「抄底略早、短期磨一下、最终涨起来」判成错，对博主不公平；但模拟操作若不加止损，也会把「先亏 40% 再涨回来」当成赚。所以本报告同时给出两者：<strong>严格口径看预测能力，模拟操作看实战收益（已加 10% 止损）</strong>。</div>
 <h3>严格口径：4 口径稳定为正的账号</h3>
@@ -113,10 +124,10 @@ a.acct:hover{color:var(--acc2);border-bottom-color:var(--acc2)}
 <h2><span class="num">02</span>关键大周期节点命中</h2>
 <p>四个真实节点，判定标准：节点前窗口内给出同方向预测，且目标价落在节点价 ±8% 内（强命中）；仅有顶/底措辞无价格为弱命中。</p>
 <div class="scroll"><table><thead><tr><th>节点</th><th>日期</th><th>真实价</th><th>强命中</th><th>弱命中</th></tr></thead><tbody>
-<tr><td><strong>2月大底 6W</strong></td><td class="mono">2026-02-06</td><td class="mono">60,000</td><td>@williamlab</td><td class="dim">@fishbtcer, @DrProfitCrypto, @liujia0224, @SilverBulletBTC</td></tr>
-<tr><td><strong>5月阶段顶 8W2</strong></td><td class="mono">2026-05-06</td><td class="mono">82,850</td><td>@ZiiiMindInvest</td><td class="dim">@btc_tigerx, @0XTiger666</td></tr>
-<tr><td><strong>7月大底 5W7</strong></td><td class="mono">2026-07-01</td><td class="mono">57,800</td><td>@jiangjinyajy</td><td class="dim">@Billions_2022_, @_Checkmatey_, @DrProfitCrypto, @btc_tigerx, @liujia0224, @btc2688, @LuYao_Trader, @BobLoukas</td></tr>
-<tr><td><strong>10月阶段顶 8W7</strong></td><td class="mono">2026-09-21</td><td class="mono">87,396</td><td>@Billions_2022_, @huangdaobtc</td><td class="dim">@Cryptodengta</td></tr>
+<tr><td><strong>2月大底 6W</strong></td><td class="mono">2026-02-06</td><td class="mono">60,000</td><td><a class="handle" href="https://x.com/williamlab" target="_blank" rel="noopener noreferrer">@williamlab</a></td><td class="dim"><a class="handle" href="https://x.com/fishbtcer" target="_blank" rel="noopener noreferrer">@fishbtcer</a>, <a class="handle" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a>, <a class="handle" href="https://x.com/liujia0224" target="_blank" rel="noopener noreferrer">@liujia0224</a>, <a class="handle" href="https://x.com/SilverBulletBTC" target="_blank" rel="noopener noreferrer">@SilverBulletBTC</a></td></tr>
+<tr><td><strong>5月阶段顶 8W2</strong></td><td class="mono">2026-05-06</td><td class="mono">82,850</td><td><a class="handle" href="https://x.com/ZiiiMindInvest" target="_blank" rel="noopener noreferrer">@ZiiiMindInvest</a></td><td class="dim"><a class="handle" href="https://x.com/btc_tigerx" target="_blank" rel="noopener noreferrer">@btc_tigerx</a>, @0XTiger666</td></tr>
+<tr><td><strong>7月大底 5W7</strong></td><td class="mono">2026-07-01</td><td class="mono">57,800</td><td><a class="handle" href="https://x.com/jiangjinyajy" target="_blank" rel="noopener noreferrer">@jiangjinyajy</a></td><td class="dim"><a class="handle" href="https://x.com/Billions_2022_" target="_blank" rel="noopener noreferrer">@Billions_2022_</a>, <a class="handle" href="https://x.com/_Checkmatey_" target="_blank" rel="noopener noreferrer">@_Checkmatey_</a>, <a class="handle" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a>, <a class="handle" href="https://x.com/btc_tigerx" target="_blank" rel="noopener noreferrer">@btc_tigerx</a>, <a class="handle" href="https://x.com/liujia0224" target="_blank" rel="noopener noreferrer">@liujia0224</a>, <a class="handle" href="https://x.com/btc2688" target="_blank" rel="noopener noreferrer">@btc2688</a>, <a class="handle" href="https://x.com/LuYao_Trader" target="_blank" rel="noopener noreferrer">@LuYao_Trader</a>, <a class="handle" href="https://x.com/BobLoukas" target="_blank" rel="noopener noreferrer">@BobLoukas</a></td></tr>
+<tr><td><strong>10月阶段顶 8W7</strong></td><td class="mono">2026-09-21</td><td class="mono">87,396</td><td><a class="handle" href="https://x.com/Billions_2022_" target="_blank" rel="noopener noreferrer">@Billions_2022_</a>, <a class="handle" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a></td><td class="dim"><a class="handle" href="https://x.com/Cryptodengta" target="_blank" rel="noopener noreferrer">@Cryptodengta</a></td></tr>
 </tbody></table></div>
 <p><strong>没有任何账号命中超过 1 个节点。</strong>这批博主对大周期顶底的判断普遍不可用。</p>
 <h2><span class="num">03</span>模拟操作：如果照他说的时间点买卖</h2>

@@ -235,12 +235,16 @@ footer{padding:52px 0 64px;background:var(--bg2);border-top:1px solid var(--line
   .stat-row{gap:18px}
 }
 </style>
+<style>
+  /* 面包屑：与 assets/report.css 中 .crumb 保持一致（自包含样式页用） */
+  .crumb{font-size:12px;color:var(--txt3);margin:0 0 16px;letter-spacing:.02em}
+  .crumb a{color:var(--txt2);text-decoration:none;border-bottom:1px solid transparent}
+  .crumb a:hover{color:var(--acc,#f0b429);border-bottom-color:rgba(240,180,41,.4)}
+  .crumb span{color:var(--txt3);margin:0 6px}
+</style>
 </head>
 <body>
-<div style="position:fixed;top:12px;right:14px;z-index:9999;font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
-  <a href="../../" style="display:inline-block;padding:7px 13px;border-radius:20px;background:rgba(17,22,31,.92);color:#e8edf5;text-decoration:none;font-size:12px;border:1px solid #2a3546;box-shadow:0 4px 14px rgba(0,0,0,.28)">← 01 宏观走势与重要事件</a>
-</div>
-
+<div class="wrap"><div class="crumb"><a href="../../">首页</a><span>/</span><a href="../">01 宏观走势与重要事件</a><span>/</span>2026-11-08</div></div>
 
 <!-- ================= HERO ================= -->
 <header class="hero">

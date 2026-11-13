@@ -8,17 +8,23 @@
 <style>
   .topics{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0 10px}
   .topic{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px 20px 18px;
-    display:flex;flex-direction:column;transition:border-color .18s,transform .18s,box-shadow .18s}
-  .topic:hover{border-color:rgba(240,180,41,.32);transform:translateY(-2px);
-    box-shadow:0 10px 28px rgba(0,0,0,.35)}
+    display:flex;flex-direction:column;transition:border-color .18s,transform .18s,box-shadow .18s,background .18s}
+  .topic:hover{border-color:rgba(240,180,41,.45);transform:translateY(-3px);
+    box-shadow:0 12px 32px rgba(0,0,0,.42);background:var(--panel2)}
+  /* 整卡可点：a 当卡片，避免再放一个「进入专题」按钮 */
+  a.topic{text-decoration:none;color:inherit;cursor:pointer;position:relative}
+  a.topic:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+  a.topic::after{content:"→";position:absolute;right:18px;bottom:16px;font-size:15px;
+    color:var(--acc2);opacity:.55;transition:opacity .18s,transform .18s}
+  a.topic:hover::after{opacity:1;transform:translateX(3px)}
   .topic .no{font-family:var(--mono);font-size:11px;color:var(--acc);letter-spacing:.14em}
   .topic h2{border:0;padding:0;margin:8px 0 10px;font-size:16.5px;color:var(--txt)}
   .topic p{color:var(--txt2);font-size:12.5px;margin:0 0 14px;flex:1;line-height:1.75}
   .topic .latest{font-size:11.5px;color:var(--txt2);background:var(--panel2);
-    border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin-bottom:12px;line-height:1.6}
+    border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin-bottom:6px;line-height:1.6}
   .topic .latest b{color:var(--acc);font-family:var(--mono)}
-  .topic .go{font-size:12.5px;color:var(--acc2)}
-  .topic .go:hover{border-bottom:1px solid var(--acc2)}
+  a.topic:hover .latest{border-color:rgba(240,180,41,.28)}
+  a.topic:hover h2{color:var(--acc)}
   .meta{display:flex;gap:20px;flex-wrap:wrap;font-size:12px;color:var(--txt3);margin:4px 0 8px}
   .meta b{color:var(--txt2);font-weight:500}
   @media(max-width:860px){.topics{grid-template-columns:1fr}}
@@ -37,29 +43,26 @@
   </div>
 
   <div class="topics">
-    <div class="topic">
+    <a class="topic" href="macro-events/">
       <div class="no">TOPIC 01</div>
       <h2>宏观走势与重要事件</h2>
       <p>行情结构、关键价位、驱动事件（CPI / 议息 / ETF / 监管 / 黑天鹅）与时间线。只讲「发生了什么、为什么」，不做博主评价。</p>
       <div class="latest">最新：<b>2026-11-13</b><br>跌破 70,000 的四条驱动</div>
-      <a class="go" href="macro-events/">进入专题 →</a>
-    </div>
+    </a>
 
-    <div class="topic">
+    <a class="topic" href="blogger-scoring/">
       <div class="no">TOPIC 02</div>
       <h2>博主预测能力打分</h2>
       <p>用超额胜率、周期分层、顶底提前预判、样本收缩等口径做可复现评级；含观点承诺台账的对错结算与拉黑建议。</p>
       <div class="latest">最新：<b>2026-11-13</b><br>30 条观点台账首轮判定</div>
-      <a class="go" href="blogger-scoring/">进入专题 →</a>
-    </div>
+    </a>
 
-    <div class="topic">
+    <a class="topic" href="blogger-views/">
       <div class="no">TOPIC 03</div>
       <h2>博主观点与走势预测</h2>
       <p>关注流里谁说了什么、哪些点位被反复提及、多空阵营如何分布，以及某次事件里谁提前看对／看错（附原文与历史标签）。</p>
       <div class="latest">最新：<b>2026-11-13</b><br>谁提前预判了跌破 7 万</div>
-      <a class="go" href="blogger-views/">进入专题 →</a>
-    </div>
+    </a>
   </div>
 
   <h2>版本与改版规则</h2>
@@ -68,6 +71,8 @@
       <li><strong>目录即版本</strong>：每期放 <code>&lt;专题&gt;/YYYY-MM-DD/index.html</code>；同日多次修订用 <code>YYYY-MM-DD-r2/</code>，不覆盖历史。</li>
       <li><strong>样式统一</strong>：新报告一律引用 <code>assets/report.css</code>；改版式只改这一个文件，历史自包含样式的报告保持原样。</li>
       <li><strong>内容修订</strong>：同一期订正直接覆盖原目录，并在页脚更新「修订」时间与说明。</li>
+      <li><strong>页内导航</strong>：每份报告顶部固定面包屑「首页 / 专题 / 日期」，前两级均可点回；不再放右上角浮动按钮。</li>
+      <li><strong>专题边界</strong>：01 只写行情事实（时间线、驱动、价位结构），03 只写观点与对错；同一份行情数据只在一个专题里维护，另一处用链接引用。</li>
       <li><strong>旧链接不断</strong>：<code>2026-11-08/</code>、<code>2026-11-11/</code> 原始路径保留可访问。</li>
     </ul>
   </div>
