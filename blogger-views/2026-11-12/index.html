@@ -75,6 +75,14 @@
   .bar > i{display:block;height:100%;background:var(--acc2)}
   @media(max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}
     .wrap{padding:28px 18px 56px} h1{font-size:21px}}
+
+  /* 历史评测标签（来自 02 专题 v4 口径，2026-11-13 加） */
+  .tag.hist{border:1px dashed currentColor;background:transparent;opacity:.92}
+  .tag.hist.pos{color:#3ddc97;border-color:rgba(61,220,151,.5);background:rgba(61,220,151,.07)}
+  .tag.hist.negx{color:#f2555a;border-color:rgba(242,85,90,.45);background:rgba(242,85,90,.07)}
+  .tag.hist.warnx{color:#f0b429;border-color:rgba(240,180,41,.45);background:rgba(240,180,41,.07)}
+  .tag.hist.gray{color:var(--txt3);border-color:rgba(255,255,255,.18)}
+  .tag.hist::before{content:"◷ ";opacity:.7}
 </style>
 <style>
   /* 面包屑：与 assets/report.css 中 .crumb 保持一致（自包含样式页用） */
@@ -96,6 +104,15 @@
     <div class="kpi"><div class="n">187</div><div class="l">含观点/判断的帖（占 37.8%）</div></div>
     <div class="kpi"><div class="n">67</div><div class="l">BTC / 加密相关帖 / 41 位作者</div></div>
     <div class="kpi"><div class="n down">-8.6%</div><div class="l">BTC 近 7 日（80,504 → 73,578）</div></div>
+  </div>
+
+  <div class="note" style="font-size:12px">
+    <strong>◷ 历史评测标签</strong>来自 <a href="../../blogger-scoring/2026-11-11/">02 博主预测能力打分</a> 的 v4 大周期口径（asof 2026-11-13）：
+    <span class="tag hist pos">大周期偏准</span> = months/quarters 预测的终点方向跑赢基准；
+    <span class="tag hist negx">大周期偏错</span> = 长周期判断为主错误；
+    <span class="tag hist warnx">追涨杀跌 / 旧口径跑输</span> = 顺势跟风或旧口径下跑输；
+    <span class="tag hist gray">样本不足 / 无记录</span> = 该账号没有足够可结算的长周期预测，<b>不代表他这次说错</b>。
+    标签评的是<b>长期能力</b>，不是本次观点对错——两者可能相反，这正是需要注意的地方。
   </div>
 
   <h2>一、结论（先看这里）</h2>
@@ -168,19 +185,19 @@
   <table>
     <thead><tr><th>账号 / 日期</th><th>倾向</th><th>目标位 / 关键位</th><th>观点摘要</th><th>来源</th></tr></thead>
     <tbody>
-      <tr><td><a class="handle" href="https://x.com/chairbtc" target="_blank" rel="noopener noreferrer">@chairbtc</a> · 11-10</td><td><span class="tag bear">偏空后抄底</span></td><td>收不回 <b>76,000</b> → 回踩 <b>70,000</b> 甚至 6 字头；<b>60,000 以下分批抄底</b></td><td>日线跌破 MA120 已破位；认为 5–6 万是本轮底部区</td><td>关注账号</td></tr>
-      <tr><td><a class="handle" href="https://x.com/Hoyooyoo" target="_blank" rel="noopener noreferrer">@Hoyooyoo</a> · 11-08</td><td><span class="tag bear">偏空</span></td><td><b>76,500</b> 之下弱势；<b>74,500 是多头最后底线</b>，跌破先看 <b>69,000</b></td><td>「震荡的嵌套」，向下深度可达本轮起涨点</td><td>关注账号</td></tr>
-      <tr><td><a class="handle" href="https://x.com/AwbczBTC" target="_blank" rel="noopener noreferrer">@AwbczBTC</a> · 11-10</td><td><span class="tag bull">强看多</span></td><td><b>72,500–73,000</b> 斐波 618 支撑；<b>75,000 → 105,000</b> 第二段涨幅</td><td>「大的要来了」；但全年评测为最差档 -43pt</td><td>关注账号</td></tr>
-      <tr><td><a class="handle" href="https://x.com/dongbimao" target="_blank" rel="noopener noreferrer">@dongbimao</a> · 11-05</td><td><span class="tag bull">年底看多</span></td><td>年底仍有机会冲 <b>100,000</b></td><td>7.5 万附近下探可能已完成一次流动性清洗；但右侧突破仍需确认（11/09 起转谨慎）</td><td>关注账号</td></tr>
-      <tr><td><a class="handle" href="https://x.com/BobLoukas" target="_blank" rel="noopener noreferrer">@BobLoukas</a> · 11-09</td><td><span class="tag bear">中期谨慎</span></td><td>无点位；<b>12 月才重新加满仓</b>，当前 50% 现金</td><td>周线周期顶已现，弱势可能延续到 1 月；4 年周期底部已在</td><td>关注账号</td></tr>
-      <tr><td><a class="handle" href="https://x.com/rektcapital" target="_blank" rel="noopener noreferrer">@rektcapital</a> · 11-10</td><td><span class="tag bear">偏空</span></td><td><b>76,800 / 78,300</b> 周线支撑转阻力；<b>75,000</b> 已被看跌回测</td><td>-17% 回撤仍未见卖方投降，任何反弹可能只是短暂缓解</td><td>关注账号</td></tr>
-      <tr><td><a class="handle" href="https://x.com/BitmonkCrypto" target="_blank" rel="noopener noreferrer">@BitmonkCrypto</a> · 11-09</td><td><span class="tag bear">偏空</span></td><td><b>74.4–76.2k</b> 支撑失守；跌破 <b>73k</b> 看 <b>69–70k</b>；<b>65–55k</b> 为极限情景</td><td>200 日均线约 73k 是关键，极限情景只是「可能」而非确定</td><td>公开搜索</td></tr>
-      <tr><td><a class="handle" href="https://x.com/CryptoReviewing" target="_blank" rel="noopener noreferrer">@CryptoReviewing</a> · 11-09</td><td><span class="tag">中性 / 流动性</span></td><td><b>71–73.5k</b> 有流动性待扫；<b>75–78.5k</b> 清算集群是更高概率的上行目标</td><td>一周内全市场清算 42 亿美元，上下都有清算池</td><td>公开搜索</td></tr>
-      <tr><td><a class="handle" href="https://x.com/XBTkaz" target="_blank" rel="noopener noreferrer">@XBTkaz</a> · 11-09</td><td><span class="tag bull">看多</span></td><td>最后扫到 <b>72k</b> 诱空 → 涨向 <b>90k</b>；<b>60k</b> 不会发生</td><td>「底部比你想象的更近」</td><td>公开搜索</td></tr>
-      <tr><td><a class="handle" href="https://x.com/MookieNFT" target="_blank" rel="noopener noreferrer">@MookieNFT</a> · 11-11</td><td><span class="tag bull">条件看多</span></td><td>先收复 <b>75k</b> → 买家介入则 <b>83k</b> 是下一目标；否则 <b>67k</b></td><td>CPI 超预期后跌至 73k，但历史上大跌后常有 8%–30% 反弹</td><td>公开搜索</td></tr>
-      <tr><td><a class="handle" href="https://x.com/FinanzasArgy" target="_blank" rel="noopener noreferrer">@FinanzasArgy</a> · 11-10</td><td><span class="tag">分水岭</span></td><td>收复 <b>75k</b> = 积极信号；否则下看 <b>71k</b></td><td>转述分析师对跌破 74k 后的技术判断</td><td>公开搜索</td></tr>
-      <tr><td><a class="handle" href="https://x.com/ShawnCT_" target="_blank" rel="noopener noreferrer">@ShawnCT_</a> · 11-09</td><td><span class="tag bear">极端看空</span></td><td>恐慌抛售到 <b>48–50k</b>；<b>2027 Q1</b> 反转到 <b>100k+</b></td><td>认为 126k 以来每次反弹都是「上升通道陷阱 → 假突破 → 崩盘」</td><td>公开搜索</td></tr>
-      <tr><td><a class="handle" href="https://x.com/drfrostcrypto" target="_blank" rel="noopener noreferrer">@drfrostcrypto</a> · 11-11</td><td><span class="tag bull">极端看多</span></td><td>从 <b>73k</b> 直接进入 <b>93–104k</b> 抛物线扩张</td><td>「结构若不成我就删号」，属口号式喊单</td><td>公开搜索</td></tr>
+      <tr><td><a class="handle" href="https://x.com/chairbtc" target="_blank" rel="noopener noreferrer">@chairbtc</a> · 11-10<br><span class="tag hist gray">历史评测：样本不足</span></td><td><span class="tag bear">偏空后抄底</span></td><td>收不回 <b>76,000</b> → 回踩 <b>70,000</b> 甚至 6 字头；<b>60,000 以下分批抄底</b></td><td>日线跌破 MA120 已破位；认为 5–6 万是本轮底部区</td><td>关注账号</td></tr>
+      <tr><td><a class="handle" href="https://x.com/Hoyooyoo" target="_blank" rel="noopener noreferrer">@Hoyooyoo</a> · 11-08<br><span class="tag hist gray">历史评测：样本不足</span></td><td><span class="tag bear">偏空</span></td><td><b>76,500</b> 之下弱势；<b>74,500 是多头最后底线</b>，跌破先看 <b>69,000</b></td><td>「震荡的嵌套」，向下深度可达本轮起涨点</td><td>关注账号</td></tr>
+      <tr><td><a class="handle" href="https://x.com/AwbczBTC" target="_blank" rel="noopener noreferrer">@AwbczBTC</a> · 11-10<br><span class="tag hist negx">历史评测：大周期偏错</span></td><td><span class="tag bull">强看多</span></td><td><b>72,500–73,000</b> 斐波 618 支撑；<b>75,000 → 105,000</b> 第二段涨幅</td><td>「大的要来了」；但全年评测为最差档 -43pt</td><td>关注账号</td></tr>
+      <tr><td><a class="handle" href="https://x.com/dongbimao" target="_blank" rel="noopener noreferrer">@dongbimao</a> · 11-05<br><span class="tag hist negx">历史评测：大周期偏错</span></td><td><span class="tag bull">年底看多</span></td><td>年底仍有机会冲 <b>100,000</b></td><td>7.5 万附近下探可能已完成一次流动性清洗；但右侧突破仍需确认（11/09 起转谨慎）</td><td>关注账号</td></tr>
+      <tr><td><a class="handle" href="https://x.com/BobLoukas" target="_blank" rel="noopener noreferrer">@BobLoukas</a> · 11-09<br><span class="tag hist negx">历史评测：大周期偏错</span></td><td><span class="tag bear">中期谨慎</span></td><td>无点位；<b>12 月才重新加满仓</b>，当前 50% 现金</td><td>周线周期顶已现，弱势可能延续到 1 月；4 年周期底部已在</td><td>关注账号</td></tr>
+      <tr><td><a class="handle" href="https://x.com/rektcapital" target="_blank" rel="noopener noreferrer">@rektcapital</a> · 11-10<br><span class="tag hist gray">历史评测：样本不足</span></td><td><span class="tag bear">偏空</span></td><td><b>76,800 / 78,300</b> 周线支撑转阻力；<b>75,000</b> 已被看跌回测</td><td>-17% 回撤仍未见卖方投降，任何反弹可能只是短暂缓解</td><td>关注账号</td></tr>
+      <tr><td><a class="handle" href="https://x.com/BitmonkCrypto" target="_blank" rel="noopener noreferrer">@BitmonkCrypto</a> · 11-09<br><span class="tag hist gray">历史评测：无记录</span></td><td><span class="tag bear">偏空</span></td><td><b>74.4–76.2k</b> 支撑失守；跌破 <b>73k</b> 看 <b>69–70k</b>；<b>65–55k</b> 为极限情景</td><td>200 日均线约 73k 是关键，极限情景只是「可能」而非确定</td><td>公开搜索</td></tr>
+      <tr><td><a class="handle" href="https://x.com/CryptoReviewing" target="_blank" rel="noopener noreferrer">@CryptoReviewing</a> · 11-09<br><span class="tag hist gray">历史评测：无记录</span></td><td><span class="tag">中性 / 流动性</span></td><td><b>71–73.5k</b> 有流动性待扫；<b>75–78.5k</b> 清算集群是更高概率的上行目标</td><td>一周内全市场清算 42 亿美元，上下都有清算池</td><td>公开搜索</td></tr>
+      <tr><td><a class="handle" href="https://x.com/XBTkaz" target="_blank" rel="noopener noreferrer">@XBTkaz</a> · 11-09<br><span class="tag hist gray">历史评测：无记录</span></td><td><span class="tag bull">看多</span></td><td>最后扫到 <b>72k</b> 诱空 → 涨向 <b>90k</b>；<b>60k</b> 不会发生</td><td>「底部比你想象的更近」</td><td>公开搜索</td></tr>
+      <tr><td><a class="handle" href="https://x.com/MookieNFT" target="_blank" rel="noopener noreferrer">@MookieNFT</a> · 11-11<br><span class="tag hist gray">历史评测：无记录</span></td><td><span class="tag bull">条件看多</span></td><td>先收复 <b>75k</b> → 买家介入则 <b>83k</b> 是下一目标；否则 <b>67k</b></td><td>CPI 超预期后跌至 73k，但历史上大跌后常有 8%–30% 反弹</td><td>公开搜索</td></tr>
+      <tr><td><a class="handle" href="https://x.com/FinanzasArgy" target="_blank" rel="noopener noreferrer">@FinanzasArgy</a> · 11-10<br><span class="tag hist gray">历史评测：无记录</span></td><td><span class="tag">分水岭</span></td><td>收复 <b>75k</b> = 积极信号；否则下看 <b>71k</b></td><td>转述分析师对跌破 74k 后的技术判断</td><td>公开搜索</td></tr>
+      <tr><td><a class="handle" href="https://x.com/ShawnCT_" target="_blank" rel="noopener noreferrer">@ShawnCT_</a> · 11-09<br><span class="tag hist gray">历史评测：无记录</span></td><td><span class="tag bear">极端看空</span></td><td>恐慌抛售到 <b>48–50k</b>；<b>2027 Q1</b> 反转到 <b>100k+</b></td><td>认为 126k 以来每次反弹都是「上升通道陷阱 → 假突破 → 崩盘」</td><td>公开搜索</td></tr>
+      <tr><td><a class="handle" href="https://x.com/drfrostcrypto" target="_blank" rel="noopener noreferrer">@drfrostcrypto</a> · 11-11<br><span class="tag hist gray">历史评测：无记录</span></td><td><span class="tag bull">极端看多</span></td><td>从 <b>73k</b> 直接进入 <b>93–104k</b> 抛物线扩张</td><td>「结构若不成我就删号」，属口号式喊单</td><td>公开搜索</td></tr>
     </tbody>
   </table>
 
@@ -206,9 +223,9 @@
     <div class="card">
       <h3 style="margin-top:0">4 口径下稳定跑赢基准（仅 3 个）</h3>
       <table><tbody>
-        <tr><td><a class="handle" href="https://x.com/_Checkmatey_" target="_blank" rel="noopener noreferrer">@_Checkmatey_</a></td><td class="num up">+11.1pt</td><td class="small">有分析、有明确点位</td></tr>
-        <tr><td><a class="handle" href="https://x.com/0XTiger666" target="_blank" rel="noopener noreferrer">@0XTiger666</a></td><td class="num up">+4.8pt</td><td class="small">偏宏观、少给点位</td></tr>
-        <tr><td><a class="handle" href="https://x.com/Dp520888" target="_blank" rel="noopener noreferrer">@Dp520888</a></td><td class="num up">+2.2pt</td><td class="small">样本不足，结论弱</td></tr>
+        <tr><td><a class="handle" href="https://x.com/_Checkmatey_" target="_blank" rel="noopener noreferrer">@_Checkmatey_</a><br><span class="tag hist pos">历史评测：大周期偏准</span></td><td class="num up">+11.1pt</td><td class="small">有分析、有明确点位</td></tr>
+        <tr><td><a class="handle" href="https://x.com/0XTiger666" target="_blank" rel="noopener noreferrer">@0XTiger666</a><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="num up">+4.8pt</td><td class="small">偏宏观、少给点位</td></tr>
+        <tr><td><a class="handle" href="https://x.com/Dp520888" target="_blank" rel="noopener noreferrer">@Dp520888</a><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="num up">+2.2pt</td><td class="small">样本不足，结论弱</td></tr>
       </tbody></table>
       <div class="small" style="margin-top:8px">这 3 个账号在本次 24h 窗口内<b>没有发布带点位的新预测</b>。</div>
     </div>

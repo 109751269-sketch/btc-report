@@ -98,10 +98,27 @@ a.acct:hover{color:var(--acc2);border-bottom-color:var(--acc2)}
   details.more .scroll{margin-top:8px}
   .sub2{font-size:12.5px;color:var(--txt3);margin:2px 0 16px}
 </style>
+
+<style>
+  /* 与 assets/report.css 对齐：面包屑 / 标题 / series（2026-11-13 修） */
+  .crumb{font-size:12px;color:var(--txt3);margin:0 0 14px;letter-spacing:.02em;line-height:1.5}
+  .crumb a{color:var(--txt2);text-decoration:none;border-bottom:1px solid transparent}
+  .crumb a:hover{color:var(--acc);border-bottom-color:rgba(240,180,41,.4)}
+  .crumb span{color:var(--txt3);margin:0 6px}
+  h1{font-size:27px;line-height:1.35;margin:0 0 8px;font-weight:650;letter-spacing:.01em}
+  .series{display:inline-flex;align-items:center;gap:6px;font-size:11px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--acc);border:1px solid rgba(240,180,41,.28);
+    border-radius:20px;padding:3px 11px;margin-bottom:12px}
+  .sub{color:var(--txt2);font-size:13px;margin:0 0 8px;line-height:1.75}
+</style>
+<style>
+  .diverge{color:#f2555a;font-size:11px;margin-left:3px;cursor:help}
+</style>
 </head>
 <body>
 <div class="wrap">
   <div class="crumb"><a href="../../">首页</a><span>/</span><a href="../">02 博主预测能力打分</a><span>/</span>2026-11-11</div>
+  <div class="series">TOPIC 02 · 2026-11-11 · 修订 2026-11-13</div>
 
   <h1>博主预测能力排行 <span style="color:var(--acc)">v4</span></h1>
   <div class="sub">数据区间 2026-01-01 ~ 2026-11-13 ｜ 96 个账号（87 个历史评测 + 9 个今日台账新增）/ 341 条逐字核对的预测 ｜ 行情 Binance BTCUSDT 日线</div>
@@ -130,9 +147,9 @@ a.acct:hover{color:var(--acc2);border-bottom-color:var(--acc2)}
 <td class="mono dim">不稳定</td>
 </tr>
   </tbody></table></div>
-  <p class="dim">本期只有 1 个账号样本达标：@DrProfitCrypto。其余 95 个账号的可结算大周期预测都不到 8 条（其中 9 个只来自今日台账，历史语料里没有）——这正是 v3 排名不可靠的核心原因。</p>
+  <p class="dim">本期只有 1 个账号样本达标：<a class="handle" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a>。其余 95 个账号的可结算大周期预测都不到 8 条（其中 9 个只来自今日台账，历史语料里没有）——这正是 v3 排名不可靠的核心原因。</p>
 
-  <div class="note"><strong>本期正榜的实情：</strong>唯一达标的 @DrProfitCrypto 综合分为 <strong>0（D 档）</strong>——大周期 5/12 对、超额 −5pt、短期 −12pt，属于「有样本但没优势」。换句话说，<strong>2026 全年没有一个大周期口径下显著跑赢基准的账号</strong>。这和 v3 排出的「S 档第一名」完全不是同一个人，正是口径差异造成的。<br>结论：<strong>现阶段不要把任何博主的点位当交易依据</strong>，用他们的逻辑做参考可以，跟单不行。</div>
+  <div class="note"><strong>本期正榜的实情：</strong>唯一达标的 <a class="handle" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a> 综合分为 <strong>0（D 档）</strong>——大周期 5/12 对、超额 −5pt、短期 −12pt，属于「有样本但没优势」。换句话说，<strong>2026 全年没有一个大周期口径下显著跑赢基准的账号</strong>。这和 v3 排出的「S 档第一名」完全不是同一个人，正是口径差异造成的。<br>结论：<strong>现阶段不要把任何博主的点位当交易依据</strong>，用他们的逻辑做参考可以，跟单不行。</div>
 
   <h3>观察榜（大周期可结算 3~7 条，<strong>仅供参考，不作结论</strong>）</h3>
   <div class="scroll"><table class="rank"><thead><tr>
@@ -273,7 +290,7 @@ a.acct:hover{color:var(--acc2);border-bottom-color:var(--acc2)}
 </tr><tr>
 <td class="mono dim">2</td>
 <td><strong><a class="acct" href="https://x.com/sylvigil" target="_blank" rel="noopener noreferrer">@sylvigil</a></strong></td>
-<td class="mono">7</td>
+<td class="mono">7<sup class="diverge" title="v3 给了高分，v4 大周期口径判为偏错">⚠</sup></td>
 <td class="mono">S</td>
 <td class="mono pos">+28pt</td>
 <td class="mono">7</td>
@@ -281,7 +298,7 @@ a.acct:hover{color:var(--acc2);border-bottom-color:var(--acc2)}
 </tr><tr>
 <td class="mono dim">3</td>
 <td><strong><a class="acct" href="https://x.com/cs_zhaozilong" target="_blank" rel="noopener noreferrer">@cs_zhaozilong</a></strong></td>
-<td class="mono">4</td>
+<td class="mono">4<sup class="diverge" title="v3 给了高分，v4 大周期口径判为偏错">⚠</sup></td>
 <td class="mono">B</td>
 <td class="mono pos">+19pt</td>
 <td class="mono">6</td>
@@ -384,7 +401,20 @@ a.acct:hover{color:var(--acc2);border-bottom-color:var(--acc2)}
 <td><span class="tag neg">历史以错误为主</span></td>
 </tr>
   </tbody></table></div>
-  <p class="dim">完整 v3 明细（87 个账号）见 <a href="2026-11-12/">2026-11-12 评分逻辑复盘</a>；两版口径差异的量化对比也在那一期。</p>
+  <div class="note" style="border-left-color:#f2555a">
+    <strong>为什么 v3 会把「大周期偏错」的人排到前面？</strong>v3 的分数公式是
+    <code>round(超额×20) + 节点命中×2 + 点位明确 +1 − 趋势跟随 −1</code>，其中「超额」用的是
+    <b>90 天内是否曾经触及 ±8%</b>。<br>
+    <b><a class="handle" href="https://x.com/sylvigil" target="_blank" rel="noopener noreferrer">@sylvigil</a> 就是典型：</b>他 2026 上半年顺势看多（BTC 从 5.78 万涨到 8.74 万），90 天内触及 +8% 极其容易，
+    于是拿到 <b>超额 +28pt、v3 分 7（S 档）</b>；但用「60/90 天后收盘方向是否走出 ≥10%」判定，他只对 1/3，
+    所以 v4 标签是「大周期偏错 + 历史以错误为主」。<b>两列不是同一把尺子，故意并列就是为了暴露这个分歧。</b><br>
+    <b>还有一个 v3 的硬伤：</b>他的 4 口径稳健性是 <code>unstable</code>（其余口径并不都为正），
+    但 v3 的分数公式<b>根本没读这个字段</b>——稳健性只做了展示，没进分。这是 v3 判他 S 档的直接原因。
+    带 <span style="color:#f2555a">⚠</span> 的行都属于这类「旧口径高、新口径偏错」的账号。<br>
+    <b>排第 1 的 <a class="handle" href="https://x.com/Billions_2022_" target="_blank" rel="noopener noreferrer">@Billions_2022_</a> 同理：</b>v3 给 9 分 S 档，但他 11-07 说「不会跌破 7w6」、11-10 说「熊市已经结束了」，11-13 就被打到 67,568，<b>台账已判错</b>（见 <a href="../2026-11-13/">2026-11-13 台账判定</a>）。
+  </div>
+
+  <p class="dim">完整 v3 明细（87 个账号）见 <a href="../2026-11-12/">2026-11-12 评分逻辑复盘</a>；两版口径差异的量化对比也在那一期。</p>
 
   <h2><span class="num">03</span>战绩速览（两种口径各自的结论）</h2>
 
@@ -440,6 +470,16 @@ a.acct:hover{color:var(--acc2);border-bottom-color:var(--acc2)}
   <h2><span class="num">06</span>模拟操作：照着他说的时间点买卖</h2>
 
 <p>规则：按预测日收盘价入场；做多遇 −10% 止损、触及目标价止盈，否则 120 天平仓；做空反向。按<strong>中位收益</strong>排序（避免被单笔大赚拉偏）。</p>
+<div class="note" style="border-left-color:#5b9dff">
+    <strong>这一节和前面的排名不是一回事，别混用：</strong>它衡量的是「<b>照着他的时间点真金白银买卖能赚多少</b>」，
+    不是「他判断得准不准」。差别来自三处：① 有 <b>−10% 止损</b>，扛过去再涨回来也算止损出局；
+    ② 触及目标价就止盈，运气好一次大赚会拉高中位数；③ 只统计给了明确点位/时间的预测，不含「长期看多」这类模糊表述。
+    <br><b>怎么用：</b>想知道「<b>谁有判断力</b>」→ 看第一节的 v4 榜单（大周期终点方向 + 扣基准）；
+    想知道「<b>跟单能不能赚钱</b>」→ 看这一节的模拟收益，但要牢记它含止损与止盈假设，且样本只有 5–20 笔。
+    两者结论不同是正常的：<b>判断力强 ≠ 收益高</b>（仓位、止损纪律、点位精度都会影响收益）。
+  </div>
+
+
 <div class="note">2026 全年买入持有 = <strong class="neg">-16.6%</strong>。下表只列交易笔数 ≥5 的账号。</div>
 <div class="scroll"><table><thead><tr><th>#</th><th>账号</th><th>笔数</th><th>中位收益</th><th>均收益</th><th>胜率</th><th>止损率</th><th>模糊正确率</th></tr></thead><tbody>
 <tr><td class="mono dim">1</td><td><strong><a class="acct" href="https://x.com/realGuanYu" target="_blank" rel="noopener noreferrer">@realGuanYu</a></strong></td><td class="mono">8</td><td class="mono pos">12.3%</td><td class="mono pos">3.8%</td><td class="mono">63%</td><td class="mono">38%</td><td class="mono">50%</td></tr>

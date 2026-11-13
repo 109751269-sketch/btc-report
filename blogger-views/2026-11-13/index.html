@@ -75,6 +75,14 @@
   .bar > i{display:block;height:100%;background:var(--acc2)}
   @media(max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}
     .wrap{padding:28px 18px 56px} h1{font-size:21px}}
+
+  /* 历史评测标签（来自 02 专题 v4 口径，2026-11-13 加） */
+  .tag.hist{border:1px dashed currentColor;background:transparent;opacity:.92}
+  .tag.hist.pos{color:#3ddc97;border-color:rgba(61,220,151,.5);background:rgba(61,220,151,.07)}
+  .tag.hist.negx{color:#f2555a;border-color:rgba(242,85,90,.45);background:rgba(242,85,90,.07)}
+  .tag.hist.warnx{color:#f0b429;border-color:rgba(240,180,41,.45);background:rgba(240,180,41,.07)}
+  .tag.hist.gray{color:var(--txt3);border-color:rgba(255,255,255,.18)}
+  .tag.hist::before{content:"◷ ";opacity:.7}
 </style>
 <style>
   /* 面包屑：与 assets/report.css 中 .crumb 保持一致（自包含样式页用） */
@@ -104,7 +112,16 @@
 
   <div class="callout bad"><strong>勘误（20:00，用户质疑后复核）：<a class="handle" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a> 已从 S 级降为 B 级。</strong>此前把他评为「从头看对」有误——他并非长期单边看空（9 月还在看涨「83000 无疑会被突破」），全年追涨杀跌率 94.7%，这波是顺势跟对、不是预判顶。详见第二节末尾的勘误说明与第四节 B 级表。</div>
 
-    <h2>一、行情背景（完整数据见 01 专题）</h2>
+    <div class="note" style="font-size:12px">
+    <strong>◷ 历史评测标签</strong>来自 <a href="../../blogger-scoring/2026-11-11/">02 博主预测能力打分</a> 的 v4 大周期口径（asof 2026-11-13）：
+    <span class="tag hist pos">大周期偏准</span> = months/quarters 预测的终点方向跑赢基准；
+    <span class="tag hist negx">大周期偏错</span> = 长周期判断为主错误；
+    <span class="tag hist warnx">追涨杀跌 / 旧口径跑输</span> = 顺势跟风或旧口径下跑输；
+    <span class="tag hist gray">样本不足 / 无记录</span> = 该账号没有足够可结算的长周期预测，<b>不代表他这次说错</b>。
+    标签评的是<b>长期能力</b>，不是本次观点对错——两者可能相反，这正是需要注意的地方。
+  </div>
+
+  <h2>一、行情背景（完整数据见 01 专题）</h2>
   <div class="grid">
     <div class="kpi"><div class="n">67,568</div><div class="l">今日最低（约 14:00），正式跌破 70,000</div></div>
     <div class="kpi"><div class="n down">−22.5%</div><div class="l">距 10-02 高点 87,220</div></div>
@@ -119,22 +136,22 @@
   <table>
     <tr><th style="width:132px">账号</th><th>关键原文（按时间）</th><th style="width:200px">准在哪 / 打折点</th></tr>
     <tr>
-      <td><strong><a class="handle" href="https://x.com/pathusa" target="_blank" rel="noopener noreferrer">@pathusa</a></strong><br><span class="tag good">最一致</span></td>
+      <td><strong><a class="handle" href="https://x.com/pathusa" target="_blank" rel="noopener noreferrer">@pathusa</a></strong><br><span class="tag good">最一致</span><br><span class="tag hist gray">历史评测：样本不足</span></td>
       <td class="q">10-20「Btc <b>滑向 75000</b>」→ 10-27「<b>75000、76000 见了</b>」<br>10-28「<b>倾向于是周线的假突破</b>」→ 11-04「美股和大饼<b>都只是反弹</b>」<br>11-09「<b>下去深不见底了</b>」<br>11-13 01:00「<b>又要买到 6 万的 BTC 了，哪些傻叉说再也买不到 6 万的？</b>」<br>11-13 08:18「比特币周线反弹到顶我看跌时，你们说是黑天鹅才跌的——<b>黑天鹅是你们家养的呀？</b>」</td>
       <td>从 75k 一路看到 6 万，破位后仍在嘲讽抄底者。<br><span class="tag warn">须标注</span> <b>他不在 87 账号结构化台账里</b>（无 preds 记录），所以「历史一致性」只能靠推文原文判断，无法做基准校正；评级依据是原文链条，不是统计超额。</td>
     </tr>
     <tr>
-      <td><strong><a class="handle" href="https://x.com/benjamincowen" target="_blank" rel="noopener noreferrer">@benjamincowen</a></strong><br><span class="tag good">最规范</span></td>
+      <td><strong><a class="handle" href="https://x.com/benjamincowen" target="_blank" rel="noopener noreferrer">@benjamincowen</a></strong><br><span class="tag good">最规范</span><br><span class="tag hist gray">历史评测：样本不足</span></td>
       <td class="q">10-21「<b>没有多根周线收在 83k 下方，多头仍控盘</b>」（先立条件）<br>10-22「日线收在 50D SMA 下方，可能去<b>牛市支撑带</b>」<br>10-24「Is this just the setup for the <b>Q4 dump</b>?」（附 5 步剧本）<br>10-26「第二次周线收在 5 月高点下方，<b>很快</b>跌向牛市支撑带」「<b>until proven wrong (back above $83k)</b>」<br>11-02「dumping into its <b>Q4 low</b>」<br>11-13「<b>比特币第四季度抛售照常发生</b>」</td>
       <td>唯一提前写明失效条件的人，破了才转空，之后一路没回头。<br>10-30「Q4 dump 是给早卖出者的买入机会」是长线框架，不等于喊底，不扣分。<br><span class="tag gray">样本</span> 结构化台账仅 7 条、跨度 10-12~11-05，历史一致性无法用统计验证。</td>
     </tr>
     <tr>
-      <td><strong><a class="handle" href="https://x.com/CryptoApprenti1" target="_blank" rel="noopener noreferrer">@CryptoApprenti1</a></strong><br><span class="tag good">最贴合标准</span></td>
+      <td><strong><a class="handle" href="https://x.com/CryptoApprenti1" target="_blank" rel="noopener noreferrer">@CryptoApprenti1</a></strong><br><span class="tag good">最贴合标准</span><br><span class="tag hist gray">历史评测：样本不足</span></td>
       <td class="q">11-06「<b>我从顶上就看空，一路空下来没松手</b>。方向一条没换。<b>11 月弹一下不改结论</b>」<br>11-06「<b>现在这段是反弹不是底，追进去就是在别人止盈的位置接棒</b>」<br>11-08「这波超跌反抽是<b>给减仓的机会，不是抄底的信号</b>」<br>11-10「<b>拿住空单，看戏</b>」<br>11-13 14:34「（Jason 多仓归零）<b>最后的多头也上路了</b>」</td>
       <td>「反弹不是底」几乎是这几天的标准答案，破位后仍在确认空头。<br><span class="tag warn">须标注</span> 他「从顶上就看空」是<b>自述</b>：结构化台账最早一条是 11-03，无法验证 10 月前是否也看空——与 <a class="handle" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a> 同类问题，故只按「11-03 起持续看空」计。</td>
     </tr>
     <tr>
-      <td><strong><a class="handle" href="https://x.com/Hoyooyoo" target="_blank" rel="noopener noreferrer">@Hoyooyoo</a></strong><br><span class="tag good">目标最准</span></td>
+      <td><strong><a class="handle" href="https://x.com/Hoyooyoo" target="_blank" rel="noopener noreferrer">@Hoyooyoo</a></strong><br><span class="tag good">目标最准</span><br><span class="tag hist gray">历史评测：样本不足</span></td>
       <td class="q">10-26「再向下跌破 79000，就进入弱势」<br>11-08「<b>76500 之下都是弱势。74500 就是多头最后底线，跌破先看 69000</b>」<br>11-11「最近的这个<b>假突破非常致命</b>」</td>
       <td>11-08 给 69,000，11-13 实际低点 67,568，<strong>提前 5 天、误差 2.1%</strong>。<br><span class="tag gray">样本</span> 台账仅 2 条，证据强但统计上不可靠。</td>
     </tr>
@@ -152,34 +169,34 @@
   <h2>三、A 级：持续看空，但留了余地或节奏偏软</h2>
   <table>
     <tr><th style="width:130px">账号</th><th>关键证据</th><th style="width:210px">为什么不是 S</th></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/rektcapital" target="_blank" rel="noopener noreferrer">@rektcapital</a></strong></td><td class="q">10-24「82,500 下方，<b>均值回归 60k–80k 始终可能</b>」<br>10-30「<b>卖方投降量 nowhere close</b>」<br>11-12「73,000 难成持久支撑」「反弹 75,000/76,800/78,300 都可能是缓解反弹」<br>11-13 18:29「<b>首次触及 200 周简单移动平均线</b>」（陈述事实，未改口喊底）</td><td>结构派不给精确点位；全年语料被抓取覆盖（833→221），历史评分不可信。但观点链最干净：给区间、明说「没投降」、从未喊底。</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/bobloukas" target="_blank" rel="noopener noreferrer">@bobloukas</a></strong></td><td class="q">11-05「the <b>weekly Cycle is in decline</b>」<br>11-13 02:11「陷入每周周期性下跌。<b>下周反弹至 78–80k 是正常反趋势动作，不是 FOMO 买入的机会。12 月/1 月才是绝佳买入时机</b>」</td><td>方向节奏都对，但买点放在 12月/1月（未验证），且 11-09 又说「4 年周期底已形成」，两套框架并存。</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/dongbimao" target="_blank" rel="noopener noreferrer">@dongbimao</a></strong><br><span class="tag good">下午更坚定</span></td><td class="q">11-09「周线 6 连阴，这周收回是黄金坑，收不回要重新思考牛市」<br>11-13 16:11「<b>比特币的多头死完了</b>，波动率极致选择的方向是向下，<b>尊重日线级别趋势，不抗单、不逆势</b>，好的多头行情需要更长时间等待」</td><td>上午偏中性（持仓不动），下午明确「多头死完、方向向下」，属持续看空但早期表述含糊。</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/btc2688" target="_blank" rel="noopener noreferrer">@btc2688</a></strong><br><span class="tag warn">下午转多</span></td><td class="q">11-13 08:33「继续看回调，<b>70000 上方不做多</b>」「<b>72000 不会是底</b>」<br>11-13 13:38「上次牛市底部我在 18000 说抄底……<b>这次我也要抓住。等待大家不敢抄的时候，我会偷偷介入</b>」（谨慎抄底，非满仓）</td><td>上午明确「72k 不是底」，下午转成「准备抄底」——虽然加了「等大家不敢抄」的条件，但态度已变，降到 A 级末位。</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/rektcapital" target="_blank" rel="noopener noreferrer">@rektcapital</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">10-24「82,500 下方，<b>均值回归 60k–80k 始终可能</b>」<br>10-30「<b>卖方投降量 nowhere close</b>」<br>11-12「73,000 难成持久支撑」「反弹 75,000/76,800/78,300 都可能是缓解反弹」<br>11-13 18:29「<b>首次触及 200 周简单移动平均线</b>」（陈述事实，未改口喊底）</td><td>结构派不给精确点位；全年语料被抓取覆盖（833→221），历史评分不可信。但观点链最干净：给区间、明说「没投降」、从未喊底。</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/bobloukas" target="_blank" rel="noopener noreferrer">@bobloukas</a></strong><br><span class="tag hist negx">历史评测：大周期偏错</span></td><td class="q">11-05「the <b>weekly Cycle is in decline</b>」<br>11-13 02:11「陷入每周周期性下跌。<b>下周反弹至 78–80k 是正常反趋势动作，不是 FOMO 买入的机会。12 月/1 月才是绝佳买入时机</b>」</td><td>方向节奏都对，但买点放在 12月/1月（未验证），且 11-09 又说「4 年周期底已形成」，两套框架并存。</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/dongbimao" target="_blank" rel="noopener noreferrer">@dongbimao</a></strong><br><span class="tag good">下午更坚定</span><br><span class="tag hist negx">历史评测：大周期偏错</span></td><td class="q">11-09「周线 6 连阴，这周收回是黄金坑，收不回要重新思考牛市」<br>11-13 16:11「<b>比特币的多头死完了</b>，波动率极致选择的方向是向下，<b>尊重日线级别趋势，不抗单、不逆势</b>，好的多头行情需要更长时间等待」</td><td>上午偏中性（持仓不动），下午明确「多头死完、方向向下」，属持续看空但早期表述含糊。</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/btc2688" target="_blank" rel="noopener noreferrer">@btc2688</a></strong><br><span class="tag warn">下午转多</span><br><span class="tag hist negx">历史评测：大周期偏错</span></td><td class="q">11-13 08:33「继续看回调，<b>70000 上方不做多</b>」「<b>72000 不会是底</b>」<br>11-13 13:38「上次牛市底部我在 18000 说抄底……<b>这次我也要抓住。等待大家不敢抄的时候，我会偷偷介入</b>」（谨慎抄底，非满仓）</td><td>上午明确「72k 不是底」，下午转成「准备抄底」——虽然加了「等大家不敢抄」的条件，但态度已变，降到 A 级末位。</td></tr>
   </table>
 
   <h2>四、B 级：方向对了，但在 72–78k 喊过底 → 打折</h2>
   <table>
     <tr><th style="width:130px">账号</th><th>看对的部分</th><th>打折的部分</th></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a></strong><br><span class="tag warn">原 S 降级</span></td><td class="q">10-20「<b>预计 10 月底到 11 月初将结束震荡开始暴跌</b>」→ 兑现；10-24 起持续看空，10-30「<b>下跌才刚刚开始，不要试图抄底</b>」；11-09「<b>所有反弹都是逃命的机会</b>」；11-13 11:06 又给出「<b>67500-62500 做多，目标反弹 75000</b>」</td><td class="q"><b>方向对，但机制是顺势：</b>9 月还在看涨（「83000 无疑会被突破」），10-09 才转空；全年追涨杀跌率 <b>94.7%</b>（19 次中 18 次顺 21 日趋势），4 口径 <code>unstable</code>、超额仅 +1pt。这波对 ≠ 会预判顶；且他 11-10 的「我是一直看空」与台账不符。<br><span class="tag neg">新证据</span> 11-13 11:06 他已发「<b>67500-62500 这个区间做多 BTC，目标反弹回到 75000</b>」——所以连「全程未喊底」也不成立，他同样在下移接多。</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/chairbtc" target="_blank" rel="noopener noreferrer">@chairbtc</a></strong></td><td class="q">11-03「3 个月内<b>还能见到 6 开头的大饼</b>」→ 兑现；10-30 空单 81.5–82k 吃到 77k</td><td class="q">同期「<b>5–6 万就是本轮底部</b>」；11-13 14:52「跌到 6 万以下、ETH 1500 以下分批抄底」；16:44「今年 6 万以下都是底部，明年 4 月减半，这 3 个月抄底吃不了亏」</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/DL_W59" target="_blank" rel="noopener noreferrer">@DL_W59</a></strong></td><td class="q">10-15「回 <b>585–82</b> 区间」；10-30「<b>支撑 68–72</b>」→ 今日 67,568 命中</td><td>宏观油价驱动；期间多次「逢低多」，下沿给到 585。</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/Felix_Hsu" target="_blank" rel="noopener noreferrer">@Felix_Hsu</a></strong></td><td class="q">10-29「77k 还差一点儿，<b>不要盲目抄底</b>，应该还有二探三探」</td><td class="q">11-12「<b>73k 买入、11 月月线 &gt;77.5k</b>」——破位前喊底，被今天打脸</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a></strong><br><span class="tag warn">原 S 降级</span><br><span class="tag hist negx">历史评测：大周期偏错</span></td><td class="q">10-20「<b>预计 10 月底到 11 月初将结束震荡开始暴跌</b>」→ 兑现；10-24 起持续看空，10-30「<b>下跌才刚刚开始，不要试图抄底</b>」；11-09「<b>所有反弹都是逃命的机会</b>」；11-13 11:06 又给出「<b>67500-62500 做多，目标反弹 75000</b>」</td><td class="q"><b>方向对，但机制是顺势：</b>9 月还在看涨（「83000 无疑会被突破」），10-09 才转空；全年追涨杀跌率 <b>94.7%</b>（19 次中 18 次顺 21 日趋势），4 口径 <code>unstable</code>、超额仅 +1pt。这波对 ≠ 会预判顶；且他 11-10 的「我是一直看空」与台账不符。<br><span class="tag neg">新证据</span> 11-13 11:06 他已发「<b>67500-62500 这个区间做多 BTC，目标反弹回到 75000</b>」——所以连「全程未喊底」也不成立，他同样在下移接多。</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/chairbtc" target="_blank" rel="noopener noreferrer">@chairbtc</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">11-03「3 个月内<b>还能见到 6 开头的大饼</b>」→ 兑现；10-30 空单 81.5–82k 吃到 77k</td><td class="q">同期「<b>5–6 万就是本轮底部</b>」；11-13 14:52「跌到 6 万以下、ETH 1500 以下分批抄底」；16:44「今年 6 万以下都是底部，明年 4 月减半，这 3 个月抄底吃不了亏」</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/DL_W59" target="_blank" rel="noopener noreferrer">@DL_W59</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">10-15「回 <b>585–82</b> 区间」；10-30「<b>支撑 68–72</b>」→ 今日 67,568 命中</td><td>宏观油价驱动；期间多次「逢低多」，下沿给到 585。</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/Felix_Hsu" target="_blank" rel="noopener noreferrer">@Felix_Hsu</a></strong><br><span class="tag hist warnx">历史评测：旧口径跑输</span></td><td class="q">10-29「77k 还差一点儿，<b>不要盲目抄底</b>，应该还有二探三探」</td><td class="q">11-12「<b>73k 买入、11 月月线 &gt;77.5k</b>」——破位前喊底，被今天打脸</td></tr>
   </table>
 
   <h2>五、C 级：在 75–80k 喊底/做多，这波看错</h2>
   <table>
     <tr><th style="width:140px">账号</th><th>当时怎么说的</th><th>晚间最新（19:40）</th></tr>
     <tr>
-      <td><strong><a class="handle" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a></strong><br><span class="tag neg">最典型</span></td>
+      <td><strong><a class="handle" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a></strong><br><span class="tag neg">最典型</span><br><span class="tag hist gray">历史评测：样本不足</span></td>
       <td class="q">10-24 在 <b>80,400 建 3,600 万美元多单</b>：「散户都在喊 70k，<b>群众总是错的</b>」<br>11-05「<b>75,000 加仓现货</b>」<br>11-08「要非常非常糟的事才会跌破」<br>11-13 07:56「<b>空头一直都是错的</b>」</td>
       <td class="q">17:45「<b>我在 80k 做多时错了</b>。然而我仍是最后一个屹立的牛人」<br>17:38「<b>底部在 68k</b>，周线 MA200 是历史上标记熊市底部最好的信号，<b>我在这里大举买入</b>」<br>18:31「<b>不会再有新低了</b>，现在 68k 大举买入」<br><span class="tag neg">底位从 80k → 76k → 75k → 68k，一路下移</span></td>
     </tr>
-    <tr><td><strong><a class="handle" href="https://x.com/Billions_2022_" target="_blank" rel="noopener noreferrer">@Billions_2022_</a></strong></td><td class="q">10-30「<b>抄底的时候到了</b>」；11-07「<b>不会跌破 7w6</b>，反弹到 8w」；11-10「<b>熊市已经结束了</b>」</td><td>今日无新 BTC 表态（未抓到）</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/market_beggar" target="_blank" rel="noopener noreferrer">@market_beggar</a></strong></td><td class="q">10-13「86K 上方<b>星辰大海</b>」；11-02「<b>牛初确认</b>，数年一遇建仓窗口」；11-09「TW 国安基金<b>精准捕捉底部</b>」</td><td class="q">09:48 仍在「在市場分歧處下注、在市場痛苦時建倉」</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/sylvigil" target="_blank" rel="noopener noreferrer">@sylvigil</a></strong></td><td class="q">10-15「<b>到 75000 是很好的抄底机会</b>」；10-25「<b>筑底也就这一两周</b>」；11-09「<b>很快启动下一轮拉升，现在就别怕了</b>」</td><td>今日无新 BTC 表态</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/Sykodelic_" target="_blank" rel="noopener noreferrer">@Sykodelic_</a></strong></td><td class="q">11-10「这里就是底部」</td><td class="q">04:16「短期持有者 capitulation 水平非常高，<b>顶级买家已经放弃了</b>」——从「底已到」转向「正在投降」</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/AwbczBTC" target="_blank" rel="noopener noreferrer">@AwbczBTC</a></strong></td><td class="q">11-10「<b>75,000 再拉 3 万点到 105,000</b>」</td><td class="q">09:30「有狗东西在控盘，至于是哪个我不说」——剧本反了，转阴谋论</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/Billions_2022_" target="_blank" rel="noopener noreferrer">@Billions_2022_</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">10-30「<b>抄底的时候到了</b>」；11-07「<b>不会跌破 7w6</b>，反弹到 8w」；11-10「<b>熊市已经结束了</b>」</td><td>今日无新 BTC 表态（未抓到）</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/market_beggar" target="_blank" rel="noopener noreferrer">@market_beggar</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">10-13「86K 上方<b>星辰大海</b>」；11-02「<b>牛初确认</b>，数年一遇建仓窗口」；11-09「TW 国安基金<b>精准捕捉底部</b>」</td><td class="q">09:48 仍在「在市場分歧處下注、在市場痛苦時建倉」</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/sylvigil" target="_blank" rel="noopener noreferrer">@sylvigil</a></strong><br><span class="tag hist negx">历史评测：大周期偏错</span></td><td class="q">10-15「<b>到 75000 是很好的抄底机会</b>」；10-25「<b>筑底也就这一两周</b>」；11-09「<b>很快启动下一轮拉升，现在就别怕了</b>」</td><td>今日无新 BTC 表态</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/Sykodelic_" target="_blank" rel="noopener noreferrer">@Sykodelic_</a></strong><br><span class="tag hist negx">历史评测：大周期偏错</span></td><td class="q">11-10「这里就是底部」</td><td class="q">04:16「短期持有者 capitulation 水平非常高，<b>顶级买家已经放弃了</b>」——从「底已到」转向「正在投降」</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/AwbczBTC" target="_blank" rel="noopener noreferrer">@AwbczBTC</a></strong><br><span class="tag hist negx">历史评测：大周期偏错</span></td><td class="q">11-10「<b>75,000 再拉 3 万点到 105,000</b>」</td><td class="q">09:30「有狗东西在控盘，至于是哪个我不说」——剧本反了，转阴谋论</td></tr>
   </table>
 
   <h2>六、破位后 7 小时：谁坚持、谁改口、谁开始喊底（v2 新增）</h2>
@@ -188,34 +205,34 @@
   <h3>6.1 继续坚持看空（没改口，甚至更硬）</h3>
   <table>
     <tr><th style="width:132px">账号</th><th>破位后的原话</th><th style="width:150px">时间</th></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/pathusa" target="_blank" rel="noopener noreferrer">@pathusa</a></strong></td><td class="q">「<b>又要买到 6 万的 BTC 了，你们不开心吗？</b>」；「比特币周线反弹到顶我看跌时，你们说是黑天鹅才跌的——<b>黑天鹅是你们家养的呀？</b>」</td><td>01:00 / 08:18</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/CryptoApprenti1" target="_blank" rel="noopener noreferrer">@CryptoApprenti1</a></strong></td><td class="q">（转发大户 Jason $179M 多头被平）「<b>最后的多头也上路了</b>」</td><td>14:34</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/dongbimao" target="_blank" rel="noopener noreferrer">@dongbimao</a></strong></td><td class="q">「<b>比特币的多头死完了</b>，波动率极致选择的方向是向下，<b>尊重日线级别趋势，不抗单、不逆势</b>」</td><td>16:11</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/crypto_yan_gui" target="_blank" rel="noopener noreferrer">@crypto_yan_gui</a></strong></td><td class="q">「看到这个月线支撑区域后，我反而<b>开始警惕进一步下跌</b>的可能。从流动性角度，价格已为后续下跌建立了较完整的积累/操纵条件」</td><td>15:01</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/blockTVBee" target="_blank" rel="noopener noreferrer">@blockTVBee</a></strong></td><td class="q">「<b>BTC 7 万附近可能不是底</b>。日线收针、USDT 场外价格涨，可能有反弹，但不像触底。今年 2 月、6–7 月两次下探<b>都不止一根针</b>」</td><td>18:43</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/KillaXBT" target="_blank" rel="noopener noreferrer">@KillaXBT</a></strong></td><td class="q">「上轮牛市最大回撤 −22%，现在是 −22%。如果真触底就该很快上涨，<b>否则要为跌向 60,000 做准备</b>」</td><td>14:05</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/Jackyi_ld" target="_blank" rel="noopener noreferrer">@Jackyi_ld</a></strong></td><td class="q">「不要死扛杠杆，不对劲就跑。我们右侧 77 上车，一看美股不对，78–79 就跑了……目前宏观不乐观，<b>需要等</b>」（实战止损派）</td><td>17:27</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/pathusa" target="_blank" rel="noopener noreferrer">@pathusa</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">「<b>又要买到 6 万的 BTC 了，你们不开心吗？</b>」；「比特币周线反弹到顶我看跌时，你们说是黑天鹅才跌的——<b>黑天鹅是你们家养的呀？</b>」</td><td>01:00 / 08:18</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/CryptoApprenti1" target="_blank" rel="noopener noreferrer">@CryptoApprenti1</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">（转发大户 Jason $179M 多头被平）「<b>最后的多头也上路了</b>」</td><td>14:34</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/dongbimao" target="_blank" rel="noopener noreferrer">@dongbimao</a></strong><br><span class="tag hist negx">历史评测：大周期偏错</span></td><td class="q">「<b>比特币的多头死完了</b>，波动率极致选择的方向是向下，<b>尊重日线级别趋势，不抗单、不逆势</b>」</td><td>16:11</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/crypto_yan_gui" target="_blank" rel="noopener noreferrer">@crypto_yan_gui</a></strong><br><span class="tag hist negx">历史评测：大周期偏错</span></td><td class="q">「看到这个月线支撑区域后，我反而<b>开始警惕进一步下跌</b>的可能。从流动性角度，价格已为后续下跌建立了较完整的积累/操纵条件」</td><td>15:01</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/blockTVBee" target="_blank" rel="noopener noreferrer">@blockTVBee</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">「<b>BTC 7 万附近可能不是底</b>。日线收针、USDT 场外价格涨，可能有反弹，但不像触底。今年 2 月、6–7 月两次下探<b>都不止一根针</b>」</td><td>18:43</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/KillaXBT" target="_blank" rel="noopener noreferrer">@KillaXBT</a></strong><br><span class="tag hist gray">历史评测：无记录</span></td><td class="q">「上轮牛市最大回撤 −22%，现在是 −22%。如果真触底就该很快上涨，<b>否则要为跌向 60,000 做准备</b>」</td><td>14:05</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/Jackyi_ld" target="_blank" rel="noopener noreferrer">@Jackyi_ld</a></strong><br><span class="tag hist gray">历史评测：无记录</span></td><td class="q">「不要死扛杠杆，不对劲就跑。我们右侧 77 上车，一看美股不对，78–79 就跑了……目前宏观不乐观，<b>需要等</b>」（实战止损派）</td><td>17:27</td></tr>
   </table>
 
   <h3>6.2 公开认错 / 自嘲（但没转空）</h3>
   <table>
     <tr><th style="width:132px">账号</th><th>原话</th><th style="width:150px">时间</th></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a></strong></td><td class="q">「<b>我在 80k 做多时错了</b>。然而，我仍是最后一个屹立的牛人……<b>我完全没料到这一切</b>，机会现在摆在眼前，我抓住它」——认错的同时把底位从 80k 挪到 68k</td><td>17:45</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/Cato_KT" target="_blank" rel="noopener noreferrer">@Cato_KT</a></strong></td><td class="q">「凌晨刚说了跌破 73,000 先看 70,000，没想到跌得如此丝滑，打开账户一看，好像仅剩 <code>$DNA</code>」（跟踪型，诚实自嘲）</td><td>14:53</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/ericlu_86" target="_blank" rel="noopener noreferrer">@ericlu_86</a></strong></td><td class="q">「6–8 月抄底均价 63K，判断 60K 是绝对底部所以 long only，<b>结果抱过一座山，把均价拉到 70K</b>，比较难受」</td><td>13:50</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">「<b>我在 80k 做多时错了</b>。然而，我仍是最后一个屹立的牛人……<b>我完全没料到这一切</b>，机会现在摆在眼前，我抓住它」——认错的同时把底位从 80k 挪到 68k</td><td>17:45</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/Cato_KT" target="_blank" rel="noopener noreferrer">@Cato_KT</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">「凌晨刚说了跌破 73,000 先看 70,000，没想到跌得如此丝滑，打开账户一看，好像仅剩 <code>$DNA</code>」（跟踪型，诚实自嘲）</td><td>14:53</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/ericlu_86" target="_blank" rel="noopener noreferrer">@ericlu_86</a></strong><br><span class="tag hist gray">历史评测：无记录</span></td><td class="q">「6–8 月抄底均价 63K，判断 60K 是绝对底部所以 long only，<b>结果抱过一座山，把均价拉到 70K</b>，比较难受」</td><td>13:50</td></tr>
   </table>
 
   <h3>6.3 开始转向「抄底 / 接近底部」</h3>
   <table>
     <tr><th style="width:132px">账号</th><th>原话</th><th style="width:190px">性质</th></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/btc2688" target="_blank" rel="noopener noreferrer">@btc2688</a></strong></td><td class="q">「上次牛市底部我在 18000 说抄底……<b>这次我也要抓住。等待大家不敢抄的时候，我会偷偷介入</b>。这次不能满仓」</td><td><span class="tag warn">上午说「72k 不是底」，下午转抄底</span></td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/chairbtc" target="_blank" rel="noopener noreferrer">@chairbtc</a></strong></td><td class="q">「跌到 6 万以下、ETH 1500 以下，<b>分批抄底现货就完事</b>」「今年 6 万以下都是底部，明年 4 月减半，这 3 个月抄底吃不了亏」</td><td>看空方向对，但持续用「6 万以下是底」兜底</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/Jiangzhuoer2" target="_blank" rel="noopener noreferrer">@Jiangzhuoer2</a></strong></td><td class="q">「下午 2 点大户被爆，插针 67.5k 后<b>情况正在好转</b>：资金费率终于转负（上次是 10/11 的 83k）、现货 CVD 增加」</td><td>用资金费率/CVD 判断短期见底信号</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/Murphychen888" target="_blank" rel="noopener noreferrer">@Murphychen888</a></strong></td><td class="q">「市场情绪重回<b>极度恐慌</b>。11-12 LTH 和 STH 转入交易所的实现亏损创近期新高，规模接近今年 6–7 月熊市底部；Glassnode 综合评分仅 <b>11 分（满分 100）</b>，Risk-Off 区间」</td><td>链上数据派，指向「接近历史底部区域」</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/monkeyjiang" target="_blank" rel="noopener noreferrer">@monkeyjiang</a></strong></td><td class="q">「这条绿线从 2022 年起只被触碰三次：2022 熊市大底、大牛市主升浪前回踩、2026 年探底 5 万 7。<b>目前是第 4 次</b>」</td><td>技术派，「接近底部」论</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/AshCrypto" target="_blank" rel="noopener noreferrer">@AshCrypto</a></strong></td><td class="q">14:14「9 天暴跌 12,500 美元，触及 67,500，<b>最终的投降已经开始</b>」<br>19:02「这怎么可能不是纯粹的市场操纵？过去 3 个月 BTC 已完成牛市确认所需的一切」</td><td>从「投降」转向「操纵论」，情绪化</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/sky27867843" target="_blank" rel="noopener noreferrer">@sky27867843</a></strong></td><td class="q">「日线 TD9 来了，<b>现货今天可以开始布局，区间 66,500–67,000</b>，合约等右侧。我 8w 空大饼……等爆两个鲸鱼行情可能才会反转」</td><td>空头转「现货分批」，位置给得具体</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/Learnernoearner" target="_blank" rel="noopener noreferrer">@Learnernoearner</a></strong></td><td class="q">「从我图表的水平反弹了 2%，<b>这将是 BTC 年底前保持看涨的最后一个支撑位</b>」</td><td>条件式看多</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/btc2688" target="_blank" rel="noopener noreferrer">@btc2688</a></strong><br><span class="tag hist negx">历史评测：大周期偏错</span></td><td class="q">「上次牛市底部我在 18000 说抄底……<b>这次我也要抓住。等待大家不敢抄的时候，我会偷偷介入</b>。这次不能满仓」</td><td><span class="tag warn">上午说「72k 不是底」，下午转抄底</span></td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/chairbtc" target="_blank" rel="noopener noreferrer">@chairbtc</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">「跌到 6 万以下、ETH 1500 以下，<b>分批抄底现货就完事</b>」「今年 6 万以下都是底部，明年 4 月减半，这 3 个月抄底吃不了亏」</td><td>看空方向对，但持续用「6 万以下是底」兜底</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/Jiangzhuoer2" target="_blank" rel="noopener noreferrer">@Jiangzhuoer2</a></strong><br><span class="tag hist gray">历史评测：无记录</span></td><td class="q">「下午 2 点大户被爆，插针 67.5k 后<b>情况正在好转</b>：资金费率终于转负（上次是 10/11 的 83k）、现货 CVD 增加」</td><td>用资金费率/CVD 判断短期见底信号</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/Murphychen888" target="_blank" rel="noopener noreferrer">@Murphychen888</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">「市场情绪重回<b>极度恐慌</b>。11-12 LTH 和 STH 转入交易所的实现亏损创近期新高，规模接近今年 6–7 月熊市底部；Glassnode 综合评分仅 <b>11 分（满分 100）</b>，Risk-Off 区间」</td><td>链上数据派，指向「接近历史底部区域」</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/monkeyjiang" target="_blank" rel="noopener noreferrer">@monkeyjiang</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">「这条绿线从 2022 年起只被触碰三次：2022 熊市大底、大牛市主升浪前回踩、2026 年探底 5 万 7。<b>目前是第 4 次</b>」</td><td>技术派，「接近底部」论</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/AshCrypto" target="_blank" rel="noopener noreferrer">@AshCrypto</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">14:14「9 天暴跌 12,500 美元，触及 67,500，<b>最终的投降已经开始</b>」<br>19:02「这怎么可能不是纯粹的市场操纵？过去 3 个月 BTC 已完成牛市确认所需的一切」</td><td>从「投降」转向「操纵论」，情绪化</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/sky27867843" target="_blank" rel="noopener noreferrer">@sky27867843</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">「日线 TD9 来了，<b>现货今天可以开始布局，区间 66,500–67,000</b>，合约等右侧。我 8w 空大饼……等爆两个鲸鱼行情可能才会反转」</td><td>空头转「现货分批」，位置给得具体</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/Learnernoearner" target="_blank" rel="noopener noreferrer">@Learnernoearner</a></strong><br><span class="tag hist gray">历史评测：无记录</span></td><td class="q">「从我图表的水平反弹了 2%，<b>这将是 BTC 年底前保持看涨的最后一个支撑位</b>」</td><td>条件式看多</td></tr>
   </table>
 
   <h3>6.4 标志性事件：大户 Jason 的 $179M 多仓归零（原文是「疑似爆仓」）</h3>
@@ -245,16 +262,16 @@
   <h3>7.2 加仓 / 挂单 / 接盘</h3>
   <table>
     <tr><th style="width:150px">主体</th><th>动作</th><th style="width:170px">性质</th></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/AguilaTrades" target="_blank" rel="noopener noreferrer">@AguilaTrades</a></strong><br><span class="small">滚仓交易员</span></td><td class="q">凌晨 <b>$71,697 做空 500 BTC</b>（$3,585 万），1 小时前 <b>$69,081 止盈平空，赚 $130 万</b>；随后 <b>在 $61,000–66,000 挂 200 BTC（$1,270 万）买单</b></td><td><span class="tag good">最具体的专业挂单</span> 说明大资金认为「还要更低才接」</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a></strong></td><td class="q">10-24 在 <b>80,400 建 $36M 多单</b> → 11-05「<b>75,000 加仓现货</b>」→ 11-13「<b>底部在 68k，我在这里大举买入</b>」</td><td><span class="tag neg">越跌越接</span> 80k→76k→75k→68k 一路下移</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a></strong></td><td class="q">11-13 11:06「<b>67500-62500 这个区间做多 BTC，目标反弹回到 75000</b>」，并称「前期踏空的将再次迎来买入机会，但<b>也仅仅博超跌反弹</b>」</td><td>看空者也给了做多区间（所以他并非「全程不喊底」，见第四节）</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/sky27867843" target="_blank" rel="noopener noreferrer">@sky27867843</a></strong></td><td class="q">「日线 TD9，现货今天可以开始布局，区间 <b>66,500–67,000</b>，合约等右侧」；此前 8 万空单</td><td>空头转现货分批</td></tr>
-    <tr><td><strong>疑似 <a class="handle" href="https://x.com/ErikVoorhees" target="_blank" rel="noopener noreferrer">@ErikVoorhees</a></strong></td><td class="q"><a class="handle" href="https://x.com/EmberCN" target="_blank" rel="noopener noreferrer">@EmberCN</a>：3 个地址一天内用 <b>4,736 万 USDT 买入 23,091 枚 ETH</b>，均价 $2,051</td><td>链上可见的机构级接盘（ETH）</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/btc2688" target="_blank" rel="noopener noreferrer">@btc2688</a></strong></td><td class="q">「等大家不敢抄的时候，我会偷偷介入，<b>这次不能满仓</b>」，同时买 ETH/SOL/XLM</td><td>谨慎抄底</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/chairbtc" target="_blank" rel="noopener noreferrer">@chairbtc</a></strong></td><td class="q">「跌到 6 万以下、ETH 1500 以下，<b>分批抄底现货</b>」；「今年 6 万以下都是底部」</td><td>定投式接盘</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/TingHu888" target="_blank" rel="noopener noreferrer">@TingHu888</a></strong></td><td class="q">「目前定投了几份……<b>恐慌越大，买的越多</b>」，但「这种幅度的跌法不会下重注」</td><td>定投，不重仓</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/BobLoukas" target="_blank" rel="noopener noreferrer">@BobLoukas</a></strong></td><td class="q">「<b>12 月/1 月将是一个绝佳的买入时机</b>」，现在 50% 现金</td><td>等更晚，不是现在</td></tr>
-    <tr><td><strong><a class="handle" href="https://x.com/CryptoPainter" target="_blank" rel="noopener noreferrer">@CryptoPainter</a></strong></td><td class="q">「合约市场不断找机会做空，再把盈利用做 BTC 的现货定投」</td><td>对冲式定投</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/AguilaTrades" target="_blank" rel="noopener noreferrer">@AguilaTrades</a></strong><br><span class="small">滚仓交易员</span><br><span class="tag hist gray">历史评测：无记录</span></td><td class="q">凌晨 <b>$71,697 做空 500 BTC</b>（$3,585 万），1 小时前 <b>$69,081 止盈平空，赚 $130 万</b>；随后 <b>在 $61,000–66,000 挂 200 BTC（$1,270 万）买单</b></td><td><span class="tag good">最具体的专业挂单</span> 说明大资金认为「还要更低才接」</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">10-24 在 <b>80,400 建 $36M 多单</b> → 11-05「<b>75,000 加仓现货</b>」→ 11-13「<b>底部在 68k，我在这里大举买入</b>」</td><td><span class="tag neg">越跌越接</span> 80k→76k→75k→68k 一路下移</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a></strong><br><span class="tag hist negx">历史评测：大周期偏错</span></td><td class="q">11-13 11:06「<b>67500-62500 这个区间做多 BTC，目标反弹回到 75000</b>」，并称「前期踏空的将再次迎来买入机会，但<b>也仅仅博超跌反弹</b>」</td><td>看空者也给了做多区间（所以他并非「全程不喊底」，见第四节）</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/sky27867843" target="_blank" rel="noopener noreferrer">@sky27867843</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">「日线 TD9，现货今天可以开始布局，区间 <b>66,500–67,000</b>，合约等右侧」；此前 8 万空单</td><td>空头转现货分批</td></tr>
+    <tr><td><strong>疑似 <a class="handle" href="https://x.com/ErikVoorhees" target="_blank" rel="noopener noreferrer">@ErikVoorhees</a></strong><br><span class="tag hist gray">历史评测：无记录</span></td><td class="q"><a class="handle" href="https://x.com/EmberCN" target="_blank" rel="noopener noreferrer">@EmberCN</a>：3 个地址一天内用 <b>4,736 万 USDT 买入 23,091 枚 ETH</b>，均价 $2,051</td><td>链上可见的机构级接盘（ETH）</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/btc2688" target="_blank" rel="noopener noreferrer">@btc2688</a></strong><br><span class="tag hist negx">历史评测：大周期偏错</span></td><td class="q">「等大家不敢抄的时候，我会偷偷介入，<b>这次不能满仓</b>」，同时买 ETH/SOL/XLM</td><td>谨慎抄底</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/chairbtc" target="_blank" rel="noopener noreferrer">@chairbtc</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">「跌到 6 万以下、ETH 1500 以下，<b>分批抄底现货</b>」；「今年 6 万以下都是底部」</td><td>定投式接盘</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/TingHu888" target="_blank" rel="noopener noreferrer">@TingHu888</a></strong><br><span class="tag hist gray">历史评测：无记录</span></td><td class="q">「目前定投了几份……<b>恐慌越大，买的越多</b>」，但「这种幅度的跌法不会下重注」</td><td>定投，不重仓</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/BobLoukas" target="_blank" rel="noopener noreferrer">@BobLoukas</a></strong><br><span class="tag hist negx">历史评测：大周期偏错</span></td><td class="q">「<b>12 月/1 月将是一个绝佳的买入时机</b>」，现在 50% 现金</td><td>等更晚，不是现在</td></tr>
+    <tr><td><strong><a class="handle" href="https://x.com/CryptoPainter" target="_blank" rel="noopener noreferrer">@CryptoPainter</a></strong><br><span class="tag hist gray">历史评测：样本不足</span></td><td class="q">「合约市场不断找机会做空，再把盈利用做 BTC 的现货定投」</td><td>对冲式定投</td></tr>
   </table>
 
   <h2>八、后续走势与点位（博主共识，非预测）</h2>
@@ -305,9 +322,9 @@
   <h2>九、和昨天评分的交叉验证（这波最值得记的一点）</h2>
   <table>
     <tr><th style="width:170px">账号</th><th>昨天旧评分（短期口径）</th><th>本次事件表现</th><th>说明什么</th></tr>
-    <tr><td><a class="handle" href="https://x.com/Billions_2022_" target="_blank" rel="noopener noreferrer">@Billions_2022_</a></td><td><span class="tag good">9 分 / S 档，第 1</span></td><td><span class="tag neg">喊底看错</span></td><td rowspan="3"><strong>旧评分第一名在真实拐点上完全看反；旧评分判负分的人反而看对。</strong>「8%/90 天窗口内触及」只能测「有没有晃够 8%」，测不出「会不会看顶底」。</td></tr>
-    <tr><td><a class="handle" href="https://x.com/sylvigil" target="_blank" rel="noopener noreferrer">@sylvigil</a></td><td><span class="tag good">7 分 / S 档</span></td><td><span class="tag neg">喊底看错</span></td></tr>
-    <tr><td><a class="handle" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a></td><td><span class="tag neg">−2 分 / 负分档</span></td><td><span class="tag good">这波看对（顺势）</span></td></tr>
+    <tr><td><a class="handle" href="https://x.com/Billions_2022_" target="_blank" rel="noopener noreferrer">@Billions_2022_</a><br><span class="tag hist gray">历史评测：样本不足</span></td><td><span class="tag good">9 分 / S 档，第 1</span></td><td><span class="tag neg">喊底看错</span></td><td rowspan="3"><strong>旧评分第一名在真实拐点上完全看反；旧评分判负分的人反而看对。</strong>「8%/90 天窗口内触及」只能测「有没有晃够 8%」，测不出「会不会看顶底」。</td></tr>
+    <tr><td><a class="handle" href="https://x.com/sylvigil" target="_blank" rel="noopener noreferrer">@sylvigil</a><br><span class="tag hist negx">历史评测：大周期偏错</span></td><td><span class="tag good">7 分 / S 档</span></td><td><span class="tag neg">喊底看错</span></td></tr>
+    <tr><td><a class="handle" href="https://x.com/huangdaobtc" target="_blank" rel="noopener noreferrer">@huangdaobtc</a><br><span class="tag hist negx">历史评测：大周期偏错</span></td><td><span class="tag neg">−2 分 / 负分档</span></td><td><span class="tag good">这波看对（顺势）</span></td></tr>
   </table>
   <div class="callout"><strong>v2 补充一个更狠的例子：</strong><a class="handle" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a> 在今天 17:45 之前，一直被当成「看多错了但硬扛」；他认错之后<strong>立刻在 68k 喊「不会再有新低」</strong>。如果 68k 守不住，这就是同一套错误的第二次下注。判断一个博主，不能只看「他对不对」，要看他<strong>错了之后怎么改</strong>——是修正框架（如 <a class="handle" href="https://x.com/benjamincowen" target="_blank" rel="noopener noreferrer">@benjamincowen</a> 的失效条件），还是换一个价位继续喊（<a class="handle" href="https://x.com/DrProfitCrypto" target="_blank" rel="noopener noreferrer">@DrProfitCrypto</a> 的 80k→76k→75k→68k）。</div>
 
