@@ -67,21 +67,31 @@
     <p class="small">所以你要求的「单日 + 3 日双抗跌」是正确做法：它把「今天转强」和「这几日持续强」同时锁住，超额从单日的 +6.2pt 提到 +9.4pt。但它 z=2.20，<strong>仍低于 z&gt;3 的门槛，属中等信号</strong>，不是强信号。</p>
     <p class="small" style="margin-bottom:0"><strong>2026-11-13 实际状态：</strong>单日抗跌 ✗（BTC −4.40% / ETH −4.45%，ETH 略差）、3 日抗跌 ✓、双抗跌 ✗。按新口径，<strong>这条依据在已收盘数据上未成立</strong>——详见下方「今日状态」。</p>
   </div>
-<h2>四、中等与无效信号（部分）</h2>
-  <div class="note" style="margin-bottom:10px"><strong>口径差异：</strong>本节数字为「按日统计、未合并连续触发日」，与上面两节的「事件级」不可直接比较。按日口径下样本数偏大、z 值偏高，仅作方向参考，<strong>判定一栏才是结论</strong>。</div>
+  <h2>四、RSI 深挖：量能是放大器</h2>
+  <p class="small">把 RSI 超卖和量能、趋势、波动率交叉测试，发现量能是唯一的强放大器。30 日持有期，同日 ±45 天匹配基准。</p>
   <table class="lab">
-    <tr><th>信号</th><th>方向</th><th class="num">样本日</th><th class="num">超额</th><th class="num">z</th><th>判定</th></tr>
-    <tr><td>RSI2 &lt; 10</td><td><span class="tag bull">看涨</span></td><td class="num">306</td><td class="num pos">+4.5</td><td class="num">1.56</td><td><span class="tag w">弱</span></td></tr>
-    <tr><td>RSI2 &gt; 90</td><td><span class="tag bear">看跌</span></td><td class="num">411</td><td class="num pos">+4.4</td><td class="num">1.85</td><td><span class="tag w">弱</span></td></tr>
-    <tr><td>RSI14 &gt; 70</td><td><span class="tag bear">看跌</span></td><td class="num">321</td><td class="num neg">−0.6</td><td class="num">−0.25</td><td><span class="tag w">无效</span></td></tr>
-    <tr><td>创 20 日新低</td><td><span class="tag bear">看跌</span></td><td class="num">208</td><td class="num">+1.7</td><td class="num">&lt;1</td><td><span class="tag w">无效</span></td></tr>
-    <tr><td>创 20 日新高</td><td><span class="tag bear">看跌</span></td><td class="num">395</td><td class="num">−6.4</td><td class="num">—</td><td><span class="tag w">无效</span></td></tr>
-    <tr><td>缩量 &lt; 0.5× 20 日均量</td><td><span class="tag bull">看涨</span></td><td class="num">271</td><td class="num">+4.4</td><td class="num">1.2</td><td><span class="tag w">弱</span></td></tr>
-    <tr><td>ATR 处 60 日低位 20%</td><td><span class="tag bull">看涨</span></td><td class="num">743</td><td class="num neg">−6.1</td><td class="num">—</td><td><span class="tag w">无效（反向）</span></td></tr>
-    <tr><td>距 20 日高点回撤 &gt; 15%</td><td><span class="tag bull">看涨</span></td><td class="num">466</td><td class="num pos">+11.4</td><td class="num">—</td><td><span class="tag m">中（与超卖类高度相关）</span></td></tr>
+    <tr><th>信号</th><th class="num">事件</th><th class="num">命中率</th><th class="num">同日基准</th><th class="num">超额</th><th class="num">z</th><th>2026 前</th><th>2026</th><th>判定</th></tr>
+    <tr><td><strong>RSI14&lt;35 + 缩量</strong></td><td class="num">54</td><td class="num">68.5%</td><td class="num">37.7%</td><td class="num pos">+30.8pt</td><td class="num">4.88</td><td class="small">+28.6pt</td><td class="small pos">+40.7pt</td><td><span class="tag s">最强</span></td></tr>
+    <tr><td>RSI14&lt;40 + 缩量</td><td class="num">136</td><td class="num">55.9%</td><td class="num">39.7%</td><td class="num pos">+16.2pt</td><td class="num">3.81</td><td class="small">+14.2pt</td><td class="small pos">+31.2pt</td><td><span class="tag s">强</span></td></tr>
+    <tr><td>RSI14&lt;30 + 当日收阳</td><td class="num">24</td><td class="num">75.0%</td><td class="num">39.5%</td><td class="num pos">+35.5pt</td><td class="num">4.01</td><td class="small">+37.9pt</td><td class="small">样本少</td><td><span class="tag m">强但样本少</span></td></tr>
+    <tr><td>RSI14&lt;35 纯</td><td class="num">127</td><td class="num">59.8%</td><td class="num">39.4%</td><td class="num pos">+20.4pt</td><td class="num">4.70</td><td class="small">+21.4pt</td><td class="small pos">+16.0pt</td><td><span class="tag s">强</span></td></tr>
+    <tr><td>RSI14&lt;30 纯</td><td class="num">61</td><td class="num">62.3%</td><td class="num">38.9%</td><td class="num pos">+23.3pt</td><td class="num">3.76</td><td class="small">—</td><td class="small">—</td><td><span class="tag s">强</span></td></tr>
+    <tr><td>RSI14&lt;30 + 放量（&gt;1.5x）</td><td class="num">35</td><td class="num">48.6%</td><td class="num">37.4%</td><td class="num pos">+11.2pt</td><td class="num">1.33</td><td class="small">—</td><td class="small">—</td><td><span class="tag w">弱</span></td></tr>
   </table>
-  <div class="note">「距 20 日高点回撤 &gt; 15%」的 +11.4pt 与 RSI 超卖、跌破均线本质是同一个均值回归因子，未重复计入强信号。</div>
-<h2>五、今日状态（2026-11-13，最后一根已收盘日线）</h2>
+  <div class="callout"><strong>核心机制：超卖 + 缩量 = 抛压衰竭。</strong>超卖单独用 +20.4pt，缩量单独用几乎为零（+4.4pt），叠加后 +30.8pt。同一句「超卖」，缩量版（+30.8）是放量版（+11.2）的近 3 倍——量能决定这是「没人卖了」还是「恐慌还在砸」。</div>
+<h2>五、中等与无效信号（部分）</h2>
+  <div class="note" style="margin-bottom:10px"><strong>口径差异：</strong>本节为「按日统计、未合并连续触发日」，样本数偏大、z 值偏高，仅作方向参考。<strong>判定一栏才是结论。</strong>按日口径单独看时，绝大多数信号超额不足 5pt，等于没有信号。</div>
+  <table class="lab">
+    <tr><th>信号</th><th>方向</th><th class="num">样本日</th><th class="num">超额</th><th>判定</th><th>说明</th></tr>
+    <tr><td>RSI2 &lt; 10</td><td><span class="tag bull">看涨</span></td><td class="num">306</td><td class="num pos">+4.5</td><td><span class="tag w">弱</span></td><td class="small">超短期超卖，效应远弱于 RSI14</td></tr>
+    <tr><td>RSI2 &gt; 90</td><td><span class="tag bear">看跌</span></td><td class="num">411</td><td class="num pos">+4.4</td><td><span class="tag w">弱</span></td><td class="small">与 RSI2&lt;10 同源，非独立</td></tr>
+    <tr><td>RSI14 &gt; 70</td><td><span class="tag bear">看跌</span></td><td class="num">321</td><td class="num neg">−0.6</td><td><span class="tag w">无效</span></td><td class="small">牛市里超买后继续涨，扣基准后归零</td></tr>
+    <tr><td>创 20 日新高</td><td><span class="tag bear">看跌</span></td><td class="num">395</td><td class="num neg">−6.4</td><td><span class="tag w">无效</span></td><td class="small">扣基准后反向，不改方向即无效</td></tr>
+    <tr><td>缩量（&lt;0.5×20 日均量）</td><td><span class="tag bull">看涨</span></td><td class="num">271</td><td class="num pos">+4.4</td><td><span class="tag w">弱</span></td><td class="small"><strong>单独用几乎无效</strong>，只在 RSI 超卖时是强放大器</td></tr>
+    <tr><td>ATR 处 60 日低位 20%</td><td><span class="tag bull">看涨</span></td><td class="num">743</td><td class="num neg">−6.1</td><td><span class="tag w">无效</span></td><td class="small">波动收敛不是方向信号</td></tr>
+    <tr><td>距 20 日高点回撤 &gt; 15%</td><td><span class="tag bull">看涨</span></td><td class="num">466</td><td class="num pos">+11.4</td><td><span class="tag m">中（未入强）</span></td><td class="small">与 RSI 超卖高度重叠，属同一因子</td></tr>
+  </table>
+<h2>六、今日状态（2026-11-13，最后一根已收盘日线）</h2>
   <div class="card">
     <table class="lab">
       <tr><th style="width:220px">项目</th><th class="num">数值</th><th>说明</th></tr>
@@ -97,7 +107,7 @@
     <p class="small" style="margin-bottom:0"><strong>重要：</strong>2026-11-14 那根日线在 UTC 24:00 前未收盘，<strong>不计入判定</strong>。用未完成的 K 线判信号会产生前视偏差。</p>
   </div>
 
-  <h2>六、方法与局限</h2>
+  <h2>七、方法与局限</h2>
   <div class="card">
     <ul class="small">
       <li><strong>数据</strong>：Binance BTCUSDT / ETHUSDT 现货日线，UTC 00:00 收盘，2999 根（2018-08-29 ~ 2026-11-13）。自动剔除未收盘日线。</li>
