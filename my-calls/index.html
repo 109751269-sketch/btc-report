@@ -41,8 +41,8 @@
   <div class="sub">只记判断，不记仓位｜UTC 日线机械结算｜记录后不修改，靠时间验证</div>
 
   <div class="grid">
-    <div class="kpi"><div class="n">1</div><div class="l">累计观点</div></div>
-    <div class="kpi"><div class="n plain">1</div><div class="l">待验证</div></div>
+    <div class="kpi"><div class="n">2</div><div class="l">累计观点</div></div>
+    <div class="kpi"><div class="n plain">2</div><div class="l">待验证</div></div>
     <div class="kpi"><div class="n fall">—</div><div class="l">已结算命中率（0/0）</div></div>
     <div class="kpi"><div class="n">2026-11-14</div><div class="l">行情截至（UTC）</div></div>
   </div>
@@ -54,12 +54,23 @@
   <table>
     <tr><th>ID</th><th>记录日</th><th>方向</th><th class="num">目标</th><th style="min-width:200px">判断依据</th><th class="num">现价</th><th class="num">窗口最高</th><th class="num">窗口最低</th><th>结算日</th><th class="num">剩余</th></tr>
     <tr>
+      <td class="num">c002</td>
+      <td>2026-11-14</td>
+      <td class="rise">看涨</td>
+      <td class="num">68,765</td>
+      <td>RSI2 极超卖（2.0）</td>
+      <td class="num">66,041</td>
+      <td class="num">—</td>
+      <td class="num">—</td>
+      <td>2026-11-21</td>
+      <td class="num">D-7</td>
+    </tr><tr>
       <td class="num">c001</td>
       <td>2026-11-14</td>
       <td class="rise">看涨</td>
       <td class="num">75,000</td>
       <td>ETH 跌不动</td>
-      <td class="num">66,450</td>
+      <td class="num">66,041</td>
       <td class="num">—</td>
       <td class="num">—</td>
       <td>2026-12-14</td>
@@ -69,6 +80,40 @@
 
   <h2>二、观点时间线</h2>
   <div class="call pending">
+      <div class="ch">
+        <span class="cid">c002</span>
+        <span class="cdate">2026-11-14</span>
+        <span class="rise">看涨</span>
+        <span class="arrow">→</span>
+        <span class="tgt">68,765</span>
+        <span class="st pending">待验证</span>
+      </div>
+      <div class="meta">
+        <span>记录时价 <b>66,120</b></span>
+        <span>当日低点 <b>66,092</b></span>
+        <span>结算日 <b>2026-11-21</b></span>
+        <span>行情至 <b>2026-11-14</b></span>
+      </div>
+      <div class="expect">RSI2 跌到 2.0，属统计上的极端超卖。7 日内出现技术性反弹的概率高于随机日。只做短线反弹，不判断反转，也不预设能到 75,000。</div>
+      <table class="basis">
+        <tr><th style="width:78px">类型</th><th>依据</th><th style="width:64px">回测判定</th></tr>
+        <tr>
+        <td><span class="tag neg">主依据</span></td>
+        <td>RSI2 极超卖（2.0）<div class="quant"><div>RSI2 2.0</div><div>RSI14 24.5</div><div>距 ATH −47.4%</div><div>已破 60 日低点</div></div><div class="small" style="margin-top:3px">2026-11-14 日线 RSI2 = 2.0</div></td>
+        <td><span class="tag warn">弱</span></td>
+      </tr><tr><td></td><td colspan="2" class="small">审查：RSI2 低于 5 共 109 次事件，7 日后上涨 66.1%，状态匹配基准 51.3%，超额 +14.7pt，z=3.25，三段 +18.3/+13.6/+13.2 全正。这是 24 个信号里唯一越过 Bonferroni 门槛（z 约 3.2）的一条。但 20000 次置换检验 p=0.0118，未过严格校正；且阈值曲线不单调（低于 2 是 +9.2、低于 3 是 +8.9、低于 5 是 +14.7、低于 8 掉到 +7.3），尖峰形态可疑。综合判「弱」。</td></tr><tr>
+        <td><span class="tag gray">辅助</span></td>
+        <td>RSI2 叠加空头排列<div class="small" style="margin-top:3px">MA20 低于 MA50 且 RSI2 低于 5</div></td>
+        <td><span class="tag warn">弱</span></td>
+      </tr><tr><td></td><td colspan="2" class="small">审查：58 次事件，命中 70.7%，基准 51.3%，超额 +19.4pt，z=3.25，三段 +20.9/+15.7/+22.5 全正。叠加后超额高于单条件，但样本从 109 降到 58，且同样未过置换校正。作辅助。</td></tr><tr>
+        <td><span class="tag gray">辅助</span></td>
+        <td>RSI2 叠加缩量<div class="small" style="margin-top:3px">量比低于 1.0 且 RSI2 低于 5</div></td>
+        <td><span class="tag warn">无效</span></td>
+      </tr><tr><td></td><td colspan="2" class="small">审查：33 次事件，命中 72.7%，超额 +21.4pt，z=2.76，三段全正。超额最高但样本最小。今日量比不满足缩量条件，仅作记录。</td></tr>
+      </table>
+      <div class="inv"><b>失效条件：</b>不设价格失效线。窗口 2026-11-21 到期仍未触及 68,765 即判未中（机械可判：只看是否触及目标）</div>
+      <div class="status-line pending">等 2026-11-14 之后的行情（现价 66041）</div>
+    </div><div class="call pending">
       <div class="ch">
         <span class="cid">c001</span>
         <span class="cdate">2026-11-14</span>
@@ -105,7 +150,7 @@
       </tr><tr><td></td><td colspan="2" class="small">审查：v3 口径：109 次事件，7 日后上涨 66.1%，基准 51.3%，超额 +14.7pt，z=3.25，三段 +18.3/+13.6/+13.2 全正。但阈值扫描不单调（低于2 +9.2、低于3 +8.9、低于5 +14.7、低于8 +7.3），20000 次置换检验 p=0.0118，未过 Bonferroni 门槛 0.002。疑为噪声尖峰，仅作参考。</td></tr>
       </table>
       <div class="inv"><b>失效条件：</b>日线收盘 &lt; 65000（视为下方空间打开，阶段底判断失效）</div>
-      <div class="status-line pending">等 2026-11-14 之后的行情（现价 66450）</div>
+      <div class="status-line pending">等 2026-11-14 之后的行情（现价 66041）</div>
     </div>
 
   <h2>三、依据审查与统计</h2>
@@ -132,68 +177,149 @@
         <th class="num" style="width:46px">z</th>
         <th style="width:58px">判定</th>
       </tr>
-      <tr><td colspan="8" style="background:var(--panel2);font-weight:600">RSI 超卖</td></tr><tr>
-            <td class="small">RSI14 低于 25</td>
+      <tr><td colspan="8" style="background:var(--panel2);font-weight:600">RSI2 阈值扫描（7 日持有）</td></tr><tr>
+            <td class="small">RSI2 低于 2</td>
             <td><span class="tag bull">看涨</span></td>
-            <td class="num">29</td>
-            <td class="num">72.4%</td>
-            <td class="num">58.0%</td>
-            <td class="num rise">+14.4pt</td>
-            <td class="num">1.73</td>
-            <td><span class="tag gray">弱</span></td>
-          </tr><tr>
-            <td class="small">RSI14 低于 30</td>
-            <td><span class="tag bull">看涨</span></td>
-            <td class="num">61</td>
-            <td class="num">62.3%</td>
-            <td class="num">57.4%</td>
-            <td class="num rise">+4.9pt</td>
-            <td class="num">0.78</td>
+            <td class="num">36</td>
+            <td class="num">61.1%</td>
+            <td class="num">51.9%</td>
+            <td class="num rise">+9.2pt</td>
+            <td class="num">1.13</td>
             <td><span class="tag warn">无效</span></td>
           </tr><tr>
-            <td class="small">RSI14 低于 35 且缩量</td>
+            <td class="small">RSI2 低于 3</td>
             <td><span class="tag bull">看涨</span></td>
-            <td class="num">54</td>
-            <td class="num">68.5%</td>
-            <td class="num">58.9%</td>
-            <td class="num rise">+9.7pt</td>
-            <td class="num">1.53</td>
+            <td class="num">55</td>
+            <td class="num">60.0%</td>
+            <td class="num">51.1%</td>
+            <td class="num rise">+8.9pt</td>
+            <td class="num">1.35</td>
+            <td><span class="tag warn">无效</span></td>
+          </tr><tr>
+            <td class="small">RSI2 低于 5</td>
+            <td><span class="tag bull">看涨</span></td>
+            <td class="num">109</td>
+            <td class="num">66.1%</td>
+            <td class="num">51.3%</td>
+            <td class="num rise">+14.7pt</td>
+            <td class="num">3.25</td>
             <td><span class="tag gray">弱</span></td>
-          </tr><tr><td colspan="8" style="background:var(--panel2);font-weight:600">均线偏离（修正后归零）</td></tr><tr>
-            <td class="small">MA20 低于 MA50</td>
+          </tr><tr>
+            <td class="small">RSI2 低于 8</td>
             <td><span class="tag bull">看涨</span></td>
-            <td class="num">617</td>
-            <td class="num">57.5%</td>
+            <td class="num">174</td>
+            <td class="num">59.2%</td>
+            <td class="num">51.9%</td>
+            <td class="num rise">+7.3pt</td>
+            <td class="num">1.95</td>
+            <td><span class="tag warn">无效</span></td>
+          </tr><tr>
+            <td class="small">RSI2 低于 10</td>
+            <td><span class="tag bull">看涨</span></td>
+            <td class="num">213</td>
             <td class="num">55.9%</td>
-            <td class="num rise">+1.6pt</td>
-            <td class="num">0.82</td>
+            <td class="num">51.1%</td>
+            <td class="num rise">+4.7pt</td>
+            <td class="num">1.39</td>
+            <td><span class="tag warn">无效</span></td>
+          </tr><tr><td colspan="8" style="background:var(--panel2);font-weight:600">RSI2 低于 5 的持有期扫描</td></tr><tr>
+            <td class="small">持有 3 日</td>
+            <td><span class="tag bull">看涨</span></td>
+            <td class="num">109</td>
+            <td class="num">61.5%</td>
+            <td class="num">52.2%</td>
+            <td class="num rise">+9.2pt</td>
+            <td class="num">1.98</td>
+            <td><span class="tag gray">弱</span></td>
+          </tr><tr>
+            <td class="small">持有 5 日</td>
+            <td><span class="tag bull">看涨</span></td>
+            <td class="num">109</td>
+            <td class="num">67.0%</td>
+            <td class="num">52.7%</td>
+            <td class="num rise">+14.3pt</td>
+            <td class="num">3.16</td>
+            <td><span class="tag gray">弱</span></td>
+          </tr><tr>
+            <td class="small">持有 7 日</td>
+            <td><span class="tag bull">看涨</span></td>
+            <td class="num">109</td>
+            <td class="num">66.1%</td>
+            <td class="num">51.3%</td>
+            <td class="num rise">+14.7pt</td>
+            <td class="num">3.25</td>
+            <td><span class="tag gray">弱</span></td>
+          </tr><tr>
+            <td class="small">持有 10 日</td>
+            <td><span class="tag bull">看涨</span></td>
+            <td class="num">109</td>
+            <td class="num">61.5%</td>
+            <td class="num">53.2%</td>
+            <td class="num rise">+8.2pt</td>
+            <td class="num">1.76</td>
             <td><span class="tag warn">无效</span></td>
           </tr><tr>
-            <td class="small">收盘低于 MA200</td>
+            <td class="small">持有 30 日</td>
             <td><span class="tag bull">看涨</span></td>
-            <td class="num">573</td>
-            <td class="num">59.9%</td>
-            <td class="num">57.0%</td>
-            <td class="num rise">+2.9pt</td>
-            <td class="num">1.40</td>
+            <td class="num">109</td>
+            <td class="num">51.4%</td>
+            <td class="num">55.1%</td>
+            <td class="num fall">-3.7pt</td>
+            <td class="num">-0.78</td>
             <td><span class="tag warn">无效</span></td>
-          </tr><tr><td colspan="8" style="background:var(--panel2);font-weight:600">位置类（修正后归零）</td></tr><tr>
-            <td class="small">距 60 日低点 2% 内</td>
+          </tr><tr><td colspan="8" style="background:var(--panel2);font-weight:600">目标位达成率（7 日，事件 vs 全样本）</td></tr><tr>
+            <td class="small">+2% (69,680)</td>
             <td><span class="tag bull">看涨</span></td>
-            <td class="num">97</td>
-            <td class="num">55.7%</td>
-            <td class="num">55.3%</td>
-            <td class="num rise">+0.3pt</td>
-            <td class="num">0.07</td>
-            <td><span class="tag warn">无效</span></td>
+            <td class="num">109</td>
+            <td class="num">48.6%</td>
+            <td class="num">39.8%</td>
+            <td class="num rise">+8.8pt</td>
+            <td class="num">0.00</td>
+            <td><span class="tag gray">有效</span></td>
           </tr><tr>
-            <td class="small">距 20 日低点 2% 内</td>
+            <td class="small">+3% (70,363)</td>
             <td><span class="tag bull">看涨</span></td>
-            <td class="num">278</td>
-            <td class="num">50.0%</td>
-            <td class="num">53.9%</td>
-            <td class="num fall">-3.9pt</td>
-            <td class="num">-1.31</td>
+            <td class="num">109</td>
+            <td class="num">45.0%</td>
+            <td class="num">33.9%</td>
+            <td class="num rise">+11.1pt</td>
+            <td class="num">0.00</td>
+            <td><span class="tag gray">有效</span></td>
+          </tr><tr>
+            <td class="small">+4% (71,047)</td>
+            <td><span class="tag bull">看涨</span></td>
+            <td class="num">109</td>
+            <td class="num">41.3%</td>
+            <td class="num">29.5%</td>
+            <td class="num rise">+11.8pt</td>
+            <td class="num">0.00</td>
+            <td><span class="tag gray">有效</span></td>
+          </tr><tr>
+            <td class="small">+5% (71,730)</td>
+            <td><span class="tag bull">看涨</span></td>
+            <td class="num">109</td>
+            <td class="num">36.7%</td>
+            <td class="num">25.3%</td>
+            <td class="num rise">+11.4pt</td>
+            <td class="num">0.00</td>
+            <td><span class="tag gray">有效</span></td>
+          </tr><tr>
+            <td class="small">+6% (72,413)</td>
+            <td><span class="tag bull">看涨</span></td>
+            <td class="num">109</td>
+            <td class="num">30.3%</td>
+            <td class="num">21.5%</td>
+            <td class="num rise">+8.8pt</td>
+            <td class="num">0.00</td>
+            <td><span class="tag gray">弱</span></td>
+          </tr><tr>
+            <td class="small">+10% (75,145)</td>
+            <td><span class="tag bull">看涨</span></td>
+            <td class="num">109</td>
+            <td class="num">14.7%</td>
+            <td class="num">12.2%</td>
+            <td class="num rise">+2.5pt</td>
+            <td class="num">0.00</td>
             <td><span class="tag warn">无效</span></td>
           </tr>
     </table>
@@ -212,7 +338,7 @@
   </div>
 
   <div class="foot">
-    生成 2026-11-14 14:23 UTC｜台账 <code>state/my_calls.json</code>｜
+    生成 2026-11-14 14:47 UTC｜台账 <code>state/my_calls.json</code>｜
     结算脚本 <code>my_journal.js</code>｜<a href="../">返回首页</a><br>
     观点记录后不修改；口径变更会升版本并注明。
   </div>

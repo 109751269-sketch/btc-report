@@ -22,8 +22,8 @@
   <h1>预测信号库</h1>
   <div class="sub">2999 根 BTC 日线（2018-08-29 ~ 2026-11-13）｜事件级去重｜状态匹配基准｜30 日方向</div>
 <div class="grid">
-    <div class="kpi"><div class="n">24</div><div class="l">候选信号</div></div>
-    <div class="kpi"><div class="n rise">1</div><div class="l">仅 1 条弱有效</div></div>
+    <div class="kpi"><div class="n">41</div><div class="l">累计测试信号</div></div>
+    <div class="kpi"><div class="n rise">2</div><div class="l">弱有效（RSI2&lt;5、RSI14&lt;25）</div></div>
     <div class="kpi"><div class="n plain">2999</div><div class="l">日线样本（8 年）</div></div>
     <div class="kpi"><div class="n">v3</div><div class="l">口径版本（状态匹配）</div></div>
   </div>
@@ -44,6 +44,7 @@
   </div><h2>二、v3 修正后的全部结果</h2>
   <table class="lab">
     <tr><th>信号</th><th>方向</th><th class="num">事件</th><th class="num">命中率</th><th class="num">状态基准</th><th class="num">超额</th><th class="num">z</th><th>三段</th><th>判定</th></tr>
+    <tr><td><strong>RSI2 &lt; 5（7 日持有）</strong></td><td><span class="tag bull">看涨</span></td><td class="num">109</td><td class="num">66.1%</td><td class="num">51.3%</td><td class="num pos">+14.7</td><td class="num">3.25</td><td class="num">+18.3/+13.6/+13.2</td><td><span class="tag m">弱</span></td></tr>
     <tr><td><strong>RSI14 &lt; 25</strong></td><td><span class="tag bull">看涨</span></td><td class="num">29</td><td class="num">72.4%</td><td class="num">58.0%</td><td class="num pos">+14.4</td><td class="num">1.73</td><td class="num">+24.5/+18.4/−1.4</td><td><span class="tag m">弱</span></td></tr>
     <tr><td><strong>RSI14 &lt; 35 + 缩量</strong></td><td><span class="tag bull">看涨</span></td><td class="num">54</td><td class="num">68.5%</td><td class="num">58.9%</td><td class="num pos">+9.7</td><td class="num">1.53</td><td class="num">+12.0/+5.0/+14.2</td><td><span class="tag m">弱</span></td></tr>
     <tr><td>RSI14 &lt; 30</td><td><span class="tag bull">看涨</span></td><td class="num">61</td><td class="num">62.3%</td><td class="num">57.4%</td><td class="num">+4.9</td><td class="num">0.78</td><td class="num">+7.3/+16.8/−13.6</td><td><span class="tag w">无效</span></td></tr>
@@ -74,7 +75,62 @@
     <p class="small" style="margin-top:0"><strong>为什么旧口径会虚高：</strong>「同日 ±45 天」窗口的前一半，正好是信号出现之前的那段行情。如果信号出现在一轮暴跌的末端，前 45 天里每一天的「未来 30 日收益」都包含了这次暴跌，命中率极低。这会把基准压到不合理的低位，超额自然虚高。</p>
     <p class="small" style="margin-bottom:0"><strong>实测证据：</strong>RSI14&lt;30 事件的「仅前 45 天基准」是 62.5%，而「仅后 45 天基准」只有 15.9%，两者平均 38.9%。前者与信号自身的命中率 62.3% 几乎相同，说明信号没有超出它所在的环境。</p>
   </div>
-<h2>四、博主常用指标的回测结论</h2>
+<h2>三之二、RSI2 深挖：唯一接近显著的信号</h2>
+  <div class="card">
+    <p class="small" style="margin-top:0">RSI2 是 Wilder RSI 取 2 周期，对短期超卖极敏感。<strong>RSI2 &lt; 5 配合 7 日持有，是 24 个信号里唯一 z 超过 3 的一条</strong>：事件 109 个，命中 66.1%，状态基准 51.3%，超额 +14.7pt，z=3.25，三段 +18.3/+13.6/+13.2 全正。</p>
+  </div>
+
+  <h3>阈值扫描：不单调，尖峰像噪声</h3>
+  <table class="lab">
+    <tr><th>阈值</th><th class="num">事件</th><th class="num">命中率</th><th class="num">状态基准</th><th class="num">超额</th><th class="num">z</th><th>三段</th></tr>
+    <tr><td>RSI2 &lt; 2</td><td class="num">36</td><td class="num">61.1%</td><td class="num">51.9%</td><td class="num">+9.2</td><td class="num">1.13</td><td class="num">+9.9/+5.3/+12.7</td></tr>
+    <tr><td>RSI2 &lt; 3</td><td class="num">55</td><td class="num">60.0%</td><td class="num">51.1%</td><td class="num">+8.9</td><td class="num">1.35</td><td class="num">+10.2/+9.0/+8.2</td></tr>
+    <tr><td><strong>RSI2 &lt; 5</strong></td><td class="num">109</td><td class="num">66.1%</td><td class="num">51.3%</td><td class="num pos">+14.7</td><td class="num">3.25</td><td class="num">+18.3/+13.6/+13.2</td></tr>
+    <tr><td>RSI2 &lt; 8</td><td class="num">174</td><td class="num">59.2%</td><td class="num">51.9%</td><td class="num">+7.3</td><td class="num">1.95</td><td class="num">+16.4/+4.8/+2.5</td></tr>
+    <tr><td>RSI2 &lt; 10</td><td class="num">213</td><td class="num">55.9%</td><td class="num">51.1%</td><td class="num">+4.7</td><td class="num">1.39</td><td class="num">+12.7/+6.2/−4.1</td></tr>
+    <tr><td>RSI2 &lt; 15</td><td class="num">300</td><td class="num">54.3%</td><td class="num">51.7%</td><td class="num">+2.7</td><td class="num">0.92</td><td class="num">+15.0/+0.4/−6.5</td></tr>
+  </table>
+  <div class="callout bad"><strong>这是它还不能算「可用」的原因：</strong>阈值曲线<strong>不单调</strong>。真信号应该越极端越强（&lt;2 最强），但这里是 &lt;2 (+9.2) → &lt;3 (+8.9) → &lt;5 (+14.7) → &lt;8 (+7.3)。&lt;5 处突然出现尖峰，更像特定时间段的偶然。20000 次置换检验 p=0.0118，未通过 24 信号 Bonferroni 校正（需 p&lt;0.002）。</div>
+
+  <h3>持有期扫描：7 日最优，30 日反转为负</h3>
+  <table class="lab">
+    <tr><th>持有期</th><th class="num">命中率</th><th class="num">状态基准</th><th class="num">超额</th><th class="num">z</th><th>三段</th></tr>
+    <tr><td>3 日</td><td class="num">61.5%</td><td class="num">52.2%</td><td class="num">+9.2</td><td class="num">1.98</td><td class="num">+4.1/+9.7/+12.4</td></tr>
+    <tr><td>5 日</td><td class="num">67.0%</td><td class="num">52.7%</td><td class="num pos">+14.3</td><td class="num">3.16</td><td class="num">+23.0/+19.9/+3.4</td></tr>
+    <tr><td><strong>7 日</strong></td><td class="num">66.1%</td><td class="num">51.3%</td><td class="num pos">+14.7</td><td class="num">3.25</td><td class="num">+18.3/+13.6/+13.2</td></tr>
+    <tr><td>10 日</td><td class="num">61.5%</td><td class="num">53.2%</td><td class="num">+8.2</td><td class="num">1.76</td><td class="num">+9.9/+4.7/+9.9</td></tr>
+    <tr><td>14 日</td><td class="num">62.4%</td><td class="num">53.5%</td><td class="num">+8.9</td><td class="num">1.93</td><td class="num">+12.9/+2.1/+11.9</td></tr>
+    <tr><td>21 日</td><td class="num">56.9%</td><td class="num">53.3%</td><td class="num">+3.6</td><td class="num">0.77</td><td class="num">+6.1/+5.0/+0.7</td></tr>
+    <tr><td>30 日</td><td class="num">51.4%</td><td class="num">55.1%</td><td class="num neg">−3.7</td><td class="num">−0.78</td><td class="num">−8.5/−8.5/+3.6</td></tr>
+  </table>
+  <p class="small">5~7 日是窗口峰值，30 日转为负值。这说明它是<strong>短线超卖反弹</strong>，不是趋势反转信号。不能用它判断「底部在哪」。</p>
+
+  <h3>叠加条件：空头排列里反而更强</h3>
+  <table class="lab">
+    <tr><th>条件组合</th><th class="num">事件</th><th class="num">命中率</th><th class="num">超额</th><th class="num">z</th><th>三段</th></tr>
+    <tr><td>仅 RSI2 &lt; 5</td><td class="num">109</td><td class="num">66.1%</td><td class="num">+14.7</td><td class="num">3.25</td><td class="num">+18.3/+13.6/+13.2</td></tr>
+    <tr><td>+ MA20 &lt; MA50</td><td class="num">58</td><td class="num">70.7%</td><td class="num pos">+19.4</td><td class="num">3.25</td><td class="num">+20.9/+15.7/+22.5</td></tr>
+    <tr><td>+ 收盘 &lt; MA200</td><td class="num">68</td><td class="num">69.1%</td><td class="num pos">+17.6</td><td class="num">3.14</td><td class="num">+24.3/+11.5/+19.3</td></tr>
+    <tr><td>+ 缩量（量比 &lt; 1）</td><td class="num">33</td><td class="num">72.7%</td><td class="num pos">+21.4</td><td class="num">2.76</td><td class="num">+35.4/+19.0/+11.3</td></tr>
+    <tr><td>+ 放量（量比 ≥1.5）</td><td class="num">47</td><td class="num">61.7%</td><td class="num">+9.6</td><td class="num">1.35</td><td class="num">+2.5/+9.4/+13.1</td></tr>
+  </table>
+  <p class="small">叠加空头排列（MA20&lt;MA50）后超额升到 +19.4，三段 +20.9/+15.7/+22.5 更整齐。叠加放量反而降到 +9.6——<strong>急跌放量时抄底，效果不如缩量阴跌时</strong>，与「放量恐慌见底」的流行说法相反。</p>
+
+  <h3>目标位怎么定（不是主观设定）</h3>
+  <p class="small">RSI2&lt;5 事件后 7 日收益分布：p10 −10.0%、p25 −2.4%、<strong>p50 +1.5%</strong>、p75 +7.1%、p90 +12.9%。全样本对照：p50 +0.4%、p75 +5.1%、p90 +11.5%。</p>
+  <table class="lab">
+    <tr><th>目标涨幅</th><th class="num">对应价位（记录价 66,120）</th><th class="num">事件达成率</th><th class="num">全样本达成率</th><th class="num">超额</th></tr>
+    <tr><td>+2%</td><td class="num">67,442</td><td class="num">48.6%</td><td class="num">39.8%</td><td class="num">+8.8</td></tr>
+    <tr><td>+3%</td><td class="num">68,104</td><td class="num">45.0%</td><td class="num">33.9%</td><td class="num">+11.1</td></tr>
+    <tr><td><strong>+4%</strong></td><td class="num"><strong>68,765</strong></td><td class="num">41.3%</td><td class="num">29.5%</td><td class="num pos">+11.8</td></tr>
+    <tr><td>+5%</td><td class="num">69,426</td><td class="num">36.7%</td><td class="num">25.3%</td><td class="num">+11.4</td></tr>
+    <tr><td>+6%</td><td class="num">70,087</td><td class="num">30.3%</td><td class="num">21.5%</td><td class="num">+8.8</td></tr>
+    <tr><td>+8%</td><td class="num">71,410</td><td class="num">21.1%</td><td class="num">16.4%</td><td class="num">+4.7</td></tr>
+    <tr><td>+10%</td><td class="num">72,732</td><td class="num">14.7%</td><td class="num">12.2%</td><td class="num">+2.5</td></tr>
+  </table>
+  <p class="small">超额峰值在 <strong>+4%</strong>（+11.8pt）。目标定得越高，超额优势越被稀释——+10% 只剩 +2.5pt。<strong>c002 的 68,765 就是从这个峰值档反推的，不是拍脑袋。</strong></p>
+
+  <h2>四、博主常用指标的回测结论</h2>
   <p class="small">从 111 个关注账号、16404 条推文中提取技术指标提及，按 v3 口径逐个回测。提及次数来自 2026 全年语料。</p>
   <table class="lab">
     <tr><th>指标</th><th class="num">推文提及</th><th>回测结论</th></tr>
@@ -95,20 +151,41 @@
       <li><strong>量价背离的方向被搞反了。</strong>价格新高但成交萎缩，流行解读为「动能衰竭」，实测继续上涨概率更高。</li>
     </ul>
   </div>
-<h2>五、今日状态（2026-11-13，最后一根已收盘日线）</h2>
+<h2>五、今日状态（更新于 2026-11-14 22:30 北京时间）</h2>
   <div class="card">
+    <p class="small" style="margin-top:0">判定基准是<strong>最后一根已收盘日线 2026-11-13</strong>（UTC 收盘 68,314）。11-14 那根尚未收盘，只作实时参考，不计入信号触发。</p>
     <table class="lab">
       <tr><th style="width:200px">项目</th><th class="num">数值</th><th>对应信号状态</th></tr>
-      <tr><td>BTC 收盘</td><td class="num">68,314</td><td class="small">2026-11-13 UTC 日线</td></tr>
-      <tr><td>当日涨跌</td><td class="num neg">−4.40%</td><td class="small">ETH −4.45%，ETH 略弱</td></tr>
-      <tr><td>RSI14</td><td class="num">24.5</td><td><span class="tag m">触发 RSI14&lt;25（+14.4pt，z=1.73）</span></td></tr>
+      <tr><td>已收盘日线（11-13）</td><td class="num">68,314</td><td class="small">−4.40%，量比 1.93（放量）</td></tr>
+      <tr><td>实时（11-14 盘中）</td><td class="num neg">66,144</td><td class="small">当日低 65,913，已跌破 11-13 低点 67,568</td></tr>
+      <tr><td>RSI2</td><td class="num">1.98</td><td><span class="tag m">触发 RSI2&lt;5（+14.7pt，z=3.25，三段全正）</span> 也触发 RSI2&lt;2</td></tr>
+      <tr><td>RSI14</td><td class="num">24.5</td><td><span class="tag m">触发 RSI14&lt;25（+14.4pt，z=1.73）</span> 第三段 −1.4</td></tr>
       <tr><td>量比（当日/20日均）</td><td class="num">1.93</td><td><span class="tag w">放量，非缩量</span> 故「RSI&lt;35+缩量」未触发</td></tr>
-      <tr><td>距 60 日低点</td><td class="num">0.0%</td><td><span class="tag w">触发但该信号已归零</span></td></tr>
+      <tr><td>距 60 日低点</td><td class="num">0.0%</td><td><span class="tag w">触发但该信号超额为负（−3.8pt）</span></td></tr>
       <tr><td>收盘 vs MA200</td><td class="num">−6.5%</td><td><span class="tag w">触发但该信号仅 +2.9pt</span></td></tr>
       <tr><td>MA20 vs MA50</td><td class="num">−4.9%</td><td><span class="tag w">空头排列，仅 +1.6pt</span></td></tr>
+      <tr><td>ETH 单日抗跌</td><td class="num">−0.05pt</td><td><span class="tag w">未触发</span> ETH −4.45% 略弱于 BTC −4.40%</td></tr>
+      <tr><td>ETH 近 3 日抗跌</td><td class="num">+1.42pt</td><td><span class="tag w">触发</span> 但「单日+3 日交集」未成立</td></tr>
     </table>
-    <p class="small" style="margin-bottom:0"><strong>今日唯一有效的是 RSI14&lt;25</strong>（+14.4pt，z=1.73，三段 +24.5/+18.4/−1.4）。注意第三段为 −1.4，最新这段行情里该信号已不再有效。2026-11-14 那根日线未收盘，不计入判定。</p>
+    <p class="small" style="margin-bottom:0"><strong>当前唯一越过 Bonferroni 阈值附近的是 RSI2&lt;5</strong>（+14.7pt，z=3.25，三段 +18.3/+13.6/+13.2 全正）。但阈值扫描不单调（&lt;2 是 +9.2、&lt;3 是 +8.9、&lt;5 是 +14.7、&lt;8 掉到 +7.3），置换检验 p=0.0118 未过 24 信号校正门槛，仍标「弱」。<strong>RSI14&lt;25 第三段为 −1.4</strong>，最新这段行情里已不再有效。</p>
   </div>
+
+  <h2>五之二、各信号当前触发一览</h2>
+  <table class="lab">
+    <tr><th>信号</th><th style="width:80px">当前</th><th class="num" style="width:70px">超额</th><th class="num" style="width:60px">z</th><th>备注</th></tr>
+    <tr><td>RSI2 &lt; 5（7 日持有）</td><td><span class="tag m">触发</span></td><td class="num">+14.7</td><td class="num">3.25</td><td class="small">三段全正，唯一接近显著</td></tr>
+    <tr><td>RSI2 &lt; 2</td><td><span class="tag m">触发</span></td><td class="num">+9.2</td><td class="num">1.13</td><td class="small">样本 36，z 低</td></tr>
+    <tr><td>RSI14 &lt; 25</td><td><span class="tag m">触发</span></td><td class="num">+14.4</td><td class="num">1.73</td><td class="small">第三段 −1.4，近期失效</td></tr>
+    <tr><td>RSI14 &lt; 35 且缩量</td><td><span class="tag w">未触发</span></td><td class="num">+9.7</td><td class="num">1.53</td><td class="small">量比 1.93，是放量</td></tr>
+    <tr><td>破 60 日新低</td><td><span class="tag w">触发</span></td><td class="num neg">−3.8</td><td class="num">−0.58</td><td class="small">负超额，第三段 −13.8</td></tr>
+    <tr><td>破 60 日新低 + 放量 1.5 倍</td><td><span class="tag w">触发</span></td><td class="num neg">−4.4</td><td class="num">−0.59</td><td class="small">负超额，第三段 −16.1</td></tr>
+    <tr><td>MA20 低 MA50</td><td><span class="tag w">触发</span></td><td class="num">+1.6</td><td class="num">0.82</td><td class="small">状态校正后归零</td></tr>
+    <tr><td>收盘低 MA200</td><td><span class="tag w">触发</span></td><td class="num">+2.9</td><td class="num">1.40</td><td class="small">归零</td></tr>
+    <tr><td>距 ATH 回撤 ≥20% 且 RSI14&lt;30</td><td><span class="tag m">触发</span></td><td class="num">+8.7</td><td class="num">1.38</td><td class="small">回撤 −47.4% 已满足</td></tr>
+    <tr><td>ETH 单日抗跌</td><td><span class="tag w">未触发</span></td><td class="num">+4.5</td><td class="num">1.54</td><td class="small">今日 ETH 更弱</td></tr>
+    <tr><td>ETH 单日 + 3 日交集抗跌</td><td><span class="tag w">未触发</span></td><td class="num">+7.8</td><td class="num">1.85</td><td class="small">三段全正，但今天单日这条没过</td></tr>
+  </table>
+  <p class="small">触发状态每天随行情变化。本节在每次抓推特或分析行情时同步更新。</p>
 
   <h2>六、方法与局限</h2>
   <div class="card">
