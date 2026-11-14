@@ -6,9 +6,13 @@
 <title>预测信号库 · BTC 研究站</title>
 <link rel="stylesheet" href="../assets/report.css">
 <style>
-  .sig-detail td{font-size:12px}
-  .sig-detail .small{font-size:10.5px;color:var(--txt3)}
-  .sig-detail .rise{font-size:11px}
+  .lab{font-size:12px}
+  .lab th,.lab td{padding:7px 9px}
+  .pos{color:var(--rise);font-weight:600}
+  .neg{color:var(--fall);font-weight:600}
+  .tag.s{background:rgba(61,220,151,.16);color:#3ddc97}
+  .tag.m{background:rgba(240,180,41,.14);color:#e0a72a}
+  .tag.w{background:rgba(255,255,255,.06);color:var(--txt3)}
 </style>
 </head>
 <body>
@@ -16,344 +20,101 @@
   <div class="crumb"><a href="../">首页</a><span>/</span>05 预测信号库</div>
   <div class="series">TOPIC 05</div>
   <h1>预测信号库</h1>
-  <div class="sub">把「人工观察到的规律」变成可回测的信号｜2024-02-19 ~ 2026-11-14（1000 天）｜基准已扣</div>
+  <div class="sub">2999 根 BTC 日线｜2018-08-29 ~ 2026-11-13｜连续触发合并为事件｜同日 ±45 天匹配基准｜目标：30 日后方向</div>
 
   <div class="grid">
-    <div class="kpi"><div class="n">25</div><div class="l">扫描信号数</div></div>
-    <div class="kpi"><div class="n rise">1</div><div class="l">判定「可用」</div></div>
-    <div class="kpi"><div class="n plain">3</div><div class="l">观察中</div></div>
-    <div class="kpi"><div class="n">10</div><div class="l">今日触发</div></div>
+    <div class="kpi"><div class="n">24</div><div class="l">候选信号</div></div>
+    <div class="kpi"><div class="n rise">6</div><div class="l">强信号（z&gt;3 且三段同向）</div></div>
+    <div class="kpi"><div class="n plain">2999</div><div class="l">日线样本（8 年）</div></div>
+    <div class="kpi"><div class="n">45</div><div class="l">匹配基准邻域（天）</div></div>
   </div>
-
-  <div class="callout"><strong>一句话结论：</strong>多数「看起来有效」的信号扣掉基准后就没有超额；本页只把「三段同号 + 样本 ≥30 + 超额 ≥5pt」标为可用，其余一律降级。</div>
+  <div class="callout"><strong>一句话结论：</strong>BTC 日线在 30 日尺度上是<strong>均值回归</strong>的。所有显著的强信号都是<strong>反向</strong>的——超卖看涨、超买看跌、跌破均线看涨、站上均线看跌。顺势类信号（金叉买入、新高追多）在扣除同期基准后<strong>全部为负或为零</strong>。</div>
 
   <h2>一、怎么读这张表</h2>
   <div class="card">
-    <table>
-      <tr><th style="width:130px">字段</th><th>含义</th></tr>
-      <tr><td><strong>样本 n</strong></td><td>这个信号在 1000 天里一共触发多少次。少于 30 次不给结论。</td></tr>
-      <tr><td><strong>命中率</strong></td><td>信号出现后第 30 天，价格按预期方向（看涨=涨、看跌=跌）走的比例。</td></tr>
-      <tr><td><strong>基准</strong></td><td>不挑信号、随便哪天进场，同方向走对的概率。2024-2026 偏涨，看涨基准约 55%、看跌约 45%。</td></tr>
-      <tr><td><strong>超额 = 命中 − 基准</strong></td><td><strong>唯一有意义的指标。</strong>等于 0 说明这个信号等于没看；负数是反指。</td></tr>
-      <tr><td><strong>平均收益</strong></td><td>按信号方向调整后的 30 日平均涨跌幅（看跌信号已翻转符号，正数=信号有效）。</td></tr>
-      <tr><td><strong>三段同号</strong></td><td>把样本按时间三等分，三段的超额是否同为正。全对才算稳定，否则可能是某一段行情造出来的。</td></tr>
-      <tr><td><strong>打分</strong></td><td><code>50 + 超额 × 4 × 稳定系数</code>。稳定系数：三段同号=1、符号翻转=0.5、样本不足=0.7。50 分 = 无优势。</td></tr>
+    <table class="lab">
+      <tr><th style="width:120px">列</th><th>含义</th></tr>
+      <tr><td><strong>事件数</strong></td><td>连续触发的日子合并成 1 个事件（例如 RSI 连续 5 天低于 25 只算 1 次）。否则同一波行情被重复计数，样本虚高。</td></tr>
+      <tr><td><strong>命中率</strong></td><td>事件发生后第 30 个收盘日的涨跌方向是否符合信号方向。看涨信号要求上涨，看跌信号要求下跌。</td></tr>
+      <tr><td><strong>匹配基准</strong></td><td>该事件所在日期 ±45 天内，随便挑一天进场、按同方向押注的胜率。这是"同一段行情里白捡的概率"。</td></tr>
+      <tr><td><strong>超额</strong></td><td>命中率 − 匹配基准。只有这一列有意义。<strong>直接用命中率判断会严重高估</strong>：牛市里随便押涨就有 60%+。</td></tr>
+      <tr><td><strong>z</strong></td><td>超额/标准误。&gt;2 算初步显著，&gt;3 算较强。但测了 24 个信号，需要 Bonferroni 校正。</td></tr>
+      <tr><td><strong>三段</strong></td><td>把样本按时间切成前/中/后三段，各自算超额。三段同号才不是某一段行情的红利。</td></tr>
     </table>
   </div>
 
-  <h2>二、信号总表（按 30 日打分排序）</h2>
-  <table>
-    <tr><th style="min-width:230px">信号</th><th>方向</th><th class="num">样本</th><th class="num">30 日命中</th><th class="num">基准</th><th class="num">超额</th><th class="num">平均收益</th><th>稳定性</th><th class="num">打分</th><th>判定</th></tr>
-    <tr>
-      <td><strong>缩量（量 &lt; 0.5×20 日均量）</strong><div class="small">成交萎缩，观望</div></td>
-      <td><span class="tag bull">看涨</span></td>
-      <td class="num">118</td>
-      <td class="num">61.9%</td>
-      <td class="num">55.2%</td>
-      <td class="num rise">+6.8pt</td>
-      <td class="num">+2.46%</td>
-      <td><span class="tag good">三段同号</span></td>
-      <td class="num">80</td>
-      <td><span class="tag good">可用</span></td>
-    </tr><tr>
-      <td><strong>创 20 日新低</strong><div class="small">跌破近 20 日最低点</div></td>
-      <td><span class="tag bear">看跌</span></td>
-      <td class="num">77</td>
-      <td class="num">59.1%</td>
-      <td class="num">44.8%</td>
-      <td class="num rise">+14.3pt</td>
-      <td class="num">+1.99%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">79</td>
-      <td><span class="tag neg">观察</span></td>
-    </tr><tr>
-      <td><strong>ETH 单日抗跌（两者都跌 且 ETH 跌幅更小）</strong><div class="small">下跌中 ETH 跌得比 BTC 少，判断底部阶段</div></td>
-      <td><span class="tag bull">看涨</span></td>
-      <td class="num">81</td>
-      <td class="num">65.3%</td>
-      <td class="num">55.2%</td>
-      <td class="num rise">+10.1pt</td>
-      <td class="num">+3.72%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">68</td>
-      <td><span class="tag neg">观察</span></td>
-    </tr><tr>
-      <td><strong>ATR14 处 60 日低位 20%</strong><div class="small">波动率压缩，常 precede 变盘</div></td>
-      <td><span class="tag bull">看涨</span></td>
-      <td class="num">260</td>
-      <td class="num">63.6%</td>
-      <td class="num">55.2%</td>
-      <td class="num rise">+8.4pt</td>
-      <td class="num">+4.16%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">62</td>
-      <td><span class="tag neg">观察</span></td>
-    </tr><tr>
-      <td><strong>创 20 日新高</strong><div class="small">突破近 20 日最高点</div></td>
-      <td><span class="tag bull">看涨</span></td>
-      <td class="num">102</td>
-      <td class="num">58.8%</td>
-      <td class="num">55.2%</td>
-      <td class="num rise">+3.6pt</td>
-      <td class="num">+3.79%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">51</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr><tr>
-      <td><strong>收盘 &gt; 布林上轨</strong><div class="small">突破 20 日 +2σ，超涨</div></td>
-      <td><span class="tag bear">看跌</span></td>
-      <td class="num">50</td>
-      <td class="num">48%</td>
-      <td class="num">44.8%</td>
-      <td class="num rise">+3.2pt</td>
-      <td class="num">-0.7%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">51</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr><tr>
-      <td><strong>近 3 日 ETH 累计弱于 BTC（且 BTC 下跌）</strong><div class="small">三日尺度 ETH 相对弱势</div></td>
-      <td><span class="tag bear">看跌</span></td>
-      <td class="num">252</td>
-      <td class="num">46.2%</td>
-      <td class="num">44.8%</td>
-      <td class="num rise">+1.4pt</td>
-      <td class="num">-0.75%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">44</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr><tr>
-      <td><strong>ETH 先弱后抗跌（10 日弱于 BTC + 3 日转为抗跌 + BTC 3 日下跌）</strong><div class="small">下跌中 ETH 更弱属正常；一旦转为抗跌，判断转折</div></td>
-      <td><span class="tag bull">看涨</span></td>
-      <td class="num">50</td>
-      <td class="num">54.3%</td>
-      <td class="num">55.2%</td>
-      <td class="num fall">-0.8pt</td>
-      <td class="num">+0.99%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">42</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr><tr>
-      <td><strong>RSI2 &gt; 90</strong><div class="small">两日 RSI 极高，短期过热</div></td>
-      <td><span class="tag bear">看跌</span></td>
-      <td class="num">116</td>
-      <td class="num">43.5%</td>
-      <td class="num">44.8%</td>
-      <td class="num fall">-1.3pt</td>
-      <td class="num">-2.54%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">41</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr><tr>
-      <td><strong>MA20 &lt; MA50</strong><div class="small">中期均线空头排列</div></td>
-      <td><span class="tag bear">看跌</span></td>
-      <td class="num">341</td>
-      <td class="num">42.7%</td>
-      <td class="num">44.8%</td>
-      <td class="num fall">-2.1pt</td>
-      <td class="num">-1.34%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">35</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr><tr>
-      <td><strong>近 3 日 ETH 累计强于 BTC（且 BTC 下跌）</strong><div class="small">三日尺度 ETH 相对强度</div></td>
-      <td><span class="tag bull">看涨</span></td>
-      <td class="num">124</td>
-      <td class="num">56.4%</td>
-      <td class="num">55.2%</td>
-      <td class="num rise">+1.2pt</td>
-      <td class="num">+2.24%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">35</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr><tr>
-      <td><strong>RSI2 &lt; 10</strong><div class="small">两日 RSI 极低，短期恐慌</div></td>
-      <td><span class="tag bull">看涨</span></td>
-      <td class="num">97</td>
-      <td class="num">57.1%</td>
-      <td class="num">55.2%</td>
-      <td class="num rise">+1.9pt</td>
-      <td class="num">+2.03%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">34</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr><tr>
-      <td><strong>距 20 日高点 &lt; 3%</strong><div class="small">贴近阶段高点，追高风险</div></td>
-      <td><span class="tag bear">看跌</span></td>
-      <td class="num">216</td>
-      <td class="num">44.4%</td>
-      <td class="num">44.8%</td>
-      <td class="num fall">-0.4pt</td>
-      <td class="num">-2.51%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">32</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr><tr>
-      <td><strong>MA20 &gt; MA50</strong><div class="small">中期均线多头排列</div></td>
-      <td><span class="tag bull">看涨</span></td>
-      <td class="num">459</td>
-      <td class="num">53.7%</td>
-      <td class="num">55.2%</td>
-      <td class="num fall">-1.5pt</td>
-      <td class="num">+2.23%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">31</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr><tr>
-      <td><strong>收盘 &gt; MA200</strong><div class="small">长期趋势向上</div></td>
-      <td><span class="tag bull">看涨</span></td>
-      <td class="num">436</td>
-      <td class="num">50.9%</td>
-      <td class="num">55.2%</td>
-      <td class="num fall">-4.3pt</td>
-      <td class="num">+1.93%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">29</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr><tr>
-      <td><strong>收盘 &lt; MA200</strong><div class="small">长期趋势向下</div></td>
-      <td><span class="tag bear">看跌</span></td>
-      <td class="num">364</td>
-      <td class="num">39.9%</td>
-      <td class="num">44.8%</td>
-      <td class="num fall">-4.9pt</td>
-      <td class="num">-1.77%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">28</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr><tr>
-      <td><strong>连续 3 日上涨</strong><div class="small">短期连涨，博回落</div></td>
-      <td><span class="tag bear">看跌</span></td>
-      <td class="num">89</td>
-      <td class="num">41.6%</td>
-      <td class="num">44.8%</td>
-      <td class="num fall">-3.2pt</td>
-      <td class="num">-1.08%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">27</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr><tr>
-      <td><strong>连续 3 日下跌</strong><div class="small">短期连跌，博反弹</div></td>
-      <td><span class="tag bull">看涨</span></td>
-      <td class="num">100</td>
-      <td class="num">52.1%</td>
-      <td class="num">55.2%</td>
-      <td class="num fall">-3.1pt</td>
-      <td class="num">+0.31%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">22</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr><tr>
-      <td><strong>距 20 日高点回撤 &gt; 15%</strong><div class="small">深跌，博反弹</div></td>
-      <td><span class="tag bull">看涨</span></td>
-      <td class="num">67</td>
-      <td class="num">49.2%</td>
-      <td class="num">55.2%</td>
-      <td class="num fall">-6pt</td>
-      <td class="num">-0.14%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">17</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr><tr>
-      <td><strong>收盘 &lt; 布林下轨</strong><div class="small">跌破 20 日 -2σ，超跌</div></td>
-      <td><span class="tag bull">看涨</span></td>
-      <td class="num">41</td>
-      <td class="num">42.9%</td>
-      <td class="num">55.2%</td>
-      <td class="num fall">-12.3pt</td>
-      <td class="num">+0.2%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">12</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr><tr>
-      <td><strong>RSI14 &lt; 30</strong><div class="small">日线 RSI14 跌破 30，超卖</div></td>
-      <td><span class="tag bull">看涨</span></td>
-      <td class="num">29</td>
-      <td class="num">46.2%</td>
-      <td class="num">55.2%</td>
-      <td class="num fall">-9pt</td>
-      <td class="num">-1.22%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">—</td>
-      <td><span class="tag gray">样本不足</span></td>
-    </tr><tr>
-      <td><strong>放量下跌（量 &gt; 2×20 日均量 且收跌）</strong><div class="small">恐慌抛售，常见短期底</div></td>
-      <td><span class="tag bull">看涨</span></td>
-      <td class="num">20</td>
-      <td class="num">50%</td>
-      <td class="num">55.2%</td>
-      <td class="num fall">-5.2pt</td>
-      <td class="num">-0.99%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">—</td>
-      <td><span class="tag gray">样本不足</span></td>
-    </tr><tr>
-      <td><strong>放量上涨（量 &gt; 2×20 日均量 且收涨）</strong><div class="small">资金进场</div></td>
-      <td><span class="tag bull">看涨</span></td>
-      <td class="num">16</td>
-      <td class="num">62.5%</td>
-      <td class="num">55.2%</td>
-      <td class="num rise">+7.3pt</td>
-      <td class="num">+8.28%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">—</td>
-      <td><span class="tag gray">样本不足</span></td>
-    </tr><tr>
-      <td><strong>连续 5 日下跌</strong><div class="small">持续下跌</div></td>
-      <td><span class="tag bull">看涨</span></td>
-      <td class="num">14</td>
-      <td class="num">38.5%</td>
-      <td class="num">55.2%</td>
-      <td class="num fall">-16.7pt</td>
-      <td class="num">-1.61%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">—</td>
-      <td><span class="tag gray">样本不足</span></td>
-    </tr><tr>
-      <td><strong>RSI14 &gt; 70</strong><div class="small">日线 RSI14 升破 70，超买</div></td>
-      <td><span class="tag bear">看跌</span></td>
-      <td class="num">57</td>
-      <td class="num">24.6%</td>
-      <td class="num">44.8%</td>
-      <td class="num fall">-20.2pt</td>
-      <td class="num">-7.1%</td>
-      <td><span class="tag warn">符号翻转</span></td>
-      <td class="num">-22</td>
-      <td><span class="tag warn">无效</span></td>
-    </tr>
+  <h2>二、强信号（事件级去重后，z&gt;3 且三段同向）</h2>
+  <table class="lab">
+    <tr><th>信号</th><th>方向</th><th class="num">事件</th><th class="num">命中</th><th class="num">匹配基准</th><th class="num">超额</th><th class="num">z</th><th>说明</th></tr>
+    <tr><td>RSI14 &lt; 25</td><td><span class="tag bull">看涨</span></td><td class="num">29</td><td class="num">72.4%</td><td class="num">40.2%</td><td class="num pos">+32.2</td><td class="num">3.88</td><td>极端超卖</td></tr>
+    <tr><td>RSI14 &lt; 30</td><td><span class="tag bull">看涨</span></td><td class="num">61</td><td class="num">62.3%</td><td class="num">38.9%</td><td class="num pos">+23.3</td><td class="num">3.76</td><td>超卖</td></tr>
+    <tr><td>MA20 &lt; MA50</td><td><span class="tag bull">看涨</span></td><td class="num">617</td><td class="num">57.5%</td><td class="num">45.6%</td><td class="num pos">+11.9</td><td class="num">6.00</td><td>中期空头排列</td></tr>
+    <tr><td>MA20 &gt; MA50</td><td><span class="tag bear">看跌</span></td><td class="num">786</td><td class="num">45.5%</td><td class="num">35.9%</td><td class="num pos">+9.6</td><td class="num">5.42</td><td>中期多头排列</td></tr>
+    <tr><td>收盘 &lt; MA200</td><td><span class="tag bull">看涨</span></td><td class="num">573</td><td class="num">59.9%</td><td class="num">51.9%</td><td class="num pos">+8.0</td><td class="num">3.90</td><td>长期熊市区</td></tr>
+    <tr><td>收盘 &gt; MA200</td><td><span class="tag bear">看跌</span></td><td class="num">832</td><td class="num">47.2%</td><td class="num">41.3%</td><td class="num pos">+5.9</td><td class="num">3.42</td><td>长期牛市区</td></tr>
   </table>
 
-  <h2>三、分周期明细</h2>
-  <table class="sig-detail">
-    <tr><th style="min-width:200px">信号</th><th class="num">样本</th>
-      <th class="num">7 日命中<br><span class="small">（基准）/ 超额</span></th><th class="num">14 日命中<br><span class="small">（基准）/ 超额</span></th><th class="num">30 日命中<br><span class="small">（基准）/ 超额</span></th>
-      <th>三段超额（30 日）</th></tr>
-    <tr><td><strong>缩量（量 &lt; 0.5×20 日均量）</strong></td><td class="num">118</td><td class="num">51.7% <span class="small">(51.7%)</span><div class="small fall">0pt</div></td><td class="num">52.6% <span class="small">(52.3%)</span><div class="small rise">+0.3pt</div></td><td class="num">61.9% <span class="small">(55.2%)</span><div class="small rise">+6.8pt</div></td><td class="small">+4.3pt / +12.4pt / +3.8pt</td></tr><tr><td><strong>创 20 日新低</strong></td><td class="num">77</td><td class="num">58.3% <span class="small">(48.3%)</span><div class="small rise">+10pt</div></td><td class="num">53.6% <span class="small">(47.7%)</span><div class="small rise">+5.9pt</div></td><td class="num">59.1% <span class="small">(44.8%)</span><div class="small rise">+14.3pt</div></td><td class="small">+0.6pt / +23.4pt / +18.8pt</td></tr><tr><td><strong>ETH 单日抗跌（两者都跌 且 ETH 跌幅更小）</strong></td><td class="num">81</td><td class="num">60% <span class="small">(51.7%)</span><div class="small rise">+8.3pt</div></td><td class="num">67.1% <span class="small">(52.3%)</span><div class="small rise">+14.8pt</div></td><td class="num">65.3% <span class="small">(55.2%)</span><div class="small rise">+10.1pt</div></td><td class="small">+28.8pt / -3.2pt / +4.8pt</td></tr><tr><td><strong>ATR14 处 60 日低位 20%</strong></td><td class="num">260</td><td class="num">55.4% <span class="small">(51.7%)</span><div class="small rise">+3.7pt</div></td><td class="num">59.5% <span class="small">(52.3%)</span><div class="small rise">+7.2pt</div></td><td class="num">63.6% <span class="small">(55.2%)</span><div class="small rise">+8.4pt</div></td><td class="small">+29pt / -6.4pt / +2.6pt</td></tr><tr><td><strong>创 20 日新高</strong></td><td class="num">102</td><td class="num">51% <span class="small">(51.7%)</span><div class="small fall">-0.7pt</div></td><td class="num">52% <span class="small">(52.3%)</span><div class="small fall">-0.3pt</div></td><td class="num">58.8% <span class="small">(55.2%)</span><div class="small rise">+3.6pt</div></td><td class="small">+21.3pt / -8.1pt / -2.3pt</td></tr><tr><td><strong>收盘 &gt; 布林上轨</strong></td><td class="num">50</td><td class="num">50% <span class="small">(48.3%)</span><div class="small rise">+1.7pt</div></td><td class="num">46% <span class="small">(47.7%)</span><div class="small fall">-1.7pt</div></td><td class="num">48% <span class="small">(44.8%)</span><div class="small rise">+3.2pt</div></td><td class="small">-7.3pt / -7.3pt / +21.9pt</td></tr><tr><td><strong>近 3 日 ETH 累计弱于 BTC（且 BTC 下跌）</strong></td><td class="num">252</td><td class="num">49.4% <span class="small">(48.3%)</span><div class="small rise">+1.1pt</div></td><td class="num">49.2% <span class="small">(47.7%)</span><div class="small rise">+1.5pt</div></td><td class="num">46.2% <span class="small">(44.8%)</span><div class="small rise">+1.4pt</div></td><td class="small">-11.5pt / +16.7pt / -1.1pt</td></tr><tr><td><strong>ETH 先弱后抗跌（10 日弱于 BTC + 3 日转为抗跌 + BTC 3 日下跌）</strong></td><td class="num">50</td><td class="num">58.3% <span class="small">(51.7%)</span><div class="small rise">+6.6pt</div></td><td class="num">55.3% <span class="small">(52.3%)</span><div class="small rise">+3pt</div></td><td class="num">54.3% <span class="small">(55.2%)</span><div class="small fall">-0.8pt</div></td><td class="small">+4.8pt / -8.5pt / +1.1pt</td></tr><tr><td><strong>RSI2 &gt; 90</strong></td><td class="num">116</td><td class="num">50% <span class="small">(48.3%)</span><div class="small rise">+1.7pt</div></td><td class="num">49.1% <span class="small">(47.7%)</span><div class="small rise">+1.4pt</div></td><td class="num">43.5% <span class="small">(44.8%)</span><div class="small fall">-1.3pt</div></td><td class="small">-8pt / +2.6pt / +1.3pt</td></tr><tr><td><strong>MA20 &lt; MA50</strong></td><td class="num">341</td><td class="num">47% <span class="small">(48.3%)</span><div class="small fall">-1.3pt</div></td><td class="num">46.2% <span class="small">(47.7%)</span><div class="small fall">-1.5pt</div></td><td class="num">42.7% <span class="small">(44.8%)</span><div class="small fall">-2.1pt</div></td><td class="small">-13pt / +14.1pt / -7.2pt</td></tr><tr><td><strong>近 3 日 ETH 累计强于 BTC（且 BTC 下跌）</strong></td><td class="num">124</td><td class="num">56.6% <span class="small">(51.7%)</span><div class="small rise">+4.9pt</div></td><td class="num">55.9% <span class="small">(52.3%)</span><div class="small rise">+3.6pt</div></td><td class="num">56.4% <span class="small">(55.2%)</span><div class="small rise">+1.2pt</div></td><td class="small">+11.5pt / -21.9pt / +14pt</td></tr><tr><td><strong>RSI2 &lt; 10</strong></td><td class="num">97</td><td class="num">54.3% <span class="small">(51.7%)</span><div class="small rise">+2.6pt</div></td><td class="num">60.6% <span class="small">(52.3%)</span><div class="small rise">+8.3pt</div></td><td class="num">57.1% <span class="small">(55.2%)</span><div class="small rise">+1.9pt</div></td><td class="small">+24.8pt / -25.2pt / +6.1pt</td></tr><tr><td><strong>距 20 日高点 &lt; 3%</strong></td><td class="num">216</td><td class="num">47.7% <span class="small">(48.3%)</span><div class="small fall">-0.6pt</div></td><td class="num">44.9% <span class="small">(47.7%)</span><div class="small fall">-2.8pt</div></td><td class="num">44.4% <span class="small">(44.8%)</span><div class="small fall">-0.4pt</div></td><td class="small">-21.2pt / +16.3pt / +3.8pt</td></tr><tr><td><strong>MA20 &gt; MA50</strong></td><td class="num">459</td><td class="num">50.8% <span class="small">(51.7%)</span><div class="small fall">-0.9pt</div></td><td class="num">51.2% <span class="small">(52.3%)</span><div class="small fall">-1.1pt</div></td><td class="num">53.7% <span class="small">(55.2%)</span><div class="small fall">-1.5pt</div></td><td class="small">+12.6pt / -19.6pt / +2.5pt</td></tr><tr><td><strong>收盘 &gt; MA200</strong></td><td class="num">436</td><td class="num">50% <span class="small">(51.7%)</span><div class="small fall">-1.7pt</div></td><td class="num">50.4% <span class="small">(52.3%)</span><div class="small fall">-1.9pt</div></td><td class="num">50.9% <span class="small">(55.2%)</span><div class="small fall">-4.3pt</div></td><td class="small">-1.5pt / +4.4pt / -15.8pt</td></tr><tr><td><strong>收盘 &lt; MA200</strong></td><td class="num">364</td><td class="num">46.3% <span class="small">(48.3%)</span><div class="small fall">-2pt</div></td><td class="num">45.4% <span class="small">(47.7%)</span><div class="small fall">-2.3pt</div></td><td class="num">39.9% <span class="small">(44.8%)</span><div class="small fall">-4.9pt</div></td><td class="small">-14.8pt / -1.5pt / +1.5pt</td></tr><tr><td><strong>连续 3 日上涨</strong></td><td class="num">89</td><td class="num">55.1% <span class="small">(48.3%)</span><div class="small rise">+6.8pt</div></td><td class="num">43.8% <span class="small">(47.7%)</span><div class="small fall">-3.9pt</div></td><td class="num">41.6% <span class="small">(44.8%)</span><div class="small fall">-3.2pt</div></td><td class="small">-20.7pt / +10.4pt / +0.4pt</td></tr><tr><td><strong>连续 3 日下跌</strong></td><td class="num">100</td><td class="num">57.6% <span class="small">(51.7%)</span><div class="small rise">+5.9pt</div></td><td class="num">57.6% <span class="small">(52.3%)</span><div class="small rise">+5.3pt</div></td><td class="num">52.1% <span class="small">(55.2%)</span><div class="small fall">-3.1pt</div></td><td class="small">+10.4pt / -27.1pt / +7.3pt</td></tr><tr><td><strong>距 20 日高点回撤 &gt; 15%</strong></td><td class="num">67</td><td class="num">49.2% <span class="small">(51.7%)</span><div class="small fall">-2.5pt</div></td><td class="num">49.2% <span class="small">(52.3%)</span><div class="small fall">-3.1pt</div></td><td class="num">49.2% <span class="small">(55.2%)</span><div class="small fall">-6pt</div></td><td class="small">-12.3pt / -26.6pt / +18.7pt</td></tr><tr><td><strong>收盘 &lt; 布林下轨</strong></td><td class="num">41</td><td class="num">55.3% <span class="small">(51.7%)</span><div class="small rise">+3.6pt</div></td><td class="num">50% <span class="small">(52.3%)</span><div class="small fall">-2.3pt</div></td><td class="num">42.9% <span class="small">(55.2%)</span><div class="small fall">-12.3pt</div></td><td class="small">-9.7pt / -9.7pt / -16.7pt</td></tr><tr><td><strong>RSI14 &lt; 30</strong></td><td class="num">29</td><td class="num">57.7% <span class="small">(51.7%)</span><div class="small rise">+6pt</div></td><td class="num">46.2% <span class="small">(52.3%)</span><div class="small fall">-6.1pt</div></td><td class="num">46.2% <span class="small">(55.2%)</span><div class="small fall">-9pt</div></td><td class="small">-17.7pt / -17.7pt / +4.8pt</td></tr><tr><td><strong>放量下跌（量 &gt; 2×20 日均量 且收跌）</strong></td><td class="num">20</td><td class="num">60% <span class="small">(51.7%)</span><div class="small rise">+8.3pt</div></td><td class="num">45% <span class="small">(52.3%)</span><div class="small fall">-7.3pt</div></td><td class="num">50% <span class="small">(55.2%)</span><div class="small fall">-5.2pt</div></td><td class="small">+28.1pt / -21.9pt / -17.7pt</td></tr><tr><td><strong>放量上涨（量 &gt; 2×20 日均量 且收涨）</strong></td><td class="num">16</td><td class="num">43.8% <span class="small">(51.7%)</span><div class="small fall">-8pt</div></td><td class="num">56.3% <span class="small">(52.3%)</span><div class="small rise">+4pt</div></td><td class="num">62.5% <span class="small">(55.2%)</span><div class="small rise">+7.3pt</div></td><td class="small">+24.8pt / +4.8pt / -5.2pt</td></tr><tr><td><strong>连续 5 日下跌</strong></td><td class="num">14</td><td class="num">71.4% <span class="small">(51.7%)</span><div class="small rise">+19.7pt</div></td><td class="num">57.1% <span class="small">(52.3%)</span><div class="small rise">+4.9pt</div></td><td class="num">38.5% <span class="small">(55.2%)</span><div class="small fall">-16.7pt</div></td><td class="small">+19.8pt / -55.2pt / -15.2pt</td></tr><tr><td><strong>RSI14 &gt; 70</strong></td><td class="num">57</td><td class="num">43.9% <span class="small">(48.3%)</span><div class="small fall">-4.4pt</div></td><td class="num">36.8% <span class="small">(47.7%)</span><div class="small fall">-10.9pt</div></td><td class="num">24.6% <span class="small">(44.8%)</span><div class="small fall">-20.2pt</div></td><td class="small">-39.5pt / -8pt / -13.2pt</td></tr>
+  <div class="callout bad"><strong>关键警告：这 6 条不是 6 个独立能力。</strong>MA20&lt;MA50 看涨与 MA20&gt;MA50 看跌是同一个指标的两侧，收盘与 MA200 的关系同理。它们说的是同一件事：<strong>BTC 在任意趋势状态下都会向均值回归</strong>。真正独立的信息可能只有 1~2 条。<br><br>另一个必须知道的陷阱：如果某指标"两边都有效"，也可能只是<strong>波动率效应</strong>（极端状态后波动放大，触达 30 日方向的概率上升），不代表有方向预测力。要区分需要看平均涨幅而不只是方向。</div>
+<h2>三、ETH 相对强度（你提出的范式，事件级复核）</h2>
+  <table class="lab">
+    <tr><th>信号</th><th>方向</th><th class="num">事件</th><th class="num">命中</th><th class="num">匹配基准</th><th class="num">超额</th><th class="num">z</th><th>结论</th></tr>
+    <tr><td>ETH 今日抗跌（都跌且 ETH 跌得少）</td><td><span class="tag bull">看涨</span></td><td class="num">289</td><td class="num">58.5%</td><td class="num">52.3%</td><td class="num pos">+6.2</td><td class="num">2.13</td><td>弱</td></tr>
+    <tr><td>ETH 3 日累计抗跌</td><td><span class="tag bull">看涨</span></td><td class="num">388</td><td class="num">52.8%</td><td class="num">51.8%</td><td class="num pos">+1.1</td><td class="num">0.42</td><td>无效</td></tr>
+    <tr><td><strong>ETH 今日 + 3 日双抗跌</strong></td><td><span class="tag bull">看涨</span></td><td class="num">131</td><td class="num">61.8%</td><td class="num">52.5%</td><td class="num pos">+9.4</td><td class="num">2.20</td><td>中等</td></tr>
   </table>
-  <p class="small">括号内为同周期基准。超额 = 命中 − 基准。</p>
-
-  <h2>四、今日触发</h2>
   <div class="card">
-    <p class="small" style="margin-top:0">行情截至 2026-11-14（UTC 日线），收盘 67,252.01。</p>
-    <ul><li><strong>RSI14 &lt; 30</strong> <span class="tag bull">看涨</span></li><li><strong>RSI2 &lt; 10</strong> <span class="tag bull">看涨</span></li><li><strong>距 20 日高点回撤 &gt; 15%</strong> <span class="tag bull">看涨</span></li><li><strong>创 20 日新低</strong> <span class="tag bear">看跌</span></li><li><strong>收盘 &lt; MA200</strong> <span class="tag bear">看跌</span></li><li><strong>MA20 &lt; MA50</strong> <span class="tag bear">看跌</span></li><li><strong>收盘 &lt; 布林下轨</strong> <span class="tag bull">看涨</span></li><li><strong>连续 3 日下跌</strong> <span class="tag bull">看涨</span></li><li><strong>ETH 先弱后抗跌（10 日弱于 BTC + 3 日转为抗跌 + BTC 3 日下跌）</strong> <span class="tag bull">看涨</span></li><li><strong>近 3 日 ETH 累计强于 BTC（且 BTC 下跌）</strong> <span class="tag bull">看涨</span></li></ul>
+    <p class="small" style="margin-top:0"><strong>你最初的问题「3 日抗跌为什么不包含单日」已查清：</strong>两者窗口不同，互不包含。实测单日抗跌 312 天、3 日抗跌 549 天，交集仅 138 天。「3 日累计」可以因前两天大涨而成立，即使今天 ETH 跌得比 BTC 更狠。</p>
+    <p class="small">所以你要求的「单日 + 3 日双抗跌」是正确做法：它把「今天转强」和「这几日持续强」同时锁住，超额从单日的 +6.2pt 提到 +9.4pt。但它 z=2.20，<strong>仍低于 z&gt;3 的门槛，属中等信号</strong>，不是强信号。</p>
+    <p class="small" style="margin-bottom:0"><strong>2026-11-13 实际状态：</strong>单日抗跌 ✗（BTC −4.40% / ETH −4.45%，ETH 略差）、3 日抗跌 ✓、双抗跌 ✗。按新口径，<strong>这条依据在已收盘数据上未成立</strong>——详见下方「今日状态」。</p>
+  </div>
+<h2>四、中等与无效信号（部分）</h2>
+  <div class="note" style="margin-bottom:10px"><strong>口径差异：</strong>本节数字为「按日统计、未合并连续触发日」，与上面两节的「事件级」不可直接比较。按日口径下样本数偏大、z 值偏高，仅作方向参考，<strong>判定一栏才是结论</strong>。</div>
+  <table class="lab">
+    <tr><th>信号</th><th>方向</th><th class="num">样本日</th><th class="num">超额</th><th class="num">z</th><th>判定</th></tr>
+    <tr><td>RSI2 &lt; 10</td><td><span class="tag bull">看涨</span></td><td class="num">306</td><td class="num pos">+4.5</td><td class="num">1.56</td><td><span class="tag w">弱</span></td></tr>
+    <tr><td>RSI2 &gt; 90</td><td><span class="tag bear">看跌</span></td><td class="num">411</td><td class="num pos">+4.4</td><td class="num">1.85</td><td><span class="tag w">弱</span></td></tr>
+    <tr><td>RSI14 &gt; 70</td><td><span class="tag bear">看跌</span></td><td class="num">321</td><td class="num neg">−0.6</td><td class="num">−0.25</td><td><span class="tag w">无效</span></td></tr>
+    <tr><td>创 20 日新低</td><td><span class="tag bear">看跌</span></td><td class="num">208</td><td class="num">+1.7</td><td class="num">&lt;1</td><td><span class="tag w">无效</span></td></tr>
+    <tr><td>创 20 日新高</td><td><span class="tag bear">看跌</span></td><td class="num">395</td><td class="num">−6.4</td><td class="num">—</td><td><span class="tag w">无效</span></td></tr>
+    <tr><td>缩量 &lt; 0.5× 20 日均量</td><td><span class="tag bull">看涨</span></td><td class="num">271</td><td class="num">+4.4</td><td class="num">1.2</td><td><span class="tag w">弱</span></td></tr>
+    <tr><td>ATR 处 60 日低位 20%</td><td><span class="tag bull">看涨</span></td><td class="num">743</td><td class="num neg">−6.1</td><td class="num">—</td><td><span class="tag w">无效（反向）</span></td></tr>
+    <tr><td>距 20 日高点回撤 &gt; 15%</td><td><span class="tag bull">看涨</span></td><td class="num">466</td><td class="num pos">+11.4</td><td class="num">—</td><td><span class="tag m">中（与超卖类高度相关）</span></td></tr>
+  </table>
+  <div class="note">「距 20 日高点回撤 &gt; 15%」的 +11.4pt 与 RSI 超卖、跌破均线本质是同一个均值回归因子，未重复计入强信号。</div>
+<h2>五、今日状态（2026-11-13，最后一根已收盘日线）</h2>
+  <div class="card">
+    <table class="lab">
+      <tr><th style="width:220px">项目</th><th class="num">数值</th><th>说明</th></tr>
+      <tr><td>BTC 收盘</td><td class="num">68,314</td><td>2026-11-13 UTC 日线</td></tr>
+      <tr><td>当日涨跌</td><td class="num neg">−4.40%</td><td>ETH −4.45%，ETH 略弱</td></tr>
+      <tr><td>RSI14</td><td class="num">&lt; 30</td><td><span class="tag bull">触发超卖看涨（z=3.76 的强信号）</span></td></tr>
+      <tr><td>收盘 vs MA200</td><td class="num">低于</td><td><span class="tag bull">触发熊市区看涨（z=3.90）</span></td></tr>
+      <tr><td>MA20 vs MA50</td><td class="num">低于</td><td><span class="tag bull">触发空头排列看涨（z=6.00）</span></td></tr>
+      <tr><td>ETH 单日抗跌</td><td class="num">✗</td><td>ETH −4.45% 差于 BTC −4.40%</td></tr>
+      <tr><td>ETH 3 日累计抗跌</td><td class="num">✓</td><td>3 日累计 ETH 强于 BTC</td></tr>
+      <tr><td>ETH 双抗跌（今日+3日）</td><td class="num">✗</td><td>需两项同时成立</td></tr>
+    </table>
+    <p class="small" style="margin-bottom:0"><strong>重要：</strong>2026-11-14 那根日线在 UTC 24:00 前未收盘，<strong>不计入判定</strong>。用未完成的 K 线判信号会产生前视偏差。</p>
   </div>
 
-  <h2>五、方法与局限</h2>
+  <h2>六、方法与局限</h2>
   <div class="card">
-    <table>
-      <tr><th style="width:150px">项目</th><th>说明</th></tr>
-      <tr><td>数据</td><td>Binance BTCUSDT / ETHUSDT 日线（UTC 00:00 收），1000 根。成交量取 quote volume。</td></tr>
-      <tr><td>信号定义</td><td>全部只用「当日及之前」的收盘数据，不看未来。指标预热期（前 200 天）不参与统计。</td></tr>
-      <tr><td>多重比较</td><td><strong>本页扫了 25 个信号 × 3 个周期。</strong>纯随机也可能有 1-2 个看起来 +10pt，所以必须要求三段同号，且不因单条信号就下重注。</td></tr>
-      <tr><td>样本期偏差</td><td>2024-02-19 至今包含一轮熊市和一段震荡，牛市单边样本不足。跨周期有效性未知。</td></tr>
-      <tr><td>未覆盖</td><td>链上数据、资金费率、ETF 流向、宏观事件均未纳入。这些需要额外数据源。</td></tr>
-      <tr><td>不构成投资建议</td><td>本页是统计检验，不是交易策略；未计入手续费、滑点与仓位管理。</td></tr>
-    </table>
+    <ul class="small">
+      <li><strong>数据</strong>：Binance BTCUSDT / ETHUSDT 现货日线，UTC 00:00 收盘，2999 根（2018-08-29 ~ 2026-11-13）。自动剔除未收盘日线。</li>
+      <li><strong>时序</strong>：信号在第 i 根收盘后判定，前向收益算到第 i+30 根收盘。<strong>绝不使用 i 之后的数据</strong>，无前视偏差。</li>
+      <li><strong>事件级去重</strong>：连续触发的日子合并为 1 个事件。例如 MA20&lt;MA50 有 1215 个触发日，但只构成 617 个事件。不去重会把一波行情算成几十个独立样本。</li>
+      <li><strong>匹配基准</strong>：同日 ±45 天邻域内、同方向的随机进场胜率。这扣掉了「这段行情本来就在涨/跌」的红利。</li>
+      <li><strong>多重比较</strong>：共测 24 个信号 + 8 组阈值网格。Bonferroni 阈值 0.05/32 ≈ 0.0016，对应 z≈3.2。<strong>严格意义上只有 RSI14&lt;25/&lt;30、MA20 双向 4 条过线</strong>。</li>
+      <li><strong>已知偏差</strong>：(1) 只有 BTC/ETH 现货 OHLCV，无资金费率、持仓量、ETF 流向（fapi.binance.com 不可达）；(2) 日线精度，无法判定日内先后；(3) 2018-2026 含两轮完整周期，但未来结构可能变化。</li>
+      <li>本页为统计研究，不构成投资建议。</li>
+    </ul>
   </div>
 
   <div class="foot">
-    生成 2026-11-14 07:30 UTC｜扫描脚本 <code>signals.js</code>｜<a href="../">返回首页</a><br>
-    信号库持续扩充；新增信号会重跑全量回测，历史结论不追改。
+    生成 <span id="gen"></span>｜数据 <code>signal-lab/data/</code>｜脚本 <code>signal-lab/</code>｜<a href="../">返回首页</a>｜<a href="../my-calls/">我的观点台账</a><br>
+    口径变更会升版本并注明。不构成投资建议。
   </div>
 </div>
+<script>document.getElementById('gen').textContent = new Date().toISOString().slice(0,16).replace('T',' ') + ' UTC';</script>
 </body>
 </html>
