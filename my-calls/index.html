@@ -114,28 +114,62 @@
       </ul>
     </div>
     <table>
-      <tr><th style="width:200px">检验口径</th><th>回测结果</th><th style="width:150px">结论</th></tr>
       <tr>
-        <td>ETH 单日抗跌 → BTC 反弹（主依据）<div class="small" style="margin-top:3px">信号 = BTC 与 ETH 同日都跌，且 ETH 跌幅更小。统计信号后 N 日 BTC 收盘上涨的比例，基准取同一区间全部交易日。</div></td>
-        <td class="small">n=81｜7 日：上涨 60.0%（基准 51.7%，超额 +8.3pt）｜14 日：67.1%（52.3%，+14.8pt）｜30 日：65.3%（55.2%，+10.1pt）</td>
-        <td><span class="tag good">观察：超额明显但 30 日三段 +28.8 / -3.2 / +4.8，稳定性不足</span></td>
-      </tr><tr>
-        <td>ETH 先弱后抗跌（复合口径）<div class="small" style="margin-top:3px">近 10 日 ETH 累计弱于 BTC，且近 3 日转为强于 BTC。验证「转折」是否比「抗跌」本身更有信息。</div></td>
-        <td class="small">n=125｜7 日：上涨 53.2%（基准 51.7%，+1.5pt）｜14 日：52.5%（52.3%，+0.2pt）｜30 日：56.3%（55.2%，+1.1pt）</td>
-        <td><span class="tag warn">无效：加上「先弱」条件后超额几乎归零，无增量价值</span></td>
-      </tr><tr>
-        <td>近 3 日累计抗跌<div class="small" style="margin-top:3px">近 3 日 ETH 累计收益 &gt; BTC 累计收益，且 BTC 近 3 日累计下跌。</div></td>
-        <td class="small">n=117｜7 日：上涨 56.6%（基准 51.7%，+4.9pt）｜14 日：55.9%（52.3%，+3.6pt）｜30 日：56.4%（55.2%，+1.2pt）</td>
-        <td><span class="tag good">观察：短期有超额，30 日基本消失</span></td>
-      </tr><tr>
-        <td>创 20 日新低 → 反弹<div class="small" style="margin-top:3px">信号 = 当日低点为近 20 日最低。原始假设是「跌多了会反弹」。</div></td>
-        <td class="small">n=77｜30 日后收盘**下跌**的比例 59.1%（基准看跌 44.8%）。即新低之后更可能继续跌，而不是反弹。</td>
-        <td><span class="tag good">反指：创新低是看跌信号，不是看涨信号</span></td>
-      </tr><tr>
-        <td>新低 + ETH 抗跌（两条件叠加）<div class="small" style="margin-top:3px">同时满足「创 20 日新低」与「ETH 单日抗跌」，检验两个条件是否互相增强。</div></td>
-        <td class="small">n=11｜7 日：上涨 30.0%（基准 51.7%，-21.7pt）｜30 日：33.3%（55.2%，-21.9pt）</td>
-        <td><span class="tag good">样本不足且方向相反，两个条件叠加后互相抵消，不作为依据</span></td>
+        <th style="width:170px">检验口径</th>
+        <th style="width:44px">方向</th>
+        <th class="num" style="width:60px">样本</th>
+        <th class="num" style="width:88px">7 日</th>
+        <th class="num" style="width:88px">14 日</th>
+        <th class="num" style="width:88px">30 日</th>
+        <th style="width:110px">三段一致性</th>
+        <th style="width:76px">判定</th>
       </tr>
+      <tr>
+          <td>ETH 单日抗跌 → 反弹（主依据）<div class="small" style="margin-top:4px">三段超额 +28.8 / -3.2 / +4.8，中段为负 → 明显衰减，只算弱信号，不能当稳定规律</div></td>
+          <td><span class="tag bull">看涨</span></td>
+          <td class="num">75</td>
+          <td class="num">60.0%<div class="small">基准 51.7%</div><div class="small rise">+8.3pt</div></td>
+          <td class="num">67.1%<div class="small">基准 52.3%</div><div class="small rise">+14.8pt</div></td>
+          <td class="num">65.3%<div class="small">基准 55.2%</div><div class="small rise">+10.1pt</div></td>
+          <td class="small"><span class="rise">+28.8pt</span> / <span class="fall">-3.2pt</span> / <span class="rise">+4.8pt</span></td>
+          <td><span class="tag neg">观察</span></td>
+        </tr><tr>
+          <td>ETH 先弱后抗跌（复合口径）<div class="small" style="margin-top:4px">加「先弱」条件后超额反而消失，30 日为负。叙事框架本身不产生超额，真正起作用的是「抗跌」</div></td>
+          <td><span class="tag bull">看涨</span></td>
+          <td class="num">46</td>
+          <td class="num">58.3%<div class="small">基准 51.7%</div><div class="small rise">+6.6pt</div></td>
+          <td class="num">55.3%<div class="small">基准 52.3%</div><div class="small rise">+3.0pt</div></td>
+          <td class="num">54.3%<div class="small">基准 55.2%</div><div class="small fall">-0.8pt</div></td>
+          <td class="small"><span class="rise">+4.8pt</span> / <span class="fall">-8.5pt</span> / <span class="rise">+1.1pt</span></td>
+          <td><span class="tag warn">无效</span></td>
+        </tr><tr>
+          <td>近 3 日累计抗跌<div class="small" style="margin-top:4px">中段 −20.7pt 大幅为负，不稳定</div></td>
+          <td><span class="tag bull">看涨</span></td>
+          <td class="num">117</td>
+          <td class="num">55.9%<div class="small">基准 51.7%</div><div class="small rise">+4.2pt</div></td>
+          <td class="num">55.9%<div class="small">基准 52.3%</div><div class="small rise">+3.6pt</div></td>
+          <td class="num">56.4%<div class="small">基准 55.2%</div><div class="small rise">+1.2pt</div></td>
+          <td class="small"><span class="rise">+12.6pt</span> / <span class="fall">-20.7pt</span> / <span class="rise">+15.2pt</span></td>
+          <td><span class="tag warn">无效</span></td>
+        </tr><tr>
+          <td>创 20 日新低 → 继续下跌<div class="small" style="margin-top:4px">这是「看跌」信号：胜率高但收益均值 −1.99%，且前段超额几乎为零（+0.6pt）。不能当抄底信号用</div></td>
+          <td><span class="tag bear">看跌</span></td>
+          <td class="num">66</td>
+          <td class="num">58.3%<div class="small">基准 48.3%</div><div class="small rise">+10.0pt</div></td>
+          <td class="num">53.6%<div class="small">基准 47.7%</div><div class="small rise">+5.9pt</div></td>
+          <td class="num">59.1%<div class="small">基准 44.8%</div><div class="small rise">+14.3pt</div></td>
+          <td class="small"><span class="rise">+0.6pt</span> / <span class="rise">+23.4pt</span> / <span class="rise">+18.8pt</span></td>
+          <td><span class="tag neg">观察</span></td>
+        </tr><tr>
+          <td>新低 + ETH 抗跌（两条件叠加）<div class="small" style="margin-top:4px">样本仅 9~11 条，不作结论</div></td>
+          <td><span class="tag bull">看涨</span></td>
+          <td class="num">9</td>
+          <td class="num">30.0%<div class="small">基准 51.7%</div><div class="small fall">-21.7pt</div></td>
+          <td class="num">40.0%<div class="small">基准 52.3%</div><div class="small fall">-12.3pt</div></td>
+          <td class="num">33.3%<div class="small">基准 55.2%</div><div class="small fall">-21.9pt</div></td>
+          <td class="small"><span class="small">—</span></td>
+          <td><span class="tag gray">样本不足</span></td>
+        </tr>
     </table>
     <p class="small" style="margin-bottom:0">全样本基准 = 同期任意交易日的同口径命中率（不挑信号）。1000 天日线，2024-02-19 ~ 2026-11-14。超额 = 信号命中 − 基准，正才算有效。</p>
   </div>
@@ -152,7 +186,7 @@
   </div>
 
   <div class="foot">
-    生成 2026-11-14 07:26 UTC｜台账 <code>state/my_calls.json</code>｜
+    生成 2026-11-14 07:31 UTC｜台账 <code>state/my_calls.json</code>｜
     结算脚本 <code>my_journal.js</code>｜<a href="../">返回首页</a><br>
     观点记录后不修改；口径变更会升版本并注明。
   </div>
