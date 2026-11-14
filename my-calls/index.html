@@ -58,7 +58,7 @@
       <td>2026-11-14</td>
       <td class="rise">看涨</td>
       <td class="num">75,000</td>
-      <td>RSI14 极超卖（24.5）</td>
+      <td>ETH 跌不动</td>
       <td class="num">66,450</td>
       <td class="num">—</td>
       <td class="num">—</td>
@@ -88,21 +88,21 @@
         <tr><th style="width:78px">类型</th><th>依据</th><th style="width:64px">回测判定</th></tr>
         <tr>
         <td><span class="tag neg">主依据</span></td>
+        <td>ETH 跌不动<div class="quant"><div>近1日 -0.05pt（持平）</div><div>近3日 +1.42pt</div><div>近7日 -3.64pt</div><div>近10日 -3.36pt</div></div><div class="small" style="margin-top:3px">近 10 日 ETH 弱于 BTC，近 3 日转为抗跌</div></td>
+        <td><span class="tag warn">弱</span></td>
+      </tr><tr><td></td><td colspan="2" class="small">审查：v3 状态匹配口径：① 单日抗跌（同日都跌且 ETH 跌幅不超过 BTC）289 次事件，30 日后上涨 58.5%，基准 54.0%，超额 +4.5pt，z=1.54，三段 +6.3/-1.1/+10.4；② 近 3 日累计抗跌 388 次，超额 -0.4pt，无效；③ 单日与 3 日交集 131 次，命中 61.8%，基准 54.0%，超额 +7.8pt，z=1.85，三段 +4.0/+3.4/+20.3 全正——这是本依据里最强的一档。原 v2 口径曾报单日 +11.7pt，修正后降至 +4.5pt。</td></tr><tr>
+        <td><span class="tag gray">辅助</span></td>
+        <td>7-8 月密集换手区上沿<div class="quant"><div>期间 8 个交易日低点落在 63100~64028，记录日低点 66456 处于该区间上沿</div></div><div class="small" style="margin-top:3px">63000~70000 为 2026-07-18 ~ 08-18 密集换手区</div></td>
+        <td><span class="tag gray">部分</span></td>
+      </tr><tr><td></td><td colspan="2" class="small">审查：该区间确有反复换手，但叠加「BTC 当日创 20 日新低」条件后，30 日上涨率反而降至 46.2%（样本仅 13），低于基准 54.0%。仅作位置参考，不作主依据。</td></tr><tr>
+        <td><span class="tag good">新增依据</span></td>
         <td>RSI14 极超卖（24.5）<div class="quant"><div>RSI14 24.5</div><div>量比 1.93（放量）</div><div>收盘距 60 日低点 0.0%</div><div>低于 MA200 达 6.5%</div></div><div class="small" style="margin-top:3px">RSI14 等于 24.5，远低于 25 阈值</div></td>
         <td><span class="tag warn">弱</span></td>
-      </tr><tr><td></td><td colspan="2" class="small">审查：v3 状态匹配口径：RSI14 低于 25 共 29 次事件，30 日后上涨 72.4%，状态基准 58.0%，超额 +14.4pt，z=1.73。三段 +24.5/+18.4/-1.4，最新一段已归零。24 个信号中唯一仍为正的，但 z 低于 2 未达显著。</td></tr><tr>
-        <td><span class="tag gray">辅助</span></td>
-        <td>距 60 日低点 0%（创阶段新低）<div class="small" style="margin-top:3px">2026-11-13 低点 67,568 为近 60 日最低</div></td>
-        <td><span class="tag warn">无效</span></td>
-      </tr><tr><td></td><td colspan="2" class="small">审查：v3 口径：97 次事件，命中 55.7%，基准 55.3%，超额 +0.3pt（z=0.07）。v2 曾报 +22.4pt，系基准偏差所致。</td></tr><tr>
-        <td><span class="tag gray">辅助</span></td>
-        <td>MA20 低于 MA50（空头排列）<div class="small" style="margin-top:3px">MA20 76,712 低于 MA50 80,624</div></td>
-        <td><span class="tag warn">无效</span></td>
-      </tr><tr><td></td><td colspan="2" class="small">审查：v3 口径：617 次事件，超额 +1.6pt（z=0.82）。v2 曾报 +11.9pt，修正后缩水 87%。</td></tr><tr>
-        <td><span class="tag gray">辅助</span></td>
-        <td>收盘低于 MA200 达 6.5%<div class="small" style="margin-top:3px">收盘 68,314 低于 MA200 73,092</div></td>
-        <td><span class="tag warn">无效</span></td>
-      </tr><tr><td></td><td colspan="2" class="small">审查：v3 口径：573 次事件，超额 +2.9pt（z=1.40）。v2 曾报 +8.0pt。</td></tr>
+      </tr><tr><td></td><td colspan="2" class="small">审查：v3 状态匹配口径：RSI14 低于 25 共 29 次事件，30 日后上涨 72.4%，状态基准 58.0%，超额 +14.4pt，z=1.73。三段 +24.5/+18.4/-1.4，最新一段已归零。24 个信号中超额最高，但 z 低于 2，且三段不稳。</td></tr><tr>
+        <td><span class="tag good">新增依据</span></td>
+        <td>RSI2 低于 5（7 日持有）<div class="quant"><div>RSI2 2.0</div><div>7 日持有口径</div></div><div class="small" style="margin-top:3px">RSI2 = 2.0，远低于 5</div></td>
+        <td><span class="tag warn">弱</span></td>
+      </tr><tr><td></td><td colspan="2" class="small">审查：v3 口径：109 次事件，7 日后上涨 66.1%，基准 51.3%，超额 +14.7pt，z=3.25，三段 +18.3/+13.6/+13.2 全正。但阈值扫描不单调（低于2 +9.2、低于3 +8.9、低于5 +14.7、低于8 +7.3），20000 次置换检验 p=0.0118，未过 Bonferroni 门槛 0.002。疑为噪声尖峰，仅作参考。</td></tr>
       </table>
       <div class="inv"><b>失效条件：</b>日线收盘 &lt; 65000（视为下方空间打开，阶段底判断失效）</div>
       <div class="status-line pending">等 2026-11-14 之后的行情（现价 66450）</div>
@@ -212,7 +212,7 @@
   </div>
 
   <div class="foot">
-    生成 2026-11-14 14:09 UTC｜台账 <code>state/my_calls.json</code>｜
+    生成 2026-11-14 14:23 UTC｜台账 <code>state/my_calls.json</code>｜
     结算脚本 <code>my_journal.js</code>｜<a href="../">返回首页</a><br>
     观点记录后不修改；口径变更会升版本并注明。
   </div>
