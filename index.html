@@ -3,38 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BTC 研究站 · 四专题</title>
+<title>BTC 研究站 · 五专题</title>
 <link rel="stylesheet" href="assets/report.css">
 <style>
-  .topics{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:20px 0 10px}
+  /* 分组 */
+  .group{margin:34px 0 6px}
+  .group-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+    padding-bottom:10px;margin-bottom:16px;border-bottom:1px solid var(--line)}
+  .group-head h2{border:0;padding:0;margin:0;font-size:16px;color:var(--txt)}
+  .group-head .cad{font-family:var(--mono);font-size:11px;letter-spacing:.04em;
+    padding:2px 9px;border-radius:20px;border:1px solid}
+  .cad.daily{color:var(--fall);border-color:rgba(61,220,151,.3);background:rgba(61,220,151,.07)}
+  .cad.periodic{color:var(--acc);border-color:rgba(240,180,41,.3);background:rgba(240,180,41,.07)}
+  .group-head .note{font-size:11.5px;color:var(--txt3)}
+
+  .topics{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:0 0 8px}
+  .topics.two{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
   .topic{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px 20px 18px;
     display:flex;flex-direction:column;transition:border-color .18s,transform .18s,box-shadow .18s,background .18s}
   .topic:hover{border-color:rgba(240,180,41,.45);transform:translateY(-3px);
     box-shadow:0 12px 32px rgba(0,0,0,.42);background:var(--panel2)}
-  /* 整卡可点：a 当卡片，避免再放一个「进入专题」按钮 */
   a.topic{text-decoration:none;color:inherit;cursor:pointer;position:relative}
   a.topic:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
   a.topic::after{content:"→";position:absolute;right:18px;bottom:16px;font-size:15px;
     color:var(--acc2);opacity:.55;transition:opacity .18s,transform .18s}
   a.topic:hover::after{opacity:1;transform:translateX(3px)}
   .topic .no{font-family:var(--mono);font-size:11px;color:var(--acc);letter-spacing:.14em}
-  .topic h2{border:0;padding:0;margin:8px 0 10px;font-size:16.5px;color:var(--txt)}
+  .topic h3{border:0;padding:0;margin:8px 0 10px;font-size:16.5px;color:var(--txt);font-weight:650}
   .topic p{color:var(--txt2);font-size:12.5px;margin:0 0 14px;flex:1;line-height:1.75}
   .topic .latest{font-size:11.5px;color:var(--txt2);background:var(--panel2);
     border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin-bottom:6px;line-height:1.6}
   .topic .latest b{color:var(--acc);font-family:var(--mono)}
   a.topic:hover .latest{border-color:rgba(240,180,41,.28)}
-  a.topic:hover h2{color:var(--acc)}
+  a.topic:hover h3{color:var(--acc)}
   .meta{display:flex;gap:20px;flex-wrap:wrap;font-size:12px;color:var(--txt3);margin:4px 0 8px}
   .meta b{color:var(--txt2);font-weight:500}
-  @media(max-width:860px){.topics{grid-template-columns:1fr}}
+  @media(max-width:860px){.topics,.topics.two{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="series">BTC RESEARCH</div>
   <h1>BTC 研究站</h1>
-  <div class="sub">推特观点 + 行情实证 + 本人观点台账 + 信号库 · 五专题分开维护</div>
+  <div class="sub">推特观点 + 行情实证 + 本人观点台账 + 信号库 · 五专题按更新节奏分两组维护</div>
 
   <div class="meta">
     <span>托管：<b>GitHub Pages</b></span>
@@ -42,41 +53,61 @@
     <span>改版：<b>只改 assets/report.css</b></span>
   </div>
 
-  <div class="topics">
-    <a class="topic" href="macro-events/">
-      <div class="no">TOPIC 01</div>
-      <h2>宏观走势与重要事件</h2>
-      <p>行情结构、关键价位、驱动事件（CPI / 议息 / ETF / 监管 / 黑天鹅）与时间线。只讲「发生了什么、为什么」，不做博主评价。</p>
-      <div class="latest">最新：<b>2026-11-14</b><br>跌破前低 67,568·放量后第二天</div>
-    </a>
+  <!-- ========== 组 A：每日更新 ========== -->
+  <div class="group">
+    <div class="group-head">
+      <h2>每日更新</h2>
+      <span class="cad daily">DAILY</span>
+      <span class="note">每次抓推即产出，一天一期，同日重大修订用 -r2</span>
+    </div>
 
-    <a class="topic" href="blogger-scoring/">
-      <div class="no">TOPIC 02</div>
-      <h2>博主预测能力打分</h2>
-      <p>用超额胜率、周期分层、顶底提前预判、样本收缩等口径做可复现评级；含观点承诺台账的对错结算与拉黑建议。</p>
-      <div class="latest">最新：<b>2026-11-13</b><br>30 条观点台账首轮判定</div>
-    </a>
+    <div class="topics two">
+      <a class="topic" href="macro-events/">
+        <div class="no">TOPIC 01</div>
+        <h3>宏观走势与重要事件</h3>
+        <p>行情结构、关键价位、驱动事件（CPI / 议息 / ETF / 监管 / 黑天鹅）与时间线。只讲「发生了什么、为什么」，不做博主评价。</p>
+        <div class="latest">最新：<b>2026-11-20</b><br>缩量破位·62,006 失守，估值进熊底区间</div>
+      </a>
 
-    <a class="topic" href="blogger-views/">
-      <div class="no">TOPIC 03</div>
-      <h2>博主观点与走势预测</h2>
-      <p>关注流里谁说了什么、哪些点位被反复提及、多空阵营如何分布，以及某次事件里谁提前看对／看错（附原文与历史标签）。</p>
-      <div class="latest">最新：<b>2026-11-14</b><br>破位后第二天·谁在接谁转空</div>
-    </a>
+      <a class="topic" href="blogger-views/">
+        <div class="no">TOPIC 03</div>
+        <h3>博主观点与走势预测</h3>
+        <p>关注流里谁说了什么、哪些点位被反复提及、多空阵营如何分布，以及某次事件里谁提前看对／看错（附原文与历史标签）。</p>
+        <div class="latest">最新：<b>2026-11-20</b><br>破 62k 之后·抄底派报数，看空派给区间</div>
+      </a>
+    </div>
+  </div>
 
-    <a class="topic" href="my-calls/">
-      <div class="no">TOPIC 04</div>
-      <h2>我的观点与预测</h2>
-      <p>我自己每天给出的走势判断：日期、当时价格、涨跌方向、目标位、判断依据，以及留给后续走势验证的结果位。只记观点，不记仓位。</p>
-      <div class="latest">最新：<b>2026-11-14</b><br>2 条预测：ETH 跌不动 + RSI2 超卖</div>
-    </a>
+  <!-- ========== 组 B：定期更新 ========== -->
+  <div class="group">
+    <div class="group-head">
+      <h2>定期更新</h2>
+      <span class="cad periodic">PERIODIC</span>
+      <span class="note">需要跑回测或全量重算，不随每日抓推产出</span>
+    </div>
 
-    <a class="topic" href="signals/">
-      <div class="no">TOPIC 05</div>
-      <h2>信号库与回测</h2>
-      <p>把「人工观察 + 感觉」变成可验证的量化信号：1000 天日线逐个回测，扣除随机基准后打分，标明可用 / 观察 / 无效。含今日触发状态。</p>
-      <div class="latest">最新：<b>2026-11-14</b><br>25 个信号首轮扫描·1 个可用</div>
-    </a>
+    <div class="topics">
+      <a class="topic" href="blogger-scoring/">
+        <div class="no">TOPIC 02</div>
+        <h3>博主预测能力打分</h3>
+        <p>用超额胜率、周期分层、顶底提前预判、样本收缩等口径做可复现评级；含观点承诺台账的对错结算与拉黑建议。</p>
+        <div class="latest">最新：<b>2026-11-13</b><br>30 条观点台账首轮判定</div>
+      </a>
+
+      <a class="topic" href="my-calls/">
+        <div class="no">TOPIC 04</div>
+        <h3>我的观点与预测</h3>
+        <p>我自己每天给出的走势判断：日期、当时价格、涨跌方向、目标位、判断依据，以及留给后续走势验证的结果位。只记观点，不记仓位。</p>
+        <div class="latest">最新：<b>2026-11-15</b><br>c001 失效（收盘破 65,000）· c002 待验证</div>
+      </a>
+
+      <a class="topic" href="signals/">
+        <div class="no">TOPIC 05</div>
+        <h3>信号库与回测</h3>
+        <p>把「人工观察 + 感觉」变成可验证的量化信号：1000 天日线逐个回测，扣除随机基准后打分，标明可用 / 观察 / 无效。含今日触发状态。</p>
+        <div class="latest">最新：<b>2026-11-14</b><br>25 个信号首轮扫描·1 个可用</div>
+      </a>
+    </div>
   </div>
 
   <h2>版本与改版规则</h2>

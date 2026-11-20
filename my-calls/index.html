@@ -42,10 +42,12 @@
 
   <div class="grid">
     <div class="kpi"><div class="n">2</div><div class="l">累计观点</div></div>
-    <div class="kpi"><div class="n plain">2</div><div class="l">待验证</div></div>
-    <div class="kpi"><div class="n fall">—</div><div class="l">已结算命中率（0/0）</div></div>
-    <div class="kpi"><div class="n">2026-11-14</div><div class="l">行情截至（UTC）</div></div>
+    <div class="kpi"><div class="n plain">1</div><div class="l">待验证</div></div>
+    <div class="kpi"><div class="n plain">0/0/1</div><div class="l">已结算（命中 / 未中 / 失效）</div></div>
+    <div class="kpi"><div class="n">2026-11-20</div><div class="l">行情截至（UTC）</div></div>
   </div>
+
+  <div class="callout bad"><strong>2026-11-15 结算：</strong>c001 触发失效条件——11-14 日线收盘 <strong>64,150</strong> 低于自设失效线 <strong>65,000</strong>，「阶段底」判断前提被打破，判定为 <strong>失效</strong>（invalidate），非「未中」。<br><br><strong>c002 现状（11-20 更新）：</strong>窗口最高仍是 11-15 的 <strong>66,132</strong>，之后连续 5 天走低、11-20 盘中探至 <strong>61,230</strong>。距目标 68,765 还差 <strong>2,633（+4.0%）</strong>，<strong>窗口只剩 11-21 一天</strong>。要命中需单日涨 11.7%，按当前缩量破位的结构，概率极低——<strong>大概率在 11-21 收盘判「未中」</strong>。原判原文不改，留档。</div>
 
   <div class="callout"><strong>判定规则：</strong>方向为「看涨」时，窗口内最高价触及目标即命中；「看跌」时最低价触及即命中。<strong>触及即刻结算，不必等到窗口到期</strong>；到 <code>settleBy</code> 仍未触及才判未中。窗口从记录日次日算起。<strong>记录后的原话不改</strong>，判错也留档。</div>
   <p class="small">当前无自动化定时任务。命中与未中的判定由 <code>my_journal.js --settle</code> 驱动，需在会话中手动触发——每次你说到 BTC，我会先跑一次并报告状态。</p>
@@ -59,24 +61,28 @@
       <td class="rise">看涨</td>
       <td class="num">68,765</td>
       <td>RSI2 极超卖（2.0）</td>
-      <td class="num">66,041</td>
-      <td class="num">—</td>
-      <td class="num">—</td>
+      <td class="num">61,540</td>
+      <td class="num">66,132</td>
+      <td class="num">61,230</td>
       <td>2026-11-21</td>
-      <td class="num">D-7</td>
-    </tr><tr>
+      <td class="num">D-1</td>
+    </tr>
+  </table>
+
+  <h2>一·B、已失效</h2>
+  <table>
+    <tr><th>ID</th><th>记录日</th><th>方向</th><th class="num">目标</th><th style="min-width:180px">判断依据</th><th>失效原因</th><th>失效日</th></tr>
+    <tr>
       <td class="num">c001</td>
       <td>2026-11-14</td>
       <td class="rise">看涨</td>
       <td class="num">75,000</td>
       <td>ETH 跌不动</td>
-      <td class="num">66,041</td>
-      <td class="num">—</td>
-      <td class="num">—</td>
-      <td>2026-12-14</td>
-      <td class="num">D-30</td>
+      <td>日线收盘 64,150 &lt; 失效线 65,000</td>
+      <td class="num">2026-11-14</td>
     </tr>
   </table>
+  <p class="small">「失效」与「未中」不同：<strong>未中</strong>是窗口到期仍未触及目标；<strong>失效</strong>是判断成立的前提被打破，提前终止，不等到 settleBy。c001 属后者——它预设「65,000 下方空间有限」，而价格直接收在 65,000 以下。</p>
 
   <h2>二、观点时间线</h2>
   <div class="call pending">
@@ -112,21 +118,21 @@
       </tr><tr><td></td><td colspan="2" class="small">审查：33 次事件，命中 72.7%，超额 +21.4pt，z=2.76，三段全正。超额最高但样本最小。今日量比不满足缩量条件，仅作记录。</td></tr>
       </table>
       <div class="inv"><b>失效条件：</b>不设价格失效线。窗口 2026-11-21 到期仍未触及 68,765 即判未中（机械可判：只看是否触及目标）</div>
-      <div class="status-line pending">等 2026-11-14 之后的行情（现价 66041）</div>
-    </div><div class="call pending">
+      <div class="status-line pending">窗口 6 天（11-15 ~ 11-20）：最高 66,132（11-15）/ 最低 61,230（11-20）/ 现价 61,540｜距目标还差 2,633（+4.0%），剩 1 天（11-21）。<strong>11-19 已破 62,006、11-20 再探 61,230，价格离目标越来越远。</strong></div>
+    </div><div class="call miss">
       <div class="ch">
         <span class="cid">c001</span>
         <span class="cdate">2026-11-14</span>
         <span class="rise">看涨</span>
         <span class="arrow">→</span>
         <span class="tgt">75,000</span>
-        <span class="st pending">待验证</span>
+        <span class="st miss">已失效</span>
       </div>
       <div class="meta">
         <span>记录时价 <b>67,057</b></span>
         <span>当日低点 <b>66,456</b></span>
-        <span>结算日 <b>2026-12-14</b></span>
-        <span>行情至 <b>2026-11-14</b></span>
+        <span>原结算日 <b>2026-12-14</b></span>
+        <span>失效于 <b>2026-11-14</b></span>
       </div>
       <div class="expect">短期阶段底，先走反弹；不排除再破 66456，但下方空间有限（约 65000）；不判断反转。</div>
       <table class="basis">
@@ -150,7 +156,7 @@
       </tr><tr><td></td><td colspan="2" class="small">审查：v3 口径：109 次事件，7 日后上涨 66.1%，基准 51.3%，超额 +14.7pt，z=3.25，三段 +18.3/+13.6/+13.2 全正。但阈值扫描不单调（低于2 +9.2、低于3 +8.9、低于5 +14.7、低于8 +7.3），20000 次置换检验 p=0.0118，未过 Bonferroni 门槛 0.002。疑为噪声尖峰，仅作参考。</td></tr>
       </table>
       <div class="inv"><b>失效条件：</b>日线收盘 &lt; 65000（视为下方空间打开，阶段底判断失效）</div>
-      <div class="status-line pending">等 2026-11-14 之后的行情（现价 66041）</div>
+      <div class="status-line miss"><strong>2026-11-15 判定失效：</strong>11-14 UTC 日线收 64,150，低于失效线 65,000。<br>事后看，主依据「ETH 跌不动」在 11-14 反转：ETH −3.98% vs BTC −3.21%，ETH 更弱；11-15 ETH 跌破 1,750。阶段底假设与相对强度假设同时被否。</div>
     </div>
 
   <h2>三、依据审查与统计</h2>

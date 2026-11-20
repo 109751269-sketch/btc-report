@@ -20,7 +20,7 @@
   <div class="crumb"><a href="../">首页</a><span>/</span>05 预测信号库</div>
   <div class="series">TOPIC 05</div>
   <h1>预测信号库</h1>
-  <div class="sub">2999 根 BTC 日线（2018-08-29 ~ 2026-11-13）｜事件级去重｜状态匹配基准｜30 日方向</div>
+  <div class="sub">2999 根 BTC 日线（2018-08-29 ~ 2026-11-13）｜触发状态更新至 2026-11-20｜量比为放量，非缩量｜事件级去重｜状态匹配基准｜30 日方向</div>
 <div class="grid">
     <div class="kpi"><div class="n">41</div><div class="l">累计测试信号</div></div>
     <div class="kpi"><div class="n rise">2</div><div class="l">弱有效（RSI2&lt;5、RSI14&lt;25）</div></div>
@@ -151,43 +151,46 @@
       <li><strong>量价背离的方向被搞反了。</strong>价格新高但成交萎缩，流行解读为「动能衰竭」，实测继续上涨概率更高。</li>
     </ul>
   </div>
-<h2>五、今日状态（更新于 2026-11-14 22:30 北京时间）</h2>
+<h2>五、今日状态（更新于 2026-11-20 21:20 北京时间）</h2>
   <div class="card">
-    <p class="small" style="margin-top:0">判定基准是<strong>最后一根已收盘日线 2026-11-13</strong>（UTC 收盘 68,314）。11-14 那根尚未收盘，只作实时参考，不计入信号触发。</p>
+    <p class="small" style="margin-top:0">判定基准是<strong>最后一根已收盘日线 2026-11-19</strong>（UTC 收盘 61,987）。11-20 那根尚未收盘，只作实时参考，不计入信号触发。</p>
     <table class="lab">
       <tr><th style="width:200px">项目</th><th class="num">数值</th><th>对应信号状态</th></tr>
-      <tr><td>已收盘日线（11-13）</td><td class="num">68,314</td><td class="small">−4.40%，量比 1.93（放量）</td></tr>
-      <tr><td>实时（11-14 盘中）</td><td class="num neg">66,144</td><td class="small">当日低 65,913，已跌破 11-13 低点 67,568</td></tr>
-      <tr><td>RSI2</td><td class="num">1.98</td><td><span class="tag m">触发 RSI2&lt;5（+14.7pt，z=3.25，三段全正）</span> 也触发 RSI2&lt;2</td></tr>
-      <tr><td>RSI14</td><td class="num">24.5</td><td><span class="tag m">触发 RSI14&lt;25（+14.4pt，z=1.73）</span> 第三段 −1.4</td></tr>
-      <tr><td>量比（当日/20日均）</td><td class="num">1.93</td><td><span class="tag w">放量，非缩量</span> 故「RSI&lt;35+缩量」未触发</td></tr>
-      <tr><td>距 60 日低点</td><td class="num">0.0%</td><td><span class="tag w">触发但该信号超额为负（−3.8pt）</span></td></tr>
-      <tr><td>收盘 vs MA200</td><td class="num">−6.5%</td><td><span class="tag w">触发但该信号仅 +2.9pt</span></td></tr>
-      <tr><td>MA20 vs MA50</td><td class="num">−4.9%</td><td><span class="tag w">空头排列，仅 +1.6pt</span></td></tr>
-      <tr><td>ETH 单日抗跌</td><td class="num">−0.05pt</td><td><span class="tag w">未触发</span> ETH −4.45% 略弱于 BTC −4.40%</td></tr>
-      <tr><td>ETH 近 3 日抗跌</td><td class="num">+1.42pt</td><td><span class="tag w">触发</span> 但「单日+3 日交集」未成立</td></tr>
+      <tr><td>已收盘日线（11-19）</td><td class="num fall">61,987</td><td class="small">−1.71%，量比 1.09，<strong>跌破 11-15 低点 62,006</strong></td></tr>
+      <tr><td>实时（11-20 盘中）</td><td class="num fall">61,540</td><td class="small">当日低 61,230，再创新低</td></tr>
+      <tr><td>RSI2</td><td class="num">3.90</td><td><span class="tag m">触发 RSI2&lt;5（7 日持有）</span></td></tr>
+      <tr><td>RSI14</td><td class="num">20.37</td><td><span class="tag m">触发 RSI14&lt;25</span></td></tr>
+      <tr><td>量比（前 20 日均）</td><td class="num">1.09（11-19 收盘）<br><span class="neg">1.35（11-20 前 14h 同时段）</span></td><td><span class="tag m">触发「缩量」条件（&lt;1.2）</span> 11-18 为 1.02、11-19 为 1.09</td></tr>
+      <tr><td>距 60 日低点</td><td class="num">+0.9%</td><td><span class="tag m">触发「距 60 日低点 &lt;2%」</span></td></tr>
+      <tr><td>破 60 日新低</td><td class="num neg">是（61,428 &lt; 62,006）</td><td><span class="tag bad">触发</span> 但该信号<strong>负超额 −3.8pt</strong>，别当买入理由</td></tr>
+      <tr><td>收盘 vs MA200</td><td class="num neg">−14.7%</td><td><span class="tag w">触发但该信号仅 +2.9pt</span></td></tr>
+      <tr><td>MA20 vs MA50</td><td class="num neg">−7.9%</td><td><span class="tag w">空头排列，仅 +1.6pt</span></td></tr>
+      <tr><td>距 ATH 回撤</td><td class="num neg">−50.9%</td><td><span class="tag m">触发「回撤≥20% + RSI14&lt;30」</span> +8.7pt，z=1.38</td></tr>
+      <tr><td>ETH 单日抗跌</td><td class="num neg">−0.57pt</td><td><span class="tag w">未触发</span> ETH −1.29% vs BTC −0.72%，ETH 更弱</td></tr>
+      <tr><td>ETH 近 3 日抗跌</td><td class="num rise">+0.31pt</td><td><span class="tag w">未触发</span> 幅度在噪声范围</td></tr>
     </table>
-    <p class="small" style="margin-bottom:0"><strong>当前唯一越过 Bonferroni 阈值附近的是 RSI2&lt;5</strong>（+14.7pt，z=3.25，三段 +18.3/+13.6/+13.2 全正）。但阈值扫描不单调（&lt;2 是 +9.2、&lt;3 是 +8.9、&lt;5 是 +14.7、&lt;8 掉到 +7.3），置换检验 p=0.0118 未过 24 信号校正门槛，仍标「弱」。<strong>RSI14&lt;25 第三段为 −1.4</strong>，最新这段行情里已不再有效。</p>
+    <p class="small" style="margin-bottom:0"><strong>量能口径提醒：</strong>盘中快照的「当日累计量 ÷ 全天 20 日均量」会系统性低估，必须改同时段对比（今日前 14 小时 ÷ 前 60 日同时段均值，前 14 小时占全天量的中位 56.1%）。本节所有量比均按正确口径。<br><br><strong>与 11-17 的关键变化：</strong>当时量比 1.7–1.8（放量横盘），判断「缩量止跌第二步没出现」。现在<strong>缩量出现了（1.02–1.09），止跌没出现——直接破了 62,006</strong>。<strong>「缩量 → 止跌」这个必要条件序列被证伪：缩量单独不构成底部条件，必须「缩量 + 价格不再创新低」同时成立。</strong>当前 RSI2 = 3.90 再次落入 &lt;5 区间，这是 11-14（RSI2=0.7）之后的第二次。</p>
   </div>
 
   <h2>五之二、各信号当前触发一览</h2>
   <table class="lab">
     <tr><th>信号</th><th style="width:80px">当前</th><th class="num" style="width:70px">超额</th><th class="num" style="width:60px">z</th><th>备注</th></tr>
-    <tr><td>RSI2 &lt; 5（7 日持有）</td><td><span class="tag m">触发</span></td><td class="num">+14.7</td><td class="num">3.25</td><td class="small">三段全正，唯一接近显著</td></tr>
-    <tr><td>RSI2 &lt; 2</td><td><span class="tag m">触发</span></td><td class="num">+9.2</td><td class="num">1.13</td><td class="small">样本 36，z 低</td></tr>
+    <tr><td><strong>RSI2 &lt; 5（7 日持有）</strong></td><td><span class="tag m">触发</span></td><td class="num">+14.7</td><td class="num">3.25</td><td class="small">11-19 RSI2 = 3.90 再次触发（11-14 曾 0.7，已走完一轮）</td></tr>
+    <tr><td>RSI2 &lt; 2</td><td><span class="tag w">未触发</span></td><td class="num">+9.2</td><td class="num">1.13</td><td class="small">3.90 &gt; 2，未到极端</td></tr>
+    <tr><td><strong>RSI2 &lt; 5 且缩量 &lt;1.2</strong></td><td><span class="tag m">触发</span></td><td class="num">+20.0</td><td class="num">2.91</td><td class="small"><strong>当前最强的一条</strong>：n=54，7 日命中 71.7%，三段 +25.2/+10.5/+24.6 全正，阈值单调（&lt;1.0→69.4%、&lt;1.2→71.7%、&lt;1.5→65.2%、&lt;2→61.7%）</td></tr>
     <tr><td>RSI14 &lt; 25</td><td><span class="tag m">触发</span></td><td class="num">+14.4</td><td class="num">1.73</td><td class="small">第三段 −1.4，近期失效</td></tr>
-    <tr><td>RSI14 &lt; 35 且缩量</td><td><span class="tag w">未触发</span></td><td class="num">+9.7</td><td class="num">1.53</td><td class="small">量比 1.93，是放量</td></tr>
-    <tr><td>破 60 日新低</td><td><span class="tag w">触发</span></td><td class="num neg">−3.8</td><td class="num">−0.58</td><td class="small">负超额，第三段 −13.8</td></tr>
-    <tr><td>破 60 日新低 + 放量 1.5 倍</td><td><span class="tag w">触发</span></td><td class="num neg">−4.4</td><td class="num">−0.59</td><td class="small">负超额，第三段 −16.1</td></tr>
+    <tr><td>RSI14 &lt; 35 且缩量</td><td><span class="tag m">触发</span></td><td class="num">+9.7</td><td class="num">1.53</td><td class="small">RSI14 20.4 &lt; 35 且量比 1.09 &lt; 1.2，<strong>两个条件均满足</strong></td></tr>
+    <tr><td>破 60 日新低</td><td><span class="tag bad">触发</span></td><td class="num neg">−3.8</td><td class="num">−0.58</td><td class="small"><strong>负超额</strong>，第三段 −13.8，不可作为买入依据</td></tr>
+    <tr><td>破 60 日新低 + 放量 1.5 倍</td><td><span class="tag w">未触发</span></td><td class="num neg">−4.4</td><td class="num">−0.59</td><td class="small">本次是缩量破位，不满足放量条件</td></tr>
     <tr><td>MA20 低 MA50</td><td><span class="tag w">触发</span></td><td class="num">+1.6</td><td class="num">0.82</td><td class="small">状态校正后归零</td></tr>
     <tr><td>收盘低 MA200</td><td><span class="tag w">触发</span></td><td class="num">+2.9</td><td class="num">1.40</td><td class="small">归零</td></tr>
-    <tr><td>距 ATH 回撤 ≥20% 且 RSI14&lt;30</td><td><span class="tag m">触发</span></td><td class="num">+8.7</td><td class="num">1.38</td><td class="small">回撤 −47.4% 已满足</td></tr>
-    <tr><td>ETH 单日抗跌</td><td><span class="tag w">未触发</span></td><td class="num">+4.5</td><td class="num">1.54</td><td class="small">今日 ETH 更弱</td></tr>
-    <tr><td>ETH 单日 + 3 日交集抗跌</td><td><span class="tag w">未触发</span></td><td class="num">+7.8</td><td class="num">1.85</td><td class="small">三段全正，但今天单日这条没过</td></tr>
+    <tr><td>距 ATH 回撤 ≥20% 且 RSI14&lt;30</td><td><span class="tag m">触发</span></td><td class="num">+8.7</td><td class="num">1.38</td><td class="small">回撤 −50.9% 已满足</td></tr>
+    <tr><td>ETH 单日抗跌</td><td><span class="tag w">未触发</span></td><td class="num">+4.5</td><td class="num">1.54</td><td class="small">ETH 更弱 0.57pt</td></tr>
+    <tr><td>ETH 单日 + 3 日交集抗跌</td><td><span class="tag w">未触发</span></td><td class="num">+7.8</td><td class="num">1.85</td><td class="small">3 日 +0.31pt，在噪声范围</td></tr>
   </table>
   <p class="small">触发状态每天随行情变化。本节在每次抓推特或分析行情时同步更新。</p>
 
-  <h2>六、方法与局限</h2>
+<h2>六、方法与局限</h2>
   <div class="card">
     <ul class="small">
       <li><strong>数据</strong>：Binance BTCUSDT / ETHUSDT 现货日线，UTC 00:00 收盘，2999 根（2018-08-29 ~ 2026-11-13），自动剔除未收盘日线。</li>
